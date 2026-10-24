@@ -1,0 +1,1056 @@
+{
+ "model": "large-v3-turbo",
+ "language": "de",
+ "words": [
+  {
+   "word": "Jemand",
+   "start": 0.91,
+   "end": 1.51,
+   "prob": 0.964
+  },
+  {
+   "word": "hat",
+   "start": 1.51,
+   "end": 1.69,
+   "prob": 0.997
+  },
+  {
+   "word": "mich",
+   "start": 1.69,
+   "end": 1.83,
+   "prob": 1.0
+  },
+  {
+   "word": "gefragt.",
+   "start": 1.83,
+   "end": 2.35,
+   "prob": 0.999
+  },
+  {
+   "word": "Versteht",
+   "start": 2.55,
+   "end": 2.93,
+   "prob": 0.997
+  },
+  {
+   "word": "dein",
+   "start": 2.93,
+   "end": 3.07,
+   "prob": 0.991
+  },
+  {
+   "word": "Hund",
+   "start": 3.07,
+   "end": 3.25,
+   "prob": 0.999
+  },
+  {
+   "word": "wirklich",
+   "start": 3.25,
+   "end": 3.57,
+   "prob": 1.0
+  },
+  {
+   "word": "nur",
+   "start": 3.57,
+   "end": 3.75,
+   "prob": 1.0
+  },
+  {
+   "word": "Deutsch?",
+   "start": 3.75,
+   "end": 4.07,
+   "prob": 0.834
+  },
+  {
+   "word": "Gute",
+   "start": 4.37,
+   "end": 4.71,
+   "prob": 0.997
+  },
+  {
+   "word": "Frage.",
+   "start": 4.71,
+   "end": 5.01,
+   "prob": 1.0
+  },
+  {
+   "word": "Heute",
+   "start": 5.37,
+   "end": 5.63,
+   "prob": 1.0
+  },
+  {
+   "word": "machen",
+   "start": 5.63,
+   "end": 5.89,
+   "prob": 1.0
+  },
+  {
+   "word": "wir",
+   "start": 5.89,
+   "end": 6.05,
+   "prob": 1.0
+  },
+  {
+   "word": "den",
+   "start": 6.05,
+   "end": 6.21,
+   "prob": 1.0
+  },
+  {
+   "word": "Test.",
+   "start": 6.21,
+   "end": 6.47,
+   "prob": 0.999
+  },
+  {
+   "word": "Das",
+   "start": 7.29,
+   "end": 7.51,
+   "prob": 0.975
+  },
+  {
+   "word": "ist",
+   "start": 7.51,
+   "end": 7.69,
+   "prob": 1.0
+  },
+  {
+   "word": "Bruno.",
+   "start": 7.69,
+   "end": 7.95,
+   "prob": 0.991
+  },
+  {
+   "word": "Bruno",
+   "start": 8.15,
+   "end": 8.49,
+   "prob": 0.996
+  },
+  {
+   "word": "ist",
+   "start": 8.49,
+   "end": 8.79,
+   "prob": 1.0
+  },
+  {
+   "word": "ein",
+   "start": 8.79,
+   "end": 8.99,
+   "prob": 1.0
+  },
+  {
+   "word": "deutscher",
+   "start": 8.99,
+   "end": 9.33,
+   "prob": 0.998
+  },
+  {
+   "word": "Schärferhund.",
+   "start": 9.33,
+   "end": 9.91,
+   "prob": 0.936
+  },
+  {
+   "word": "Er",
+   "start": 10.03,
+   "end": 10.21,
+   "prob": 1.0
+  },
+  {
+   "word": "ist",
+   "start": 10.21,
+   "end": 10.39,
+   "prob": 1.0
+  },
+  {
+   "word": "drei",
+   "start": 10.39,
+   "end": 10.61,
+   "prob": 0.826
+  },
+  {
+   "word": "Jahre",
+   "start": 10.61,
+   "end": 10.89,
+   "prob": 1.0
+  },
+  {
+   "word": "alt",
+   "start": 10.89,
+   "end": 11.19,
+   "prob": 1.0
+  },
+  {
+   "word": "und",
+   "start": 11.19,
+   "end": 11.37,
+   "prob": 0.989
+  },
+  {
+   "word": "er",
+   "start": 11.37,
+   "end": 11.53,
+   "prob": 0.963
+  },
+  {
+   "word": "liegt",
+   "start": 11.53,
+   "end": 11.71,
+   "prob": 1.0
+  },
+  {
+   "word": "am",
+   "start": 11.71,
+   "end": 11.89,
+   "prob": 1.0
+  },
+  {
+   "word": "liebsten",
+   "start": 11.89,
+   "end": 12.23,
+   "prob": 0.999
+  },
+  {
+   "word": "auf",
+   "start": 12.23,
+   "end": 12.37,
+   "prob": 1.0
+  },
+  {
+   "word": "seinem",
+   "start": 12.37,
+   "end": 12.57,
+   "prob": 1.0
+  },
+  {
+   "word": "roten",
+   "start": 12.57,
+   "end": 12.91,
+   "prob": 0.999
+  },
+  {
+   "word": "Spielzeug.",
+   "start": 12.91,
+   "end": 13.41,
+   "prob": 0.956
+  },
+  {
+   "word": "Erster",
+   "start": 14.35,
+   "end": 14.83,
+   "prob": 0.997
+  },
+  {
+   "word": "Test.",
+   "start": 14.83,
+   "end": 15.13,
+   "prob": 1.0
+  },
+  {
+   "word": "Ich",
+   "start": 15.35,
+   "end": 15.53,
+   "prob": 0.999
+  },
+  {
+   "word": "sage",
+   "start": 15.53,
+   "end": 15.85,
+   "prob": 1.0
+  },
+  {
+   "word": "es",
+   "start": 15.85,
+   "end": 16.01,
+   "prob": 0.999
+  },
+  {
+   "word": "auf",
+   "start": 16.01,
+   "end": 16.19,
+   "prob": 1.0
+  },
+  {
+   "word": "Englisch.",
+   "start": 16.19,
+   "end": 16.61,
+   "prob": 0.999
+  },
+  {
+   "word": "Sit!",
+   "start": 16.75,
+   "end": 16.89,
+   "prob": 0.059
+  },
+  {
+   "word": "Bruno",
+   "start": 17.03,
+   "end": 17.43,
+   "prob": 0.993
+  },
+  {
+   "word": "bewegt",
+   "start": 17.43,
+   "end": 17.87,
+   "prob": 1.0
+  },
+  {
+   "word": "sich",
+   "start": 17.87,
+   "end": 18.03,
+   "prob": 1.0
+  },
+  {
+   "word": "nicht.",
+   "start": 18.03,
+   "end": 18.25,
+   "prob": 1.0
+  },
+  {
+   "word": "Er",
+   "start": 18.39,
+   "end": 18.59,
+   "prob": 1.0
+  },
+  {
+   "word": "schaut",
+   "start": 18.59,
+   "end": 18.89,
+   "prob": 0.999
+  },
+  {
+   "word": "einfach",
+   "start": 18.89,
+   "end": 19.21,
+   "prob": 1.0
+  },
+  {
+   "word": "weg.",
+   "start": 19.21,
+   "end": 19.47,
+   "prob": 0.999
+  },
+  {
+   "word": "Jetzt",
+   "start": 20.33,
+   "end": 20.81,
+   "prob": 0.999
+  },
+  {
+   "word": "auf",
+   "start": 20.81,
+   "end": 21.01,
+   "prob": 1.0
+  },
+  {
+   "word": "Deutsch.",
+   "start": 21.01,
+   "end": 21.31,
+   "prob": 0.999
+  },
+  {
+   "word": "Sit!",
+   "start": 21.55,
+   "end": 21.69,
+   "prob": 0.741
+  },
+  {
+   "word": "Und",
+   "start": 21.83,
+   "end": 22.09,
+   "prob": 0.994
+  },
+  {
+   "word": "sofort",
+   "start": 22.09,
+   "end": 22.45,
+   "prob": 0.999
+  },
+  {
+   "word": "setzt",
+   "start": 22.45,
+   "end": 22.77,
+   "prob": 0.999
+  },
+  {
+   "word": "er",
+   "start": 22.77,
+   "end": 22.93,
+   "prob": 1.0
+  },
+  {
+   "word": "sich",
+   "start": 22.93,
+   "end": 23.07,
+   "prob": 1.0
+  },
+  {
+   "word": "hin.",
+   "start": 23.07,
+   "end": 23.27,
+   "prob": 1.0
+  },
+  {
+   "word": "Sitz",
+   "start": 23.47,
+   "end": 23.71,
+   "prob": 0.716
+  },
+  {
+   "word": "bedeutet",
+   "start": 23.71,
+   "end": 24.09,
+   "prob": 0.998
+  },
+  {
+   "word": "Setz",
+   "start": 24.09,
+   "end": 24.51,
+   "prob": 0.505
+  },
+  {
+   "word": "dich!",
+   "start": 24.51,
+   "end": 24.69,
+   "prob": 0.981
+  },
+  {
+   "word": "Nächster",
+   "start": 25.65,
+   "end": 26.13,
+   "prob": 0.998
+  },
+  {
+   "word": "Befehl.",
+   "start": 26.13,
+   "end": 26.63,
+   "prob": 0.999
+  },
+  {
+   "word": "Platz.",
+   "start": 26.77,
+   "end": 26.97,
+   "prob": 0.982
+  },
+  {
+   "word": "Bruno",
+   "start": 27.17,
+   "end": 27.51,
+   "prob": 0.997
+  },
+  {
+   "word": "legt",
+   "start": 27.51,
+   "end": 27.83,
+   "prob": 0.999
+  },
+  {
+   "word": "sich",
+   "start": 27.83,
+   "end": 27.97,
+   "prob": 0.997
+  },
+  {
+   "word": "wieder",
+   "start": 27.97,
+   "end": 28.19,
+   "prob": 1.0
+  },
+  {
+   "word": "hin.",
+   "start": 28.19,
+   "end": 28.43,
+   "prob": 0.999
+  },
+  {
+   "word": "Platz",
+   "start": 28.61,
+   "end": 28.89,
+   "prob": 0.998
+  },
+  {
+   "word": "heißt",
+   "start": 28.89,
+   "end": 29.31,
+   "prob": 0.995
+  },
+  {
+   "word": "leg",
+   "start": 29.31,
+   "end": 29.65,
+   "prob": 0.44
+  },
+  {
+   "word": "dich",
+   "start": 29.65,
+   "end": 29.79,
+   "prob": 0.997
+  },
+  {
+   "word": "hin.",
+   "start": 29.79,
+   "end": 30.01,
+   "prob": 1.0
+  },
+  {
+   "word": "Und",
+   "start": 30.63,
+   "end": 31.19,
+   "prob": 0.931
+  },
+  {
+   "word": "jetzt",
+   "start": 31.19,
+   "end": 31.47,
+   "prob": 1.0
+  },
+  {
+   "word": "komm",
+   "start": 31.47,
+   "end": 31.87,
+   "prob": 0.317
+  },
+  {
+   "word": "her!",
+   "start": 31.87,
+   "end": 32.11,
+   "prob": 0.999
+  },
+  {
+   "word": "Bruno",
+   "start": 32.39,
+   "end": 32.75,
+   "prob": 0.997
+  },
+  {
+   "word": "steht",
+   "start": 32.75,
+   "end": 33.07,
+   "prob": 1.0
+  },
+  {
+   "word": "auf",
+   "start": 33.07,
+   "end": 33.41,
+   "prob": 0.999
+  },
+  {
+   "word": "und",
+   "start": 33.41,
+   "end": 33.63,
+   "prob": 0.999
+  },
+  {
+   "word": "kommt",
+   "start": 33.63,
+   "end": 33.85,
+   "prob": 0.999
+  },
+  {
+   "word": "langsam",
+   "start": 33.85,
+   "end": 34.17,
+   "prob": 0.999
+  },
+  {
+   "word": "zu",
+   "start": 34.17,
+   "end": 34.35,
+   "prob": 1.0
+  },
+  {
+   "word": "mir.",
+   "start": 34.35,
+   "end": 34.57,
+   "prob": 1.0
+  },
+  {
+   "word": "Er",
+   "start": 35.15,
+   "end": 35.71,
+   "prob": 0.998
+  },
+  {
+   "word": "hat",
+   "start": 35.71,
+   "end": 35.87,
+   "prob": 1.0
+  },
+  {
+   "word": "sein",
+   "start": 35.87,
+   "end": 36.07,
+   "prob": 1.0
+  },
+  {
+   "word": "Spielzeug",
+   "start": 36.07,
+   "end": 36.63,
+   "prob": 1.0
+  },
+  {
+   "word": "im",
+   "start": 36.63,
+   "end": 36.83,
+   "prob": 1.0
+  },
+  {
+   "word": "Maul.",
+   "start": 36.83,
+   "end": 37.13,
+   "prob": 1.0
+  },
+  {
+   "word": "Ich",
+   "start": 37.29,
+   "end": 37.47,
+   "prob": 0.999
+  },
+  {
+   "word": "sage",
+   "start": 37.47,
+   "end": 37.79,
+   "prob": 1.0
+  },
+  {
+   "word": "aus",
+   "start": 37.79,
+   "end": 38.31,
+   "prob": 0.826
+  },
+  {
+   "word": "und",
+   "start": 38.31,
+   "end": 38.61,
+   "prob": 0.953
+  },
+  {
+   "word": "er",
+   "start": 38.61,
+   "end": 38.81,
+   "prob": 0.999
+  },
+  {
+   "word": "lässt",
+   "start": 38.81,
+   "end": 38.95,
+   "prob": 0.999
+  },
+  {
+   "word": "es",
+   "start": 38.95,
+   "end": 39.15,
+   "prob": 1.0
+  },
+  {
+   "word": "fallen.",
+   "start": 39.15,
+   "end": 39.45,
+   "prob": 1.0
+  },
+  {
+   "word": "Braver",
+   "start": 39.71,
+   "end": 40.05,
+   "prob": 0.972
+  },
+  {
+   "word": "Hund!",
+   "start": 40.05,
+   "end": 40.31,
+   "prob": 0.999
+  },
+  {
+   "word": "Übrigens,",
+   "start": 41.51,
+   "end": 42.07,
+   "prob": 0.997
+  },
+  {
+   "word": "Sitz,",
+   "start": 42.23,
+   "end": 42.45,
+   "prob": 0.995
+  },
+  {
+   "word": "Platz",
+   "start": 42.61,
+   "end": 42.87,
+   "prob": 1.0
+  },
+  {
+   "word": "und",
+   "start": 42.87,
+   "end": 43.25,
+   "prob": 1.0
+  },
+  {
+   "word": "Komm",
+   "start": 43.25,
+   "end": 43.47,
+   "prob": 0.009
+  },
+  {
+   "word": "her",
+   "start": 43.47,
+   "end": 43.69,
+   "prob": 0.944
+  },
+  {
+   "word": "sind",
+   "start": 43.69,
+   "end": 43.93,
+   "prob": 0.999
+  },
+  {
+   "word": "Imperative.",
+   "start": 43.93,
+   "end": 44.67,
+   "prob": 0.91
+  },
+  {
+   "word": "Zu",
+   "start": 44.85,
+   "end": 45.01,
+   "prob": 0.993
+  },
+  {
+   "word": "einem",
+   "start": 45.01,
+   "end": 45.25,
+   "prob": 0.993
+  },
+  {
+   "word": "Menschen",
+   "start": 45.25,
+   "end": 45.59,
+   "prob": 0.999
+  },
+  {
+   "word": "sagt",
+   "start": 45.59,
+   "end": 45.91,
+   "prob": 0.999
+  },
+  {
+   "word": "man",
+   "start": 45.91,
+   "end": 46.07,
+   "prob": 1.0
+  },
+  {
+   "word": "höflicher.",
+   "start": 46.07,
+   "end": 46.55,
+   "prob": 0.999
+  },
+  {
+   "word": "Könnten",
+   "start": 46.73,
+   "end": 47.01,
+   "prob": 0.998
+  },
+  {
+   "word": "Sie",
+   "start": 47.01,
+   "end": 47.17,
+   "prob": 0.934
+  },
+  {
+   "word": "sich",
+   "start": 47.17,
+   "end": 47.37,
+   "prob": 1.0
+  },
+  {
+   "word": "bitte",
+   "start": 47.37,
+   "end": 47.57,
+   "prob": 0.999
+  },
+  {
+   "word": "setzen?",
+   "start": 47.57,
+   "end": 47.89,
+   "prob": 0.997
+  },
+  {
+   "word": "Aber",
+   "start": 48.13,
+   "end": 48.45,
+   "prob": 0.999
+  },
+  {
+   "word": "Bruno",
+   "start": 48.45,
+   "end": 48.83,
+   "prob": 1.0
+  },
+  {
+   "word": "mag",
+   "start": 48.83,
+   "end": 49.11,
+   "prob": 0.99
+  },
+  {
+   "word": "keine",
+   "start": 49.11,
+   "end": 49.45,
+   "prob": 1.0
+  },
+  {
+   "word": "langen",
+   "start": 49.45,
+   "end": 49.73,
+   "prob": 1.0
+  },
+  {
+   "word": "Sätze.",
+   "start": 49.73,
+   "end": 50.03,
+   "prob": 1.0
+  },
+  {
+   "word": "Letzter",
+   "start": 51.09,
+   "end": 51.65,
+   "prob": 0.998
+  },
+  {
+   "word": "Test.",
+   "start": 51.65,
+   "end": 51.95,
+   "prob": 1.0
+  },
+  {
+   "word": "Ich",
+   "start": 52.23,
+   "end": 52.35,
+   "prob": 1.0
+  },
+  {
+   "word": "flüstere",
+   "start": 52.35,
+   "end": 52.75,
+   "prob": 0.988
+  },
+  {
+   "word": "ganz",
+   "start": 52.75,
+   "end": 52.97,
+   "prob": 1.0
+  },
+  {
+   "word": "leise.",
+   "start": 52.97,
+   "end": 53.35,
+   "prob": 1.0
+  },
+  {
+   "word": "Bist",
+   "start": 53.45,
+   "end": 53.61,
+   "prob": 0.998
+  },
+  {
+   "word": "du",
+   "start": 53.61,
+   "end": 53.69,
+   "prob": 0.992
+  },
+  {
+   "word": "ein",
+   "start": 53.69,
+   "end": 53.79,
+   "prob": 1.0
+  },
+  {
+   "word": "Leckerli?",
+   "start": 53.79,
+   "end": 54.19,
+   "prob": 0.502
+  },
+  {
+   "word": "Plötzlich",
+   "start": 56.05,
+   "end": 56.61,
+   "prob": 0.998
+  },
+  {
+   "word": "hebt",
+   "start": 56.61,
+   "end": 56.83,
+   "prob": 0.988
+  },
+  {
+   "word": "er",
+   "start": 56.83,
+   "end": 56.93,
+   "prob": 1.0
+  },
+  {
+   "word": "den",
+   "start": 56.93,
+   "end": 57.05,
+   "prob": 1.0
+  },
+  {
+   "word": "Kopf",
+   "start": 57.05,
+   "end": 57.35,
+   "prob": 1.0
+  },
+  {
+   "word": "und",
+   "start": 57.35,
+   "end": 57.67,
+   "prob": 1.0
+  },
+  {
+   "word": "schaut",
+   "start": 57.67,
+   "end": 57.91,
+   "prob": 1.0
+  },
+  {
+   "word": "mich",
+   "start": 57.91,
+   "end": 58.07,
+   "prob": 1.0
+  },
+  {
+   "word": "direkt",
+   "start": 58.07,
+   "end": 58.37,
+   "prob": 1.0
+  },
+  {
+   "word": "an.",
+   "start": 58.37,
+   "end": 58.63,
+   "prob": 1.0
+  },
+  {
+   "word": "Dieses",
+   "start": 58.81,
+   "end": 59.17,
+   "prob": 0.994
+  },
+  {
+   "word": "Wort",
+   "start": 59.17,
+   "end": 59.51,
+   "prob": 0.999
+  },
+  {
+   "word": "versteht",
+   "start": 59.51,
+   "end": 59.93,
+   "prob": 0.998
+  },
+  {
+   "word": "er",
+   "start": 59.93,
+   "end": 59.99,
+   "prob": 0.971
+  },
+  {
+   "word": "nicht.",
+   "start": 59.99,
+   "end": 59.99,
+   "prob": 0.661
+  },
+  {
+   "word": "in",
+   "start": 59.99,
+   "end": 60.15,
+   "prob": 0.731
+  },
+  {
+   "word": "jeder",
+   "start": 60.15,
+   "end": 60.33,
+   "prob": 0.98
+  },
+  {
+   "word": "Sprache.",
+   "start": 60.33,
+   "end": 60.89,
+   "prob": 0.995
+  },
+  {
+   "word": "Welches",
+   "start": 61.87,
+   "end": 62.43,
+   "prob": 0.989
+  },
+  {
+   "word": "Wort",
+   "start": 62.43,
+   "end": 62.67,
+   "prob": 0.993
+  },
+  {
+   "word": "soll",
+   "start": 62.67,
+   "end": 62.91,
+   "prob": 0.993
+  },
+  {
+   "word": "Bruno",
+   "start": 62.91,
+   "end": 63.21,
+   "prob": 0.988
+  },
+  {
+   "word": "als",
+   "start": 63.21,
+   "end": 63.53,
+   "prob": 0.994
+  },
+  {
+   "word": "nächstes",
+   "start": 63.53,
+   "end": 63.91,
+   "prob": 0.991
+  },
+  {
+   "word": "lernen?",
+   "start": 63.91,
+   "end": 64.25,
+   "prob": 0.99
+  },
+  {
+   "word": "Schreib",
+   "start": 64.41,
+   "end": 64.69,
+   "prob": 0.856
+  },
+  {
+   "word": "es",
+   "start": 64.69,
+   "end": 64.81,
+   "prob": 0.981
+  },
+  {
+   "word": "in",
+   "start": 64.81,
+   "end": 64.91,
+   "prob": 0.995
+  },
+  {
+   "word": "die",
+   "start": 64.91,
+   "end": 65.01,
+   "prob": 0.996
+  },
+  {
+   "word": "Kommentare.",
+   "start": 65.01,
+   "end": 65.29,
+   "prob": 0.998
+  }
+ ]
+}

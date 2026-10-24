@@ -1,0 +1,245 @@
+{
+ "duration": 90.268,
+ "segs": [
+  {
+   "block": 0,
+   "role": "seg",
+   "k": 0,
+   "text": "Ich helfe dir.",
+   "start": 0.8,
+   "end": 1.682
+  },
+  {
+   "block": 0,
+   "role": "seg",
+   "k": 1,
+   "text": "Aber: Ich sehe dich.",
+   "start": 2.432,
+   "end": 3.631
+  },
+  {
+   "block": 0,
+   "role": "seg",
+   "k": 2,
+   "text": "Warum? Das Verb entscheidet!",
+   "start": 4.381,
+   "end": 6.283
+  },
+  {
+   "block": 1,
+   "role": "seg",
+   "k": 0,
+   "text": "Manche Verben brauchen nur den Nominativ.",
+   "start": 8.083,
+   "end": 10.568
+  },
+  {
+   "block": 1,
+   "role": "seg",
+   "k": 1,
+   "text": "Der Junge ging unter.",
+   "start": 11.318,
+   "end": 12.386
+  },
+  {
+   "block": 1,
+   "role": "seg",
+   "k": 2,
+   "text": "Viele Verben brauchen einen Akkusativ.",
+   "start": 13.136,
+   "end": 15.609
+  },
+  {
+   "block": 1,
+   "role": "seg",
+   "k": 3,
+   "text": "Er rettete einen Jungen.",
+   "start": 16.359,
+   "end": 17.624
+  },
+  {
+   "block": 2,
+   "role": "seg",
+   "k": 0,
+   "text": "Einige Verben brauchen den Dativ.",
+   "start": 19.424,
+   "end": 21.327
+  },
+  {
+   "block": 2,
+   "role": "seg",
+   "k": 1,
+   "text": "Ich helfe den Reisenden.",
+   "start": 22.077,
+   "end": 23.447
+  },
+  {
+   "block": 2,
+   "role": "seg",
+   "k": 2,
+   "text": "Genauso: danken, gefallen, gehören.",
+   "start": 24.197,
+   "end": 26.798
+  },
+  {
+   "block": 3,
+   "role": "seg",
+   "k": 0,
+   "text": "Manche Verben haben zwei Ergänzungen.",
+   "start": 28.598,
+   "end": 30.792
+  },
+  {
+   "block": 3,
+   "role": "seg",
+   "k": 1,
+   "text": "Ich erkläre ihnen die Verbindung.",
+   "start": 31.542,
+   "end": 33.202
+  },
+  {
+   "block": 3,
+   "role": "seg",
+   "k": 2,
+   "text": "Wem? Ihnen.",
+   "start": 33.952,
+   "end": 34.939
+  },
+  {
+   "block": 3,
+   "role": "seg",
+   "k": 3,
+   "text": "Was? Die Verbindung.",
+   "start": 35.689,
+   "end": 37.032
+  },
+  {
+   "block": 4,
+   "role": "seg",
+   "k": 0,
+   "text": "Und viele Verben haben eine Präposition.",
+   "start": 38.832,
+   "end": 41.375
+  },
+  {
+   "block": 4,
+   "role": "seg",
+   "k": 1,
+   "text": "Mit Akkusativ: Die Leute freuen sich über einen warmen Ort.",
+   "start": 42.125,
+   "end": 45.48
+  },
+  {
+   "block": 4,
+   "role": "seg",
+   "k": 2,
+   "text": "Mit Dativ: Er begann mit den Maßnahmen.",
+   "start": 46.23,
+   "end": 48.44
+  },
+  {
+   "block": 5,
+   "role": "seg",
+   "k": 0,
+   "text": "Mein Tipp: Lerne jedes Verb mit seinem Kasus.",
+   "start": 50.24,
+   "end": 52.817
+  },
+  {
+   "block": 5,
+   "role": "seg",
+   "k": 1,
+   "text": "Helfen plus Dativ.",
+   "start": 53.567,
+   "end": 54.861
+  },
+  {
+   "block": 5,
+   "role": "seg",
+   "k": 2,
+   "text": "Sehen plus Akkusativ.",
+   "start": 55.611,
+   "end": 57.259
+  },
+  {
+   "block": 6,
+   "role": "intro",
+   "k": 0,
+   "text": "Und jetzt der Test!",
+   "start": 59.059,
+   "end": 60.266
+  },
+  {
+   "block": 6,
+   "role": "intro",
+   "k": 1,
+   "text": "Dativ oder Akkusativ?",
+   "start": 61.016,
+   "end": 62.66
+  },
+  {
+   "block": 6,
+   "role": "q",
+   "k": 2,
+   "text": "Eins: Ich danke … Lehrer.",
+   "start": 63.41,
+   "end": 64.939
+  },
+  {
+   "block": 6,
+   "role": "q",
+   "k": 3,
+   "text": "Zwei: Ich besuche … Lehrer.",
+   "start": 65.689,
+   "end": 67.161
+  },
+  {
+   "block": 6,
+   "role": "q",
+   "k": 4,
+   "text": "Drei: Das Buch gefällt … Lehrer.",
+   "start": 67.911,
+   "end": 69.777
+  },
+  {
+   "block": 6,
+   "role": "pause",
+   "k": 5,
+   "text": "Drück auf Pause und denk nach!",
+   "start": 70.527,
+   "end": 72.572
+  },
+  {
+   "block": 6,
+   "role": "a",
+   "k": 6,
+   "text": "Ich danke dem Lehrer.",
+   "start": 77.972,
+   "end": 79.151
+  },
+  {
+   "block": 6,
+   "role": "a",
+   "k": 7,
+   "text": "Ich besuche den Lehrer.",
+   "start": 79.901,
+   "end": 81.319
+  },
+  {
+   "block": 6,
+   "role": "a",
+   "k": 8,
+   "text": "Das Buch gefällt dem Lehrer.",
+   "start": 82.069,
+   "end": 83.633
+  },
+  {
+   "block": 7,
+   "role": "cta",
+   "k": 0,
+   "text": "Wie viele hast du richtig? Schreib es in die Kommentare!",
+   "start": 85.433,
+   "end": 88.068
+  }
+ ]
+}

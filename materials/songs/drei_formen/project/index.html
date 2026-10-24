@@ -1,0 +1,1264 @@
+<!doctype html>
+<html lang="de" data-resolution="portrait">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="gsap.min.js"></script>
+<style>
+  @font-face { font-family: "Inter Display"; font-weight: 600; src: local("Inter Display SemiBold"), local("InterDisplay-SemiBold"); }
+  @font-face { font-family: "Inter Display"; font-weight: 700; src: local("Inter Display Bold"), local("InterDisplay-Bold"); }
+  @font-face { font-family: "Inter Display"; font-weight: 800; src: local("Inter Display ExtraBold"), local("InterDisplay-ExtraBold"); }
+  @font-face { font-family: "Inter Display"; font-weight: 900; src: local("Inter Display Black"), local("InterDisplay-Black"); }
+  @font-face { font-family: "Noto Color Emoji"; src: local("Noto Color Emoji"), local("NotoColorEmoji"); }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1080px; height: 1920px; overflow: hidden; background: #FFF7EC; }
+  #root { position: relative; width: 100%; height: 100%; overflow: hidden; background: #FFF7EC; font-family: "Inter Display", Inter, sans-serif; color: #1F2A44; }
+  .layer { position: absolute; inset: 0; }
+  .blob { position: absolute; border-radius: 50%; }
+  .note { position: absolute; font: 90px "Noto Color Emoji"; opacity: .5; }
+  .em { font-family: "Noto Color Emoji"; }
+  em { font-style: normal; }
+  em.p { color: #E8590C; } em.g { color: #0CA678; } em.s { color: #7048E8; } em.h { color: #1C7ED6; } em.r { color: #868E96; }
+  #chip { position: absolute; top: 80px; left: 60px; padding: 14px 28px; border-radius: 40px; background: #fff; font: 800 36px "Inter Display"; box-shadow: 0 6px 18px rgba(31,42,68,.08); }
+  #chip2 { position: absolute; top: 80px; right: 60px; padding: 14px 28px; border-radius: 40px; background: #1F2A44; color: #fff; font: 800 34px "Inter Display"; }
+  #chip2 b { color: #FFA94D; }
+  .pill { position: absolute; top: 182px; left: 0; right: 0; margin: 0 auto; width: max-content; padding: 12px 34px; border-radius: 34px; background: #FFE8CC; color: #7A4A12; font: 700 40px "Inter Display"; opacity: 0; }
+  .pill b { font-weight: 900; color: #E8590C; }
+  .card { position: absolute; left: 50px; right: 50px; top: 280px; opacity: 0; }
+  .drow { margin-bottom: 20px; padding: 18px 34px 20px; border-radius: 34px; background: #fff; box-shadow: 0 14px 34px rgba(31,42,68,.1); border-left: 14px solid #FFA94D; opacity: 0; }
+  .drow:nth-child(2) { border-left-color: #4DABF7; } .drow:nth-child(3) { border-left-color: #63E6BE; }
+  .lab { display: flex; align-items: center; gap: 14px; font: 800 28px Inter; letter-spacing: .08em; text-transform: uppercase; color: #868E96; }
+  .aux { padding: 2px 14px; border-radius: 14px; font: 900 26px Inter; letter-spacing: .04em; color: #fff; text-transform: none; }
+  .aux.s { background: #7048E8; } .aux.h { background: #1C7ED6; }
+  .de { margin-top: 6px; font: 900 72px/1.15 "Inter Display"; white-space: nowrap; }
+  .ru { margin-top: 6px; font: 700 40px/1.2 "Inter Display"; color: #1971C2; }
+  .w { display: inline-block; opacity: .32; transform-origin: 50% 80%; }
+  .card.line { top: 330px; padding: 50px 46px 44px; border-radius: 44px; background: #fff; box-shadow: 0 18px 44px rgba(31,42,68,.12); border: 6px solid #FFD8A8; text-align: center; }
+  .big { font: 900 84px/1.18 "Inter Display"; white-space: nowrap; }
+  .card .uk { margin-top: 26px; font: 700 48px/1.25 "Inter Display"; color: #1971C2; }
+  .fill { position: absolute; left: 90px; right: 90px; top: 380px; padding: 50px; border-radius: 44px; background: #1F2A44; color: #fff; text-align: center; opacity: 0; }
+  .fe { font-size: 130px; display: inline-block; }
+  .ft { margin-top: 10px; font: 900 70px "Inter Display"; } .fu { margin-top: 12px; font: 700 46px "Inter Display"; color: #A5D8FF; }
+  .list { position: absolute; left: 50px; right: 50px; top: 1000px; opacity: 0; }
+  .lhead { margin-bottom: 14px; font: 800 30px Inter; letter-spacing: .06em; text-transform: uppercase; color: #ADB5BD; }
+  .lhead span { text-transform: none; letter-spacing: 0; }
+  .lrow { display: flex; align-items: baseline; gap: 18px; margin-bottom: 10px; padding: 12px 24px; border-radius: 22px; background: rgba(255,255,255,.75); opacity: 0; }
+  .lde { font: 800 40px/1.2 "Inter Display"; white-space: nowrap; } .ar { color: #ADB5BD; }
+  .lu { margin-left: auto; font: 600 30px/1.2 "Inter Display"; color: #1971C2; text-align: right; }
+  #legend { position: absolute; left: 50px; right: 50px; top: 1665px; display: flex; justify-content: center; gap: 14px; }
+  #legend span { padding: 10px 20px; border-radius: 22px; background: #fff; font: 800 30px Inter; box-shadow: 0 4px 12px rgba(31,42,68,.06); }
+  #bar { position: absolute; left: 60px; right: 60px; top: 1760px; height: 14px; border-radius: 7px; background: #F1E4D2; overflow: hidden; }
+  #barf { width: 100%; height: 100%; background: linear-gradient(90deg, #FFA94D, #E8590C); transform-origin: 0 50%; }
+  em.inf { color: #E8590C; } em.prt { color: #1C7ED6; } em.pp { color: #0CA678; } em.pp u { text-decoration-thickness: 6px; text-underline-offset: 8px; }
+  em.h { color: #D6336C; } .aux.h { background: #D6336C; }
+  .drow { padding: 10px 34px 12px; margin-bottom: 12px; } .lab { font-size: 24px; } .de { font-size: 60px; margin-top: 2px; } .ru { font-size: 34px; margin-top: 0; }
+  .drow:nth-child(4) { border-left-color: #B197FC; background: #F8F6FF; }
+  .ex { margin-top: 4px; font: 800 48px/1.2 "Inter Display"; white-space: nowrap; }
+  .w.dash { opacity: .35; }
+  .card.line .big { font-size: 70px; } .card.line .uk { margin-top: 10px; margin-bottom: 26px; font-size: 42px; } .card.line .uk:last-child { margin-bottom: 0; }
+  .list { top: 1010px; } .lhead { margin-bottom: 8px; font-size: 26px; } .lrow { padding: 6px 22px; margin-bottom: 6px; } .lde { font-size: 34px; } .lu { font-size: 28px; }
+</style>
+</head>
+<body>
+<div id="root" data-composition-id="main" data-start="0" data-duration="226.32" data-width="1080" data-height="1920">
+  <div id="bg" class="layer clip" data-start="0" data-duration="226.32" data-track-index="0">
+    <div id="b1" class="blob" style="left:-160px;top:160px;width:620px;height:620px;background:#FFE3C2"></div>
+    <div id="b2" class="blob" style="left:640px;top:760px;width:560px;height:560px;background:#DBE4FF"></div>
+    <div id="b3" class="blob" style="left:-120px;top:1380px;width:520px;height:520px;background:#D3F9D8"></div>
+    <div id="n1" class="note" style="left:900px;top:300px">🎵</div>
+    <div id="n2" class="note" style="left:40px;top:900px">🎶</div>
+  </div>
+  <div id="ui" class="layer clip" data-start="0" data-duration="226.32" data-track-index="1">
+    <div id="chip"><span class="em">🎵</span> Drei Formen</div>
+    <div id="chip2">Starke <b>Verben</b></div>
+<div class="pill" id="p0"><b>Unterwegs</b> · У дорозі</div>
+<div class="pill" id="p1"><b>Wiederholen</b> · Повторюємо</div>
+<div class="pill" id="p2"><b>Refrain</b> · Приспів</div>
+<div class="pill" id="p3"><b>Sehen und sprechen</b> · Бачити й говорити</div>
+<div class="pill" id="p4"><b>Wiederholen</b> · Повторюємо</div>
+<div class="pill" id="p5"><b>Refrain</b> · Приспів</div>
+<div class="pill" id="p6"><b>Alltag</b> · Щодня</div>
+<div class="pill" id="p7"><b>Wiederholen</b> · Повторюємо</div>
+<div class="pill" id="p8"><b>Refrain</b> · Приспів</div>
+<div class="pill" id="p9"><b>Bleiben und liegen</b> · Залишатися й лежати</div>
+<div class="pill" id="p10"><b>Beginnen und gewinnen</b> · Починати й вигравати</div>
+<div class="pill" id="p11"><b>Alle zusammen!</b> · Усі разом!</div>
+<div class="pill" id="p12"><b>Finale</b> · Фінал</div>
+<div class="card drill" id="c0"><div class="drow" id="d0_0"><div class="lab">Infinitiv</div><div class="de fit"><span class="w" id="w1"><em class="inf">Gehen</em></span></div><div class="ru">іти</div></div><div class="drow" id="d0_1"><div class="lab">Präteritum</div><div class="de fit"><span class="w" id="w2"><em class="prt">ging</em></span></div><div class="ru">йшов</div></div><div class="drow" id="d0_2"><div class="lab">Partizip II</div><div class="de fit"><span class="w" id="w3"><em class="pp"><u>ge</u>gangen</em>,</span></div><div class="ru">пішов</div></div><div class="drow ex" id="d0_3"><div class="lab">Beispiel · Perfekt <span class="aux s">sein</span></div><div class="ex fit"><span class="w" id="w4">ich</span> <span class="w" id="w5"><em class="s">bin</em></span> <span class="w" id="w6">nach</span> <span class="w" id="w7">Hause</span> <span class="w" id="w8"><em class="pp"><u>ge</u>gangen</em>.</span></div><div class="ru">я пішов додому.</div></div></div>
+<div class="card drill" id="c1"><div class="drow" id="d1_0"><div class="lab">Infinitiv</div><div class="de fit"><span class="w" id="w9"><em class="inf">Kommen</em></span></div><div class="ru">приходити</div></div><div class="drow" id="d1_1"><div class="lab">Präteritum</div><div class="de fit"><span class="w" id="w10"><em class="prt">kam</em></span></div><div class="ru">прийшов</div></div><div class="drow" id="d1_2"><div class="lab">Partizip II</div><div class="de fit"><span class="w" id="w11"><em class="pp"><u>ge</u>kommen</em>,</span></div><div class="ru">прийшов</div></div><div class="drow ex" id="d1_3"><div class="lab">Beispiel · Perfekt <span class="aux s">sein</span></div><div class="ex fit"><span class="w" id="w12">meine</span> <span class="w" id="w13">Freunde</span> <span class="w" id="w14"><em class="s">sind</em></span> <span class="w" id="w15"><em class="pp"><u>ge</u>kommen</em>.</span></div><div class="ru">мої друзі прийшли.</div></div></div>
+<div class="card drill" id="c2"><div class="drow" id="d2_0"><div class="lab">Infinitiv</div><div class="de fit"><span class="w" id="w16"><em class="inf">Gehen</em></span></div><div class="ru">іти</div></div><div class="drow" id="d2_1"><div class="lab">Präteritum</div><div class="de fit"><span class="w" id="w17"><em class="prt">ging</em></span></div><div class="ru">йшов</div></div><div class="drow" id="d2_2"><div class="lab">Partizip II</div><div class="de fit"><span class="w" id="w18"><em class="pp"><u>ge</u>gangen</em>,</span></div><div class="ru">пішов</div></div><div class="drow ex" id="d2_3"><div class="lab">Beispiel · Perfekt <span class="aux s">sein</span></div><div class="ex fit"><span class="w" id="w19">ich</span> <span class="w" id="w20"><em class="s">bin</em></span> <span class="w" id="w21">nach</span> <span class="w" id="w22">Hause</span> <span class="w" id="w23"><em class="pp"><u>ge</u>gangen</em>.</span></div><div class="ru">я пішов додому.</div></div></div>
+<div class="card drill" id="c3"><div class="drow" id="d3_0"><div class="lab">Infinitiv</div><div class="de fit"><span class="w" id="w24"><em class="inf">Kommen</em></span></div><div class="ru">приходити</div></div><div class="drow" id="d3_1"><div class="lab">Präteritum</div><div class="de fit"><span class="w" id="w25"><em class="prt">kam</em></span></div><div class="ru">прийшов</div></div><div class="drow" id="d3_2"><div class="lab">Partizip II</div><div class="de fit"><span class="w" id="w26"><em class="pp"><u>ge</u>kommen</em>,</span></div><div class="ru">прийшов</div></div><div class="drow ex" id="d3_3"><div class="lab">Beispiel · Perfekt <span class="aux s">sein</span></div><div class="ex fit"><span class="w" id="w27">meine</span> <span class="w" id="w28">Freunde</span> <span class="w" id="w29"><em class="s">sind</em></span> <span class="w" id="w30"><em class="pp"><u>ge</u>kommen</em>.</span></div><div class="ru">мої друзі прийшли.</div></div></div>
+<div class="card drill" id="c4"><div class="drow" id="d4_0"><div class="lab">Infinitiv</div><div class="de fit"><span class="w" id="w31"><em class="inf">Fahren</em></span></div><div class="ru">їхати</div></div><div class="drow" id="d4_1"><div class="lab">Präteritum</div><div class="de fit"><span class="w" id="w32"><em class="prt">fuhr</em></span></div><div class="ru">їхав</div></div><div class="drow" id="d4_2"><div class="lab">Partizip II</div><div class="de fit"><span class="w" id="w33"><em class="pp"><u>ge</u>fahren</em>,</span></div><div class="ru">поїхав</div></div><div class="drow ex" id="d4_3"><div class="lab">Beispiel · Perfekt <span class="aux s">sein</span></div><div class="ex fit"><span class="w" id="w34">wir</span> <span class="w" id="w35"><em class="s">sind</em></span> <span class="w" id="w36">mit</span> <span class="w" id="w37">dem</span> <span class="w" id="w38">Bus</span> <span class="w" id="w39"><em class="pp"><u>ge</u>fahren</em>.</span></div><div class="ru">ми їхали автобусом.</div></div></div>
+<div class="card drill" id="c5"><div class="drow" id="d5_0"><div class="lab">Infinitiv</div><div class="de fit"><span class="w" id="w40"><em class="inf">Laufen</em></span></div><div class="ru">бігти</div></div><div class="drow" id="d5_1"><div class="lab">Präteritum</div><div class="de fit"><span class="w" id="w41"><em class="prt">lief</em></span></div><div class="ru">біг</div></div><div class="drow" id="d5_2"><div class="lab">Partizip II</div><div class="de fit"><span class="w" id="w42"><em class="pp"><u>ge</u>laufen</em>,</span></div><div class="ru">пробіг</div></div><div class="drow ex" id="d5_3"><div class="lab">Beispiel · Perfekt <span class="aux s">sein</span></div><div class="ex fit"><span class="w" id="w43">wir</span> <span class="w" id="w44"><em class="s">sind</em></span> <span class="w" id="w45">durch</span> <span class="w" id="w46">den</span> <span class="w" id="w47">Park</span> <span class="w" id="w48"><em class="pp"><u>ge</u>laufen</em>.</span></div><div class="ru">ми бігли через парк.</div></div></div>
+<div class="card line" id="c6"><div class="big fit"><span class="w" id="w49"><em class="inf">Gehen</em>,</span> <span class="w" id="w50"><em class="prt">ging</em>,</span> <span class="w" id="w51"><em class="pp"><u>ge</u>gangen</em>,</span></div><div class="uk">іти, йшов, пішов</div><div class="big fit"><span class="w" id="w52">Wörter</span> <span class="w" id="w53">klingen,</span> <span class="w" id="w54">Wörter</span> <span class="w" id="w55">klangen!</span></div><div class="uk">слова звучать, слова звучали!</div></div>
+<div class="card line" id="c7"><div class="big fit"><span class="w" id="w56"><em class="inf">Kommen</em>,</span> <span class="w" id="w57"><em class="prt">kam</em>,</span> <span class="w" id="w58"><em class="pp"><u>ge</u>kommen</em>,</span></div><div class="uk">приходити, прийшов, прийшов</div><div class="big fit"><span class="w" id="w59">jetzt</span> <span class="w" id="w60">hab</span> <span class="w" id="w61">ich</span> <span class="w" id="w62">sie</span> <span class="w" id="w63">aufgenommen!</span></div><div class="uk">тепер я їх запам&#x27;ятав!</div></div>
+<div class="card line" id="c8"><div class="big fit"><span class="w" id="w64">Drei</span> <span class="w" id="w65">Formen,</span> <span class="w" id="w66">sing</span> <span class="w" id="w67">sie</span> <span class="w" id="w68">laut,</span></div><div class="uk">Три форми, співай їх голосно,</div><div class="big fit"><span class="w" id="w69">bis</span> <span class="w" id="w70">dein</span> <span class="w" id="w71">Mund</span> <span class="w" id="w72">sie</span> <span class="w" id="w73">selber</span> <span class="w" id="w74">baut!</span></div><div class="uk">поки твій рот сам їх не складе!</div></div>
+<div class="card line" id="c9"><div class="big fit"><span class="w" id="w75">Eins,</span> <span class="w" id="w76">zwei,</span> <span class="w" id="w77">drei</span> <span class="w dash">—</span> <span class="w" id="w78">noch</span> <span class="w" id="w79">einmal,</span></div><div class="uk">Раз, два, три — ще раз,</div><div class="big fit"><span class="w" id="w80">Deutsch</span> <span class="w" id="w81">zu</span> <span class="w" id="w82">lernen</span> <span class="w" id="w83">ist</span> <span class="w" id="w84">genial!</span></div><div class="uk">вчити німецьку — це геніально!</div></div>
+<div class="card drill" id="c10"><div class="drow" id="d10_0"><div class="lab">Infinitiv</div><div class="de fit"><span class="w" id="w85"><em class="inf">Sehen</em></span></div><div class="ru">бачити</div></div><div class="drow" id="d10_1"><div class="lab">Präteritum</div><div class="de fit"><span class="w" id="w86"><em class="prt">sah</em></span></div><div class="ru">бачив</div></div><div class="drow" id="d10_2"><div class="lab">Partizip II</div><div class="de fit"><span class="w" id="w87"><em class="pp"><u>ge</u>sehen</em>,</span></div><div class="ru">побачив</div></div><div class="drow ex" id="d10_3"><div class="lab">Beispiel · Perfekt <span class="aux h">haben</span></div><div class="ex fit"><span class="w" id="w88">ich</span> <span class="w" id="w89"><em class="h">habe</em></span> <span class="w" id="w90">dich</span> <span class="w" id="w91">heute</span> <span class="w" id="w92"><em class="pp"><u>ge</u>sehen</em>.</span></div><div class="ru">я бачив тебе сьогодні.</div></div></div>
+<div class="card drill" id="c11"><div class="drow" id="d11_0"><div class="lab">Infinitiv</div><div class="de fit"><span class="w" id="w93"><em class="inf">Sprechen</em></span></div><div class="ru">говорити</div></div><div class="drow" id="d11_1"><div class="lab">Präteritum</div><div class="de fit"><span class="w" id="w94"><em class="prt">sprach</em></span></div><div class="ru">говорив</div></div><div class="drow" id="d11_2"><div class="lab">Partizip II</div><div class="de fit"><span class="w" id="w95"><em class="pp"><u>ge</u>sprochen</em>,</span></div><div class="ru">поговорив</div></div><div class="drow ex" id="d11_3"><div class="lab">Beispiel · Perfekt <span class="aux h">haben</span></div><div class="ex fit"><span class="w" id="w96">wir</span> <span class="w" id="w97"><em class="h">haben</em></span> <span class="w" id="w98">Deutsch</span> <span class="w" id="w99"><em class="pp"><u>ge</u>sprochen</em>.</span></div><div class="ru">ми говорили німецькою.</div></div></div>
+<div class="card drill" id="c12"><div class="drow" id="d12_0"><div class="lab">Infinitiv</div><div class="de fit"><span class="w" id="w100"><em class="inf">Geben</em></span></div><div class="ru">давати</div></div><div class="drow" id="d12_1"><div class="lab">Präteritum</div><div class="de fit"><span class="w" id="w101"><em class="prt">gab</em></span></div><div class="ru">дав</div></div><div class="drow" id="d12_2"><div class="lab">Partizip II</div><div class="de fit"><span class="w" id="w102"><em class="pp"><u>ge</u>geben</em>,</span></div><div class="ru">дав</div></div><div class="drow ex" id="d12_3"><div class="lab">Beispiel · Perfekt <span class="aux h">haben</span></div><div class="ex fit"><span class="w" id="w103">ich</span> <span class="w" id="w104"><em class="h">habe</em></span> <span class="w" id="w105">dir</span> <span class="w" id="w106">ein</span> <span class="w" id="w107">Buch</span> <span class="w" id="w108"><em class="pp"><u>ge</u>geben</em>.</span></div><div class="ru">я дав тобі книжку.</div></div></div>
+<div class="card drill" id="c13"><div class="drow" id="d13_0"><div class="lab">Infinitiv</div><div class="de fit"><span class="w" id="w109"><em class="inf">Nehmen</em></span></div><div class="ru">брати</div></div><div class="drow" id="d13_1"><div class="lab">Präteritum</div><div class="de fit"><span class="w" id="w110"><em class="prt">nahm</em></span></div><div class="ru">брав</div></div><div class="drow" id="d13_2"><div class="lab">Partizip II</div><div class="de fit"><span class="w" id="w111"><em class="pp"><u>ge</u>nommen</em>,</span></div><div class="ru">взяв</div></div><div class="drow ex" id="d13_3"><div class="lab">Beispiel · Perfekt <span class="aux h">haben</span></div><div class="ex fit"><span class="w" id="w112">ich</span> <span class="w" id="w113"><em class="h">habe</em></span> <span class="w" id="w114">den</span> <span class="w" id="w115">Zug</span> <span class="w" id="w116"><em class="pp"><u>ge</u>nommen</em>.</span></div><div class="ru">я сів на потяг.</div></div></div>
+<div class="card line" id="c14"><div class="big fit"><span class="w" id="w117"><em class="inf">Sehen</em>,</span> <span class="w" id="w118"><em class="prt">sah</em>,</span> <span class="w" id="w119"><em class="pp"><u>ge</u>sehen</em>,</span></div><div class="uk">бачити, бачив, побачив</div><div class="big fit"><span class="w" id="w120">Wörter</span> <span class="w" id="w121">bleiben</span> <span class="w" id="w122">nicht</span> <span class="w" id="w123">mehr</span> <span class="w" id="w124">stehen!</span></div><div class="uk">слова більше не стоять на місці!</div></div>
+<div class="card line" id="c15"><div class="big fit"><span class="w" id="w125"><em class="inf">Sprechen</em>,</span> <span class="w" id="w126"><em class="prt">sprach</em>,</span> <span class="w" id="w127"><em class="pp"><u>ge</u>sprochen</em>,</span></div><div class="uk">говорити, говорив, поговорив</div><div class="big fit"><span class="w" id="w128">heute</span> <span class="w" id="w129">hab</span> <span class="w" id="w130">ich</span> <span class="w" id="w131">viel</span> <span class="w" id="w132">gesprochen!</span></div><div class="uk">сьогодні я багато говорив!</div></div>
+<div class="card line" id="c16"><div class="big fit"><span class="w" id="w133">Drei</span> <span class="w" id="w134">Formen,</span> <span class="w" id="w135">sing</span> <span class="w" id="w136">sie</span> <span class="w" id="w137">laut,</span></div><div class="uk">Три форми, співай їх голосно,</div><div class="big fit"><span class="w" id="w138">bis</span> <span class="w" id="w139">dein</span> <span class="w" id="w140">Mund</span> <span class="w" id="w141">sie</span> <span class="w" id="w142">selber</span> <span class="w" id="w143">baut!</span></div><div class="uk">поки твій рот сам їх не складе!</div></div>
+<div class="card line" id="c17"><div class="big fit"><span class="w" id="w144">Eins,</span> <span class="w" id="w145">zwei,</span> <span class="w" id="w146">drei</span> <span class="w dash">—</span> <span class="w" id="w147">noch</span> <span class="w" id="w148">einmal,</span></div><div class="uk">Раз, два, три — ще раз,</div><div class="big fit"><span class="w" id="w149">Deutsch</span> <span class="w" id="w150">zu</span> <span class="w" id="w151">lernen</span> <span class="w" id="w152">ist</span> <span class="w" id="w153">genial!</span></div><div class="uk">вчити німецьку — це геніально!</div></div>
+<div class="card drill" id="c18"><div class="drow" id="d18_0"><div class="lab">Infinitiv</div><div class="de fit"><span class="w" id="w154"><em class="inf">Essen</em></span></div><div class="ru">їсти</div></div><div class="drow" id="d18_1"><div class="lab">Präteritum</div><div class="de fit"><span class="w" id="w155"><em class="prt">aß</em></span></div><div class="ru">їв</div></div><div class="drow" id="d18_2"><div class="lab">Partizip II</div><div class="de fit"><span class="w" id="w156"><em class="pp"><u>ge</u>gessen</em>,</span></div><div class="ru">з&#x27;їв</div></div><div class="drow ex" id="d18_3"><div class="lab">Beispiel · Perfekt <span class="aux h">haben</span></div><div class="ex fit"><span class="w" id="w157">ich</span> <span class="w" id="w158"><em class="h">habe</em></span> <span class="w" id="w159">Brot</span> <span class="w" id="w160">und</span> <span class="w" id="w161">Käse</span> <span class="w" id="w162"><em class="pp"><u>ge</u>gessen</em>.</span></div><div class="ru">я їв хліб і сир.</div></div></div>
+<div class="card drill" id="c19"><div class="drow" id="d19_0"><div class="lab">Infinitiv</div><div class="de fit"><span class="w" id="w163"><em class="inf">Trinken</em></span></div><div class="ru">пити</div></div><div class="drow" id="d19_1"><div class="lab">Präteritum</div><div class="de fit"><span class="w" id="w164"><em class="prt">trank</em></span></div><div class="ru">пив</div></div><div class="drow" id="d19_2"><div class="lab">Partizip II</div><div class="de fit"><span class="w" id="w165"><em class="pp"><u>ge</u>trunken</em>,</span></div><div class="ru">випив</div></div><div class="drow ex" id="d19_3"><div class="lab">Beispiel · Perfekt <span class="aux h">haben</span></div><div class="ex fit"><span class="w" id="w166">ich</span> <span class="w" id="w167"><em class="h">habe</em></span> <span class="w" id="w168">Wasser</span> <span class="w" id="w169"><em class="pp"><u>ge</u>trunken</em>.</span></div><div class="ru">я пив воду.</div></div></div>
+<div class="card drill" id="c20"><div class="drow" id="d20_0"><div class="lab">Infinitiv</div><div class="de fit"><span class="w" id="w170"><em class="inf">Schlafen</em></span></div><div class="ru">спати</div></div><div class="drow" id="d20_1"><div class="lab">Präteritum</div><div class="de fit"><span class="w" id="w171"><em class="prt">schlief</em></span></div><div class="ru">спав</div></div><div class="drow" id="d20_2"><div class="lab">Partizip II</div><div class="de fit"><span class="w" id="w172"><em class="pp"><u>ge</u>schlafen</em>,</span></div><div class="ru">поспав</div></div><div class="drow ex" id="d20_3"><div class="lab">Beispiel · Perfekt <span class="aux h">haben</span></div><div class="ex fit"><span class="w" id="w173">ich</span> <span class="w" id="w174"><em class="h">habe</em></span> <span class="w" id="w175">gut</span> <span class="w" id="w176"><em class="pp"><u>ge</u>schlafen</em>.</span></div><div class="ru">я добре спав.</div></div></div>
+<div class="card drill" id="c21"><div class="drow" id="d21_0"><div class="lab">Infinitiv</div><div class="de fit"><span class="w" id="w177"><em class="inf">Lesen</em></span></div><div class="ru">читати</div></div><div class="drow" id="d21_1"><div class="lab">Präteritum</div><div class="de fit"><span class="w" id="w178"><em class="prt">las</em></span></div><div class="ru">читав</div></div><div class="drow" id="d21_2"><div class="lab">Partizip II</div><div class="de fit"><span class="w" id="w179"><em class="pp"><u>ge</u>lesen</em>,</span></div><div class="ru">прочитав</div></div><div class="drow ex" id="d21_3"><div class="lab">Beispiel · Perfekt <span class="aux h">haben</span></div><div class="ex fit"><span class="w" id="w180">ich</span> <span class="w" id="w181"><em class="h">habe</em></span> <span class="w" id="w182">ein</span> <span class="w" id="w183">Buch</span> <span class="w" id="w184"><em class="pp"><u>ge</u>lesen</em>.</span></div><div class="ru">я прочитав книжку.</div></div></div>
+<div class="card drill" id="c22"><div class="drow" id="d22_0"><div class="lab">Infinitiv</div><div class="de fit"><span class="w" id="w185"><em class="inf">Schreiben</em></span></div><div class="ru">писати</div></div><div class="drow" id="d22_1"><div class="lab">Präteritum</div><div class="de fit"><span class="w" id="w186"><em class="prt">schrieb</em></span></div><div class="ru">писав</div></div><div class="drow" id="d22_2"><div class="lab">Partizip II</div><div class="de fit"><span class="w" id="w187"><em class="pp"><u>ge</u>schrieben</em>,</span></div><div class="ru">написав</div></div><div class="drow ex" id="d22_3"><div class="lab">Beispiel · Perfekt <span class="aux h">haben</span></div><div class="ex fit"><span class="w" id="w188">ich</span> <span class="w" id="w189"><em class="h">habe</em></span> <span class="w" id="w190">dir</span> <span class="w" id="w191">einen</span> <span class="w" id="w192">Brief</span> <span class="w" id="w193"><em class="pp"><u>ge</u>schrieben</em>.</span></div><div class="ru">я написав тобі листа.</div></div></div>
+<div class="card drill" id="c23"><div class="drow" id="d23_0"><div class="lab">Infinitiv</div><div class="de fit"><span class="w" id="w194"><em class="inf">Finden</em></span></div><div class="ru">знаходити</div></div><div class="drow" id="d23_1"><div class="lab">Präteritum</div><div class="de fit"><span class="w" id="w195"><em class="prt">fand</em></span></div><div class="ru">знайшов</div></div><div class="drow" id="d23_2"><div class="lab">Partizip II</div><div class="de fit"><span class="w" id="w196"><em class="pp"><u>ge</u>funden</em>,</span></div><div class="ru">знайшов</div></div><div class="drow ex" id="d23_3"><div class="lab">Beispiel · Perfekt <span class="aux h">haben</span></div><div class="ex fit"><span class="w" id="w197">ich</span> <span class="w" id="w198"><em class="h">habe</em></span> <span class="w" id="w199">den</span> <span class="w" id="w200">Schlüssel</span> <span class="w" id="w201"><em class="pp"><u>ge</u>funden</em>.</span></div><div class="ru">я знайшов ключ.</div></div></div>
+<div class="card drill" id="c24"><div class="drow" id="d24_0"><div class="lab">Infinitiv</div><div class="de fit"><span class="w" id="w202"><em class="inf">Helfen</em></span></div><div class="ru">допомагати</div></div><div class="drow" id="d24_1"><div class="lab">Präteritum</div><div class="de fit"><span class="w" id="w203"><em class="prt">half</em></span></div><div class="ru">допоміг</div></div><div class="drow" id="d24_2"><div class="lab">Partizip II</div><div class="de fit"><span class="w" id="w204"><em class="pp"><u>ge</u>holfen</em>,</span></div><div class="ru">допоміг</div></div><div class="drow ex" id="d24_3"><div class="lab">Beispiel · Perfekt <span class="aux h">haben</span></div><div class="ex fit"><span class="w" id="w205">wir</span> <span class="w" id="w206"><em class="h">haben</em></span> <span class="w" id="w207">unserem</span> <span class="w" id="w208">Freund</span> <span class="w" id="w209"><em class="pp"><u>ge</u>holfen</em>.</span></div><div class="ru">ми допомогли нашому другові.</div></div></div>
+<div class="card drill" id="c25"><div class="drow" id="d25_0"><div class="lab">Infinitiv</div><div class="de fit"><span class="w" id="w210"><em class="inf">Treffen</em></span></div><div class="ru">зустрічати</div></div><div class="drow" id="d25_1"><div class="lab">Präteritum</div><div class="de fit"><span class="w" id="w211"><em class="prt">traf</em></span></div><div class="ru">зустрів</div></div><div class="drow" id="d25_2"><div class="lab">Partizip II</div><div class="de fit"><span class="w" id="w212"><em class="pp"><u>ge</u>troffen</em>,</span></div><div class="ru">зустрів</div></div><div class="drow ex" id="d25_3"><div class="lab">Beispiel · Perfekt <span class="aux h">haben</span></div><div class="ex fit"><span class="w" id="w213">ich</span> <span class="w" id="w214"><em class="h">habe</em></span> <span class="w" id="w215">dich</span> <span class="w" id="w216">gestern</span> <span class="w" id="w217"><em class="pp"><u>ge</u>troffen</em>.</span></div><div class="ru">я зустрів тебе вчора.</div></div></div>
+<div class="card line" id="c26"><div class="big fit"><span class="w" id="w218"><em class="inf">Essen</em>,</span> <span class="w" id="w219"><em class="prt">aß</em>,</span> <span class="w" id="w220"><em class="pp"><u>ge</u>gessen</em>,</span></div><div class="uk">їсти, їв, з&#x27;їв</div><div class="big fit"><span class="w" id="w221">nicht</span> <span class="w" id="w222">vergessen,</span> <span class="w" id="w223">nicht</span> <span class="w" id="w224">vergessen!</span></div><div class="uk">не забувай, не забувай!</div></div>
+<div class="card line" id="c27"><div class="big fit"><span class="w" id="w225"><em class="inf">Trinken</em>,</span> <span class="w" id="w226"><em class="prt">trank</em>,</span> <span class="w" id="w227"><em class="pp"><u>ge</u>trunken</em>,</span></div><div class="uk">пити, пив, випив</div><div class="big fit"><span class="w" id="w228">jede</span> <span class="w" id="w229">Form</span> <span class="w" id="w230">klingt</span> <span class="w" id="w231">wie</span> <span class="w" id="w232">ein</span> <span class="w" id="w233">Funken!</span></div><div class="uk">кожна форма звучить, як іскра!</div></div>
+<div class="card line" id="c28"><div class="big fit"><span class="w" id="w234">Drei</span> <span class="w" id="w235">Formen,</span> <span class="w" id="w236">sing</span> <span class="w" id="w237">sie</span> <span class="w" id="w238">laut,</span></div><div class="uk">Три форми, співай їх голосно,</div><div class="big fit"><span class="w" id="w239">bis</span> <span class="w" id="w240">dein</span> <span class="w" id="w241">Mund</span> <span class="w" id="w242">sie</span> <span class="w" id="w243">selber</span> <span class="w" id="w244">baut!</span></div><div class="uk">поки твій рот сам їх не складе!</div></div>
+<div class="card line" id="c29"><div class="big fit"><span class="w" id="w245">Eins,</span> <span class="w" id="w246">zwei,</span> <span class="w" id="w247">drei</span> <span class="w dash">—</span> <span class="w" id="w248">noch</span> <span class="w" id="w249">einmal,</span></div><div class="uk">Раз, два, три — ще раз,</div><div class="big fit"><span class="w" id="w250">Deutsch</span> <span class="w" id="w251">zu</span> <span class="w" id="w252">lernen</span> <span class="w" id="w253">ist</span> <span class="w" id="w254">genial!</span></div><div class="uk">вчити німецьку — це геніально!</div></div>
+<div class="card drill" id="c30"><div class="drow" id="d30_0"><div class="lab">Infinitiv</div><div class="de fit"><span class="w" id="w255"><em class="inf">Bleiben</em></span></div><div class="ru">залишатися</div></div><div class="drow" id="d30_1"><div class="lab">Präteritum</div><div class="de fit"><span class="w" id="w256"><em class="prt">blieb</em></span></div><div class="ru">залишився</div></div><div class="drow" id="d30_2"><div class="lab">Partizip II</div><div class="de fit"><span class="w" id="w257"><em class="pp"><u>ge</u>blieben</em>,</span></div><div class="ru">залишився</div></div><div class="drow ex" id="d30_3"><div class="lab">Beispiel · Perfekt <span class="aux s">sein</span></div><div class="ex fit"><span class="w" id="w258">ich</span> <span class="w" id="w259"><em class="s">bin</em></span> <span class="w" id="w260">heute</span> <span class="w" id="w261">hier</span> <span class="w" id="w262"><em class="pp"><u>ge</u>blieben</em>.</span></div><div class="ru">я сьогодні залишився тут.</div></div></div>
+<div class="card drill" id="c31"><div class="drow" id="d31_0"><div class="lab">Infinitiv</div><div class="de fit"><span class="w" id="w263"><em class="inf">Stehen</em></span></div><div class="ru">стояти</div></div><div class="drow" id="d31_1"><div class="lab">Präteritum</div><div class="de fit"><span class="w" id="w264"><em class="prt">stand</em></span></div><div class="ru">стояв</div></div><div class="drow" id="d31_2"><div class="lab">Partizip II</div><div class="de fit"><span class="w" id="w265"><em class="pp"><u>ge</u>standen</em>,</span></div><div class="ru">стояв</div></div><div class="drow ex" id="d31_3"><div class="lab">Beispiel · Perfekt <span class="aux h">haben</span></div><div class="ex fit"><span class="w" id="w266">wir</span> <span class="w" id="w267"><em class="h">haben</em></span> <span class="w" id="w268">lange</span> <span class="w" id="w269">dort</span> <span class="w" id="w270"><em class="pp"><u>ge</u>standen</em>.</span></div><div class="ru">ми довго там стояли.</div></div></div>
+<div class="card drill" id="c32"><div class="drow" id="d32_0"><div class="lab">Infinitiv</div><div class="de fit"><span class="w" id="w271"><em class="inf">Sitzen</em></span></div><div class="ru">сидіти</div></div><div class="drow" id="d32_1"><div class="lab">Präteritum</div><div class="de fit"><span class="w" id="w272"><em class="prt">saß</em></span></div><div class="ru">сидів</div></div><div class="drow" id="d32_2"><div class="lab">Partizip II</div><div class="de fit"><span class="w" id="w273"><em class="pp"><u>ge</u>sessen</em>,</span></div><div class="ru">сидів</div></div><div class="drow ex" id="d32_3"><div class="lab">Beispiel · Perfekt <span class="aux h">haben</span></div><div class="ex fit"><span class="w" id="w274">ich</span> <span class="w" id="w275"><em class="h">habe</em></span> <span class="w" id="w276">auf</span> <span class="w" id="w277">dem</span> <span class="w" id="w278">Stuhl</span> <span class="w" id="w279"><em class="pp"><u>ge</u>sessen</em>.</span></div><div class="ru">я сидів на стільці.</div></div></div>
+<div class="card drill" id="c33"><div class="drow" id="d33_0"><div class="lab">Infinitiv</div><div class="de fit"><span class="w" id="w280"><em class="inf">Liegen</em></span></div><div class="ru">лежати</div></div><div class="drow" id="d33_1"><div class="lab">Präteritum</div><div class="de fit"><span class="w" id="w281"><em class="prt">lag</em></span></div><div class="ru">лежав</div></div><div class="drow" id="d33_2"><div class="lab">Partizip II</div><div class="de fit"><span class="w" id="w282"><em class="pp"><u>ge</u>legen</em>,</span></div><div class="ru">лежав</div></div><div class="drow ex" id="d33_3"><div class="lab">Beispiel · Perfekt <span class="aux h">haben</span></div><div class="ex fit"><span class="w" id="w283">das</span> <span class="w" id="w284">Buch</span> <span class="w" id="w285"><em class="h">hat</em></span> <span class="w" id="w286">auf</span> <span class="w" id="w287">dem</span> <span class="w" id="w288">Tisch</span> <span class="w" id="w289"><em class="pp"><u>ge</u>legen</em>.</span></div><div class="ru">книжка лежала на столі.</div></div></div>
+<div class="card drill" id="c34"><div class="drow" id="d34_0"><div class="lab">Infinitiv</div><div class="de fit"><span class="w" id="w290"><em class="inf">Halten</em></span></div><div class="ru">тримати</div></div><div class="drow" id="d34_1"><div class="lab">Präteritum</div><div class="de fit"><span class="w" id="w291"><em class="prt">hielt</em></span></div><div class="ru">тримав</div></div><div class="drow" id="d34_2"><div class="lab">Partizip II</div><div class="de fit"><span class="w" id="w292"><em class="pp"><u>ge</u>halten</em>,</span></div><div class="ru">тримав</div></div><div class="drow ex" id="d34_3"><div class="lab">Beispiel · Perfekt <span class="aux h">haben</span></div><div class="ex fit"><span class="w" id="w293">ich</span> <span class="w" id="w294"><em class="h">habe</em></span> <span class="w" id="w295">die</span> <span class="w" id="w296">Tür</span> <span class="w" id="w297">auf<em class="pp"><u>ge</u>halten</em>.</span></div><div class="ru">я притримав двері.</div></div></div>
+<div class="card drill" id="c35"><div class="drow" id="d35_0"><div class="lab">Infinitiv</div><div class="de fit"><span class="w" id="w298"><em class="inf">Fallen</em></span></div><div class="ru">падати</div></div><div class="drow" id="d35_1"><div class="lab">Präteritum</div><div class="de fit"><span class="w" id="w299"><em class="prt">fiel</em></span></div><div class="ru">впав</div></div><div class="drow" id="d35_2"><div class="lab">Partizip II</div><div class="de fit"><span class="w" id="w300"><em class="pp"><u>ge</u>fallen</em>,</span></div><div class="ru">впав</div></div><div class="drow ex" id="d35_3"><div class="lab">Beispiel · Perfekt <span class="aux s">sein</span></div><div class="ex fit"><span class="w" id="w301">die</span> <span class="w" id="w302">Blätter</span> <span class="w" id="w303"><em class="s">sind</em></span> <span class="w" id="w304">vom</span> <span class="w" id="w305">Baum</span> <span class="w" id="w306"><em class="pp"><u>ge</u>fallen</em>.</span></div><div class="ru">листя впало з дерева.</div></div></div>
+<div class="card drill" id="c36"><div class="drow" id="d36_0"><div class="lab">Infinitiv</div><div class="de fit"><span class="w" id="w307"><em class="inf">Vergessen</em></span></div><div class="ru">забувати</div></div><div class="drow" id="d36_1"><div class="lab">Präteritum</div><div class="de fit"><span class="w" id="w308"><em class="prt">vergaß</em></span></div><div class="ru">забув</div></div><div class="drow" id="d36_2"><div class="lab">Partizip II</div><div class="de fit"><span class="w" id="w309"><em class="inf">vergessen</em>,</span></div><div class="ru">забув</div></div><div class="drow ex" id="d36_3"><div class="lab">Beispiel · Perfekt <span class="aux h">haben</span></div><div class="ex fit"><span class="w" id="w310">ich</span> <span class="w" id="w311"><em class="h">habe</em></span> <span class="w" id="w312">den</span> <span class="w" id="w313">Termin</span> <span class="w" id="w314"><em class="inf">vergessen</em>.</span></div><div class="ru">я забув про зустріч.</div></div></div>
+<div class="card drill" id="c37"><div class="drow" id="d37_0"><div class="lab">Infinitiv</div><div class="de fit"><span class="w" id="w315"><em class="inf">Beginnen</em></span></div><div class="ru">починатися</div></div><div class="drow" id="d37_1"><div class="lab">Präteritum</div><div class="de fit"><span class="w" id="w316"><em class="prt">begann</em></span></div><div class="ru">почався</div></div><div class="drow" id="d37_2"><div class="lab">Partizip II</div><div class="de fit"><span class="w" id="w317"><em class="pp">begonnen</em>,</span></div><div class="ru">почався</div></div><div class="drow ex" id="d37_3"><div class="lab">Beispiel · Perfekt <span class="aux h">haben</span></div><div class="ex fit"><span class="w" id="w318">der</span> <span class="w" id="w319">Unterricht</span> <span class="w" id="w320"><em class="h">hat</em></span> <span class="w" id="w321"><em class="pp">begonnen</em>.</span></div><div class="ru">урок почався.</div></div></div>
+<div class="card drill" id="c38"><div class="drow" id="d38_0"><div class="lab">Infinitiv</div><div class="de fit"><span class="w" id="w322"><em class="inf">Gewinnen</em></span></div><div class="ru">вигравати</div></div><div class="drow" id="d38_1"><div class="lab">Präteritum</div><div class="de fit"><span class="w" id="w323"><em class="prt">gewann</em></span></div><div class="ru">виграв</div></div><div class="drow" id="d38_2"><div class="lab">Partizip II</div><div class="de fit"><span class="w" id="w324"><em class="pp"><u>ge</u>wonnen</em>,</span></div><div class="ru">виграв</div></div><div class="drow ex" id="d38_3"><div class="lab">Beispiel · Perfekt <span class="aux h">haben</span></div><div class="ex fit"><span class="w" id="w325">wir</span> <span class="w" id="w326"><em class="h">haben</em></span> <span class="w" id="w327">das</span> <span class="w" id="w328">Spiel</span> <span class="w" id="w329"><em class="pp"><u>ge</u>wonnen</em>.</span></div><div class="ru">ми виграли гру.</div></div></div>
+<div class="card drill" id="c39"><div class="drow" id="d39_0"><div class="lab">Infinitiv</div><div class="de fit"><span class="w" id="w330"><em class="inf">Ziehen</em></span></div><div class="ru">переїжджати</div></div><div class="drow" id="d39_1"><div class="lab">Präteritum</div><div class="de fit"><span class="w" id="w331"><em class="prt">zog</em></span></div><div class="ru">переїхав</div></div><div class="drow" id="d39_2"><div class="lab">Partizip II</div><div class="de fit"><span class="w" id="w332"><em class="pp"><u>ge</u>zogen</em>,</span></div><div class="ru">переїхав</div></div><div class="drow ex" id="d39_3"><div class="lab">Beispiel · Perfekt <span class="aux s">sein</span></div><div class="ex fit"><span class="w" id="w333">wir</span> <span class="w" id="w334"><em class="s">sind</em></span> <span class="w" id="w335">in</span> <span class="w" id="w336">ein</span> <span class="w" id="w337">neues</span> <span class="w" id="w338">Haus</span> <span class="w" id="w339"><em class="pp"><u>ge</u>zogen</em>.</span></div><div class="ru">ми переїхали в новий будинок.</div></div></div>
+<div class="card drill" id="c40"><div class="drow" id="d40_0"><div class="lab">Infinitiv</div><div class="de fit"><span class="w" id="w340"><em class="inf">Tragen</em></span></div><div class="ru">нести</div></div><div class="drow" id="d40_1"><div class="lab">Präteritum</div><div class="de fit"><span class="w" id="w341"><em class="prt">trug</em></span></div><div class="ru">ніс</div></div><div class="drow" id="d40_2"><div class="lab">Partizip II</div><div class="de fit"><span class="w" id="w342"><em class="pp"><u>ge</u>tragen</em>,</span></div><div class="ru">поніс</div></div><div class="drow ex" id="d40_3"><div class="lab">Beispiel · Perfekt <span class="aux h">haben</span></div><div class="ex fit"><span class="w" id="w343">ich</span> <span class="w" id="w344"><em class="h">habe</em></span> <span class="w" id="w345">die</span> <span class="w" id="w346">Tasche</span> <span class="w" id="w347"><em class="pp"><u>ge</u>tragen</em>.</span></div><div class="ru">я ніс сумку.</div></div></div>
+<div class="card drill" id="c41"><div class="drow" id="d41_0"><div class="lab">Infinitiv</div><div class="de fit"><span class="w" id="w348"><em class="inf">Werfen</em></span></div><div class="ru">кидати</div></div><div class="drow" id="d41_1"><div class="lab">Präteritum</div><div class="de fit"><span class="w" id="w349"><em class="prt">warf</em></span></div><div class="ru">кинув</div></div><div class="drow" id="d41_2"><div class="lab">Partizip II</div><div class="de fit"><span class="w" id="w350"><em class="pp"><u>ge</u>worfen</em>,</span></div><div class="ru">кинув</div></div><div class="drow ex" id="d41_3"><div class="lab">Beispiel · Perfekt <span class="aux h">haben</span></div><div class="ex fit"><span class="w" id="w351">er</span> <span class="w" id="w352"><em class="h">hat</em></span> <span class="w" id="w353">den</span> <span class="w" id="w354">Ball</span> <span class="w" id="w355"><em class="pp"><u>ge</u>worfen</em>.</span></div><div class="ru">він кинув м&#x27;яч.</div></div></div>
+<div class="card line" id="c42"><div class="big fit"><span class="w" id="w356"><em class="inf">Gehen</em>,</span> <span class="w" id="w357"><em class="prt">ging</em>,</span> <span class="w" id="w358"><em class="pp"><u>ge</u>gangen</em>!</span></div><div class="uk">іти, йшов, пішов!</div><div class="big fit"><span class="w" id="w359"><em class="inf">Kommen</em>,</span> <span class="w" id="w360"><em class="prt">kam</em>,</span> <span class="w" id="w361"><em class="pp"><u>ge</u>kommen</em>!</span></div><div class="uk">приходити, прийшов, прийшов!</div></div>
+<div class="card line" id="c43"><div class="big fit"><span class="w" id="w362"><em class="inf">Sehen</em>,</span> <span class="w" id="w363"><em class="prt">sah</em>,</span> <span class="w" id="w364"><em class="pp"><u>ge</u>sehen</em>!</span></div><div class="uk">бачити, бачив, побачив!</div><div class="big fit"><span class="w" id="w365"><em class="inf">Sprechen</em>,</span> <span class="w" id="w366"><em class="prt">sprach</em>,</span> <span class="w" id="w367"><em class="pp"><u>ge</u>sprochen</em>!</span></div><div class="uk">говорити, говорив, поговорив!</div></div>
+<div class="card line" id="c44"><div class="big fit"><span class="w" id="w368"><em class="inf">Essen</em>,</span> <span class="w" id="w369"><em class="prt">aß</em>,</span> <span class="w" id="w370"><em class="pp"><u>ge</u>gessen</em>!</span></div><div class="uk">їсти, їв, з&#x27;їв!</div><div class="big fit"><span class="w" id="w371"><em class="inf">Trinken</em>,</span> <span class="w" id="w372"><em class="prt">trank</em>,</span> <span class="w" id="w373"><em class="pp"><u>ge</u>trunken</em>!</span></div><div class="uk">пити, пив, випив!</div></div>
+<div class="card line" id="c45"><div class="big fit"><span class="w" id="w374"><em class="inf">Lesen</em>,</span> <span class="w" id="w375"><em class="prt">las</em>,</span> <span class="w" id="w376"><em class="pp"><u>ge</u>lesen</em>!</span></div><div class="uk">читати, читав, прочитав!</div><div class="big fit"><span class="w" id="w377"><em class="inf">Schreiben</em>,</span> <span class="w" id="w378"><em class="prt">schrieb</em>,</span> <span class="w" id="w379"><em class="pp"><u>ge</u>schrieben</em>!</span></div><div class="uk">писати, писав, написав!</div></div>
+<div class="card line" id="c46"><div class="big fit"><span class="w" id="w380">Drei</span> <span class="w" id="w381">Formen,</span> <span class="w" id="w382">ein</span> <span class="w" id="w383">Rhythmus,</span></div><div class="uk">Три форми, один ритм,</div><div class="big fit"><span class="w" id="w384">Deutsch</span> <span class="w" id="w385">wird</span> <span class="w" id="w386">leichter</span> <span class="w dash">—</span> <span class="w" id="w387">hör</span> <span class="w" id="w388">nur</span> <span class="w" id="w389">zu!</span></div><div class="uk">німецька стає легшою — тільки слухай!</div></div>
+<div class="card line" id="c47"><div class="big fit"><span class="w" id="w390">Sing</span> <span class="w" id="w391">am</span> <span class="w" id="w392">Morgen,</span> <span class="w" id="w393">sing</span> <span class="w" id="w394">am</span> <span class="w" id="w395">Abend,</span></div><div class="uk">Співай уранці, співай увечері,</div><div class="big fit"><span class="w" id="w396">bald</span> <span class="w" id="w397">sind</span> <span class="w" id="w398">alle</span> <span class="w" id="w399">Wörter</span> <span class="w" id="w400">da!</span></div><div class="uk">скоро всі слова будуть з тобою!</div></div>
+<div class="list" id="g0"><div class="lhead">In diesem Teil · <span>у цій частині</span></div><div class="lrow" id="r0"><span class="lde"><em class="inf">gehen</em> <span class="ar">·</span> <em class="prt">ging</em> <span class="ar">·</span> <em class="pp"><u>ge</u>gangen</em></span><span class="lu">іти</span></div><div class="lrow" id="r1"><span class="lde"><em class="inf">kommen</em> <span class="ar">·</span> <em class="prt">kam</em> <span class="ar">·</span> <em class="pp"><u>ge</u>kommen</em></span><span class="lu">приходити</span></div><div class="lrow" id="r2"><span class="lde"><em class="inf">gehen</em> <span class="ar">·</span> <em class="prt">ging</em> <span class="ar">·</span> <em class="pp"><u>ge</u>gangen</em></span><span class="lu">іти</span></div><div class="lrow" id="r3"><span class="lde"><em class="inf">kommen</em> <span class="ar">·</span> <em class="prt">kam</em> <span class="ar">·</span> <em class="pp"><u>ge</u>kommen</em></span><span class="lu">приходити</span></div><div class="lrow" id="r4"><span class="lde"><em class="inf">fahren</em> <span class="ar">·</span> <em class="prt">fuhr</em> <span class="ar">·</span> <em class="pp"><u>ge</u>fahren</em></span><span class="lu">їхати</span></div><div class="lrow" id="r5"><span class="lde"><em class="inf">laufen</em> <span class="ar">·</span> <em class="prt">lief</em> <span class="ar">·</span> <em class="pp"><u>ge</u>laufen</em></span><span class="lu">бігти</span></div></div>
+<div class="list" id="g1"><div class="lhead">In diesem Teil · <span>у цій частині</span></div><div class="lrow" id="r6"><span class="lde"><em class="inf">Gehen</em>, <em class="prt">ging</em>, <em class="pp"><u>ge</u>gangen</em></span><span class="lu">іти, йшов, пішов</span></div><div class="lrow" id="r7"><span class="lde"><em class="inf">Kommen</em>, <em class="prt">kam</em>, <em class="pp"><u>ge</u>kommen</em></span><span class="lu">приходити, прийшов, прийшов</span></div></div>
+<div class="list" id="g2"><div class="lhead">In diesem Teil · <span>у цій частині</span></div><div class="lrow" id="r8"><span class="lde">Drei Formen, sing sie laut</span><span class="lu">Три форми, співай їх голосно</span></div><div class="lrow" id="r9"><span class="lde">Eins, zwei, drei — noch einmal</span><span class="lu">Раз, два, три — ще раз</span></div></div>
+<div class="list" id="g3"><div class="lhead">In diesem Teil · <span>у цій частині</span></div><div class="lrow" id="r10"><span class="lde"><em class="inf">sehen</em> <span class="ar">·</span> <em class="prt">sah</em> <span class="ar">·</span> <em class="pp"><u>ge</u>sehen</em></span><span class="lu">бачити</span></div><div class="lrow" id="r11"><span class="lde"><em class="inf">sprechen</em> <span class="ar">·</span> <em class="prt">sprach</em> <span class="ar">·</span> <em class="pp"><u>ge</u>sprochen</em></span><span class="lu">говорити</span></div><div class="lrow" id="r12"><span class="lde"><em class="inf">geben</em> <span class="ar">·</span> <em class="prt">gab</em> <span class="ar">·</span> <em class="pp"><u>ge</u>geben</em></span><span class="lu">давати</span></div><div class="lrow" id="r13"><span class="lde"><em class="inf">nehmen</em> <span class="ar">·</span> <em class="prt">nahm</em> <span class="ar">·</span> <em class="pp"><u>ge</u>nommen</em></span><span class="lu">брати</span></div></div>
+<div class="list" id="g4"><div class="lhead">In diesem Teil · <span>у цій частині</span></div><div class="lrow" id="r14"><span class="lde"><em class="inf">Sehen</em>, <em class="prt">sah</em>, <em class="pp"><u>ge</u>sehen</em></span><span class="lu">бачити, бачив, побачив</span></div><div class="lrow" id="r15"><span class="lde"><em class="inf">Sprechen</em>, <em class="prt">sprach</em>, <em class="pp"><u>ge</u>sprochen</em></span><span class="lu">говорити, говорив, поговорив</span></div></div>
+<div class="list" id="g5"><div class="lhead">In diesem Teil · <span>у цій частині</span></div><div class="lrow" id="r16"><span class="lde">Drei Formen, sing sie laut</span><span class="lu">Три форми, співай їх голосно</span></div><div class="lrow" id="r17"><span class="lde">Eins, zwei, drei — noch einmal</span><span class="lu">Раз, два, три — ще раз</span></div></div>
+<div class="list" id="g6"><div class="lhead">In diesem Teil · <span>у цій частині</span></div><div class="lrow" id="r18"><span class="lde"><em class="inf">essen</em> <span class="ar">·</span> <em class="prt">aß</em> <span class="ar">·</span> <em class="pp"><u>ge</u>gessen</em></span><span class="lu">їсти</span></div><div class="lrow" id="r19"><span class="lde"><em class="inf">trinken</em> <span class="ar">·</span> <em class="prt">trank</em> <span class="ar">·</span> <em class="pp"><u>ge</u>trunken</em></span><span class="lu">пити</span></div><div class="lrow" id="r20"><span class="lde"><em class="inf">schlafen</em> <span class="ar">·</span> <em class="prt">schlief</em> <span class="ar">·</span> <em class="pp"><u>ge</u>schlafen</em></span><span class="lu">спати</span></div><div class="lrow" id="r21"><span class="lde"><em class="inf">lesen</em> <span class="ar">·</span> <em class="prt">las</em> <span class="ar">·</span> <em class="pp"><u>ge</u>lesen</em></span><span class="lu">читати</span></div><div class="lrow" id="r22"><span class="lde"><em class="inf">schreiben</em> <span class="ar">·</span> <em class="prt">schrieb</em> <span class="ar">·</span> <em class="pp"><u>ge</u>schrieben</em></span><span class="lu">писати</span></div><div class="lrow" id="r23"><span class="lde"><em class="inf">finden</em> <span class="ar">·</span> <em class="prt">fand</em> <span class="ar">·</span> <em class="pp"><u>ge</u>funden</em></span><span class="lu">знаходити</span></div><div class="lrow" id="r24"><span class="lde"><em class="inf">helfen</em> <span class="ar">·</span> <em class="prt">half</em> <span class="ar">·</span> <em class="pp"><u>ge</u>holfen</em></span><span class="lu">допомагати</span></div><div class="lrow" id="r25"><span class="lde"><em class="inf">treffen</em> <span class="ar">·</span> <em class="prt">traf</em> <span class="ar">·</span> <em class="pp"><u>ge</u>troffen</em></span><span class="lu">зустрічати</span></div><div class="lrow" id="r26"><span class="lde"><em class="inf">Essen</em>, <em class="prt">aß</em>, <em class="pp"><u>ge</u>gessen</em></span><span class="lu">їсти, їв, з&#x27;їв</span></div></div>
+<div class="list" id="g7"><div class="lhead">In diesem Teil · <span>у цій частині</span></div><div class="lrow" id="r27"><span class="lde"><em class="inf">Trinken</em>, <em class="prt">trank</em>, <em class="pp"><u>ge</u>trunken</em></span><span class="lu">пити, пив, випив</span></div><div class="lrow" id="r28"><span class="lde">Drei Formen, sing sie laut</span><span class="lu">Три форми, співай їх голосно</span></div></div>
+<div class="list" id="g8"><div class="lhead">In diesem Teil · <span>у цій частині</span></div><div class="lrow" id="r29"><span class="lde">Eins, zwei, drei — noch einmal</span><span class="lu">Раз, два, три — ще раз</span></div></div>
+<div class="list" id="g9"><div class="lhead">In diesem Teil · <span>у цій частині</span></div><div class="lrow" id="r30"><span class="lde"><em class="inf">bleiben</em> <span class="ar">·</span> <em class="prt">blieb</em> <span class="ar">·</span> <em class="pp"><u>ge</u>blieben</em></span><span class="lu">залишатися</span></div><div class="lrow" id="r31"><span class="lde"><em class="inf">stehen</em> <span class="ar">·</span> <em class="prt">stand</em> <span class="ar">·</span> <em class="pp"><u>ge</u>standen</em></span><span class="lu">стояти</span></div><div class="lrow" id="r32"><span class="lde"><em class="inf">sitzen</em> <span class="ar">·</span> <em class="prt">saß</em> <span class="ar">·</span> <em class="pp"><u>ge</u>sessen</em></span><span class="lu">сидіти</span></div><div class="lrow" id="r33"><span class="lde"><em class="inf">liegen</em> <span class="ar">·</span> <em class="prt">lag</em> <span class="ar">·</span> <em class="pp"><u>ge</u>legen</em></span><span class="lu">лежати</span></div><div class="lrow" id="r34"><span class="lde"><em class="inf">halten</em> <span class="ar">·</span> <em class="prt">hielt</em> <span class="ar">·</span> <em class="pp"><u>ge</u>halten</em></span><span class="lu">тримати</span></div><div class="lrow" id="r35"><span class="lde"><em class="inf">fallen</em> <span class="ar">·</span> <em class="prt">fiel</em> <span class="ar">·</span> <em class="pp"><u>ge</u>fallen</em></span><span class="lu">падати</span></div></div>
+<div class="list" id="g10"><div class="lhead">In diesem Teil · <span>у цій частині</span></div><div class="lrow" id="r36"><span class="lde"><em class="inf">vergessen</em> <span class="ar">·</span> <em class="prt">vergaß</em> <span class="ar">·</span> <em class="pp">vergessen</em></span><span class="lu">забувати</span></div><div class="lrow" id="r37"><span class="lde"><em class="inf">beginnen</em> <span class="ar">·</span> <em class="prt">begann</em> <span class="ar">·</span> <em class="pp">begonnen</em></span><span class="lu">починатися</span></div><div class="lrow" id="r38"><span class="lde"><em class="inf">gewinnen</em> <span class="ar">·</span> <em class="prt">gewann</em> <span class="ar">·</span> <em class="pp"><u>ge</u>wonnen</em></span><span class="lu">вигравати</span></div><div class="lrow" id="r39"><span class="lde"><em class="inf">ziehen</em> <span class="ar">·</span> <em class="prt">zog</em> <span class="ar">·</span> <em class="pp"><u>ge</u>zogen</em></span><span class="lu">переїжджати</span></div><div class="lrow" id="r40"><span class="lde"><em class="inf">tragen</em> <span class="ar">·</span> <em class="prt">trug</em> <span class="ar">·</span> <em class="pp"><u>ge</u>tragen</em></span><span class="lu">нести</span></div><div class="lrow" id="r41"><span class="lde"><em class="inf">werfen</em> <span class="ar">·</span> <em class="prt">warf</em> <span class="ar">·</span> <em class="pp"><u>ge</u>worfen</em></span><span class="lu">кидати</span></div></div>
+<div class="list" id="g11"><div class="lhead">In diesem Teil · <span>у цій частині</span></div><div class="lrow" id="r42"><span class="lde"><em class="inf">Gehen</em>, <em class="prt">ging</em>, <em class="pp"><u>ge</u>gangen</em></span><span class="lu">іти, йшов, пішов</span></div><div class="lrow" id="r43"><span class="lde"><em class="inf">Sehen</em>, <em class="prt">sah</em>, <em class="pp"><u>ge</u>sehen</em></span><span class="lu">бачити, бачив, побачив</span></div><div class="lrow" id="r44"><span class="lde"><em class="inf">Essen</em>, <em class="prt">aß</em>, <em class="pp"><u>ge</u>gessen</em></span><span class="lu">їсти, їв, з&#x27;їв</span></div><div class="lrow" id="r45"><span class="lde"><em class="inf">Lesen</em>, <em class="prt">las</em>, <em class="pp"><u>ge</u>lesen</em></span><span class="lu">читати, читав, прочитав</span></div></div>
+<div class="list" id="g12"><div class="lhead">In diesem Teil · <span>у цій частині</span></div><div class="lrow" id="r46"><span class="lde">Drei Formen, ein Rhythmus</span><span class="lu">Три форми, один ритм</span></div><div class="lrow" id="r47"><span class="lde">Sing am Morgen, sing am Abend</span><span class="lu">Співай уранці, співай увечері</span></div></div>
+    <div id="legend"><span><em class="inf">gehen</em></span><span><em class="prt">ging</em></span><span><em class="pp"><u>ge</u>gangen</em></span><span><em class="s">bin</em> sein</span><span><em class="h">habe</em> haben</span></div>
+    <div id="bar"><div id="barf"></div></div>
+  </div>
+</div>
+<script>
+  // підгонка ширини довгих рядків під картку
+  document.querySelectorAll(".fit").forEach(el => {
+    const max = el.parentElement.clientWidth - 68;
+    let fs = parseFloat(getComputedStyle(el).fontSize);
+    while (el.scrollWidth > max && fs > 30) { fs -= 2; el.style.fontSize = fs + "px"; }
+  });
+  document.querySelectorAll(".lde").forEach(el => {
+    let fs = 34; while (el.parentElement.scrollWidth > el.parentElement.clientWidth && fs > 24) { fs -= 2; el.style.fontSize = fs + "px"; }
+  });
+  const tl = gsap.timeline({ paused: true });
+  const D = 226.32;
+  tl.to("#b1", { x: 120, y: 80, duration: D, ease: "sine.inOut" }, 0);
+  tl.to("#b2", { x: -140, y: -60, duration: D, ease: "sine.inOut" }, 0);
+  tl.to("#b3", { x: 160, y: -90, duration: D, ease: "sine.inOut" }, 0);
+  tl.to("#n1", { y: 40, rotation: 15, duration: 2.4, yoyo: true, repeat: Math.max(0, Math.floor(D / 2.4) - 1), ease: "sine.inOut" }, 0);
+  tl.to("#n2", { y: -40, rotation: -15, duration: 2.8, yoyo: true, repeat: Math.max(0, Math.floor(D / 2.8) - 1), ease: "sine.inOut" }, 0);
+  tl.fromTo("#barf", { scaleX: 0 }, { scaleX: 1, duration: D, ease: "none" }, 0);
+  tl.to("#w1",{opacity:1,duration:.14,ease:"power1.out"},0.000);
+  tl.fromTo("#w1",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},0.000);
+  tl.fromTo("#d0_0",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},0.000);
+  tl.to("#w2",{opacity:1,duration:.14,ease:"power1.out"},0.760);
+  tl.fromTo("#w2",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},0.760);
+  tl.fromTo("#d0_1",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},0.460);
+  tl.to("#w3",{opacity:1,duration:.14,ease:"power1.out"},1.080);
+  tl.fromTo("#w3",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},1.080);
+  tl.fromTo("#d0_2",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},0.780);
+  tl.to("#w4",{opacity:1,duration:.14,ease:"power1.out"},1.840);
+  tl.fromTo("#w4",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},1.840);
+  tl.to("#w5",{opacity:1,duration:.14,ease:"power1.out"},2.060);
+  tl.fromTo("#w5",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},2.060);
+  tl.to("#w6",{opacity:1,duration:.14,ease:"power1.out"},2.360);
+  tl.fromTo("#w6",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},2.360);
+  tl.to("#w7",{opacity:1,duration:.14,ease:"power1.out"},2.700);
+  tl.fromTo("#w7",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},2.700);
+  tl.to("#w8",{opacity:1,duration:.14,ease:"power1.out"},3.120);
+  tl.fromTo("#w8",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},3.120);
+  tl.fromTo("#d0_3",{y:30,opacity:0},{y:0,opacity:1,duration:.3,ease:"power2.out"},1.490);
+  tl.fromTo("#c0",{opacity:0,y:50,scale:.96},{opacity:1,y:0,scale:1,duration:.3,ease:"back.out(1.6)"},0.000);
+  tl.to("#c0",{opacity:0,y:-30,duration:.22,ease:"power2.in"},3.280);
+  tl.fromTo("#r0",{opacity:0,x:-30},{opacity:1,x:0,duration:.3,ease:"power2.out"},3.500);
+  tl.to("#w9",{opacity:1,duration:.14,ease:"power1.out"},3.800);
+  tl.fromTo("#w9",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},3.800);
+  tl.fromTo("#d1_0",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},3.450);
+  tl.to("#w10",{opacity:1,duration:.14,ease:"power1.out"},4.820);
+  tl.fromTo("#w10",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},4.820);
+  tl.fromTo("#d1_1",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},4.520);
+  tl.to("#w11",{opacity:1,duration:.14,ease:"power1.out"},5.840);
+  tl.fromTo("#w11",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},5.840);
+  tl.fromTo("#d1_2",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},5.540);
+  tl.to("#w12",{opacity:1,duration:.14,ease:"power1.out"},6.460);
+  tl.fromTo("#w12",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},6.460);
+  tl.to("#w13",{opacity:1,duration:.14,ease:"power1.out"},6.880);
+  tl.fromTo("#w13",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},6.880);
+  tl.to("#w14",{opacity:1,duration:.14,ease:"power1.out"},7.440);
+  tl.fromTo("#w14",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},7.440);
+  tl.to("#w15",{opacity:1,duration:.14,ease:"power1.out"},7.880);
+  tl.fromTo("#w15",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},7.880);
+  tl.fromTo("#d1_3",{y:30,opacity:0},{y:0,opacity:1,duration:.3,ease:"power2.out"},6.110);
+  tl.fromTo("#c1",{opacity:0,y:50,scale:.96},{opacity:1,y:0,scale:1,duration:.3,ease:"back.out(1.6)"},3.450);
+  tl.to("#c1",{opacity:0,y:-30,duration:.22,ease:"power2.in"},8.120);
+  tl.fromTo("#r1",{opacity:0,x:-30},{opacity:1,x:0,duration:.3,ease:"power2.out"},8.340);
+  tl.to("#w16",{opacity:1,duration:.14,ease:"power1.out"},8.640);
+  tl.fromTo("#w16",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},8.640);
+  tl.fromTo("#d2_0",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},8.290);
+  tl.to("#w17",{opacity:1,duration:.14,ease:"power1.out"},9.940);
+  tl.fromTo("#w17",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},9.940);
+  tl.fromTo("#d2_1",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},9.640);
+  tl.to("#w18",{opacity:1,duration:.14,ease:"power1.out"},10.460);
+  tl.fromTo("#w18",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},10.460);
+  tl.fromTo("#d2_2",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},10.160);
+  tl.to("#w19",{opacity:1,duration:.14,ease:"power1.out"},11.180);
+  tl.fromTo("#w19",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},11.180);
+  tl.to("#w20",{opacity:1,duration:.14,ease:"power1.out"},11.360);
+  tl.fromTo("#w20",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},11.360);
+  tl.to("#w21",{opacity:1,duration:.14,ease:"power1.out"},11.620);
+  tl.fromTo("#w21",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},11.620);
+  tl.to("#w22",{opacity:1,duration:.14,ease:"power1.out"},11.980);
+  tl.fromTo("#w22",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},11.980);
+  tl.to("#w23",{opacity:1,duration:.14,ease:"power1.out"},12.400);
+  tl.fromTo("#w23",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},12.400);
+  tl.fromTo("#d2_3",{y:30,opacity:0},{y:0,opacity:1,duration:.3,ease:"power2.out"},10.830);
+  tl.fromTo("#c2",{opacity:0,y:50,scale:.96},{opacity:1,y:0,scale:1,duration:.3,ease:"back.out(1.6)"},8.290);
+  tl.to("#c2",{opacity:0,y:-30,duration:.22,ease:"power2.in"},12.620);
+  tl.fromTo("#r2",{opacity:0,x:-30},{opacity:1,x:0,duration:.3,ease:"power2.out"},12.840);
+  tl.to("#w24",{opacity:1,duration:.14,ease:"power1.out"},13.140);
+  tl.fromTo("#w24",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},13.140);
+  tl.fromTo("#d3_0",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},12.790);
+  tl.to("#w25",{opacity:1,duration:.14,ease:"power1.out"},14.270);
+  tl.fromTo("#w25",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},14.270);
+  tl.fromTo("#d3_1",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},13.970);
+  tl.to("#w26",{opacity:1,duration:.14,ease:"power1.out"},15.400);
+  tl.fromTo("#w26",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},15.400);
+  tl.fromTo("#d3_2",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},15.100);
+  tl.to("#w27",{opacity:1,duration:.14,ease:"power1.out"},15.740);
+  tl.fromTo("#w27",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},15.740);
+  tl.to("#w28",{opacity:1,duration:.14,ease:"power1.out"},16.160);
+  tl.fromTo("#w28",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},16.160);
+  tl.to("#w29",{opacity:1,duration:.14,ease:"power1.out"},16.720);
+  tl.fromTo("#w29",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},16.720);
+  tl.to("#w30",{opacity:1,duration:.14,ease:"power1.out"},17.140);
+  tl.fromTo("#w30",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},17.140);
+  tl.fromTo("#d3_3",{y:30,opacity:0},{y:0,opacity:1,duration:.3,ease:"power2.out"},15.390);
+  tl.fromTo("#c3",{opacity:0,y:50,scale:.96},{opacity:1,y:0,scale:1,duration:.3,ease:"back.out(1.6)"},12.790);
+  tl.to("#c3",{opacity:0,y:-30,duration:.22,ease:"power2.in"},17.420);
+  tl.fromTo("#r3",{opacity:0,x:-30},{opacity:1,x:0,duration:.3,ease:"power2.out"},17.640);
+  tl.to("#w31",{opacity:1,duration:.14,ease:"power1.out"},17.940);
+  tl.fromTo("#w31",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},17.940);
+  tl.fromTo("#d4_0",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},17.590);
+  tl.to("#w32",{opacity:1,duration:.14,ease:"power1.out"},19.300);
+  tl.fromTo("#w32",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},19.300);
+  tl.fromTo("#d4_1",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},19.000);
+  tl.to("#w33",{opacity:1,duration:.14,ease:"power1.out"},19.800);
+  tl.fromTo("#w33",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},19.800);
+  tl.fromTo("#d4_2",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},19.500);
+  tl.to("#w34",{opacity:1,duration:.14,ease:"power1.out"},20.440);
+  tl.fromTo("#w34",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},20.440);
+  tl.to("#w35",{opacity:1,duration:.14,ease:"power1.out"},20.640);
+  tl.fromTo("#w35",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},20.640);
+  tl.to("#w36",{opacity:1,duration:.14,ease:"power1.out"},20.940);
+  tl.fromTo("#w36",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},20.940);
+  tl.to("#w37",{opacity:1,duration:.14,ease:"power1.out"},21.340);
+  tl.fromTo("#w37",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},21.340);
+  tl.to("#w38",{opacity:1,duration:.14,ease:"power1.out"},21.560);
+  tl.fromTo("#w38",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},21.560);
+  tl.to("#w39",{opacity:1,duration:.14,ease:"power1.out"},21.860);
+  tl.fromTo("#w39",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},21.860);
+  tl.fromTo("#d4_3",{y:30,opacity:0},{y:0,opacity:1,duration:.3,ease:"power2.out"},20.090);
+  tl.fromTo("#c4",{opacity:0,y:50,scale:.96},{opacity:1,y:0,scale:1,duration:.3,ease:"back.out(1.6)"},17.590);
+  tl.to("#c4",{opacity:0,y:-30,duration:.22,ease:"power2.in"},21.980);
+  tl.fromTo("#r4",{opacity:0,x:-30},{opacity:1,x:0,duration:.3,ease:"power2.out"},22.200);
+  tl.to("#w40",{opacity:1,duration:.14,ease:"power1.out"},22.500);
+  tl.fromTo("#w40",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},22.500);
+  tl.fromTo("#d5_0",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},22.150);
+  tl.to("#w41",{opacity:1,duration:.14,ease:"power1.out"},23.460);
+  tl.fromTo("#w41",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},23.460);
+  tl.fromTo("#d5_1",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},23.160);
+  tl.to("#w42",{opacity:1,duration:.14,ease:"power1.out"},24.440);
+  tl.fromTo("#w42",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},24.440);
+  tl.fromTo("#d5_2",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},24.140);
+  tl.to("#w43",{opacity:1,duration:.14,ease:"power1.out"},25.220);
+  tl.fromTo("#w43",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},25.220);
+  tl.to("#w44",{opacity:1,duration:.14,ease:"power1.out"},25.320);
+  tl.fromTo("#w44",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},25.320);
+  tl.to("#w45",{opacity:1,duration:.14,ease:"power1.out"},25.620);
+  tl.fromTo("#w45",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},25.620);
+  tl.to("#w46",{opacity:1,duration:.14,ease:"power1.out"},25.920);
+  tl.fromTo("#w46",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},25.920);
+  tl.to("#w47",{opacity:1,duration:.14,ease:"power1.out"},26.180);
+  tl.fromTo("#w47",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},26.180);
+  tl.to("#w48",{opacity:1,duration:.14,ease:"power1.out"},26.560);
+  tl.fromTo("#w48",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},26.560);
+  tl.fromTo("#d5_3",{y:30,opacity:0},{y:0,opacity:1,duration:.3,ease:"power2.out"},24.870);
+  tl.fromTo("#c5",{opacity:0,y:50,scale:.96},{opacity:1,y:0,scale:1,duration:.3,ease:"back.out(1.6)"},22.150);
+  tl.to("#c5",{opacity:0,y:-30,duration:.22,ease:"power2.in"},26.480);
+  tl.fromTo("#r5",{opacity:0,x:-30},{opacity:1,x:0,duration:.3,ease:"power2.out"},26.700);
+  tl.to("#w49",{opacity:1,duration:.14,ease:"power1.out"},27.000);
+  tl.fromTo("#w49",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},27.000);
+  tl.to("#w50",{opacity:1,duration:.14,ease:"power1.out"},28.880);
+  tl.fromTo("#w50",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},28.880);
+  tl.to("#w51",{opacity:1,duration:.14,ease:"power1.out"},29.020);
+  tl.fromTo("#w51",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},29.020);
+  tl.to("#w52",{opacity:1,duration:.14,ease:"power1.out"},29.400);
+  tl.fromTo("#w52",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},29.400);
+  tl.to("#w53",{opacity:1,duration:.14,ease:"power1.out"},30.097);
+  tl.fromTo("#w53",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},30.097);
+  tl.to("#w54",{opacity:1,duration:.14,ease:"power1.out"},30.794);
+  tl.fromTo("#w54",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},30.794);
+  tl.to("#w55",{opacity:1,duration:.14,ease:"power1.out"},31.491);
+  tl.fromTo("#w55",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},31.491);
+  tl.fromTo("#c6",{opacity:0,y:50,scale:.96},{opacity:1,y:0,scale:1,duration:.3,ease:"back.out(1.6)"},26.650);
+  tl.to("#c6",{opacity:0,y:-30,duration:.22,ease:"power2.in"},31.669);
+  tl.fromTo("#r6",{opacity:0,x:-30},{opacity:1,x:0,duration:.3,ease:"power2.out"},31.889);
+  tl.to("#w56",{opacity:1,duration:.14,ease:"power1.out"},32.189);
+  tl.fromTo("#w56",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},32.189);
+  tl.to("#w57",{opacity:1,duration:.14,ease:"power1.out"},32.886);
+  tl.fromTo("#w57",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},32.886);
+  tl.to("#w58",{opacity:1,duration:.14,ease:"power1.out"},33.583);
+  tl.fromTo("#w58",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},33.583);
+  tl.to("#w59",{opacity:1,duration:.14,ease:"power1.out"},34.280);
+  tl.fromTo("#w59",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},34.280);
+  tl.to("#w60",{opacity:1,duration:.14,ease:"power1.out"},34.620);
+  tl.fromTo("#w60",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},34.620);
+  tl.to("#w61",{opacity:1,duration:.14,ease:"power1.out"},35.060);
+  tl.fromTo("#w61",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},35.060);
+  tl.to("#w62",{opacity:1,duration:.14,ease:"power1.out"},35.200);
+  tl.fromTo("#w62",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},35.200);
+  tl.to("#w63",{opacity:1,duration:.14,ease:"power1.out"},35.480);
+  tl.fromTo("#w63",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},35.480);
+  tl.fromTo("#c7",{opacity:0,y:50,scale:.96},{opacity:1,y:0,scale:1,duration:.3,ease:"back.out(1.6)"},31.839);
+  tl.to("#c7",{opacity:0,y:-30,duration:.22,ease:"power2.in"},36.320);
+  tl.fromTo("#r7",{opacity:0,x:-30},{opacity:1,x:0,duration:.3,ease:"power2.out"},36.460);
+  tl.to("#w64",{opacity:1,duration:.14,ease:"power1.out"},36.840);
+  tl.fromTo("#w64",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},36.840);
+  tl.to("#w65",{opacity:1,duration:.14,ease:"power1.out"},37.180);
+  tl.fromTo("#w65",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},37.180);
+  tl.to("#w66",{opacity:1,duration:.14,ease:"power1.out"},37.820);
+  tl.fromTo("#w66",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},37.820);
+  tl.to("#w67",{opacity:1,duration:.14,ease:"power1.out"},38.240);
+  tl.fromTo("#w67",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},38.240);
+  tl.to("#w68",{opacity:1,duration:.14,ease:"power1.out"},38.380);
+  tl.fromTo("#w68",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},38.380);
+  tl.to("#w69",{opacity:1,duration:.14,ease:"power1.out"},38.920);
+  tl.fromTo("#w69",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},38.920);
+  tl.to("#w70",{opacity:1,duration:.14,ease:"power1.out"},39.233);
+  tl.fromTo("#w70",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},39.233);
+  tl.to("#w71",{opacity:1,duration:.14,ease:"power1.out"},39.547);
+  tl.fromTo("#w71",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},39.547);
+  tl.to("#w72",{opacity:1,duration:.14,ease:"power1.out"},39.860);
+  tl.fromTo("#w72",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},39.860);
+  tl.to("#w73",{opacity:1,duration:.14,ease:"power1.out"},40.160);
+  tl.fromTo("#w73",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},40.160);
+  tl.to("#w74",{opacity:1,duration:.14,ease:"power1.out"},40.660);
+  tl.fromTo("#w74",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},40.660);
+  tl.fromTo("#c8",{opacity:0,y:50,scale:.96},{opacity:1,y:0,scale:1,duration:.3,ease:"back.out(1.6)"},36.490);
+  tl.to("#c8",{opacity:0,y:-30,duration:.22,ease:"power2.in"},40.980);
+  tl.fromTo("#r8",{opacity:0,x:-30},{opacity:1,x:0,duration:.3,ease:"power2.out"},41.200);
+  tl.to("#w75",{opacity:1,duration:.14,ease:"power1.out"},41.500);
+  tl.fromTo("#w75",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},41.500);
+  tl.to("#w76",{opacity:1,duration:.14,ease:"power1.out"},41.900);
+  tl.fromTo("#w76",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},41.900);
+  tl.to("#w77",{opacity:1,duration:.14,ease:"power1.out"},42.080);
+  tl.fromTo("#w77",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},42.080);
+  tl.to("#w78",{opacity:1,duration:.14,ease:"power1.out"},42.620);
+  tl.fromTo("#w78",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},42.620);
+  tl.to("#w79",{opacity:1,duration:.14,ease:"power1.out"},42.720);
+  tl.fromTo("#w79",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},42.720);
+  tl.to("#w80",{opacity:1,duration:.14,ease:"power1.out"},43.740);
+  tl.fromTo("#w80",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},43.740);
+  tl.to("#w81",{opacity:1,duration:.14,ease:"power1.out"},43.980);
+  tl.fromTo("#w81",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},43.980);
+  tl.to("#w82",{opacity:1,duration:.14,ease:"power1.out"},44.280);
+  tl.fromTo("#w82",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},44.280);
+  tl.to("#w83",{opacity:1,duration:.14,ease:"power1.out"},44.660);
+  tl.fromTo("#w83",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},44.660);
+  tl.to("#w84",{opacity:1,duration:.14,ease:"power1.out"},45.140);
+  tl.fromTo("#w84",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},45.140);
+  tl.fromTo("#c9",{opacity:0,y:50,scale:.96},{opacity:1,y:0,scale:1,duration:.3,ease:"back.out(1.6)"},41.150);
+  tl.to("#c9",{opacity:0,y:-30,duration:.22,ease:"power2.in"},46.140);
+  tl.fromTo("#r9",{opacity:0,x:-30},{opacity:1,x:0,duration:.3,ease:"power2.out"},45.740);
+  tl.to("#w85",{opacity:1,duration:.14,ease:"power1.out"},46.660);
+  tl.fromTo("#w85",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},46.660);
+  tl.fromTo("#d10_0",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},46.310);
+  tl.to("#w86",{opacity:1,duration:.14,ease:"power1.out"},47.240);
+  tl.fromTo("#w86",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},47.240);
+  tl.fromTo("#d10_1",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},46.940);
+  tl.to("#w87",{opacity:1,duration:.14,ease:"power1.out"},47.760);
+  tl.fromTo("#w87",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},47.760);
+  tl.fromTo("#d10_2",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},47.460);
+  tl.to("#w88",{opacity:1,duration:.14,ease:"power1.out"},48.360);
+  tl.fromTo("#w88",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},48.360);
+  tl.to("#w89",{opacity:1,duration:.14,ease:"power1.out"},48.580);
+  tl.fromTo("#w89",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},48.580);
+  tl.to("#w90",{opacity:1,duration:.14,ease:"power1.out"},48.920);
+  tl.fromTo("#w90",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},48.920);
+  tl.to("#w91",{opacity:1,duration:.14,ease:"power1.out"},49.200);
+  tl.fromTo("#w91",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},49.200);
+  tl.to("#w92",{opacity:1,duration:.14,ease:"power1.out"},49.620);
+  tl.fromTo("#w92",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},49.620);
+  tl.fromTo("#d10_3",{y:30,opacity:0},{y:0,opacity:1,duration:.3,ease:"power2.out"},48.010);
+  tl.fromTo("#c10",{opacity:0,y:50,scale:.96},{opacity:1,y:0,scale:1,duration:.3,ease:"back.out(1.6)"},46.310);
+  tl.to("#c10",{opacity:0,y:-30,duration:.22,ease:"power2.in"},50.160);
+  tl.fromTo("#r10",{opacity:0,x:-30},{opacity:1,x:0,duration:.3,ease:"power2.out"},50.380);
+  tl.to("#w93",{opacity:1,duration:.14,ease:"power1.out"},50.680);
+  tl.fromTo("#w93",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},50.680);
+  tl.fromTo("#d11_0",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},50.330);
+  tl.to("#w94",{opacity:1,duration:.14,ease:"power1.out"},51.320);
+  tl.fromTo("#w94",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},51.320);
+  tl.fromTo("#d11_1",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},51.020);
+  tl.to("#w95",{opacity:1,duration:.14,ease:"power1.out"},51.860);
+  tl.fromTo("#w95",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},51.860);
+  tl.fromTo("#d11_2",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},51.560);
+  tl.to("#w96",{opacity:1,duration:.14,ease:"power1.out"},53.060);
+  tl.fromTo("#w96",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},53.060);
+  tl.to("#w97",{opacity:1,duration:.14,ease:"power1.out"},53.240);
+  tl.fromTo("#w97",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},53.240);
+  tl.to("#w98",{opacity:1,duration:.14,ease:"power1.out"},53.580);
+  tl.fromTo("#w98",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},53.580);
+  tl.to("#w99",{opacity:1,duration:.14,ease:"power1.out"},53.980);
+  tl.fromTo("#w99",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},53.980);
+  tl.fromTo("#d11_3",{y:30,opacity:0},{y:0,opacity:1,duration:.3,ease:"power2.out"},52.710);
+  tl.fromTo("#c11",{opacity:0,y:50,scale:.96},{opacity:1,y:0,scale:1,duration:.3,ease:"back.out(1.6)"},50.330);
+  tl.to("#c11",{opacity:0,y:-30,duration:.22,ease:"power2.in"},55.040);
+  tl.fromTo("#r11",{opacity:0,x:-30},{opacity:1,x:0,duration:.3,ease:"power2.out"},54.500);
+  tl.to("#w100",{opacity:1,duration:.14,ease:"power1.out"},55.560);
+  tl.fromTo("#w100",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},55.560);
+  tl.fromTo("#d12_0",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},55.210);
+  tl.to("#w101",{opacity:1,duration:.14,ease:"power1.out"},56.600);
+  tl.fromTo("#w101",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},56.600);
+  tl.fromTo("#d12_1",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},56.300);
+  tl.to("#w102",{opacity:1,duration:.14,ease:"power1.out"},57.040);
+  tl.fromTo("#w102",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},57.040);
+  tl.fromTo("#d12_2",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},56.740);
+  tl.to("#w103",{opacity:1,duration:.14,ease:"power1.out"},57.600);
+  tl.fromTo("#w103",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},57.600);
+  tl.to("#w104",{opacity:1,duration:.14,ease:"power1.out"},57.720);
+  tl.fromTo("#w104",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},57.720);
+  tl.to("#w105",{opacity:1,duration:.14,ease:"power1.out"},58.100);
+  tl.fromTo("#w105",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},58.100);
+  tl.to("#w106",{opacity:1,duration:.14,ease:"power1.out"},58.480);
+  tl.fromTo("#w106",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},58.480);
+  tl.to("#w107",{opacity:1,duration:.14,ease:"power1.out"},58.840);
+  tl.fromTo("#w107",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},58.840);
+  tl.to("#w108",{opacity:1,duration:.14,ease:"power1.out"},59.100);
+  tl.fromTo("#w108",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},59.100);
+  tl.fromTo("#d12_3",{y:30,opacity:0},{y:0,opacity:1,duration:.3,ease:"power2.out"},57.250);
+  tl.fromTo("#c12",{opacity:0,y:50,scale:.96},{opacity:1,y:0,scale:1,duration:.3,ease:"back.out(1.6)"},55.210);
+  tl.to("#c12",{opacity:0,y:-30,duration:.22,ease:"power2.in"},59.220);
+  tl.fromTo("#r12",{opacity:0,x:-30},{opacity:1,x:0,duration:.3,ease:"power2.out"},59.440);
+  tl.to("#w109",{opacity:1,duration:.14,ease:"power1.out"},59.740);
+  tl.fromTo("#w109",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},59.740);
+  tl.fromTo("#d13_0",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},59.390);
+  tl.to("#w110",{opacity:1,duration:.14,ease:"power1.out"},60.400);
+  tl.fromTo("#w110",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},60.400);
+  tl.fromTo("#d13_1",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},60.100);
+  tl.to("#w111",{opacity:1,duration:.14,ease:"power1.out"},60.900);
+  tl.fromTo("#w111",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},60.900);
+  tl.fromTo("#d13_2",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},60.600);
+  tl.to("#w112",{opacity:1,duration:.14,ease:"power1.out"},62.480);
+  tl.fromTo("#w112",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},62.480);
+  tl.to("#w113",{opacity:1,duration:.14,ease:"power1.out"},62.520);
+  tl.fromTo("#w113",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},62.520);
+  tl.to("#w114",{opacity:1,duration:.14,ease:"power1.out"},62.880);
+  tl.fromTo("#w114",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},62.880);
+  tl.to("#w115",{opacity:1,duration:.14,ease:"power1.out"},63.400);
+  tl.fromTo("#w115",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},63.400);
+  tl.to("#w116",{opacity:1,duration:.14,ease:"power1.out"},63.760);
+  tl.fromTo("#w116",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},63.760);
+  tl.fromTo("#d13_3",{y:30,opacity:0},{y:0,opacity:1,duration:.3,ease:"power2.out"},62.130);
+  tl.fromTo("#c13",{opacity:0,y:50,scale:.96},{opacity:1,y:0,scale:1,duration:.3,ease:"back.out(1.6)"},59.390);
+  tl.to("#c13",{opacity:0,y:-30,duration:.22,ease:"power2.in"},64.020);
+  tl.fromTo("#r13",{opacity:0,x:-30},{opacity:1,x:0,duration:.3,ease:"power2.out"},64.240);
+  tl.to("#w117",{opacity:1,duration:.14,ease:"power1.out"},64.540);
+  tl.fromTo("#w117",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},64.540);
+  tl.to("#w118",{opacity:1,duration:.14,ease:"power1.out"},65.920);
+  tl.fromTo("#w118",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},65.920);
+  tl.to("#w119",{opacity:1,duration:.14,ease:"power1.out"},66.400);
+  tl.fromTo("#w119",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},66.400);
+  tl.to("#w120",{opacity:1,duration:.14,ease:"power1.out"},66.940);
+  tl.fromTo("#w120",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},66.940);
+  tl.to("#w121",{opacity:1,duration:.14,ease:"power1.out"},67.360);
+  tl.fromTo("#w121",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},67.360);
+  tl.to("#w122",{opacity:1,duration:.14,ease:"power1.out"},68.260);
+  tl.fromTo("#w122",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},68.260);
+  tl.to("#w123",{opacity:1,duration:.14,ease:"power1.out"},68.440);
+  tl.fromTo("#w123",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},68.440);
+  tl.to("#w124",{opacity:1,duration:.14,ease:"power1.out"},68.620);
+  tl.fromTo("#w124",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},68.620);
+  tl.fromTo("#c14",{opacity:0,y:50,scale:.96},{opacity:1,y:0,scale:1,duration:.3,ease:"back.out(1.6)"},64.190);
+  tl.to("#c14",{opacity:0,y:-30,duration:.22,ease:"power2.in"},68.500);
+  tl.fromTo("#r14",{opacity:0,x:-30},{opacity:1,x:0,duration:.3,ease:"power2.out"},68.720);
+  tl.to("#w125",{opacity:1,duration:.14,ease:"power1.out"},69.020);
+  tl.fromTo("#w125",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},69.020);
+  tl.to("#w126",{opacity:1,duration:.14,ease:"power1.out"},69.940);
+  tl.fromTo("#w126",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},69.940);
+  tl.to("#w127",{opacity:1,duration:.14,ease:"power1.out"},70.880);
+  tl.fromTo("#w127",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},70.880);
+  tl.to("#w128",{opacity:1,duration:.14,ease:"power1.out"},71.560);
+  tl.fromTo("#w128",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},71.560);
+  tl.to("#w129",{opacity:1,duration:.14,ease:"power1.out"},72.040);
+  tl.fromTo("#w129",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},72.040);
+  tl.to("#w130",{opacity:1,duration:.14,ease:"power1.out"},72.620);
+  tl.fromTo("#w130",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},72.620);
+  tl.to("#w131",{opacity:1,duration:.14,ease:"power1.out"},72.760);
+  tl.fromTo("#w131",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},72.760);
+  tl.to("#w132",{opacity:1,duration:.14,ease:"power1.out"},73.100);
+  tl.fromTo("#w132",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},73.100);
+  tl.fromTo("#c15",{opacity:0,y:50,scale:.96},{opacity:1,y:0,scale:1,duration:.3,ease:"back.out(1.6)"},68.670);
+  tl.to("#c15",{opacity:0,y:-30,duration:.22,ease:"power2.in"},73.200);
+  tl.fromTo("#r15",{opacity:0,x:-30},{opacity:1,x:0,duration:.3,ease:"power2.out"},73.420);
+  tl.to("#w133",{opacity:1,duration:.14,ease:"power1.out"},73.720);
+  tl.fromTo("#w133",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},73.720);
+  tl.to("#w134",{opacity:1,duration:.14,ease:"power1.out"},74.260);
+  tl.fromTo("#w134",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},74.260);
+  tl.to("#w135",{opacity:1,duration:.14,ease:"power1.out"},75.100);
+  tl.fromTo("#w135",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},75.100);
+  tl.to("#w136",{opacity:1,duration:.14,ease:"power1.out"},75.500);
+  tl.fromTo("#w136",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},75.500);
+  tl.to("#w137",{opacity:1,duration:.14,ease:"power1.out"},75.620);
+  tl.fromTo("#w137",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},75.620);
+  tl.to("#w138",{opacity:1,duration:.14,ease:"power1.out"},76.380);
+  tl.fromTo("#w138",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},76.380);
+  tl.to("#w139",{opacity:1,duration:.14,ease:"power1.out"},76.580);
+  tl.fromTo("#w139",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},76.580);
+  tl.to("#w140",{opacity:1,duration:.14,ease:"power1.out"},76.900);
+  tl.fromTo("#w140",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},76.900);
+  tl.to("#w141",{opacity:1,duration:.14,ease:"power1.out"},77.140);
+  tl.fromTo("#w141",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},77.140);
+  tl.to("#w142",{opacity:1,duration:.14,ease:"power1.out"},77.400);
+  tl.fromTo("#w142",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},77.400);
+  tl.to("#w143",{opacity:1,duration:.14,ease:"power1.out"},77.960);
+  tl.fromTo("#w143",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},77.960);
+  tl.fromTo("#c16",{opacity:0,y:50,scale:.96},{opacity:1,y:0,scale:1,duration:.3,ease:"back.out(1.6)"},73.370);
+  tl.to("#c16",{opacity:0,y:-30,duration:.22,ease:"power2.in"},78.020);
+  tl.fromTo("#r16",{opacity:0,x:-30},{opacity:1,x:0,duration:.3,ease:"power2.out"},78.240);
+  tl.to("#w144",{opacity:1,duration:.14,ease:"power1.out"},78.540);
+  tl.fromTo("#w144",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},78.540);
+  tl.to("#w145",{opacity:1,duration:.14,ease:"power1.out"},79.120);
+  tl.fromTo("#w145",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},79.120);
+  tl.to("#w146",{opacity:1,duration:.14,ease:"power1.out"},79.320);
+  tl.fromTo("#w146",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},79.320);
+  tl.to("#w147",{opacity:1,duration:.14,ease:"power1.out"},79.860);
+  tl.fromTo("#w147",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},79.860);
+  tl.to("#w148",{opacity:1,duration:.14,ease:"power1.out"},79.960);
+  tl.fromTo("#w148",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},79.960);
+  tl.to("#w149",{opacity:1,duration:.14,ease:"power1.out"},81.020);
+  tl.fromTo("#w149",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},81.020);
+  tl.to("#w150",{opacity:1,duration:.14,ease:"power1.out"},81.220);
+  tl.fromTo("#w150",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},81.220);
+  tl.to("#w151",{opacity:1,duration:.14,ease:"power1.out"},81.520);
+  tl.fromTo("#w151",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},81.520);
+  tl.to("#w152",{opacity:1,duration:.14,ease:"power1.out"},81.960);
+  tl.fromTo("#w152",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},81.960);
+  tl.to("#w153",{opacity:1,duration:.14,ease:"power1.out"},82.420);
+  tl.fromTo("#w153",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},82.420);
+  tl.fromTo("#c17",{opacity:0,y:50,scale:.96},{opacity:1,y:0,scale:1,duration:.3,ease:"back.out(1.6)"},78.190);
+  tl.to("#c17",{opacity:0,y:-30,duration:.22,ease:"power2.in"},82.380);
+  tl.fromTo("#r17",{opacity:0,x:-30},{opacity:1,x:0,duration:.3,ease:"power2.out"},82.600);
+  tl.to("#w154",{opacity:1,duration:.14,ease:"power1.out"},82.900);
+  tl.fromTo("#w154",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},82.900);
+  tl.fromTo("#d18_0",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},82.550);
+  tl.to("#w155",{opacity:1,duration:.14,ease:"power1.out"},84.560);
+  tl.fromTo("#w155",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},84.560);
+  tl.fromTo("#d18_1",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},84.260);
+  tl.to("#w156",{opacity:1,duration:.14,ease:"power1.out"},84.780);
+  tl.fromTo("#w156",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},84.780);
+  tl.fromTo("#d18_2",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},84.480);
+  tl.to("#w157",{opacity:1,duration:.14,ease:"power1.out"},85.600);
+  tl.fromTo("#w157",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},85.600);
+  tl.to("#w158",{opacity:1,duration:.14,ease:"power1.out"},85.680);
+  tl.fromTo("#w158",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},85.680);
+  tl.to("#w159",{opacity:1,duration:.14,ease:"power1.out"},86.020);
+  tl.fromTo("#w159",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},86.020);
+  tl.to("#w160",{opacity:1,duration:.14,ease:"power1.out"},86.540);
+  tl.fromTo("#w160",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},86.540);
+  tl.to("#w161",{opacity:1,duration:.14,ease:"power1.out"},86.780);
+  tl.fromTo("#w161",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},86.780);
+  tl.to("#w162",{opacity:1,duration:.14,ease:"power1.out"},87.220);
+  tl.fromTo("#w162",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},87.220);
+  tl.fromTo("#d18_3",{y:30,opacity:0},{y:0,opacity:1,duration:.3,ease:"power2.out"},85.250);
+  tl.fromTo("#c18",{opacity:0,y:50,scale:.96},{opacity:1,y:0,scale:1,duration:.3,ease:"back.out(1.6)"},82.550);
+  tl.to("#c18",{opacity:0,y:-30,duration:.22,ease:"power2.in"},87.160);
+  tl.fromTo("#r18",{opacity:0,x:-30},{opacity:1,x:0,duration:.3,ease:"power2.out"},87.380);
+  tl.to("#w163",{opacity:1,duration:.14,ease:"power1.out"},87.680);
+  tl.fromTo("#w163",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},87.680);
+  tl.fromTo("#d19_0",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},87.330);
+  tl.to("#w164",{opacity:1,duration:.14,ease:"power1.out"},88.560);
+  tl.fromTo("#w164",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},88.560);
+  tl.fromTo("#d19_1",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},88.260);
+  tl.to("#w165",{opacity:1,duration:.14,ease:"power1.out"},89.020);
+  tl.fromTo("#w165",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},89.020);
+  tl.fromTo("#d19_2",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},88.720);
+  tl.to("#w166",{opacity:1,duration:.14,ease:"power1.out"},89.760);
+  tl.fromTo("#w166",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},89.760);
+  tl.to("#w167",{opacity:1,duration:.14,ease:"power1.out"},90.500);
+  tl.fromTo("#w167",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},90.500);
+  tl.to("#w168",{opacity:1,duration:.14,ease:"power1.out"},90.820);
+  tl.fromTo("#w168",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},90.820);
+  tl.to("#w169",{opacity:1,duration:.14,ease:"power1.out"},91.140);
+  tl.fromTo("#w169",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},91.140);
+  tl.fromTo("#d19_3",{y:30,opacity:0},{y:0,opacity:1,duration:.3,ease:"power2.out"},89.410);
+  tl.fromTo("#c19",{opacity:0,y:50,scale:.96},{opacity:1,y:0,scale:1,duration:.3,ease:"back.out(1.6)"},87.330);
+  tl.to("#c19",{opacity:0,y:-30,duration:.22,ease:"power2.in"},92.300);
+  tl.fromTo("#r19",{opacity:0,x:-30},{opacity:1,x:0,duration:.3,ease:"power2.out"},92.160);
+  tl.to("#w170",{opacity:1,duration:.14,ease:"power1.out"},92.820);
+  tl.fromTo("#w170",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},92.820);
+  tl.fromTo("#d20_0",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},92.470);
+  tl.to("#w171",{opacity:1,duration:.14,ease:"power1.out"},93.740);
+  tl.fromTo("#w171",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},93.740);
+  tl.fromTo("#d20_1",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},93.440);
+  tl.to("#w172",{opacity:1,duration:.14,ease:"power1.out"},94.320);
+  tl.fromTo("#w172",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},94.320);
+  tl.fromTo("#d20_2",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},94.020);
+  tl.to("#w173",{opacity:1,duration:.14,ease:"power1.out"},95.060);
+  tl.fromTo("#w173",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},95.060);
+  tl.to("#w174",{opacity:1,duration:.14,ease:"power1.out"},95.140);
+  tl.fromTo("#w174",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},95.140);
+  tl.to("#w175",{opacity:1,duration:.14,ease:"power1.out"},95.760);
+  tl.fromTo("#w175",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},95.760);
+  tl.to("#w176",{opacity:1,duration:.14,ease:"power1.out"},96.440);
+  tl.fromTo("#w176",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},96.440);
+  tl.fromTo("#d20_3",{y:30,opacity:0},{y:0,opacity:1,duration:.3,ease:"power2.out"},94.710);
+  tl.fromTo("#c20",{opacity:0,y:50,scale:.96},{opacity:1,y:0,scale:1,duration:.3,ease:"back.out(1.6)"},92.470);
+  tl.to("#c20",{opacity:0,y:-30,duration:.22,ease:"power2.in"},96.520);
+  tl.fromTo("#r20",{opacity:0,x:-30},{opacity:1,x:0,duration:.3,ease:"power2.out"},96.740);
+  tl.to("#w177",{opacity:1,duration:.14,ease:"power1.out"},97.040);
+  tl.fromTo("#w177",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},97.040);
+  tl.fromTo("#d21_0",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},96.690);
+  tl.to("#w178",{opacity:1,duration:.14,ease:"power1.out"},97.920);
+  tl.fromTo("#w178",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},97.920);
+  tl.fromTo("#d21_1",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},97.620);
+  tl.to("#w179",{opacity:1,duration:.14,ease:"power1.out"},98.380);
+  tl.fromTo("#w179",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},98.380);
+  tl.fromTo("#d21_2",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},98.080);
+  tl.to("#w180",{opacity:1,duration:.14,ease:"power1.out"},99.100);
+  tl.fromTo("#w180",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},99.100);
+  tl.to("#w181",{opacity:1,duration:.14,ease:"power1.out"},99.760);
+  tl.fromTo("#w181",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},99.760);
+  tl.to("#w182",{opacity:1,duration:.14,ease:"power1.out"},100.160);
+  tl.fromTo("#w182",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},100.160);
+  tl.to("#w183",{opacity:1,duration:.14,ease:"power1.out"},100.740);
+  tl.fromTo("#w183",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},100.740);
+  tl.to("#w184",{opacity:1,duration:.14,ease:"power1.out"},101.020);
+  tl.fromTo("#w184",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},101.020);
+  tl.fromTo("#d21_3",{y:30,opacity:0},{y:0,opacity:1,duration:.3,ease:"power2.out"},98.750);
+  tl.fromTo("#c21",{opacity:0,y:50,scale:.96},{opacity:1,y:0,scale:1,duration:.3,ease:"back.out(1.6)"},96.690);
+  tl.to("#c21",{opacity:0,y:-30,duration:.22,ease:"power2.in"},101.620);
+  tl.fromTo("#r21",{opacity:0,x:-30},{opacity:1,x:0,duration:.3,ease:"power2.out"},101.840);
+  tl.to("#w185",{opacity:1,duration:.14,ease:"power1.out"},102.140);
+  tl.fromTo("#w185",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},102.140);
+  tl.fromTo("#d22_0",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},101.790);
+  tl.to("#w186",{opacity:1,duration:.14,ease:"power1.out"},103.160);
+  tl.fromTo("#w186",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},103.160);
+  tl.fromTo("#d22_1",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},102.860);
+  tl.to("#w187",{opacity:1,duration:.14,ease:"power1.out"},103.620);
+  tl.fromTo("#w187",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},103.620);
+  tl.fromTo("#d22_2",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},103.320);
+  tl.to("#w188",{opacity:1,duration:.14,ease:"power1.out"},104.400);
+  tl.fromTo("#w188",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},104.400);
+  tl.to("#w189",{opacity:1,duration:.14,ease:"power1.out"},104.500);
+  tl.fromTo("#w189",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},104.500);
+  tl.to("#w190",{opacity:1,duration:.14,ease:"power1.out"},104.740);
+  tl.fromTo("#w190",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},104.740);
+  tl.to("#w191",{opacity:1,duration:.14,ease:"power1.out"},104.940);
+  tl.fromTo("#w191",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},104.940);
+  tl.to("#w192",{opacity:1,duration:.14,ease:"power1.out"},105.440);
+  tl.fromTo("#w192",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},105.440);
+  tl.to("#w193",{opacity:1,duration:.14,ease:"power1.out"},105.700);
+  tl.fromTo("#w193",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},105.700);
+  tl.fromTo("#d22_3",{y:30,opacity:0},{y:0,opacity:1,duration:.3,ease:"power2.out"},104.050);
+  tl.fromTo("#c22",{opacity:0,y:50,scale:.96},{opacity:1,y:0,scale:1,duration:.3,ease:"back.out(1.6)"},101.790);
+  tl.to("#c22",{opacity:0,y:-30,duration:.22,ease:"power2.in"},105.780);
+  tl.fromTo("#r22",{opacity:0,x:-30},{opacity:1,x:0,duration:.3,ease:"power2.out"},106.000);
+  tl.to("#w194",{opacity:1,duration:.14,ease:"power1.out"},106.300);
+  tl.fromTo("#w194",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},106.300);
+  tl.fromTo("#d23_0",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},105.950);
+  tl.to("#w195",{opacity:1,duration:.14,ease:"power1.out"},107.220);
+  tl.fromTo("#w195",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},107.220);
+  tl.fromTo("#d23_1",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},106.920);
+  tl.to("#w196",{opacity:1,duration:.14,ease:"power1.out"},108.140);
+  tl.fromTo("#w196",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},108.140);
+  tl.fromTo("#d23_2",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},107.840);
+  tl.to("#w197",{opacity:1,duration:.14,ease:"power1.out"},108.960);
+  tl.fromTo("#w197",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},108.960);
+  tl.to("#w198",{opacity:1,duration:.14,ease:"power1.out"},109.040);
+  tl.fromTo("#w198",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},109.040);
+  tl.to("#w199",{opacity:1,duration:.14,ease:"power1.out"},109.340);
+  tl.fromTo("#w199",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},109.340);
+  tl.to("#w200",{opacity:1,duration:.14,ease:"power1.out"},109.560);
+  tl.fromTo("#w200",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},109.560);
+  tl.to("#w201",{opacity:1,duration:.14,ease:"power1.out"},110.280);
+  tl.fromTo("#w201",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},110.280);
+  tl.fromTo("#d23_3",{y:30,opacity:0},{y:0,opacity:1,duration:.3,ease:"power2.out"},108.610);
+  tl.fromTo("#c23",{opacity:0,y:50,scale:.96},{opacity:1,y:0,scale:1,duration:.3,ease:"back.out(1.6)"},105.950);
+  tl.to("#c23",{opacity:0,y:-30,duration:.22,ease:"power2.in"},110.420);
+  tl.fromTo("#r23",{opacity:0,x:-30},{opacity:1,x:0,duration:.3,ease:"power2.out"},110.640);
+  tl.to("#w202",{opacity:1,duration:.14,ease:"power1.out"},110.940);
+  tl.fromTo("#w202",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},110.940);
+  tl.fromTo("#d24_0",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},110.590);
+  tl.to("#w203",{opacity:1,duration:.14,ease:"power1.out"},112.500);
+  tl.fromTo("#w203",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},112.500);
+  tl.fromTo("#d24_1",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},112.200);
+  tl.to("#w204",{opacity:1,duration:.14,ease:"power1.out"},112.960);
+  tl.fromTo("#w204",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},112.960);
+  tl.fromTo("#d24_2",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},112.660);
+  tl.to("#w205",{opacity:1,duration:.14,ease:"power1.out"},113.500);
+  tl.fromTo("#w205",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},113.500);
+  tl.to("#w206",{opacity:1,duration:.14,ease:"power1.out"},113.760);
+  tl.fromTo("#w206",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},113.760);
+  tl.to("#w207",{opacity:1,duration:.14,ease:"power1.out"},114.140);
+  tl.fromTo("#w207",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},114.140);
+  tl.to("#w208",{opacity:1,duration:.14,ease:"power1.out"},114.600);
+  tl.fromTo("#w208",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},114.600);
+  tl.to("#w209",{opacity:1,duration:.14,ease:"power1.out"},115.120);
+  tl.fromTo("#w209",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},115.120);
+  tl.fromTo("#d24_3",{y:30,opacity:0},{y:0,opacity:1,duration:.3,ease:"power2.out"},113.150);
+  tl.fromTo("#c24",{opacity:0,y:50,scale:.96},{opacity:1,y:0,scale:1,duration:.3,ease:"back.out(1.6)"},110.590);
+  tl.to("#c24",{opacity:0,y:-30,duration:.22,ease:"power2.in"},115.240);
+  tl.fromTo("#r24",{opacity:0,x:-30},{opacity:1,x:0,duration:.3,ease:"power2.out"},115.460);
+  tl.to("#w210",{opacity:1,duration:.14,ease:"power1.out"},115.760);
+  tl.fromTo("#w210",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},115.760);
+  tl.fromTo("#d25_0",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},115.410);
+  tl.to("#w211",{opacity:1,duration:.14,ease:"power1.out"},116.560);
+  tl.fromTo("#w211",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},116.560);
+  tl.fromTo("#d25_1",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},116.260);
+  tl.to("#w212",{opacity:1,duration:.14,ease:"power1.out"},117.020);
+  tl.fromTo("#w212",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},117.020);
+  tl.fromTo("#d25_2",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},116.720);
+  tl.to("#w213",{opacity:1,duration:.14,ease:"power1.out"},117.680);
+  tl.fromTo("#w213",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},117.680);
+  tl.to("#w214",{opacity:1,duration:.14,ease:"power1.out"},118.460);
+  tl.fromTo("#w214",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},118.460);
+  tl.to("#w215",{opacity:1,duration:.14,ease:"power1.out"},118.780);
+  tl.fromTo("#w215",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},118.780);
+  tl.to("#w216",{opacity:1,duration:.14,ease:"power1.out"},119.060);
+  tl.fromTo("#w216",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},119.060);
+  tl.to("#w217",{opacity:1,duration:.14,ease:"power1.out"},119.680);
+  tl.fromTo("#w217",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},119.680);
+  tl.fromTo("#d25_3",{y:30,opacity:0},{y:0,opacity:1,duration:.3,ease:"power2.out"},117.330);
+  tl.fromTo("#c25",{opacity:0,y:50,scale:.96},{opacity:1,y:0,scale:1,duration:.3,ease:"back.out(1.6)"},115.410);
+  tl.to("#c25",{opacity:0,y:-30,duration:.22,ease:"power2.in"},119.860);
+  tl.fromTo("#r25",{opacity:0,x:-30},{opacity:1,x:0,duration:.3,ease:"power2.out"},120.080);
+  tl.to("#w218",{opacity:1,duration:.14,ease:"power1.out"},120.380);
+  tl.fromTo("#w218",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},120.380);
+  tl.to("#w219",{opacity:1,duration:.14,ease:"power1.out"},121.840);
+  tl.fromTo("#w219",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},121.840);
+  tl.to("#w220",{opacity:1,duration:.14,ease:"power1.out"},122.240);
+  tl.fromTo("#w220",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},122.240);
+  tl.to("#w221",{opacity:1,duration:.14,ease:"power1.out"},123.000);
+  tl.fromTo("#w221",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},123.000);
+  tl.to("#w222",{opacity:1,duration:.14,ease:"power1.out"},123.160);
+  tl.fromTo("#w222",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},123.160);
+  tl.to("#w223",{opacity:1,duration:.14,ease:"power1.out"},124.120);
+  tl.fromTo("#w223",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},124.120);
+  tl.to("#w224",{opacity:1,duration:.14,ease:"power1.out"},124.340);
+  tl.fromTo("#w224",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},124.340);
+  tl.fromTo("#c26",{opacity:0,y:50,scale:.96},{opacity:1,y:0,scale:1,duration:.3,ease:"back.out(1.6)"},120.030);
+  tl.to("#c26",{opacity:0,y:-30,duration:.22,ease:"power2.in"},124.400);
+  tl.fromTo("#r26",{opacity:0,x:-30},{opacity:1,x:0,duration:.3,ease:"power2.out"},124.620);
+  tl.to("#w225",{opacity:1,duration:.14,ease:"power1.out"},124.920);
+  tl.fromTo("#w225",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},124.920);
+  tl.to("#w226",{opacity:1,duration:.14,ease:"power1.out"},125.880);
+  tl.fromTo("#w226",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},125.880);
+  tl.to("#w227",{opacity:1,duration:.14,ease:"power1.out"},126.940);
+  tl.fromTo("#w227",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},126.940);
+  tl.to("#w228",{opacity:1,duration:.14,ease:"power1.out"},127.680);
+  tl.fromTo("#w228",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},127.680);
+  tl.to("#w229",{opacity:1,duration:.14,ease:"power1.out"},127.960);
+  tl.fromTo("#w229",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},127.960);
+  tl.to("#w230",{opacity:1,duration:.14,ease:"power1.out"},128.400);
+  tl.fromTo("#w230",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},128.400);
+  tl.to("#w231",{opacity:1,duration:.14,ease:"power1.out"},128.720);
+  tl.fromTo("#w231",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},128.720);
+  tl.to("#w232",{opacity:1,duration:.14,ease:"power1.out"},128.960);
+  tl.fromTo("#w232",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},128.960);
+  tl.to("#w233",{opacity:1,duration:.14,ease:"power1.out"},129.320);
+  tl.fromTo("#w233",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},129.320);
+  tl.fromTo("#c27",{opacity:0,y:50,scale:.96},{opacity:1,y:0,scale:1,duration:.3,ease:"back.out(1.6)"},124.570);
+  tl.to("#c27",{opacity:0,y:-30,duration:.22,ease:"power2.in"},129.240);
+  tl.fromTo("#r27",{opacity:0,x:-30},{opacity:1,x:0,duration:.3,ease:"power2.out"},129.460);
+  tl.to("#w234",{opacity:1,duration:.14,ease:"power1.out"},129.760);
+  tl.fromTo("#w234",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},129.760);
+  tl.to("#w235",{opacity:1,duration:.14,ease:"power1.out"},130.340);
+  tl.fromTo("#w235",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},130.340);
+  tl.to("#w236",{opacity:1,duration:.14,ease:"power1.out"},131.080);
+  tl.fromTo("#w236",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},131.080);
+  tl.to("#w237",{opacity:1,duration:.14,ease:"power1.out"},131.400);
+  tl.fromTo("#w237",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},131.400);
+  tl.to("#w238",{opacity:1,duration:.14,ease:"power1.out"},131.560);
+  tl.fromTo("#w238",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},131.560);
+  tl.to("#w239",{opacity:1,duration:.14,ease:"power1.out"},132.340);
+  tl.fromTo("#w239",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},132.340);
+  tl.to("#w240",{opacity:1,duration:.14,ease:"power1.out"},132.520);
+  tl.fromTo("#w240",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},132.520);
+  tl.to("#w241",{opacity:1,duration:.14,ease:"power1.out"},132.780);
+  tl.fromTo("#w241",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},132.780);
+  tl.to("#w242",{opacity:1,duration:.14,ease:"power1.out"},133.040);
+  tl.fromTo("#w242",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},133.040);
+  tl.to("#w243",{opacity:1,duration:.14,ease:"power1.out"},133.300);
+  tl.fromTo("#w243",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},133.300);
+  tl.to("#w244",{opacity:1,duration:.14,ease:"power1.out"},133.880);
+  tl.fromTo("#w244",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},133.880);
+  tl.fromTo("#c28",{opacity:0,y:50,scale:.96},{opacity:1,y:0,scale:1,duration:.3,ease:"back.out(1.6)"},129.410);
+  tl.to("#c28",{opacity:0,y:-30,duration:.22,ease:"power2.in"},133.900);
+  tl.fromTo("#r28",{opacity:0,x:-30},{opacity:1,x:0,duration:.3,ease:"power2.out"},134.120);
+  tl.to("#w245",{opacity:1,duration:.14,ease:"power1.out"},134.420);
+  tl.fromTo("#w245",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},134.420);
+  tl.to("#w246",{opacity:1,duration:.14,ease:"power1.out"},134.940);
+  tl.fromTo("#w246",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},134.940);
+  tl.to("#w247",{opacity:1,duration:.14,ease:"power1.out"},135.240);
+  tl.fromTo("#w247",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},135.240);
+  tl.to("#w248",{opacity:1,duration:.14,ease:"power1.out"},135.800);
+  tl.fromTo("#w248",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},135.800);
+  tl.to("#w249",{opacity:1,duration:.14,ease:"power1.out"},135.880);
+  tl.fromTo("#w249",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},135.880);
+  tl.to("#w250",{opacity:1,duration:.14,ease:"power1.out"},136.940);
+  tl.fromTo("#w250",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},136.940);
+  tl.to("#w251",{opacity:1,duration:.14,ease:"power1.out"},137.160);
+  tl.fromTo("#w251",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},137.160);
+  tl.to("#w252",{opacity:1,duration:.14,ease:"power1.out"},137.440);
+  tl.fromTo("#w252",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},137.440);
+  tl.to("#w253",{opacity:1,duration:.14,ease:"power1.out"},137.860);
+  tl.fromTo("#w253",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},137.860);
+  tl.to("#w254",{opacity:1,duration:.14,ease:"power1.out"},138.300);
+  tl.fromTo("#w254",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},138.300);
+  tl.fromTo("#c29",{opacity:0,y:50,scale:.96},{opacity:1,y:0,scale:1,duration:.3,ease:"back.out(1.6)"},134.070);
+  tl.to("#c29",{opacity:0,y:-30,duration:.22,ease:"power2.in"},138.300);
+  tl.fromTo("#r29",{opacity:0,x:-30},{opacity:1,x:0,duration:.3,ease:"power2.out"},138.520);
+  tl.to("#w255",{opacity:1,duration:.14,ease:"power1.out"},138.820);
+  tl.fromTo("#w255",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},138.820);
+  tl.fromTo("#d30_0",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},138.470);
+  tl.to("#w256",{opacity:1,duration:.14,ease:"power1.out"},140.460);
+  tl.fromTo("#w256",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},140.460);
+  tl.fromTo("#d30_1",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},140.160);
+  tl.to("#w257",{opacity:1,duration:.14,ease:"power1.out"},140.900);
+  tl.fromTo("#w257",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},140.900);
+  tl.fromTo("#d30_2",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},140.600);
+  tl.to("#w258",{opacity:1,duration:.14,ease:"power1.out"},141.360);
+  tl.fromTo("#w258",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},141.360);
+  tl.to("#w259",{opacity:1,duration:.14,ease:"power1.out"},141.780);
+  tl.fromTo("#w259",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},141.780);
+  tl.to("#w260",{opacity:1,duration:.14,ease:"power1.out"},142.040);
+  tl.fromTo("#w260",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},142.040);
+  tl.to("#w261",{opacity:1,duration:.14,ease:"power1.out"},142.540);
+  tl.fromTo("#w261",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},142.540);
+  tl.to("#w262",{opacity:1,duration:.14,ease:"power1.out"},143.020);
+  tl.fromTo("#w262",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},143.020);
+  tl.fromTo("#d30_3",{y:30,opacity:0},{y:0,opacity:1,duration:.3,ease:"power2.out"},141.010);
+  tl.fromTo("#c30",{opacity:0,y:50,scale:.96},{opacity:1,y:0,scale:1,duration:.3,ease:"back.out(1.6)"},138.470);
+  tl.to("#c30",{opacity:0,y:-30,duration:.22,ease:"power2.in"},143.080);
+  tl.fromTo("#r30",{opacity:0,x:-30},{opacity:1,x:0,duration:.3,ease:"power2.out"},143.300);
+  tl.to("#w263",{opacity:1,duration:.14,ease:"power1.out"},143.600);
+  tl.fromTo("#w263",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},143.600);
+  tl.fromTo("#d31_0",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},143.250);
+  tl.to("#w264",{opacity:1,duration:.14,ease:"power1.out"},144.480);
+  tl.fromTo("#w264",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},144.480);
+  tl.fromTo("#d31_1",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},144.180);
+  tl.to("#w265",{opacity:1,duration:.14,ease:"power1.out"},144.960);
+  tl.fromTo("#w265",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},144.960);
+  tl.fromTo("#d31_2",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},144.660);
+  tl.to("#w266",{opacity:1,duration:.14,ease:"power1.out"},145.740);
+  tl.fromTo("#w266",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},145.740);
+  tl.to("#w267",{opacity:1,duration:.14,ease:"power1.out"},146.340);
+  tl.fromTo("#w267",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},146.340);
+  tl.to("#w268",{opacity:1,duration:.14,ease:"power1.out"},146.700);
+  tl.fromTo("#w268",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},146.700);
+  tl.to("#w269",{opacity:1,duration:.14,ease:"power1.out"},147.180);
+  tl.fromTo("#w269",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},147.180);
+  tl.to("#w270",{opacity:1,duration:.14,ease:"power1.out"},147.620);
+  tl.fromTo("#w270",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},147.620);
+  tl.fromTo("#d31_3",{y:30,opacity:0},{y:0,opacity:1,duration:.3,ease:"power2.out"},145.390);
+  tl.fromTo("#c31",{opacity:0,y:50,scale:.96},{opacity:1,y:0,scale:1,duration:.3,ease:"back.out(1.6)"},143.250);
+  tl.to("#c31",{opacity:0,y:-30,duration:.22,ease:"power2.in"},147.900);
+  tl.fromTo("#r31",{opacity:0,x:-30},{opacity:1,x:0,duration:.3,ease:"power2.out"},148.120);
+  tl.to("#w271",{opacity:1,duration:.14,ease:"power1.out"},148.420);
+  tl.fromTo("#w271",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},148.420);
+  tl.fromTo("#d32_0",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},148.070);
+  tl.to("#w272",{opacity:1,duration:.14,ease:"power1.out"},149.740);
+  tl.fromTo("#w272",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},149.740);
+  tl.fromTo("#d32_1",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},149.440);
+  tl.to("#w273",{opacity:1,duration:.14,ease:"power1.out"},150.260);
+  tl.fromTo("#w273",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},150.260);
+  tl.fromTo("#d32_2",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},149.960);
+  tl.to("#w274",{opacity:1,duration:.14,ease:"power1.out"},150.900);
+  tl.fromTo("#w274",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},150.900);
+  tl.to("#w275",{opacity:1,duration:.14,ease:"power1.out"},151.060);
+  tl.fromTo("#w275",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},151.060);
+  tl.to("#w276",{opacity:1,duration:.14,ease:"power1.out"},151.400);
+  tl.fromTo("#w276",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},151.400);
+  tl.to("#w277",{opacity:1,duration:.14,ease:"power1.out"},151.740);
+  tl.fromTo("#w277",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},151.740);
+  tl.to("#w278",{opacity:1,duration:.14,ease:"power1.out"},151.920);
+  tl.fromTo("#w278",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},151.920);
+  tl.to("#w279",{opacity:1,duration:.14,ease:"power1.out"},152.460);
+  tl.fromTo("#w279",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},152.460);
+  tl.fromTo("#d32_3",{y:30,opacity:0},{y:0,opacity:1,duration:.3,ease:"power2.out"},150.550);
+  tl.fromTo("#c32",{opacity:0,y:50,scale:.96},{opacity:1,y:0,scale:1,duration:.3,ease:"back.out(1.6)"},148.070);
+  tl.to("#c32",{opacity:0,y:-30,duration:.22,ease:"power2.in"},152.420);
+  tl.fromTo("#r32",{opacity:0,x:-30},{opacity:1,x:0,duration:.3,ease:"power2.out"},152.640);
+  tl.to("#w280",{opacity:1,duration:.14,ease:"power1.out"},152.940);
+  tl.fromTo("#w280",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},152.940);
+  tl.fromTo("#d33_0",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},152.590);
+  tl.to("#w281",{opacity:1,duration:.14,ease:"power1.out"},153.820);
+  tl.fromTo("#w281",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},153.820);
+  tl.fromTo("#d33_1",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},153.520);
+  tl.to("#w282",{opacity:1,duration:.14,ease:"power1.out"},154.340);
+  tl.fromTo("#w282",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},154.340);
+  tl.fromTo("#d33_2",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},154.040);
+  tl.to("#w283",{opacity:1,duration:.14,ease:"power1.out"},155.040);
+  tl.fromTo("#w283",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},155.040);
+  tl.to("#w284",{opacity:1,duration:.14,ease:"power1.out"},155.520);
+  tl.fromTo("#w284",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},155.520);
+  tl.to("#w285",{opacity:1,duration:.14,ease:"power1.out"},155.760);
+  tl.fromTo("#w285",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},155.760);
+  tl.to("#w286",{opacity:1,duration:.14,ease:"power1.out"},156.060);
+  tl.fromTo("#w286",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},156.060);
+  tl.to("#w287",{opacity:1,duration:.14,ease:"power1.out"},156.360);
+  tl.fromTo("#w287",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},156.360);
+  tl.to("#w288",{opacity:1,duration:.14,ease:"power1.out"},156.620);
+  tl.fromTo("#w288",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},156.620);
+  tl.to("#w289",{opacity:1,duration:.14,ease:"power1.out"},156.940);
+  tl.fromTo("#w289",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},156.940);
+  tl.fromTo("#d33_3",{y:30,opacity:0},{y:0,opacity:1,duration:.3,ease:"power2.out"},154.690);
+  tl.fromTo("#c33",{opacity:0,y:50,scale:.96},{opacity:1,y:0,scale:1,duration:.3,ease:"back.out(1.6)"},152.590);
+  tl.to("#c33",{opacity:0,y:-30,duration:.22,ease:"power2.in"},157.400);
+  tl.fromTo("#r33",{opacity:0,x:-30},{opacity:1,x:0,duration:.3,ease:"power2.out"},157.620);
+  tl.to("#w290",{opacity:1,duration:.14,ease:"power1.out"},157.920);
+  tl.fromTo("#w290",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},157.920);
+  tl.fromTo("#d34_0",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},157.570);
+  tl.to("#w291",{opacity:1,duration:.14,ease:"power1.out"},159.080);
+  tl.fromTo("#w291",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},159.080);
+  tl.fromTo("#d34_1",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},158.780);
+  tl.to("#w292",{opacity:1,duration:.14,ease:"power1.out"},159.240);
+  tl.fromTo("#w292",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},159.240);
+  tl.fromTo("#d34_2",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},158.940);
+  tl.to("#w293",{opacity:1,duration:.14,ease:"power1.out"},160.300);
+  tl.fromTo("#w293",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},160.300);
+  tl.to("#w294",{opacity:1,duration:.14,ease:"power1.out"},160.380);
+  tl.fromTo("#w294",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},160.380);
+  tl.to("#w295",{opacity:1,duration:.14,ease:"power1.out"},160.720);
+  tl.fromTo("#w295",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},160.720);
+  tl.to("#w296",{opacity:1,duration:.14,ease:"power1.out"},160.980);
+  tl.fromTo("#w296",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},160.980);
+  tl.to("#w297",{opacity:1,duration:.14,ease:"power1.out"},161.340);
+  tl.fromTo("#w297",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},161.340);
+  tl.fromTo("#d34_3",{y:30,opacity:0},{y:0,opacity:1,duration:.3,ease:"power2.out"},159.950);
+  tl.fromTo("#c34",{opacity:0,y:50,scale:.96},{opacity:1,y:0,scale:1,duration:.3,ease:"back.out(1.6)"},157.570);
+  tl.to("#c34",{opacity:0,y:-30,duration:.22,ease:"power2.in"},161.680);
+  tl.fromTo("#r34",{opacity:0,x:-30},{opacity:1,x:0,duration:.3,ease:"power2.out"},161.900);
+  tl.to("#w298",{opacity:1,duration:.14,ease:"power1.out"},162.200);
+  tl.fromTo("#w298",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},162.200);
+  tl.fromTo("#d35_0",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},161.850);
+  tl.to("#w299",{opacity:1,duration:.14,ease:"power1.out"},163.180);
+  tl.fromTo("#w299",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},163.180);
+  tl.fromTo("#d35_1",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},162.880);
+  tl.to("#w300",{opacity:1,duration:.14,ease:"power1.out"},163.660);
+  tl.fromTo("#w300",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},163.660);
+  tl.fromTo("#d35_2",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},163.360);
+  tl.to("#w301",{opacity:1,duration:.14,ease:"power1.out"},164.760);
+  tl.fromTo("#w301",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},164.760);
+  tl.to("#w302",{opacity:1,duration:.14,ease:"power1.out"},164.840);
+  tl.fromTo("#w302",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},164.840);
+  tl.to("#w303",{opacity:1,duration:.14,ease:"power1.out"},165.160);
+  tl.fromTo("#w303",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},165.160);
+  tl.to("#w304",{opacity:1,duration:.14,ease:"power1.out"},165.640);
+  tl.fromTo("#w304",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},165.640);
+  tl.to("#w305",{opacity:1,duration:.14,ease:"power1.out"},165.960);
+  tl.fromTo("#w305",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},165.960);
+  tl.to("#w306",{opacity:1,duration:.14,ease:"power1.out"},166.280);
+  tl.fromTo("#w306",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},166.280);
+  tl.fromTo("#d35_3",{y:30,opacity:0},{y:0,opacity:1,duration:.3,ease:"power2.out"},164.410);
+  tl.fromTo("#c35",{opacity:0,y:50,scale:.96},{opacity:1,y:0,scale:1,duration:.3,ease:"back.out(1.6)"},161.850);
+  tl.to("#c35",{opacity:0,y:-30,duration:.22,ease:"power2.in"},166.300);
+  tl.fromTo("#r35",{opacity:0,x:-30},{opacity:1,x:0,duration:.3,ease:"power2.out"},166.520);
+  tl.to("#w307",{opacity:1,duration:.14,ease:"power1.out"},166.820);
+  tl.fromTo("#w307",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},166.820);
+  tl.fromTo("#d36_0",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},166.470);
+  tl.to("#w308",{opacity:1,duration:.14,ease:"power1.out"},168.220);
+  tl.fromTo("#w308",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},168.220);
+  tl.fromTo("#d36_1",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},167.920);
+  tl.to("#w309",{opacity:1,duration:.14,ease:"power1.out"},168.800);
+  tl.fromTo("#w309",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},168.800);
+  tl.fromTo("#d36_2",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},168.500);
+  tl.to("#w310",{opacity:1,duration:.14,ease:"power1.out"},169.140);
+  tl.fromTo("#w310",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},169.140);
+  tl.to("#w311",{opacity:1,duration:.14,ease:"power1.out"},169.540);
+  tl.fromTo("#w311",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},169.540);
+  tl.to("#w312",{opacity:1,duration:.14,ease:"power1.out"},169.780);
+  tl.fromTo("#w312",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},169.780);
+  tl.to("#w313",{opacity:1,duration:.14,ease:"power1.out"},169.980);
+  tl.fromTo("#w313",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},169.980);
+  tl.to("#w314",{opacity:1,duration:.14,ease:"power1.out"},170.880);
+  tl.fromTo("#w314",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},170.880);
+  tl.fromTo("#d36_3",{y:30,opacity:0},{y:0,opacity:1,duration:.3,ease:"power2.out"},168.790);
+  tl.fromTo("#c36",{opacity:0,y:50,scale:.96},{opacity:1,y:0,scale:1,duration:.3,ease:"back.out(1.6)"},166.470);
+  tl.to("#c36",{opacity:0,y:-30,duration:.22,ease:"power2.in"},171.000);
+  tl.fromTo("#r36",{opacity:0,x:-30},{opacity:1,x:0,duration:.3,ease:"power2.out"},171.220);
+  tl.to("#w315",{opacity:1,duration:.14,ease:"power1.out"},171.520);
+  tl.fromTo("#w315",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},171.520);
+  tl.fromTo("#d37_0",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},171.170);
+  tl.to("#w316",{opacity:1,duration:.14,ease:"power1.out"},172.240);
+  tl.fromTo("#w316",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},172.240);
+  tl.fromTo("#d37_1",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},171.940);
+  tl.to("#w317",{opacity:1,duration:.14,ease:"power1.out"},172.940);
+  tl.fromTo("#w317",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},172.940);
+  tl.fromTo("#d37_2",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},172.640);
+  tl.to("#w318",{opacity:1,duration:.14,ease:"power1.out"},173.320);
+  tl.fromTo("#w318",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},173.320);
+  tl.to("#w319",{opacity:1,duration:.14,ease:"power1.out"},174.160);
+  tl.fromTo("#w319",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},174.160);
+  tl.to("#w320",{opacity:1,duration:.14,ease:"power1.out"},174.740);
+  tl.fromTo("#w320",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},174.740);
+  tl.to("#w321",{opacity:1,duration:.14,ease:"power1.out"},175.260);
+  tl.fromTo("#w321",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},175.260);
+  tl.fromTo("#d37_3",{y:30,opacity:0},{y:0,opacity:1,duration:.3,ease:"power2.out"},172.970);
+  tl.fromTo("#c37",{opacity:0,y:50,scale:.96},{opacity:1,y:0,scale:1,duration:.3,ease:"back.out(1.6)"},171.170);
+  tl.to("#c37",{opacity:0,y:-30,duration:.22,ease:"power2.in"},175.480);
+  tl.fromTo("#r37",{opacity:0,x:-30},{opacity:1,x:0,duration:.3,ease:"power2.out"},175.700);
+  tl.to("#w322",{opacity:1,duration:.14,ease:"power1.out"},176.000);
+  tl.fromTo("#w322",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},176.000);
+  tl.fromTo("#d38_0",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},175.650);
+  tl.to("#w323",{opacity:1,duration:.14,ease:"power1.out"},177.160);
+  tl.fromTo("#w323",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},177.160);
+  tl.fromTo("#d38_1",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},176.860);
+  tl.to("#w324",{opacity:1,duration:.14,ease:"power1.out"},177.560);
+  tl.fromTo("#w324",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},177.560);
+  tl.fromTo("#d38_2",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},177.260);
+  tl.to("#w325",{opacity:1,duration:.14,ease:"power1.out"},177.960);
+  tl.fromTo("#w325",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},177.960);
+  tl.to("#w326",{opacity:1,duration:.14,ease:"power1.out"},178.840);
+  tl.fromTo("#w326",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},178.840);
+  tl.to("#w327",{opacity:1,duration:.14,ease:"power1.out"},179.080);
+  tl.fromTo("#w327",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},179.080);
+  tl.to("#w328",{opacity:1,duration:.14,ease:"power1.out"},179.320);
+  tl.fromTo("#w328",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},179.320);
+  tl.to("#w329",{opacity:1,duration:.14,ease:"power1.out"},179.720);
+  tl.fromTo("#w329",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},179.720);
+  tl.fromTo("#d38_3",{y:30,opacity:0},{y:0,opacity:1,duration:.3,ease:"power2.out"},177.610);
+  tl.fromTo("#c38",{opacity:0,y:50,scale:.96},{opacity:1,y:0,scale:1,duration:.3,ease:"back.out(1.6)"},175.650);
+  tl.to("#c38",{opacity:0,y:-30,duration:.22,ease:"power2.in"},180.300);
+  tl.fromTo("#r38",{opacity:0,x:-30},{opacity:1,x:0,duration:.3,ease:"power2.out"},180.400);
+  tl.to("#w330",{opacity:1,duration:.14,ease:"power1.out"},180.820);
+  tl.fromTo("#w330",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},180.820);
+  tl.fromTo("#d39_0",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},180.470);
+  tl.to("#w331",{opacity:1,duration:.14,ease:"power1.out"},181.800);
+  tl.fromTo("#w331",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},181.800);
+  tl.fromTo("#d39_1",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},181.500);
+  tl.to("#w332",{opacity:1,duration:.14,ease:"power1.out"},182.280);
+  tl.fromTo("#w332",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},182.280);
+  tl.fromTo("#d39_2",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},181.980);
+  tl.to("#w333",{opacity:1,duration:.14,ease:"power1.out"},182.760);
+  tl.fromTo("#w333",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},182.760);
+  tl.to("#w334",{opacity:1,duration:.14,ease:"power1.out"},183.340);
+  tl.fromTo("#w334",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},183.340);
+  tl.to("#w335",{opacity:1,duration:.14,ease:"power1.out"},183.520);
+  tl.fromTo("#w335",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},183.520);
+  tl.to("#w336",{opacity:1,duration:.14,ease:"power1.out"},183.700);
+  tl.fromTo("#w336",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},183.700);
+  tl.to("#w337",{opacity:1,duration:.14,ease:"power1.out"},184.040);
+  tl.fromTo("#w337",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},184.040);
+  tl.to("#w338",{opacity:1,duration:.14,ease:"power1.out"},184.640);
+  tl.fromTo("#w338",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},184.640);
+  tl.to("#w339",{opacity:1,duration:.14,ease:"power1.out"},184.900);
+  tl.fromTo("#w339",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},184.900);
+  tl.fromTo("#d39_3",{y:30,opacity:0},{y:0,opacity:1,duration:.3,ease:"power2.out"},182.410);
+  tl.fromTo("#c39",{opacity:0,y:50,scale:.96},{opacity:1,y:0,scale:1,duration:.3,ease:"back.out(1.6)"},180.470);
+  tl.to("#c39",{opacity:0,y:-30,duration:.22,ease:"power2.in"},185.240);
+  tl.fromTo("#r39",{opacity:0,x:-30},{opacity:1,x:0,duration:.3,ease:"power2.out"},185.460);
+  tl.to("#w340",{opacity:1,duration:.14,ease:"power1.out"},185.760);
+  tl.fromTo("#w340",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},185.760);
+  tl.fromTo("#d40_0",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},185.410);
+  tl.to("#w341",{opacity:1,duration:.14,ease:"power1.out"},187.020);
+  tl.fromTo("#w341",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},187.020);
+  tl.fromTo("#d40_1",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},186.720);
+  tl.to("#w342",{opacity:1,duration:.14,ease:"power1.out"},187.540);
+  tl.fromTo("#w342",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},187.540);
+  tl.fromTo("#d40_2",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},187.240);
+  tl.to("#w343",{opacity:1,duration:.14,ease:"power1.out"},187.860);
+  tl.fromTo("#w343",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},187.860);
+  tl.to("#w344",{opacity:1,duration:.14,ease:"power1.out"},188.340);
+  tl.fromTo("#w344",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},188.340);
+  tl.to("#w345",{opacity:1,duration:.14,ease:"power1.out"},188.700);
+  tl.fromTo("#w345",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},188.700);
+  tl.to("#w346",{opacity:1,duration:.14,ease:"power1.out"},188.980);
+  tl.fromTo("#w346",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},188.980);
+  tl.to("#w347",{opacity:1,duration:.14,ease:"power1.out"},189.500);
+  tl.fromTo("#w347",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},189.500);
+  tl.fromTo("#d40_3",{y:30,opacity:0},{y:0,opacity:1,duration:.3,ease:"power2.out"},187.510);
+  tl.fromTo("#c40",{opacity:0,y:50,scale:.96},{opacity:1,y:0,scale:1,duration:.3,ease:"back.out(1.6)"},185.410);
+  tl.to("#c40",{opacity:0,y:-30,duration:.22,ease:"power2.in"},189.680);
+  tl.fromTo("#r40",{opacity:0,x:-30},{opacity:1,x:0,duration:.3,ease:"power2.out"},189.900);
+  tl.to("#w348",{opacity:1,duration:.14,ease:"power1.out"},190.200);
+  tl.fromTo("#w348",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},190.200);
+  tl.fromTo("#d41_0",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},189.850);
+  tl.to("#w349",{opacity:1,duration:.14,ease:"power1.out"},191.180);
+  tl.fromTo("#w349",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},191.180);
+  tl.fromTo("#d41_1",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},190.880);
+  tl.to("#w350",{opacity:1,duration:.14,ease:"power1.out"},191.580);
+  tl.fromTo("#w350",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},191.580);
+  tl.fromTo("#d41_2",{x:-40,opacity:0},{x:0,opacity:1,duration:.25,ease:"power2.out"},191.280);
+  tl.to("#w351",{opacity:1,duration:.14,ease:"power1.out"},192.000);
+  tl.fromTo("#w351",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},192.000);
+  tl.to("#w352",{opacity:1,duration:.14,ease:"power1.out"},192.780);
+  tl.fromTo("#w352",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},192.780);
+  tl.to("#w353",{opacity:1,duration:.14,ease:"power1.out"},193.100);
+  tl.fromTo("#w353",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},193.100);
+  tl.to("#w354",{opacity:1,duration:.14,ease:"power1.out"},193.420);
+  tl.fromTo("#w354",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},193.420);
+  tl.to("#w355",{opacity:1,duration:.14,ease:"power1.out"},194.000);
+  tl.fromTo("#w355",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},194.000);
+  tl.fromTo("#d41_3",{y:30,opacity:0},{y:0,opacity:1,duration:.3,ease:"power2.out"},191.650);
+  tl.fromTo("#c41",{opacity:0,y:50,scale:.96},{opacity:1,y:0,scale:1,duration:.3,ease:"back.out(1.6)"},189.850);
+  tl.to("#c41",{opacity:0,y:-30,duration:.22,ease:"power2.in"},194.920);
+  tl.fromTo("#r41",{opacity:0,x:-30},{opacity:1,x:0,duration:.3,ease:"power2.out"},194.920);
+  tl.to("#w356",{opacity:1,duration:.14,ease:"power1.out"},195.440);
+  tl.fromTo("#w356",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},195.440);
+  tl.to("#w357",{opacity:1,duration:.14,ease:"power1.out"},196.000);
+  tl.fromTo("#w357",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},196.000);
+  tl.to("#w358",{opacity:1,duration:.14,ease:"power1.out"},196.940);
+  tl.fromTo("#w358",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},196.940);
+  tl.to("#w359",{opacity:1,duration:.14,ease:"power1.out"},197.520);
+  tl.fromTo("#w359",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},197.520);
+  tl.to("#w360",{opacity:1,duration:.14,ease:"power1.out"},197.720);
+  tl.fromTo("#w360",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},197.720);
+  tl.to("#w361",{opacity:1,duration:.14,ease:"power1.out"},199.230);
+  tl.fromTo("#w361",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},199.230);
+  tl.fromTo("#c42",{opacity:0,y:50,scale:.96},{opacity:1,y:0,scale:1,duration:.3,ease:"back.out(1.6)"},195.090);
+  tl.to("#c42",{opacity:0,y:-30,duration:.22,ease:"power2.in"},200.220);
+  tl.fromTo("#r42",{opacity:0,x:-30},{opacity:1,x:0,duration:.3,ease:"power2.out"},200.440);
+  tl.to("#w362",{opacity:1,duration:.14,ease:"power1.out"},200.740);
+  tl.fromTo("#w362",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},200.740);
+  tl.to("#w363",{opacity:1,duration:.14,ease:"power1.out"},201.040);
+  tl.fromTo("#w363",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},201.040);
+  tl.to("#w364",{opacity:1,duration:.14,ease:"power1.out"},201.480);
+  tl.fromTo("#w364",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},201.480);
+  tl.to("#w365",{opacity:1,duration:.14,ease:"power1.out"},202.040);
+  tl.fromTo("#w365",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},202.040);
+  tl.to("#w366",{opacity:1,duration:.14,ease:"power1.out"},202.660);
+  tl.fromTo("#w366",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},202.660);
+  tl.to("#w367",{opacity:1,duration:.14,ease:"power1.out"},203.380);
+  tl.fromTo("#w367",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},203.380);
+  tl.fromTo("#c43",{opacity:0,y:50,scale:.96},{opacity:1,y:0,scale:1,duration:.3,ease:"back.out(1.6)"},200.390);
+  tl.to("#c43",{opacity:0,y:-30,duration:.22,ease:"power2.in"},204.620);
+  tl.fromTo("#r43",{opacity:0,x:-30},{opacity:1,x:0,duration:.3,ease:"power2.out"},204.060);
+  tl.to("#w368",{opacity:1,duration:.14,ease:"power1.out"},205.140);
+  tl.fromTo("#w368",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},205.140);
+  tl.to("#w369",{opacity:1,duration:.14,ease:"power1.out"},205.660);
+  tl.fromTo("#w369",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},205.660);
+  tl.to("#w370",{opacity:1,duration:.14,ease:"power1.out"},205.920);
+  tl.fromTo("#w370",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},205.920);
+  tl.to("#w371",{opacity:1,duration:.14,ease:"power1.out"},206.820);
+  tl.fromTo("#w371",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},206.820);
+  tl.to("#w372",{opacity:1,duration:.14,ease:"power1.out"},207.220);
+  tl.fromTo("#w372",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},207.220);
+  tl.to("#w373",{opacity:1,duration:.14,ease:"power1.out"},208.560);
+  tl.fromTo("#w373",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},208.560);
+  tl.fromTo("#c44",{opacity:0,y:50,scale:.96},{opacity:1,y:0,scale:1,duration:.3,ease:"back.out(1.6)"},204.790);
+  tl.to("#c44",{opacity:0,y:-30,duration:.22,ease:"power2.in"},208.660);
+  tl.fromTo("#r44",{opacity:0,x:-30},{opacity:1,x:0,duration:.3,ease:"power2.out"},208.880);
+  tl.to("#w374",{opacity:1,duration:.14,ease:"power1.out"},209.180);
+  tl.fromTo("#w374",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},209.180);
+  tl.to("#w375",{opacity:1,duration:.14,ease:"power1.out"},209.620);
+  tl.fromTo("#w375",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},209.620);
+  tl.to("#w376",{opacity:1,duration:.14,ease:"power1.out"},210.580);
+  tl.fromTo("#w376",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},210.580);
+  tl.to("#w377",{opacity:1,duration:.14,ease:"power1.out"},211.400);
+  tl.fromTo("#w377",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},211.400);
+  tl.to("#w378",{opacity:1,duration:.14,ease:"power1.out"},212.040);
+  tl.fromTo("#w378",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},212.040);
+  tl.to("#w379",{opacity:1,duration:.14,ease:"power1.out"},212.660);
+  tl.fromTo("#w379",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},212.660);
+  tl.fromTo("#c45",{opacity:0,y:50,scale:.96},{opacity:1,y:0,scale:1,duration:.3,ease:"back.out(1.6)"},208.830);
+  tl.to("#c45",{opacity:0,y:-30,duration:.22,ease:"power2.in"},213.580);
+  tl.fromTo("#r45",{opacity:0,x:-30},{opacity:1,x:0,duration:.3,ease:"power2.out"},213.260);
+  tl.to("#w380",{opacity:1,duration:.14,ease:"power1.out"},214.100);
+  tl.fromTo("#w380",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},214.100);
+  tl.to("#w381",{opacity:1,duration:.14,ease:"power1.out"},214.240);
+  tl.fromTo("#w381",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},214.240);
+  tl.to("#w382",{opacity:1,duration:.14,ease:"power1.out"},215.240);
+  tl.fromTo("#w382",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},215.240);
+  tl.to("#w383",{opacity:1,duration:.14,ease:"power1.out"},215.500);
+  tl.fromTo("#w383",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},215.500);
+  tl.to("#w384",{opacity:1,duration:.14,ease:"power1.out"},216.180);
+  tl.fromTo("#w384",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},216.180);
+  tl.to("#w385",{opacity:1,duration:.14,ease:"power1.out"},216.360);
+  tl.fromTo("#w385",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},216.360);
+  tl.to("#w386",{opacity:1,duration:.14,ease:"power1.out"},216.680);
+  tl.fromTo("#w386",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},216.680);
+  tl.to("#w387",{opacity:1,duration:.14,ease:"power1.out"},217.380);
+  tl.fromTo("#w387",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},217.380);
+  tl.to("#w388",{opacity:1,duration:.14,ease:"power1.out"},217.520);
+  tl.fromTo("#w388",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},217.520);
+  tl.to("#w389",{opacity:1,duration:.14,ease:"power1.out"},217.760);
+  tl.fromTo("#w389",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},217.760);
+  tl.fromTo("#c46",{opacity:0,y:50,scale:.96},{opacity:1,y:0,scale:1,duration:.3,ease:"back.out(1.6)"},213.750);
+  tl.to("#c46",{opacity:0,y:-30,duration:.22,ease:"power2.in"},217.980);
+  tl.fromTo("#r46",{opacity:0,x:-30},{opacity:1,x:0,duration:.3,ease:"power2.out"},218.180);
+  tl.to("#w390",{opacity:1,duration:.14,ease:"power1.out"},218.500);
+  tl.fromTo("#w390",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},218.500);
+  tl.to("#w391",{opacity:1,duration:.14,ease:"power1.out"},218.660);
+  tl.fromTo("#w391",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},218.660);
+  tl.to("#w392",{opacity:1,duration:.14,ease:"power1.out"},219.020);
+  tl.fromTo("#w392",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},219.020);
+  tl.to("#w393",{opacity:1,duration:.14,ease:"power1.out"},219.720);
+  tl.fromTo("#w393",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},219.720);
+  tl.to("#w394",{opacity:1,duration:.14,ease:"power1.out"},219.880);
+  tl.fromTo("#w394",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},219.880);
+  tl.to("#w395",{opacity:1,duration:.14,ease:"power1.out"},220.280);
+  tl.fromTo("#w395",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},220.280);
+  tl.to("#w396",{opacity:1,duration:.14,ease:"power1.out"},220.920);
+  tl.fromTo("#w396",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},220.920);
+  tl.to("#w397",{opacity:1,duration:.14,ease:"power1.out"},221.080);
+  tl.fromTo("#w397",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},221.080);
+  tl.to("#w398",{opacity:1,duration:.14,ease:"power1.out"},221.340);
+  tl.fromTo("#w398",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},221.340);
+  tl.to("#w399",{opacity:1,duration:.14,ease:"power1.out"},222.000);
+  tl.fromTo("#w399",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},222.000);
+  tl.to("#w400",{opacity:1,duration:.14,ease:"power1.out"},223.380);
+  tl.fromTo("#w400",{y:0},{y:-10,duration:.12,yoyo:true,repeat:1,ease:"sine.out"},223.380);
+  tl.fromTo("#c47",{opacity:0,y:50,scale:.96},{opacity:1,y:0,scale:1,duration:.3,ease:"back.out(1.6)"},218.150);
+  tl.to("#c47",{opacity:0,y:-30,duration:.22,ease:"power2.in"},225.800);
+  tl.fromTo("#r47",{opacity:0,x:-30},{opacity:1,x:0,duration:.3,ease:"power2.out"},223.880);
+  tl.fromTo(["#g0","#p0"],{opacity:0,y:30},{opacity:1,y:0,duration:.35,ease:"power2.out"},0.000);
+  tl.to(["#g0","#p0"],{opacity:0,duration:.25},26.450);
+  tl.fromTo(["#g1","#p1"],{opacity:0,y:30},{opacity:1,y:0,duration:.35,ease:"power2.out"},26.650);
+  tl.to(["#g1","#p1"],{opacity:0,duration:.25},36.290);
+  tl.fromTo(["#g2","#p2"],{opacity:0,y:30},{opacity:1,y:0,duration:.35,ease:"power2.out"},36.490);
+  tl.to(["#g2","#p2"],{opacity:0,duration:.25},46.110);
+  tl.fromTo(["#g3","#p3"],{opacity:0,y:30},{opacity:1,y:0,duration:.35,ease:"power2.out"},46.310);
+  tl.to(["#g3","#p3"],{opacity:0,duration:.25},63.990);
+  tl.fromTo(["#g4","#p4"],{opacity:0,y:30},{opacity:1,y:0,duration:.35,ease:"power2.out"},64.190);
+  tl.to(["#g4","#p4"],{opacity:0,duration:.25},73.170);
+  tl.fromTo(["#g5","#p5"],{opacity:0,y:30},{opacity:1,y:0,duration:.35,ease:"power2.out"},73.370);
+  tl.to(["#g5","#p5"],{opacity:0,duration:.25},82.350);
+  tl.fromTo(["#g6","#p6"],{opacity:0,y:30},{opacity:1,y:0,duration:.35,ease:"power2.out"},82.550);
+  tl.to(["#g6","#p6"],{opacity:0,duration:.25},124.370);
+  tl.fromTo(["#g7","#p7"],{opacity:0,y:30},{opacity:1,y:0,duration:.35,ease:"power2.out"},124.570);
+  tl.to(["#g7","#p7"],{opacity:0,duration:.25},133.870);
+  tl.fromTo(["#g8","#p8"],{opacity:0,y:30},{opacity:1,y:0,duration:.35,ease:"power2.out"},134.070);
+  tl.to(["#g8","#p8"],{opacity:0,duration:.25},138.270);
+  tl.fromTo(["#g9","#p9"],{opacity:0,y:30},{opacity:1,y:0,duration:.35,ease:"power2.out"},138.470);
+  tl.to(["#g9","#p9"],{opacity:0,duration:.25},166.270);
+  tl.fromTo(["#g10","#p10"],{opacity:0,y:30},{opacity:1,y:0,duration:.35,ease:"power2.out"},166.470);
+  tl.to(["#g10","#p10"],{opacity:0,duration:.25},194.890);
+  tl.fromTo(["#g11","#p11"],{opacity:0,y:30},{opacity:1,y:0,duration:.35,ease:"power2.out"},195.090);
+  tl.to(["#g11","#p11"],{opacity:0,duration:.25},213.550);
+  tl.fromTo(["#g12","#p12"],{opacity:0,y:30},{opacity:1,y:0,duration:.35,ease:"power2.out"},213.750);
+  tl.to(["#g12","#p12"],{opacity:0,duration:.25},226.070);
+  tl.set({}, {}, D);
+  window.__timelines["main"] = tl;
+</script>
+</body>
+</html>

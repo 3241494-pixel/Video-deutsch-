@@ -1,0 +1,405 @@
+1
+00:00:00,000 --> 00:00:03,450
+Aufwachen — ich wache auf — ich bin aufgewacht
+прокидатися — я прокидаюся — я прокинувся
+
+2
+00:00:03,500 --> 00:00:06,610
+Aufstehen — ich stehe auf — ich bin aufgestanden
+вставати — я встаю — я встав
+
+3
+00:00:06,660 --> 00:00:09,310
+Sich anziehen — ich ziehe mich an — ich habe mich angezogen
+одягатися — я одягаюся — я одягнувся
+
+4
+00:00:09,360 --> 00:00:12,690
+Sich ausziehen — ich ziehe mich aus — ich habe mich ausgezogen
+роздягатися — я роздягаюся — я роздягнувся
+
+5
+00:00:12,740 --> 00:00:16,020
+Losgehen — ich gehe los — ich bin losgegangen
+вирушати — я вирушаю — я вирушив
+
+6
+00:00:28,000 --> 00:00:31,110
+Anmachen — ich mache an — ich habe angemacht
+вмикати — я вмикаю — я увімкнув
+
+7
+00:00:31,160 --> 00:00:34,130
+Ausmachen — ich mache aus — ich habe ausgemacht
+вимикати — я вимикаю — я вимкнув
+
+8
+00:00:34,180 --> 00:00:37,030
+Aufmachen — ich mache auf — ich habe aufgemacht
+відчиняти — я відчиняю — я відчинив
+
+9
+00:00:37,080 --> 00:00:40,150
+Zumachen — ich mache zu — ich habe zugemacht
+зачиняти — я зачиняю — я зачинив
+
+10
+00:00:40,200 --> 00:00:44,080
+Aufdrehen — ich drehe auf — ich habe aufgedreht
+відкручувати — я відкручую — я відкрутив
+
+11
+00:00:45,680 --> 00:00:49,070
+Ich stehe auf, ich gehe los
+Я встаю, я вирушаю
+
+12
+00:00:49,120 --> 00:00:52,050
+Ich mache auf, ich mache zu
+Я відчиняю, я зачиняю
+
+13
+00:00:52,100 --> 00:00:55,410
+Ich komme rein, ich gehe raus
+Я заходжу, я виходжу
+
+14
+00:00:55,460 --> 00:00:58,490
+Ich steige ein und steige aus
+Я сідаю і виходжу (з транспорту)
+
+15
+00:00:58,540 --> 00:01:01,550
+Ich mache an, ich mache aus
+Я вмикаю, я вимикаю
+
+16
+00:01:01,600 --> 00:01:04,610
+Ich komme mit, ich gehe nach Haus
+Я йду з тобою, я йду додому
+
+17
+00:01:04,660 --> 00:01:07,580
+Ich rufe an, ich höre zu
+Я телефоную, я слухаю
+
+18
+00:01:07,660 --> 00:01:10,640
+Ich mache weiter — immerzu!
+Я продовжую — завжди!
+
+19
+00:01:23,920 --> 00:01:26,790
+Eingehen — ich gehe ein — ich bin eingegangen
+заходити — я заходжу — я зайшов
+
+20
+00:01:26,840 --> 00:01:29,890
+Ausgehen — ich gehe aus — ich bin ausgegangen
+виходити (з дому) — я виходжу — я вийшов
+
+21
+00:01:29,940 --> 00:01:32,990
+Eintreten — ich trete ein — ich bin eingetreten
+входити — я входжу — я ввійшов
+
+22
+00:01:33,040 --> 00:01:36,110
+Hinausgehen — ich gehe hinaus — ich bin hinausgegangen
+виходити назовні — я виходжу — я вийшов
+
+23
+00:01:36,160 --> 00:01:39,440
+Hereinkommen — ich komme herein — ich bin hereingekommen
+заходити всередину — я заходжу — я зайшов
+
+24
+00:01:42,520 --> 00:01:45,350
+Einsteigen — ich steige ein — ich bin eingestiegen
+сідати (в транспорт) — я сідаю — я сів
+
+25
+00:01:45,400 --> 00:01:48,430
+Aussteigen — ich steige aus — ich bin ausgestiegen
+виходити (з транспорту) — я виходжу — я вийшов
+
+26
+00:01:48,480 --> 00:01:51,530
+Umsteigen — ich steige um — ich bin umgestiegen
+робити пересадку — я пересідаю — я пересів
+
+27
+00:01:51,580 --> 00:01:54,570
+Abfahren — ich fahre ab — ich bin abgefahren
+від'їжджати — я від'їжджаю — я від'їхав
+
+28
+00:01:54,620 --> 00:01:58,080
+Ankommen — ich komme an — ich bin angekommen
+прибувати — я прибуваю — я прибув
+
+29
+00:01:59,900 --> 00:02:03,170
+Ich steige ein, ich steige aus
+Я сідаю, я виходжу
+
+30
+00:02:03,220 --> 00:02:05,990
+Ich fahre weg, ich komm zurück
+Я їду геть, я повертаюся
+
+31
+00:02:06,040 --> 00:02:09,370
+Ich gehe weiter, immer weiter
+Я йду далі, все далі
+
+32
+00:02:09,420 --> 00:02:12,210
+Schritt für Schritt und Stück für Stück
+Крок за кроком, потроху
+
+33
+00:02:12,260 --> 00:02:15,370
+Ich komme mit, ich komme an
+Я йду з тобою, я прибуваю
+
+34
+00:02:15,420 --> 00:02:18,510
+Ich fahre los, so schnell ich kann
+Я вирушаю так швидко, як можу
+
+35
+00:02:18,560 --> 00:02:21,490
+Ich rufe an, ich höre zu
+Я телефоную, я слухаю
+
+36
+00:02:21,540 --> 00:02:24,980
+Ich mache weiter — immerzu!
+Я продовжую — завжди!
+
+37
+00:02:38,140 --> 00:02:41,030
+Mitkommen — ich komme mit — ich bin mitgekommen
+іти разом — я йду з тобою — я пішов разом
+
+38
+00:02:41,080 --> 00:02:44,130
+Weggehen — ich gehe weg — ich bin weggegangen
+іти геть — я йду геть — я пішов
+
+39
+00:02:44,180 --> 00:02:47,210
+Wegfahren — ich fahre weg — ich bin weggefahren
+їхати геть — я їду геть — я поїхав
+
+40
+00:02:47,260 --> 00:02:50,310
+Zurückkommen — ich komme zurück — ich bin zurückgekommen
+повертатися — я повертаюся — я повернувся
+
+41
+00:02:50,360 --> 00:02:53,760
+Zurückgehen — ich gehe zurück — ich bin zurückgegangen
+іти назад — я йду назад — я пішов назад
+
+42
+00:02:56,520 --> 00:02:59,510
+Einkaufen — ich kaufe ein — ich habe eingekauft
+робити покупки — я купую — я купив
+
+43
+00:02:59,560 --> 00:03:02,470
+Mitnehmen — ich nehme mit — ich habe mitgenommen
+брати з собою — я беру — я взяв
+
+44
+00:03:02,520 --> 00:03:05,710
+Mitbringen — ich bringe mit — ich habe mitgebracht
+приносити з собою — я приношу — я приніс
+
+45
+00:03:05,760 --> 00:03:08,650
+Abholen — ich hole ab — ich habe abgeholt
+забирати — я забираю — я забрав
+
+46
+00:03:08,700 --> 00:03:12,360
+Zurückgeben — ich gebe zurück — ich habe zurückgegeben
+повертати (річ) — я повертаю — я повернув
+
+47
+00:03:15,140 --> 00:03:18,210
+Anrufen — ich rufe an — ich habe angerufen
+телефонувати — я телефоную — я зателефонував
+
+48
+00:03:18,260 --> 00:03:21,310
+Zurückrufen — ich rufe zurück — ich habe zurückgerufen
+передзвонювати — я передзвонюю — я передзвонив
+
+49
+00:03:21,360 --> 00:03:24,410
+Zuhören — ich höre zu — ich habe zugehört
+слухати — я слухаю — я вислухав
+
+50
+00:03:24,460 --> 00:03:27,510
+Nachfragen — ich frage nach — ich habe nachgefragt
+перепитувати — я перепитую — я перепитав
+
+51
+00:03:27,560 --> 00:03:30,290
+Vorstellen — ich stelle vor — ich habe vorgestellt
+представляти — я представляю — я представив
+
+52
+00:03:30,340 --> 00:03:32,930
+Ich rufe an, du rufst zurück
+Я телефоную, ти передзвонюєш
+
+53
+00:03:32,980 --> 00:03:35,770
+Ich höre zu, Stück für Stück
+Я слухаю, крок за кроком
+
+54
+00:03:35,820 --> 00:03:39,170
+Ich frage nach, ich stelle vor
+Я перепитую, я представляю
+
+55
+00:03:39,220 --> 00:03:42,700
+Wir sprechen Deutsch — noch einmal von vorn!
+Ми говоримо німецькою — ще раз спочатку!
+
+56
+00:03:43,200 --> 00:03:45,850
+Anfangen — ich fange an — ich habe angefangen
+починати — я починаю — я почав
+
+57
+00:03:45,900 --> 00:03:49,300
+Aufhören — ich höre auf — ich habe aufgehört
+припиняти — я припиняю — я припинив
+
+58
+00:03:49,953 --> 00:03:52,130
+Aufschreiben — ich schreibe auf — ich habe aufgeschrieben
+записувати — я записую — я записав
+
+59
+00:03:52,180 --> 00:03:55,250
+Vorlesen — ich lese vor — ich habe vorgelesen
+читати вголос — я читаю вголос — я прочитав
+
+60
+00:03:55,300 --> 00:03:58,820
+Vorbereiten — ich bereite vor — ich habe vorbereitet
+готувати — я готую — я підготував
+
+61
+00:03:59,360 --> 00:04:01,130
+Fernsehen — ich sehe fern — ich habe ferngesehen
+дивитися телевізор — я дивлюся — я подивився
+
+62
+00:04:01,180 --> 00:04:04,570
+Aufpassen — ich passe auf — ich habe aufgepasst
+бути уважним — я стежу — я стежив
+
+63
+00:04:04,620 --> 00:04:07,610
+Nachschauen — ich schaue nach — ich habe nachgeschaut
+перевіряти — я перевіряю — я перевірив
+
+64
+00:04:07,660 --> 00:04:10,730
+Ausprobieren — ich probiere aus — ich habe ausprobiert
+пробувати — я пробую — я спробував
+
+65
+00:04:10,780 --> 00:04:13,730
+Anschauen — ich schaue an — ich habe angeschaut
+розглядати — я розглядаю — я розглянув
+
+66
+00:04:13,780 --> 00:04:17,330
+Weitermachen — ich mache weiter
+продовжувати — я продовжую
+
+67
+00:04:17,380 --> 00:04:19,450
+Weitergehen — ich gehe weiter
+іти далі — я йду далі
+
+68
+00:04:19,500 --> 00:04:22,800
+Vorbeikommen — ich komme vorbei
+заходити (в гості) — я заходжу
+
+69
+00:04:23,500 --> 00:04:25,780
+Zurückkehren — ich kehre zurück
+повертатися — я повертаюся
+
+70
+00:04:25,830 --> 00:04:27,540
+Ich stehe auf!
+Я встаю!
+
+71
+00:04:28,600 --> 00:04:30,560
+Ich gehe los!
+Я вирушаю!
+
+72
+00:04:31,580 --> 00:04:33,270
+Ich komme an!
+Я прибуваю!
+
+73
+00:04:33,320 --> 00:04:36,860
+Ich komme zurück!
+Я повертаюся!
+
+74
+00:04:38,860 --> 00:04:39,850
+Anmachen! Ausmachen!
+Увімкнути! Вимкнути!
+
+75
+00:04:39,900 --> 00:04:42,010
+Aufmachen! Zumachen!
+Відчинити! Зачинити!
+
+76
+00:04:42,060 --> 00:04:43,750
+Einsteigen! Aussteigen!
+Сісти! Вийти!
+
+77
+00:04:43,800 --> 00:04:45,130
+Anrufen! Zurückrufen!
+Подзвонити! Передзвонити!
+
+78
+00:04:45,180 --> 00:04:47,990
+Ich stehe auf — ich bin aufgestanden
+Я встаю — я встав
+
+79
+00:04:48,040 --> 00:04:51,130
+Ich gehe los — ich bin losgegangen
+Я вирушаю — я вирушив
+
+80
+00:04:51,180 --> 00:04:54,310
+Ich komme an — ich bin angekommen
+Я прибуваю — я прибув
+
+81
+00:04:54,360 --> 00:04:58,720
+Ich komme zurück — ich bin zurückgekommen
+Я повертаюся — я повернувся
+

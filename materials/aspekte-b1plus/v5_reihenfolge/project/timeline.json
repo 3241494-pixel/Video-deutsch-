@@ -1,0 +1,237 @@
+{
+ "duration": 86.581,
+ "segs": [
+  {
+   "block": 0,
+   "role": "seg",
+   "k": 0,
+   "text": "Ich gebe dem Polizisten meinen Ausweis.",
+   "start": 0.8,
+   "end": 3.099
+  },
+  {
+   "block": 0,
+   "role": "seg",
+   "k": 1,
+   "text": "Ich gebe ihn ihm.",
+   "start": 3.849,
+   "end": 4.929
+  },
+  {
+   "block": 0,
+   "role": "seg",
+   "k": 2,
+   "text": "Warum ändert sich die Reihenfolge?",
+   "start": 5.679,
+   "end": 7.526
+  },
+  {
+   "block": 1,
+   "role": "seg",
+   "k": 0,
+   "text": "Regel eins: zwei Nomen.",
+   "start": 9.326,
+   "end": 11.026
+  },
+  {
+   "block": 1,
+   "role": "seg",
+   "k": 1,
+   "text": "Zuerst Dativ, dann Akkusativ.",
+   "start": 11.776,
+   "end": 13.994
+  },
+  {
+   "block": 1,
+   "role": "seg",
+   "k": 2,
+   "text": "Ich gebe dem Polizisten meinen Ausweis.",
+   "start": 14.744,
+   "end": 17.229
+  },
+  {
+   "block": 1,
+   "role": "seg",
+   "k": 3,
+   "text": "Ich schenke meiner Mutter Blumen.",
+   "start": 17.979,
+   "end": 19.44
+  },
+  {
+   "block": 2,
+   "role": "seg",
+   "k": 0,
+   "text": "Regel zwei: ein Pronomen und ein Nomen.",
+   "start": 21.24,
+   "end": 23.729
+  },
+  {
+   "block": 2,
+   "role": "seg",
+   "k": 1,
+   "text": "Das Pronomen kommt zuerst.",
+   "start": 24.479,
+   "end": 26.023
+  },
+  {
+   "block": 2,
+   "role": "seg",
+   "k": 2,
+   "text": "Ich gebe ihm meinen Ausweis.",
+   "start": 26.773,
+   "end": 28.445
+  },
+  {
+   "block": 2,
+   "role": "seg",
+   "k": 3,
+   "text": "Ich gebe ihn dem Polizisten.",
+   "start": 29.195,
+   "end": 30.708
+  },
+  {
+   "block": 3,
+   "role": "seg",
+   "k": 0,
+   "text": "Regel drei: zwei Pronomen.",
+   "start": 32.508,
+   "end": 34.377
+  },
+  {
+   "block": 3,
+   "role": "seg",
+   "k": 1,
+   "text": "Jetzt zuerst Akkusativ, dann Dativ.",
+   "start": 35.127,
+   "end": 37.646
+  },
+  {
+   "block": 3,
+   "role": "seg",
+   "k": 2,
+   "text": "Ich gebe ihn ihm.",
+   "start": 38.396,
+   "end": 39.58
+  },
+  {
+   "block": 3,
+   "role": "seg",
+   "k": 3,
+   "text": "Ich zeige es dir.",
+   "start": 40.33,
+   "end": 41.47
+  },
+  {
+   "block": 4,
+   "role": "seg",
+   "k": 0,
+   "text": "Also, noch einmal:",
+   "start": 43.27,
+   "end": 44.504
+  },
+  {
+   "block": 4,
+   "role": "seg",
+   "k": 1,
+   "text": "Zwei Nomen: Dativ zuerst.",
+   "start": 45.254,
+   "end": 47.262
+  },
+  {
+   "block": 4,
+   "role": "seg",
+   "k": 2,
+   "text": "Pronomen immer nach vorne.",
+   "start": 48.012,
+   "end": 49.486
+  },
+  {
+   "block": 4,
+   "role": "seg",
+   "k": 3,
+   "text": "Zwei Pronomen: Akkusativ zuerst.",
+   "start": 50.236,
+   "end": 52.58
+  },
+  {
+   "block": 5,
+   "role": "intro",
+   "k": 0,
+   "text": "Und jetzt der Test!",
+   "start": 54.38,
+   "end": 55.437
+  },
+  {
+   "block": 5,
+   "role": "intro",
+   "k": 1,
+   "text": "Richtig oder falsch?",
+   "start": 56.187,
+   "end": 57.557
+  },
+  {
+   "block": 5,
+   "role": "q",
+   "k": 2,
+   "text": "Eins: Ich erkläre die Regel dir.",
+   "start": 58.307,
+   "end": 60.108
+  },
+  {
+   "block": 5,
+   "role": "q",
+   "k": 3,
+   "text": "Zwei: Ich schenke meinem Vater ein Buch.",
+   "start": 60.858,
+   "end": 62.909
+  },
+  {
+   "block": 5,
+   "role": "q",
+   "k": 4,
+   "text": "Drei: Ich zeige es ihr.",
+   "start": 63.659,
+   "end": 65.044
+  },
+  {
+   "block": 5,
+   "role": "pause",
+   "k": 5,
+   "text": "Drück auf Pause und denk nach!",
+   "start": 65.794,
+   "end": 67.707
+  },
+  {
+   "block": 5,
+   "role": "a",
+   "k": 6,
+   "text": "Eins ist falsch. Richtig ist: Ich erkläre dir die Regel.",
+   "start": 73.107,
+   "end": 76.258
+  },
+  {
+   "block": 5,
+   "role": "a",
+   "k": 7,
+   "text": "Zwei ist richtig.",
+   "start": 77.008,
+   "end": 78.091
+  },
+  {
+   "block": 5,
+   "role": "a",
+   "k": 8,
+   "text": "Drei ist richtig.",
+   "start": 78.841,
+   "end": 79.818
+  },
+  {
+   "block": 6,
+   "role": "cta",
+   "k": 0,
+   "text": "Wie viele hast du richtig? Schreib es in die Kommentare!",
+   "start": 81.618,
+   "end": 84.381
+  }
+ ]
+}

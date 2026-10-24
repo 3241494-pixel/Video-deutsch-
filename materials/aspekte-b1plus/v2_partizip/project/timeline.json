@@ -1,0 +1,341 @@
+{
+ "duration": 112.953,
+ "segs": [
+  {
+   "block": 0,
+   "role": "seg",
+   "k": 0,
+   "text": "Gesagt. Verdient. Fasziniert. Aufgehört.",
+   "start": 0.8,
+   "end": 4.051
+  },
+  {
+   "block": 0,
+   "role": "seg",
+   "k": 1,
+   "text": "Warum hat nicht jedes Partizip ein ge?",
+   "start": 4.801,
+   "end": 7.119
+  },
+  {
+   "block": 1,
+   "role": "seg",
+   "k": 0,
+   "text": "Regel eins: normale Verben.",
+   "start": 8.919,
+   "end": 10.832
+  },
+  {
+   "block": 1,
+   "role": "seg",
+   "k": 1,
+   "text": "Ge, plus Stamm, plus t.",
+   "start": 11.582,
+   "end": 13.245
+  },
+  {
+   "block": 1,
+   "role": "seg",
+   "k": 2,
+   "text": "Sagen, gesagt.",
+   "start": 13.995,
+   "end": 15.102
+  },
+  {
+   "block": 1,
+   "role": "seg",
+   "k": 3,
+   "text": "Machen, gemacht.",
+   "start": 15.852,
+   "end": 16.746
+  },
+  {
+   "block": 1,
+   "role": "seg",
+   "k": 4,
+   "text": "Unregelmäßige Verben enden auf en.",
+   "start": 17.496,
+   "end": 19.772
+  },
+  {
+   "block": 1,
+   "role": "seg",
+   "k": 5,
+   "text": "Nehmen, genommen.",
+   "start": 20.522,
+   "end": 21.724
+  },
+  {
+   "block": 2,
+   "role": "seg",
+   "k": 0,
+   "text": "Regel zwei: trennbare Verben.",
+   "start": 23.524,
+   "end": 25.548
+  },
+  {
+   "block": 2,
+   "role": "seg",
+   "k": 1,
+   "text": "Das ge steht in der Mitte.",
+   "start": 26.298,
+   "end": 27.782
+  },
+  {
+   "block": 2,
+   "role": "seg",
+   "k": 2,
+   "text": "Aufhören, aufgehört.",
+   "start": 28.532,
+   "end": 30.018
+  },
+  {
+   "block": 2,
+   "role": "seg",
+   "k": 3,
+   "text": "Aufgeben, aufgegeben.",
+   "start": 30.768,
+   "end": 32.219
+  },
+  {
+   "block": 2,
+   "role": "seg",
+   "k": 4,
+   "text": "Einkaufen, eingekauft.",
+   "start": 32.969,
+   "end": 34.455
+  },
+  {
+   "block": 3,
+   "role": "seg",
+   "k": 0,
+   "text": "Regel drei: untrennbare Verben.",
+   "start": 36.255,
+   "end": 38.135
+  },
+  {
+   "block": 3,
+   "role": "seg",
+   "k": 1,
+   "text": "Sie beginnen mit be, ver, er, ent oder zer.",
+   "start": 38.885,
+   "end": 41.708
+  },
+  {
+   "block": 3,
+   "role": "seg",
+   "k": 2,
+   "text": "Hier gibt es kein ge!",
+   "start": 42.458,
+   "end": 43.725
+  },
+  {
+   "block": 3,
+   "role": "seg",
+   "k": 3,
+   "text": "Verdienen, verdient.",
+   "start": 44.475,
+   "end": 45.868
+  },
+  {
+   "block": 3,
+   "role": "seg",
+   "k": 4,
+   "text": "Verstehen, verstanden.",
+   "start": 46.618,
+   "end": 48.127
+  },
+  {
+   "block": 3,
+   "role": "seg",
+   "k": 5,
+   "text": "Erzählen, erzählt.",
+   "start": 48.877,
+   "end": 50.398
+  },
+  {
+   "block": 4,
+   "role": "seg",
+   "k": 0,
+   "text": "Regel vier: Verben mit der Endung ieren.",
+   "start": 52.198,
+   "end": 54.423
+  },
+  {
+   "block": 4,
+   "role": "seg",
+   "k": 1,
+   "text": "Auch hier gibt es kein ge.",
+   "start": 55.173,
+   "end": 56.592
+  },
+  {
+   "block": 4,
+   "role": "seg",
+   "k": 2,
+   "text": "Faszinieren, fasziniert.",
+   "start": 57.342,
+   "end": 59.381
+  },
+  {
+   "block": 4,
+   "role": "seg",
+   "k": 3,
+   "text": "Studieren, studiert.",
+   "start": 60.131,
+   "end": 61.46
+  },
+  {
+   "block": 4,
+   "role": "seg",
+   "k": 4,
+   "text": "Telefonieren, telefoniert.",
+   "start": 62.21,
+   "end": 63.998
+  },
+  {
+   "block": 5,
+   "role": "seg",
+   "k": 0,
+   "text": "Und Achtung: gemischte Verben!",
+   "start": 65.798,
+   "end": 67.604
+  },
+  {
+   "block": 5,
+   "role": "seg",
+   "k": 1,
+   "text": "Der Stamm ändert sich, aber die Endung ist t.",
+   "start": 68.354,
+   "end": 70.697
+  },
+  {
+   "block": 5,
+   "role": "seg",
+   "k": 2,
+   "text": "Kennen, gekannt.",
+   "start": 71.447,
+   "end": 72.538
+  },
+  {
+   "block": 5,
+   "role": "seg",
+   "k": 3,
+   "text": "Bringen, gebracht.",
+   "start": 73.288,
+   "end": 74.356
+  },
+  {
+   "block": 5,
+   "role": "seg",
+   "k": 4,
+   "text": "Denken, gedacht.",
+   "start": 75.106,
+   "end": 76.174
+  },
+  {
+   "block": 5,
+   "role": "seg",
+   "k": 5,
+   "text": "Wissen, gewusst.",
+   "start": 76.924,
+   "end": 77.981
+  },
+  {
+   "block": 6,
+   "role": "intro",
+   "k": 0,
+   "text": "Und jetzt der Test!",
+   "start": 79.781,
+   "end": 80.919
+  },
+  {
+   "block": 6,
+   "role": "intro",
+   "k": 1,
+   "text": "Wie heißt das Partizip?",
+   "start": 81.669,
+   "end": 82.969
+  },
+  {
+   "block": 6,
+   "role": "q",
+   "k": 2,
+   "text": "Eins: anrufen.",
+   "start": 83.719,
+   "end": 85.031
+  },
+  {
+   "block": 6,
+   "role": "q",
+   "k": 3,
+   "text": "Zwei: bezahlen.",
+   "start": 85.781,
+   "end": 87.066
+  },
+  {
+   "block": 6,
+   "role": "q",
+   "k": 4,
+   "text": "Drei: reparieren.",
+   "start": 87.816,
+   "end": 89.052
+  },
+  {
+   "block": 6,
+   "role": "q",
+   "k": 5,
+   "text": "Vier: mitbringen.",
+   "start": 89.802,
+   "end": 90.963
+  },
+  {
+   "block": 6,
+   "role": "pause",
+   "k": 6,
+   "text": "Drück auf Pause und denk nach!",
+   "start": 91.713,
+   "end": 93.71
+  },
+  {
+   "block": 6,
+   "role": "a",
+   "k": 7,
+   "text": "Angerufen.",
+   "start": 99.11,
+   "end": 99.946
+  },
+  {
+   "block": 6,
+   "role": "a",
+   "k": 8,
+   "text": "Bezahlt.",
+   "start": 100.696,
+   "end": 101.555
+  },
+  {
+   "block": 6,
+   "role": "a",
+   "k": 9,
+   "text": "Repariert.",
+   "start": 102.305,
+   "end": 103.118
+  },
+  {
+   "block": 6,
+   "role": "a",
+   "k": 10,
+   "text": "Mitgebracht.",
+   "start": 103.868,
+   "end": 104.681
+  },
+  {
+   "block": 7,
+   "role": "cta",
+   "k": 0,
+   "text": "Welches Partizip ist für dich am schwersten? Schreib es in die Kommentare!",
+   "start": 106.481,
+   "end": 110.753
+  }
+ ]
+}

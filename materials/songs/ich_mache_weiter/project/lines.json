@@ -1,0 +1,3312 @@
+[
+{
+"sec": "Intro",
+"text": "Aufwachen — ich wache auf — ich bin aufgewacht",
+"words": [
+"Aufwachen",
+"ich",
+"wache",
+"auf",
+"ich",
+"bin",
+"aufgewacht"
+],
+"t": [
+[
+0.0,
+0.74
+],
+[
+1.02,
+1.14
+],
+[
+1.14,
+1.46
+],
+[
+1.46,
+1.88
+],
+[
+2.04,
+2.12
+],
+[
+2.12,
+2.32
+],
+[
+2.32,
+3.44
+]
+],
+"start": 0.0,
+"end": 3.44
+},
+{
+"sec": "Intro",
+"text": "Aufstehen — ich stehe auf — ich bin aufgestanden",
+"words": [
+"Aufstehen",
+"ich",
+"stehe",
+"auf",
+"ich",
+"bin",
+"aufgestanden"
+],
+"t": [
+[
+3.5,
+4.12
+],
+[
+4.32,
+4.32
+],
+[
+4.32,
+4.54
+],
+[
+4.54,
+5.0
+],
+[
+5.14,
+5.2
+],
+[
+5.2,
+5.42
+],
+[
+5.42,
+6.46
+]
+],
+"start": 3.5,
+"end": 6.46
+},
+{
+"sec": "Intro",
+"text": "Sich anziehen — ich ziehe mich an — ich habe mich angezogen",
+"words": [
+"Sich",
+"anziehen",
+"ich",
+"ziehe",
+"mich",
+"an",
+"ich",
+"habe",
+"mich",
+"angezogen"
+],
+"t": [
+[
+6.66,
+6.8
+],
+[
+6.8,
+7.22
+],
+[
+7.22,
+7.38
+],
+[
+7.38,
+7.56
+],
+[
+7.56,
+7.72
+],
+[
+7.72,
+7.98
+],
+[
+8.04,
+8.16
+],
+[
+8.16,
+8.3
+],
+[
+8.3,
+8.5
+],
+[
+8.5,
+9.24
+]
+],
+"start": 6.66,
+"end": 9.24
+},
+{
+"sec": "Intro",
+"text": "Sich ausziehen — ich ziehe mich aus — ich habe mich ausgezogen",
+"words": [
+"Sich",
+"ausziehen",
+"ich",
+"ziehe",
+"mich",
+"aus",
+"ich",
+"habe",
+"mich",
+"ausgezogen"
+],
+"t": [
+[
+9.36,
+9.66
+],
+[
+9.66,
+10.3
+],
+[
+10.44,
+10.46
+],
+[
+10.46,
+10.7
+],
+[
+10.7,
+10.86
+],
+[
+10.86,
+11.1
+],
+[
+11.1,
+11.26
+],
+[
+11.26,
+11.4
+],
+[
+11.4,
+11.58
+],
+[
+11.58,
+12.38
+]
+],
+"start": 9.36,
+"end": 12.38
+},
+{
+"sec": "Intro",
+"text": "Losgehen — ich gehe los — ich bin losgegangen",
+"words": [
+"Losgehen",
+"ich",
+"gehe",
+"los",
+"ich",
+"bin",
+"losgegangen"
+],
+"t": [
+[
+12.74,
+13.36
+],
+[
+13.5,
+13.56
+],
+[
+13.56,
+13.78
+],
+[
+13.78,
+14.26
+],
+[
+14.4,
+14.48
+],
+[
+14.48,
+14.66
+],
+[
+14.66,
+15.62
+]
+],
+"start": 12.74,
+"end": 15.62
+},
+{
+"sec": "Verse 1 — Zuhause",
+"text": "Anmachen — ich mache an — ich habe angemacht",
+"words": [
+"Anmachen",
+"ich",
+"mache",
+"an",
+"ich",
+"habe",
+"angemacht"
+],
+"t": [
+[
+28.0,
+28.58
+],
+[
+28.92,
+29.02
+],
+[
+29.02,
+29.36
+],
+[
+29.36,
+29.64
+],
+[
+29.78,
+29.8
+],
+[
+29.8,
+30.14
+],
+[
+30.14,
+30.9
+]
+],
+"start": 28.0,
+"end": 30.9
+},
+{
+"sec": "Verse 1 — Zuhause",
+"text": "Ausmachen — ich mache aus — ich habe ausgemacht",
+"words": [
+"Ausmachen",
+"ich",
+"mache",
+"aus",
+"ich",
+"habe",
+"ausgemacht"
+],
+"t": [
+[
+31.16,
+31.68
+],
+[
+31.86,
+32.12
+],
+[
+32.12,
+32.42
+],
+[
+32.42,
+32.72
+],
+[
+32.8,
+32.94
+],
+[
+32.94,
+33.22
+],
+[
+33.22,
+34.0
+]
+],
+"start": 31.16,
+"end": 34.0
+},
+{
+"sec": "Verse 1 — Zuhause",
+"text": "Aufmachen — ich mache auf — ich habe aufgemacht",
+"words": [
+"Aufmachen",
+"ich",
+"mache",
+"auf",
+"ich",
+"habe",
+"aufgemacht"
+],
+"t": [
+[
+34.18,
+34.76
+],
+[
+34.78,
+35.2
+],
+[
+35.2,
+35.52
+],
+[
+35.52,
+35.88
+],
+[
+35.88,
+35.88
+],
+[
+35.88,
+36.26
+],
+[
+36.26,
+37.08
+]
+],
+"start": 34.18,
+"end": 37.08
+},
+{
+"sec": "Verse 1 — Zuhause",
+"text": "Zumachen — ich mache zu — ich habe zugemacht",
+"words": [
+"Zumachen",
+"ich",
+"mache",
+"zu",
+"ich",
+"habe",
+"zugemacht"
+],
+"t": [
+[
+37.08,
+37.84
+],
+[
+37.84,
+38.3
+],
+[
+38.3,
+38.58
+],
+[
+38.58,
+38.84
+],
+[
+38.84,
+39.1
+],
+[
+39.1,
+39.38
+],
+[
+39.38,
+40.2
+]
+],
+"start": 37.08,
+"end": 40.2
+},
+{
+"sec": "Verse 1 — Zuhause",
+"text": "Aufdrehen — ich drehe auf — ich habe aufgedreht",
+"words": [
+"Aufdrehen",
+"ich",
+"drehe",
+"auf",
+"ich",
+"habe",
+"aufgedreht"
+],
+"t": [
+[
+40.2,
+41.04
+],
+[
+41.04,
+41.233
+],
+[
+41.233,
+41.427
+],
+[
+41.427,
+41.62
+],
+[
+41.62,
+42.2
+],
+[
+42.2,
+42.48
+],
+[
+42.48,
+43.68
+]
+],
+"start": 40.2,
+"end": 43.68
+},
+{
+"sec": "Chorus",
+"text": "Ich stehe auf, ich gehe los",
+"words": [
+"Ich",
+"stehe",
+"auf,",
+"ich",
+"gehe",
+"los"
+],
+"t": [
+[
+45.68,
+46.4
+],
+[
+46.4,
+46.7
+],
+[
+46.7,
+47.48
+],
+[
+47.66,
+47.98
+],
+[
+47.98,
+48.24
+],
+[
+48.24,
+48.92
+]
+],
+"start": 45.68,
+"end": 48.92
+},
+{
+"sec": "Chorus",
+"text": "Ich mache auf, ich mache zu",
+"words": [
+"Ich",
+"mache",
+"auf,",
+"ich",
+"mache",
+"zu"
+],
+"t": [
+[
+49.12,
+49.54
+],
+[
+49.54,
+49.82
+],
+[
+49.82,
+50.5
+],
+[
+50.66,
+51.08
+],
+[
+51.08,
+51.38
+],
+[
+51.38,
+51.7
+]
+],
+"start": 49.12,
+"end": 51.7
+},
+{
+"sec": "Chorus",
+"text": "Ich komme rein, ich gehe raus",
+"words": [
+"Ich",
+"komme",
+"rein,",
+"ich",
+"gehe",
+"raus"
+],
+"t": [
+[
+52.1,
+52.6
+],
+[
+52.6,
+52.92
+],
+[
+52.92,
+53.44
+],
+[
+53.9,
+54.18
+],
+[
+54.18,
+54.42
+],
+[
+54.42,
+55.02
+]
+],
+"start": 52.1,
+"end": 55.02
+},
+{
+"sec": "Chorus",
+"text": "Ich steige ein und steige aus",
+"words": [
+"Ich",
+"steige",
+"ein",
+"und",
+"steige",
+"aus"
+],
+"t": [
+[
+55.46,
+55.7
+],
+[
+55.7,
+56.06
+],
+[
+56.06,
+56.58
+],
+[
+56.58,
+57.22
+],
+[
+57.22,
+57.58
+],
+[
+57.58,
+58.16
+]
+],
+"start": 55.46,
+"end": 58.16
+},
+{
+"sec": "Chorus",
+"text": "Ich mache an, ich mache aus",
+"words": [
+"Ich",
+"mache",
+"an,",
+"ich",
+"mache",
+"aus"
+],
+"t": [
+[
+58.54,
+58.82
+],
+[
+58.82,
+59.14
+],
+[
+59.14,
+59.56
+],
+[
+60.02,
+60.38
+],
+[
+60.38,
+60.62
+],
+[
+60.62,
+61.28
+]
+],
+"start": 58.54,
+"end": 61.28
+},
+{
+"sec": "Chorus",
+"text": "Ich komme mit, ich gehe nach Haus",
+"words": [
+"Ich",
+"komme",
+"mit,",
+"ich",
+"gehe",
+"nach",
+"Haus"
+],
+"t": [
+[
+61.6,
+61.9
+],
+[
+61.9,
+62.22
+],
+[
+62.22,
+62.72
+],
+[
+62.94,
+63.48
+],
+[
+63.48,
+63.68
+],
+[
+63.68,
+63.94
+],
+[
+63.94,
+64.32
+]
+],
+"start": 61.6,
+"end": 64.32
+},
+{
+"sec": "Chorus",
+"text": "Ich rufe an, ich höre zu",
+"words": [
+"Ich",
+"rufe",
+"an,",
+"ich",
+"höre",
+"zu"
+],
+"t": [
+[
+64.66,
+65.02
+],
+[
+65.02,
+65.32
+],
+[
+65.32,
+65.8
+],
+[
+66.04,
+66.58
+],
+[
+66.58,
+66.88
+],
+[
+66.88,
+67.18
+]
+],
+"start": 64.66,
+"end": 67.18
+},
+{
+"sec": "Chorus",
+"text": "Ich mache weiter — immerzu!",
+"words": [
+"Ich",
+"mache",
+"weiter",
+"immerzu!"
+],
+"t": [
+[
+67.66,
+68.08
+],
+[
+68.08,
+68.38
+],
+[
+68.38,
+69.04
+],
+[
+69.04,
+70.24000000000001
+]
+],
+"start": 67.66,
+"end": 70.24000000000001
+},
+{
+"sec": "Verse 2 — Rein und raus",
+"text": "Eingehen — ich gehe ein — ich bin eingegangen",
+"words": [
+"Eingehen",
+"ich",
+"gehe",
+"ein",
+"ich",
+"bin",
+"eingegangen"
+],
+"t": [
+[
+83.92,
+84.62
+],
+[
+84.72,
+84.76
+],
+[
+84.76,
+85.02
+],
+[
+85.02,
+85.48
+],
+[
+85.64,
+85.72
+],
+[
+85.72,
+85.92
+],
+[
+85.92,
+86.7
+]
+],
+"start": 83.92,
+"end": 86.7
+},
+{
+"sec": "Verse 2 — Rein und raus",
+"text": "Ausgehen — ich gehe aus — ich bin ausgegangen",
+"words": [
+"Ausgehen",
+"ich",
+"gehe",
+"aus",
+"ich",
+"bin",
+"ausgegangen"
+],
+"t": [
+[
+86.84,
+87.42
+],
+[
+87.6,
+87.86
+],
+[
+87.86,
+88.08
+],
+[
+88.08,
+88.62
+],
+[
+88.7,
+88.82
+],
+[
+88.82,
+89.0
+],
+[
+89.0,
+89.74
+]
+],
+"start": 86.84,
+"end": 89.74
+},
+{
+"sec": "Verse 2 — Rein und raus",
+"text": "Eintreten — ich trete ein — ich bin eingetreten",
+"words": [
+"Eintreten",
+"ich",
+"trete",
+"ein",
+"ich",
+"bin",
+"eingetreten"
+],
+"t": [
+[
+89.94,
+90.52
+],
+[
+90.68,
+90.92
+],
+[
+90.92,
+91.24
+],
+[
+91.24,
+91.66
+],
+[
+91.84,
+91.92
+],
+[
+91.92,
+92.1
+],
+[
+92.1,
+92.86
+]
+],
+"start": 89.94,
+"end": 92.86
+},
+{
+"sec": "Verse 2 — Rein und raus",
+"text": "Hinausgehen — ich gehe hinaus — ich bin hinausgegangen",
+"words": [
+"Hinausgehen",
+"ich",
+"gehe",
+"hinaus",
+"ich",
+"bin",
+"hinausgegangen"
+],
+"t": [
+[
+93.04,
+93.86
+],
+[
+94.0,
+94.06
+],
+[
+94.06,
+94.28
+],
+[
+94.28,
+94.6
+],
+[
+94.68,
+94.82
+],
+[
+94.82,
+95.0
+],
+[
+95.0,
+95.96
+]
+],
+"start": 93.04,
+"end": 95.96
+},
+{
+"sec": "Verse 2 — Rein und raus",
+"text": "Hereinkommen — ich komme herein — ich bin hereingekommen",
+"words": [
+"Hereinkommen",
+"ich",
+"komme",
+"herein",
+"ich",
+"bin",
+"hereingekommen"
+],
+"t": [
+[
+96.16,
+96.98
+],
+[
+97.12,
+97.14
+],
+[
+97.14,
+97.32
+],
+[
+97.32,
+97.78
+],
+[
+97.84,
+97.9
+],
+[
+97.9,
+98.08
+],
+[
+98.08,
+99.04
+]
+],
+"start": 96.16,
+"end": 99.04
+},
+{
+"sec": "Verse 3 — Unterwegs",
+"text": "Einsteigen — ich steige ein — ich bin eingestiegen",
+"words": [
+"Einsteigen",
+"ich",
+"steige",
+"ein",
+"ich",
+"bin",
+"eingestiegen"
+],
+"t": [
+[
+102.52,
+103.22
+],
+[
+103.32,
+103.36
+],
+[
+103.36,
+103.66
+],
+[
+103.66,
+104.08
+],
+[
+104.22,
+104.3
+],
+[
+104.3,
+104.5
+],
+[
+104.5,
+105.26
+]
+],
+"start": 102.52,
+"end": 105.26
+},
+{
+"sec": "Verse 3 — Unterwegs",
+"text": "Aussteigen — ich steige aus — ich bin ausgestiegen",
+"words": [
+"Aussteigen",
+"ich",
+"steige",
+"aus",
+"ich",
+"bin",
+"ausgestiegen"
+],
+"t": [
+[
+105.4,
+106.06
+],
+[
+106.34,
+106.4
+],
+[
+106.4,
+106.76
+],
+[
+106.76,
+107.18
+],
+[
+107.22,
+107.4
+],
+[
+107.4,
+107.6
+],
+[
+107.6,
+108.36
+]
+],
+"start": 105.4,
+"end": 108.36
+},
+{
+"sec": "Verse 3 — Unterwegs",
+"text": "Umsteigen — ich steige um — ich bin umgestiegen",
+"words": [
+"Umsteigen",
+"ich",
+"steige",
+"um",
+"ich",
+"bin",
+"umgestiegen"
+],
+"t": [
+[
+108.48,
+109.14
+],
+[
+109.28,
+109.52
+],
+[
+109.52,
+109.88
+],
+[
+109.88,
+110.2
+],
+[
+110.32,
+110.5
+],
+[
+110.5,
+110.68
+],
+[
+110.68,
+111.42
+]
+],
+"start": 108.48,
+"end": 111.42
+},
+{
+"sec": "Verse 3 — Unterwegs",
+"text": "Abfahren — ich fahre ab — ich bin abgefahren",
+"words": [
+"Abfahren",
+"ich",
+"fahre",
+"ab",
+"ich",
+"bin",
+"abgefahren"
+],
+"t": [
+[
+111.58,
+112.2
+],
+[
+112.38,
+112.6
+],
+[
+112.6,
+113.0
+],
+[
+113.0,
+113.34
+],
+[
+113.5,
+113.58
+],
+[
+113.58,
+113.8
+],
+[
+113.8,
+114.5
+]
+],
+"start": 111.58,
+"end": 114.5
+},
+{
+"sec": "Verse 3 — Unterwegs",
+"text": "Ankommen — ich komme an — ich bin angekommen",
+"words": [
+"Ankommen",
+"ich",
+"komme",
+"an",
+"ich",
+"bin",
+"angekommen"
+],
+"t": [
+[
+114.62,
+115.28
+],
+[
+115.6,
+115.7
+],
+[
+115.7,
+116.02
+],
+[
+116.02,
+116.4
+],
+[
+116.52,
+116.66
+],
+[
+116.66,
+116.86
+],
+[
+116.86,
+117.68
+]
+],
+"start": 114.62,
+"end": 117.68
+},
+{
+"sec": "Chorus",
+"text": "Ich steige ein, ich steige aus",
+"words": [
+"Ich",
+"steige",
+"ein,",
+"ich",
+"steige",
+"aus"
+],
+"t": [
+[
+119.9,
+120.7
+],
+[
+120.7,
+121.1
+],
+[
+121.1,
+121.58
+],
+[
+121.88,
+122.28
+],
+[
+122.28,
+122.66
+],
+[
+122.66,
+123.22
+]
+],
+"start": 119.9,
+"end": 123.22
+},
+{
+"sec": "Chorus",
+"text": "Ich fahre weg, ich komm zurück",
+"words": [
+"Ich",
+"fahre",
+"weg,",
+"ich",
+"komm",
+"zurück"
+],
+"t": [
+[
+123.22,
+123.84
+],
+[
+123.84,
+124.2
+],
+[
+124.2,
+124.6
+],
+[
+124.72,
+125.38
+],
+[
+125.38,
+125.58
+],
+[
+125.58,
+126.04
+]
+],
+"start": 123.22,
+"end": 126.04
+},
+{
+"sec": "Chorus",
+"text": "Ich gehe weiter, immer weiter",
+"words": [
+"Ich",
+"gehe",
+"weiter,",
+"immer",
+"weiter"
+],
+"t": [
+[
+126.04,
+126.94
+],
+[
+126.94,
+127.22
+],
+[
+127.22,
+127.94
+],
+[
+128.32,
+128.82
+],
+[
+128.82,
+129.42
+]
+],
+"start": 126.04,
+"end": 129.42
+},
+{
+"sec": "Chorus",
+"text": "Schritt für Schritt und Stück für Stück",
+"words": [
+"Schritt",
+"für",
+"Schritt",
+"und",
+"Stück",
+"für",
+"Stück"
+],
+"t": [
+[
+129.42,
+130.2
+],
+[
+130.2,
+130.42
+],
+[
+130.42,
+130.78
+],
+[
+130.78,
+131.54
+],
+[
+131.54,
+131.76
+],
+[
+131.76,
+132.0
+],
+[
+132.0,
+132.26
+]
+],
+"start": 129.42,
+"end": 132.26
+},
+{
+"sec": "Chorus",
+"text": "Ich komme mit, ich komme an",
+"words": [
+"Ich",
+"komme",
+"mit,",
+"ich",
+"komme",
+"an"
+],
+"t": [
+[
+132.26,
+133.14
+],
+[
+133.14,
+133.44
+],
+[
+133.44,
+133.86
+],
+[
+133.96,
+134.68
+],
+[
+134.68,
+134.98
+],
+[
+134.98,
+135.42
+]
+],
+"start": 132.26,
+"end": 135.42
+},
+{
+"sec": "Chorus",
+"text": "Ich fahre los, so schnell ich kann",
+"words": [
+"Ich",
+"fahre",
+"los,",
+"so",
+"schnell",
+"ich",
+"kann"
+],
+"t": [
+[
+135.42,
+136.24
+],
+[
+136.24,
+136.58
+],
+[
+136.58,
+137.16
+],
+[
+137.24,
+137.74
+],
+[
+137.74,
+137.96
+],
+[
+137.96,
+138.16
+],
+[
+138.16,
+138.56
+]
+],
+"start": 135.42,
+"end": 138.56
+},
+{
+"sec": "Chorus",
+"text": "Ich rufe an, ich höre zu",
+"words": [
+"Ich",
+"rufe",
+"an,",
+"ich",
+"höre",
+"zu"
+],
+"t": [
+[
+138.56,
+139.34
+],
+[
+139.34,
+139.66
+],
+[
+139.66,
+140.14
+],
+[
+140.8,
+140.9
+],
+[
+140.9,
+141.18
+],
+[
+141.18,
+141.54
+]
+],
+"start": 138.56,
+"end": 141.54
+},
+{
+"sec": "Chorus",
+"text": "Ich mache weiter — immerzu!",
+"words": [
+"Ich",
+"mache",
+"weiter",
+"immerzu!"
+],
+"t": [
+[
+141.54,
+142.38
+],
+[
+142.38,
+142.72
+],
+[
+142.72,
+143.38
+],
+[
+143.38,
+144.57999999999998
+]
+],
+"start": 141.54,
+"end": 144.57999999999998
+},
+{
+"sec": "Verse 4 — Kommen und gehen",
+"text": "Mitkommen — ich komme mit — ich bin mitgekommen",
+"words": [
+"Mitkommen",
+"ich",
+"komme",
+"mit",
+"ich",
+"bin",
+"mitgekommen"
+],
+"t": [
+[
+158.14,
+158.84
+],
+[
+158.94,
+159.06
+],
+[
+159.06,
+159.34
+],
+[
+159.34,
+159.74
+],
+[
+159.92,
+160.04
+],
+[
+160.04,
+160.2
+],
+[
+160.2,
+160.92
+]
+],
+"start": 158.14,
+"end": 160.92
+},
+{
+"sec": "Verse 4 — Kommen und gehen",
+"text": "Weggehen — ich gehe weg — ich bin weggegangen",
+"words": [
+"Weggehen",
+"ich",
+"gehe",
+"weg",
+"ich",
+"bin",
+"weggegangen"
+],
+"t": [
+[
+161.08,
+161.72
+],
+[
+161.92,
+162.16
+],
+[
+162.16,
+162.42
+],
+[
+162.42,
+162.86
+],
+[
+163.0,
+163.12
+],
+[
+163.12,
+163.32
+],
+[
+163.32,
+164.04
+]
+],
+"start": 161.08,
+"end": 164.04
+},
+{
+"sec": "Verse 4 — Kommen und gehen",
+"text": "Wegfahren — ich fahre weg — ich bin weggefahren",
+"words": [
+"Wegfahren",
+"ich",
+"fahre",
+"weg",
+"ich",
+"bin",
+"weggefahren"
+],
+"t": [
+[
+164.18,
+164.8
+],
+[
+165.18,
+165.26
+],
+[
+165.26,
+165.56
+],
+[
+165.56,
+165.92
+],
+[
+166.08,
+166.22
+],
+[
+166.22,
+166.4
+],
+[
+166.4,
+167.12
+]
+],
+"start": 164.18,
+"end": 167.12
+},
+{
+"sec": "Verse 4 — Kommen und gehen",
+"text": "Zurückkommen — ich komme zurück — ich bin zurückgekommen",
+"words": [
+"Zurückkommen",
+"ich",
+"komme",
+"zurück",
+"ich",
+"bin",
+"zurückgekommen"
+],
+"t": [
+[
+167.26,
+167.9
+],
+[
+168.12,
+168.34
+],
+[
+168.34,
+168.56
+],
+[
+168.56,
+168.9
+],
+[
+169.08,
+169.1
+],
+[
+169.1,
+169.3
+],
+[
+169.3,
+170.2
+]
+],
+"start": 167.26,
+"end": 170.2
+},
+{
+"sec": "Verse 4 — Kommen und gehen",
+"text": "Zurückgehen — ich gehe zurück — ich bin zurückgegangen",
+"words": [
+"Zurückgehen",
+"ich",
+"gehe",
+"zurück",
+"ich",
+"bin",
+"zurückgegangen"
+],
+"t": [
+[
+170.36,
+171.0
+],
+[
+171.34,
+171.44
+],
+[
+171.44,
+171.66
+],
+[
+171.66,
+172.0
+],
+[
+172.1,
+172.2
+],
+[
+172.2,
+172.4
+],
+[
+172.4,
+173.36
+]
+],
+"start": 170.36,
+"end": 173.36
+},
+{
+"sec": "Verse 5 — Einkaufen",
+"text": "Einkaufen — ich kaufe ein — ich habe eingekauft",
+"words": [
+"Einkaufen",
+"ich",
+"kaufe",
+"ein",
+"ich",
+"habe",
+"eingekauft"
+],
+"t": [
+[
+176.52,
+177.26
+],
+[
+177.26,
+177.64
+],
+[
+177.64,
+178.02
+],
+[
+178.02,
+178.22
+],
+[
+178.22,
+178.42
+],
+[
+178.42,
+178.78
+],
+[
+178.78,
+179.56
+]
+],
+"start": 176.52,
+"end": 179.56
+},
+{
+"sec": "Verse 5 — Einkaufen",
+"text": "Mitnehmen — ich nehme mit — ich habe mitgenommen",
+"words": [
+"Mitnehmen",
+"ich",
+"nehme",
+"mit",
+"ich",
+"habe",
+"mitgenommen"
+],
+"t": [
+[
+179.56,
+180.32
+],
+[
+180.32,
+180.74
+],
+[
+180.74,
+181.04
+],
+[
+181.04,
+181.36
+],
+[
+181.36,
+181.5
+],
+[
+181.5,
+181.82
+],
+[
+181.82,
+182.52
+]
+],
+"start": 179.56,
+"end": 182.52
+},
+{
+"sec": "Verse 5 — Einkaufen",
+"text": "Mitbringen — ich bringe mit — ich habe mitgebracht",
+"words": [
+"Mitbringen",
+"ich",
+"bringe",
+"mit",
+"ich",
+"habe",
+"mitgebracht"
+],
+"t": [
+[
+182.52,
+183.42
+],
+[
+183.42,
+183.84
+],
+[
+183.84,
+184.24
+],
+[
+184.24,
+184.46
+],
+[
+184.46,
+184.62
+],
+[
+184.62,
+184.92
+],
+[
+184.92,
+185.76
+]
+],
+"start": 182.52,
+"end": 185.76
+},
+{
+"sec": "Verse 5 — Einkaufen",
+"text": "Abholen — ich hole ab — ich habe abgeholt",
+"words": [
+"Abholen",
+"ich",
+"hole",
+"ab",
+"ich",
+"habe",
+"abgeholt"
+],
+"t": [
+[
+185.76,
+186.62
+],
+[
+186.62,
+186.96
+],
+[
+186.96,
+187.24
+],
+[
+187.24,
+187.54
+],
+[
+187.54,
+187.7
+],
+[
+187.7,
+188.04
+],
+[
+188.04,
+188.7
+]
+],
+"start": 185.76,
+"end": 188.7
+},
+{
+"sec": "Verse 5 — Einkaufen",
+"text": "Zurückgeben — ich gebe zurück — ich habe zurückgegeben",
+"words": [
+"Zurückgeben",
+"ich",
+"gebe",
+"zurück",
+"ich",
+"habe",
+"zurückgegeben"
+],
+"t": [
+[
+188.7,
+189.62
+],
+[
+189.62,
+190.04
+],
+[
+190.04,
+190.22
+],
+[
+190.22,
+190.58
+],
+[
+190.58,
+190.78
+],
+[
+190.78,
+191.04
+],
+[
+191.04,
+191.96
+]
+],
+"start": 188.7,
+"end": 191.96
+},
+{
+"sec": "Verse 6 — Kommunikation",
+"text": "Anrufen — ich rufe an — ich habe angerufen",
+"words": [
+"Anrufen",
+"ich",
+"rufe",
+"an",
+"ich",
+"habe",
+"angerufen"
+],
+"t": [
+[
+195.14,
+195.88
+],
+[
+195.56,
+196.06
+],
+[
+196.06,
+196.56
+],
+[
+196.56,
+196.82
+],
+[
+197.0,
+197.06
+],
+[
+197.06,
+197.34
+],
+[
+197.34,
+198.12
+]
+],
+"start": 195.14,
+"end": 198.12
+},
+{
+"sec": "Verse 6 — Kommunikation",
+"text": "Zurückrufen — ich rufe zurück — ich habe zurückgerufen",
+"words": [
+"Zurückrufen",
+"ich",
+"rufe",
+"zurück",
+"ich",
+"habe",
+"zurückgerufen"
+],
+"t": [
+[
+198.26,
+198.94
+],
+[
+199.1,
+199.34
+],
+[
+199.34,
+199.6
+],
+[
+199.6,
+199.86
+],
+[
+200.06,
+200.12
+],
+[
+200.12,
+200.34
+],
+[
+200.34,
+201.2
+]
+],
+"start": 198.26,
+"end": 201.2
+},
+{
+"sec": "Verse 6 — Kommunikation",
+"text": "Zuhören — ich höre zu — ich habe zugehört",
+"words": [
+"Zuhören",
+"ich",
+"höre",
+"zu",
+"ich",
+"habe",
+"zugehört"
+],
+"t": [
+[
+201.36,
+202.0
+],
+[
+202.0,
+202.46
+],
+[
+202.46,
+202.76
+],
+[
+202.76,
+203.0
+],
+[
+203.16,
+203.26
+],
+[
+203.26,
+203.52
+],
+[
+203.52,
+204.32
+]
+],
+"start": 201.36,
+"end": 204.32
+},
+{
+"sec": "Verse 6 — Kommunikation",
+"text": "Nachfragen — ich frage nach — ich habe nachgefragt",
+"words": [
+"Nachfragen",
+"ich",
+"frage",
+"nach",
+"ich",
+"habe",
+"nachgefragt"
+],
+"t": [
+[
+204.46,
+205.12
+],
+[
+205.12,
+205.52
+],
+[
+205.52,
+205.86
+],
+[
+205.86,
+206.12
+],
+[
+206.26,
+206.34
+],
+[
+206.34,
+206.6
+],
+[
+206.6,
+207.4
+]
+],
+"start": 204.46,
+"end": 207.4
+},
+{
+"sec": "Verse 6 — Kommunikation",
+"text": "Vorstellen — ich stelle vor — ich habe vorgestellt",
+"words": [
+"Vorstellen",
+"ich",
+"stelle",
+"vor",
+"ich",
+"habe",
+"vorgestellt"
+],
+"t": [
+[
+207.56,
+208.16
+],
+[
+208.16,
+208.6
+],
+[
+208.6,
+208.88
+],
+[
+208.88,
+209.18
+],
+[
+209.32,
+209.44
+],
+[
+209.44,
+209.7
+],
+[
+209.7,
+210.34
+]
+],
+"start": 207.56,
+"end": 210.34
+},
+{
+"sec": "Chorus",
+"text": "Ich rufe an, du rufst zurück",
+"words": [
+"Ich",
+"rufe",
+"an,",
+"du",
+"rufst",
+"zurück"
+],
+"t": [
+[
+210.34,
+210.66
+],
+[
+210.66,
+210.88
+],
+[
+210.88,
+211.32
+],
+[
+211.32,
+212.08
+],
+[
+212.08,
+212.42
+],
+[
+212.42,
+212.82
+]
+],
+"start": 210.34,
+"end": 212.82
+},
+{
+"sec": "Chorus",
+"text": "Ich höre zu, Stück für Stück",
+"words": [
+"Ich",
+"höre",
+"zu,",
+"Stück",
+"für",
+"Stück"
+],
+"t": [
+[
+212.98,
+213.64
+],
+[
+213.64,
+213.94
+],
+[
+213.94,
+214.3
+],
+[
+214.62,
+215.34
+],
+[
+215.34,
+215.54
+],
+[
+215.54,
+215.82
+]
+],
+"start": 212.98,
+"end": 215.82
+},
+{
+"sec": "Chorus",
+"text": "Ich frage nach, ich stelle vor",
+"words": [
+"Ich",
+"frage",
+"nach,",
+"ich",
+"stelle",
+"vor"
+],
+"t": [
+[
+215.82,
+216.72
+],
+[
+216.72,
+217.06
+],
+[
+217.06,
+217.58
+],
+[
+217.88,
+218.3
+],
+[
+218.3,
+218.62
+],
+[
+218.62,
+218.96
+]
+],
+"start": 215.82,
+"end": 218.96
+},
+{
+"sec": "Chorus",
+"text": "Wir sprechen Deutsch — noch einmal von vorn!",
+"words": [
+"Wir",
+"sprechen",
+"Deutsch",
+"noch",
+"einmal",
+"von",
+"vorn!"
+],
+"t": [
+[
+219.22,
+219.8
+],
+[
+219.8,
+220.18
+],
+[
+220.18,
+220.64
+],
+[
+220.64,
+221.22
+],
+[
+221.22,
+221.52
+],
+[
+221.52,
+221.78
+],
+[
+221.78,
+222.3
+]
+],
+"start": 219.22,
+"end": 222.3
+},
+{
+"sec": "Verse 7 — Lernen und Arbeiten",
+"text": "Anfangen — ich fange an — ich habe angefangen",
+"words": [
+"Anfangen",
+"ich",
+"fange",
+"an",
+"ich",
+"habe",
+"angefangen"
+],
+"t": [
+[
+223.2,
+223.8
+],
+[
+224.0,
+224.08
+],
+[
+224.1,
+224.48
+],
+[
+224.5,
+224.88
+],
+[
+224.9,
+224.98
+],
+[
+225.0,
+225.28
+],
+[
+225.3,
+225.9
+]
+],
+"start": 223.2,
+"end": 225.9
+},
+{
+"sec": "Verse 7 — Lernen und Arbeiten",
+"text": "Aufhören — ich höre auf — ich habe aufgehört",
+"words": [
+"Aufhören",
+"ich",
+"höre",
+"auf",
+"ich",
+"habe",
+"aufgehört"
+],
+"t": [
+[
+225.9,
+226.5
+],
+[
+227.1,
+227.18
+],
+[
+227.2,
+227.58
+],
+[
+227.6,
+227.88
+],
+[
+227.9,
+227.98
+],
+[
+228.0,
+228.28
+],
+[
+228.3,
+228.9
+]
+],
+"start": 225.9,
+"end": 228.9
+},
+{
+"sec": "Verse 7 — Lernen und Arbeiten",
+"text": "Aufschreiben — ich schreibe auf — ich habe aufgeschrieben",
+"words": [
+"Aufschreiben",
+"ich",
+"schreibe",
+"auf",
+"ich",
+"habe",
+"aufgeschrieben"
+],
+"t": [
+[
+229.953,
+230.04
+],
+[
+230.04,
+230.3
+],
+[
+230.3,
+230.68
+],
+[
+230.68,
+230.92
+],
+[
+230.98,
+231.1
+],
+[
+231.1,
+231.42
+],
+[
+231.42,
+232.18
+]
+],
+"start": 229.953,
+"end": 232.18
+},
+{
+"sec": "Verse 7 — Lernen und Arbeiten",
+"text": "Vorlesen — ich lese vor — ich habe vorgelesen",
+"words": [
+"Vorlesen",
+"ich",
+"lese",
+"vor",
+"ich",
+"habe",
+"vorgelesen"
+],
+"t": [
+[
+232.18,
+233.02
+],
+[
+233.16,
+233.38
+],
+[
+233.38,
+233.74
+],
+[
+233.74,
+234.0
+],
+[
+234.14,
+234.18
+],
+[
+234.18,
+234.46
+],
+[
+234.46,
+235.3
+]
+],
+"start": 232.18,
+"end": 235.3
+},
+{
+"sec": "Verse 7 — Lernen und Arbeiten",
+"text": "Vorbereiten — ich bereite vor — ich habe vorbereitet",
+"words": [
+"Vorbereiten",
+"ich",
+"bereite",
+"vor",
+"ich",
+"habe",
+"vorbereitet"
+],
+"t": [
+[
+235.3,
+236.1
+],
+[
+236.26,
+236.48
+],
+[
+236.48,
+236.8
+],
+[
+236.8,
+237.06
+],
+[
+237.22,
+237.28
+],
+[
+237.28,
+237.56
+],
+[
+237.56,
+238.42
+]
+],
+"start": 235.3,
+"end": 238.42
+},
+{
+"sec": "Verse 8 — Schauen und Probieren",
+"text": "Fernsehen — ich sehe fern — ich habe ferngesehen",
+"words": [
+"Fernsehen",
+"ich",
+"sehe",
+"fern",
+"ich",
+"habe",
+"ferngesehen"
+],
+"t": [
+[
+239.36,
+239.98
+],
+[
+240.32,
+240.44
+],
+[
+240.44,
+240.44
+],
+[
+240.44,
+240.44
+],
+[
+240.44,
+240.44
+],
+[
+240.44,
+240.66
+],
+[
+240.66,
+241.18
+]
+],
+"start": 239.36,
+"end": 241.18
+},
+{
+"sec": "Verse 8 — Schauen und Probieren",
+"text": "Aufpassen — ich passe auf — ich habe aufgepasst",
+"words": [
+"Aufpassen",
+"ich",
+"passe",
+"auf",
+"ich",
+"habe",
+"aufgepasst"
+],
+"t": [
+[
+241.18,
+242.26
+],
+[
+242.46,
+242.66
+],
+[
+242.66,
+242.98
+],
+[
+242.98,
+243.28
+],
+[
+243.38,
+243.48
+],
+[
+243.48,
+243.8
+],
+[
+243.8,
+244.62
+]
+],
+"start": 241.18,
+"end": 244.62
+},
+{
+"sec": "Verse 8 — Schauen und Probieren",
+"text": "Nachschauen — ich schaue nach — ich habe nachgeschaut",
+"words": [
+"Nachschauen",
+"ich",
+"schaue",
+"nach",
+"ich",
+"habe",
+"nachgeschaut"
+],
+"t": [
+[
+244.62,
+245.38
+],
+[
+245.54,
+245.76
+],
+[
+245.76,
+246.1
+],
+[
+246.1,
+246.38
+],
+[
+246.54,
+246.58
+],
+[
+246.58,
+246.88
+],
+[
+246.88,
+247.66
+]
+],
+"start": 244.62,
+"end": 247.66
+},
+{
+"sec": "Verse 8 — Schauen und Probieren",
+"text": "Ausprobieren — ich probiere aus — ich habe ausprobiert",
+"words": [
+"Ausprobieren",
+"ich",
+"probiere",
+"aus",
+"ich",
+"habe",
+"ausprobiert"
+],
+"t": [
+[
+247.66,
+248.42
+],
+[
+248.56,
+248.68
+],
+[
+248.68,
+249.12
+],
+[
+249.12,
+249.44
+],
+[
+249.5,
+249.68
+],
+[
+249.68,
+250.0
+],
+[
+250.3,
+250.78
+]
+],
+"start": 247.66,
+"end": 250.78
+},
+{
+"sec": "Verse 8 — Schauen und Probieren",
+"text": "Anschauen — ich schaue an — ich habe angeschaut",
+"words": [
+"Anschauen",
+"ich",
+"schaue",
+"an",
+"ich",
+"habe",
+"angeschaut"
+],
+"t": [
+[
+250.78,
+251.58
+],
+[
+251.9,
+251.96
+],
+[
+251.96,
+252.28
+],
+[
+252.28,
+252.58
+],
+[
+252.66,
+252.76
+],
+[
+252.76,
+253.08
+],
+[
+253.08,
+253.78
+]
+],
+"start": 250.78,
+"end": 253.78
+},
+{
+"sec": "Final Chorus",
+"text": "Weitermachen — ich mache weiter",
+"words": [
+"Weitermachen",
+"ich",
+"mache",
+"weiter"
+],
+"t": [
+[
+253.78,
+254.98
+],
+[
+255.34,
+255.46
+],
+[
+255.46,
+255.74
+],
+[
+256.88,
+257.26
+]
+],
+"start": 253.78,
+"end": 257.26
+},
+{
+"sec": "Final Chorus",
+"text": "Weitergehen — ich gehe weiter",
+"words": [
+"Weitergehen",
+"ich",
+"gehe",
+"weiter"
+],
+"t": [
+[
+257.38,
+258.12
+],
+[
+258.12,
+258.56
+],
+[
+258.56,
+258.84
+],
+[
+258.84,
+259.42
+]
+],
+"start": 257.38,
+"end": 259.42
+},
+{
+"sec": "Final Chorus",
+"text": "Vorbeikommen — ich komme vorbei",
+"words": [
+"Vorbeikommen",
+"ich",
+"komme",
+"vorbei"
+],
+"t": [
+[
+259.5,
+260.7
+],
+[
+261.44,
+261.64
+],
+[
+261.64,
+261.84
+],
+[
+261.84,
+262.4
+]
+],
+"start": 259.5,
+"end": 262.4
+},
+{
+"sec": "Final Chorus",
+"text": "Zurückkehren — ich kehre zurück",
+"words": [
+"Zurückkehren",
+"ich",
+"kehre",
+"zurück"
+],
+"t": [
+[
+263.5,
+264.4
+],
+[
+264.54,
+264.78
+],
+[
+264.78,
+265.0
+],
+[
+265.0,
+265.54
+]
+],
+"start": 263.5,
+"end": 265.54
+},
+{
+"sec": "Final Chorus",
+"text": "Ich stehe auf!",
+"words": [
+"Ich",
+"stehe",
+"auf!"
+],
+"t": [
+[
+265.83,
+266.28
+],
+[
+266.28,
+266.68
+],
+[
+266.68,
+267.14
+]
+],
+"start": 265.83,
+"end": 267.14
+},
+{
+"sec": "Final Chorus",
+"text": "Ich gehe los!",
+"words": [
+"Ich",
+"gehe",
+"los!"
+],
+"t": [
+[
+268.6,
+269.3
+],
+[
+269.4,
+269.66
+],
+[
+269.66,
+270.16
+]
+],
+"start": 268.6,
+"end": 270.16
+},
+{
+"sec": "Final Chorus",
+"text": "Ich komme an!",
+"words": [
+"Ich",
+"komme",
+"an!"
+],
+"t": [
+[
+271.58,
+272.48
+],
+[
+272.48,
+272.78
+],
+[
+272.78,
+273.26
+]
+],
+"start": 271.58,
+"end": 273.26
+},
+{
+"sec": "Final Chorus",
+"text": "Ich komme zurück!",
+"words": [
+"Ich",
+"komme",
+"zurück!"
+],
+"t": [
+[
+273.32,
+274.52
+],
+[
+275.2,
+275.52
+],
+[
+275.52,
+276.46
+]
+],
+"start": 273.32,
+"end": 276.46
+},
+{
+"sec": "Final Chorus",
+"text": "Anmachen! Ausmachen!",
+"words": [
+"Anmachen!",
+"Ausmachen!"
+],
+"t": [
+[
+278.86,
+279.76
+],
+[
+279.76,
+279.9
+]
+],
+"start": 278.86,
+"end": 279.9
+},
+{
+"sec": "Final Chorus",
+"text": "Aufmachen! Zumachen!",
+"words": [
+"Aufmachen!",
+"Zumachen!"
+],
+"t": [
+[
+279.9,
+280.56
+],
+[
+280.56,
+281.76
+]
+],
+"start": 279.9,
+"end": 281.76
+},
+{
+"sec": "Final Chorus",
+"text": "Einsteigen! Aussteigen!",
+"words": [
+"Einsteigen!",
+"Aussteigen!"
+],
+"t": [
+[
+282.06,
+282.88
+],
+[
+283.08,
+283.62
+]
+],
+"start": 282.06,
+"end": 283.62
+},
+{
+"sec": "Final Chorus",
+"text": "Anrufen! Zurückrufen!",
+"words": [
+"Anrufen!",
+"Zurückrufen!"
+],
+"t": [
+[
+283.8,
+284.36
+],
+[
+284.58,
+285.18
+]
+],
+"start": 283.8,
+"end": 285.18
+},
+{
+"sec": "Outro",
+"text": "Ich stehe auf — ich bin aufgestanden",
+"words": [
+"Ich",
+"stehe",
+"auf",
+"ich",
+"bin",
+"aufgestanden"
+],
+"t": [
+[
+285.18,
+285.6
+],
+[
+285.6,
+286.06
+],
+[
+286.06,
+286.56
+],
+[
+286.92,
+286.98
+],
+[
+286.98,
+287.2
+],
+[
+287.2,
+288.0
+]
+],
+"start": 285.18,
+"end": 288.0
+},
+{
+"sec": "Outro",
+"text": "Ich gehe los — ich bin losgegangen",
+"words": [
+"Ich",
+"gehe",
+"los",
+"ich",
+"bin",
+"losgegangen"
+],
+"t": [
+[
+288.04,
+288.66
+],
+[
+288.66,
+289.16
+],
+[
+289.16,
+289.68
+],
+[
+289.86,
+290.08
+],
+[
+290.08,
+290.32
+],
+[
+290.32,
+291.02
+]
+],
+"start": 288.04,
+"end": 291.02
+},
+{
+"sec": "Outro",
+"text": "Ich komme an — ich bin angekommen",
+"words": [
+"Ich",
+"komme",
+"an",
+"ich",
+"bin",
+"angekommen"
+],
+"t": [
+[
+291.18,
+291.78
+],
+[
+291.78,
+292.16
+],
+[
+292.16,
+292.58
+],
+[
+292.86,
+293.18
+],
+[
+293.18,
+293.38
+],
+[
+293.38,
+294.16
+]
+],
+"start": 291.18,
+"end": 294.16
+},
+{
+"sec": "Outro",
+"text": "Ich komme zurück — ich bin zurückgekommen",
+"words": [
+"Ich",
+"komme",
+"zurück",
+"ich",
+"bin",
+"zurückgekommen"
+],
+"t": [
+[
+294.36,
+294.88
+],
+[
+294.88,
+295.16
+],
+[
+295.16,
+295.64
+],
+[
+296.12,
+296.46
+],
+[
+296.46,
+296.66
+],
+[
+296.66,
+297.72
+]
+],
+"start": 294.36,
+"end": 297.72
+}
+]

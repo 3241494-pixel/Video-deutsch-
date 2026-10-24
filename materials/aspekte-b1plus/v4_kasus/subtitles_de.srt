@@ -1,0 +1,120 @@
+1
+00:00:00,800 --> 00:00:01,750
+Ich helfe dir.
+
+2
+00:00:02,432 --> 00:00:03,770
+Aber: Ich sehe dich.
+
+3
+00:00:04,381 --> 00:00:06,510
+Warum? Das Verb entscheidet!
+
+4
+00:00:08,083 --> 00:00:10,650
+Manche Verben brauchen nur den Nominativ.
+
+5
+00:00:11,318 --> 00:00:12,490
+Der Junge ging unter.
+
+6
+00:00:13,136 --> 00:00:15,610
+Viele Verben brauchen einen Akkusativ.
+
+7
+00:00:16,359 --> 00:00:17,730
+Er rettete einen Jungen.
+
+8
+00:00:19,424 --> 00:00:21,590
+Einige Verben brauchen den Dativ.
+
+9
+00:00:22,077 --> 00:00:23,450
+Ich helfe den Reisenden.
+
+10
+00:00:24,230 --> 00:00:26,870
+Genauso: danken, gefallen, gehören.
+
+11
+00:00:28,598 --> 00:00:30,710
+Manche Verben haben zwei Ergänzungen.
+
+12
+00:00:33,130 --> 00:00:33,430
+Ich erkläre ihnen die Verbindung.
+
+13
+00:00:33,970 --> 00:00:35,010
+Wem? Ihnen.
+
+14
+00:00:35,689 --> 00:00:37,150
+Was? Die Verbindung.
+
+15
+00:00:38,832 --> 00:00:41,190
+Und viele Verben haben eine Präposition.
+
+16
+00:00:42,125 --> 00:00:45,550
+Mit Akkusativ: Die Leute freuen sich über einen warmen Ort.
+
+17
+00:00:46,230 --> 00:00:48,310
+Mit Dativ: Er begann mit den Maßnahmen.
+
+18
+00:00:50,240 --> 00:00:52,890
+Mein Tipp: Lerne jedes Verb mit seinem Kasus.
+
+19
+00:00:53,567 --> 00:00:55,110
+Helfen plus Dativ.
+
+20
+00:00:55,611 --> 00:00:57,250
+Sehen plus Akkusativ.
+
+21
+00:00:59,059 --> 00:01:00,400
+Und jetzt der Test!
+
+22
+00:01:01,016 --> 00:01:02,860
+Dativ oder Akkusativ?
+
+23
+00:01:03,410 --> 00:01:04,920
+Eins: Ich danke … Lehrer.
+
+24
+00:01:05,689 --> 00:01:07,300
+Zwei: Ich besuche … Lehrer.
+
+25
+00:01:07,911 --> 00:01:09,820
+Drei: Das Buch gefällt … Lehrer.
+
+26
+00:01:10,527 --> 00:01:12,700
+Drück auf Pause und denk nach!
+
+27
+00:01:17,972 --> 00:01:19,180
+Ich danke dem Lehrer.
+
+28
+00:01:19,901 --> 00:01:21,340
+Ich besuche den Lehrer.
+
+29
+00:01:22,069 --> 00:01:23,740
+Das Buch gefällt dem Lehrer.
+
+30
+00:01:25,433 --> 00:01:27,920
+Wie viele hast du richtig? Schreib es in die Kommentare!
+

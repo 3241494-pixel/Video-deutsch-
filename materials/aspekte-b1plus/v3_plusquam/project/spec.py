@@ -1,0 +1,35 @@
+# Видео 3: Plusquamperfekt + nachdem (Aspekte neu B1+, Kapitel 1, Modul 1)
+from colors import *
+CHIP = "🇩🇪 Aspekte B1+ · Kapitel 1"
+BLOCKS = [
+ {"kind": "rule", "title": "<b>Plusquam</b>perfekt", **c(ORANGE),
+  "segs": ["Matthias wollte Fußballprofi werden.", "Aber dann passierte etwas.", "Er hatte sich schwer am Knie verletzt.", "Deshalb musste er seinen Traum aufgeben."],
+  "rows": [{"em": "⚽", "l": "Matthias wollte Fußballprofi werden.", "at": 0},
+           {"em": "🦵", "l": "① Er <b>hatte</b> sich am Knie <b>verletzt</b>.", "at": 2},
+           {"em": "💔", "l": "② Er musste seinen Traum aufgeben.", "at": 3}],
+  "notes": [{"html": "Aber dann … 😱", "at": 1}]},
+ {"kind": "rule", "num": 1, "label": "Was ist das?", "badge": "noch früher ⏪", "badge_at": 0, **c(BLUE),
+  "segs": ["Das Plusquamperfekt zeigt: Das ist noch früher passiert.", "Zuerst die Verletzung.", "Dann das Ende vom Traum."],
+  "rows": [{"em": "1️⃣", "l": "früher: <b>Plusquamperfekt</b>", "at": 1}, {"em": "2️⃣", "l": "später: Präteritum / Perfekt", "at": 2}]},
+ {"kind": "rule", "num": 2, "label": "So bildest du es", "badge": "hatte / war + Partizip II", "badge_at": 0, **c(GREEN),
+  "segs": ["Man bildet es mit hatte oder war, plus Partizip zwei.", "Ich hatte gegessen.", "Er war gelaufen."],
+  "rows": [{"em": "🍽️", "l": "Ich <b>hatte</b> gegessen.", "at": 1}, {"em": "🏃", "l": "Er <b>war</b> gelaufen.", "at": 2}],
+  "notes": [{"html": "haben → hatte · sein → war", "at": 2}]},
+ {"kind": "rule", "num": 3, "label": "Beispiele", **c(PURPLE),
+  "segs": ["Belinda weinte.", "Ihr Freund hatte sie verlassen.", "Peter trank eine ganze Flasche Wasser.", "Er war zehn Kilometer gelaufen."],
+  "rows": [{"em": "😢", "l": "Belinda weinte.", "at": 0}, {"em": "💔", "l": "Ihr Freund <b>hatte</b> sie <b>verlassen</b>.", "at": 1},
+           {"em": "🥤", "l": "Peter trank eine Flasche Wasser.", "at": 2}, {"em": "🏃", "l": "Er <b>war</b> 10 km <b>gelaufen</b>.", "at": 3}]},
+ {"kind": "rule", "num": 4, "label": "Mit nachdem", "badge": "nachdem … hatte,", "badge_at": 0, **c(RED),
+  "segs": ["Mit nachdem verbindest du beides.", "Nachdem sich Matthias verletzt hatte, musste er aufhören.", "Achtung: Im Satz mit nachdem steht das Verb am Ende."],
+  "rows": [{"em": "🔗", "l": "<b>Nachdem</b> sich Matthias verletzt <b>hatte</b>, musste er aufhören.", "at": 1}],
+  "notes": [{"html": "Verb am Ende ↘", "at": 2}]},
+ {"kind": "quiz", "title": "Was ist vorher passiert?", **c(ORANGE),
+  "intro": ["Und jetzt der Test!", "Was ist vorher passiert?"],
+  "q_say": ["Eins: Der Computer funktionierte nicht mehr.", "Zwei: Die Feuerwehr stand vor dem Haus.", "Drei: Anton war sehr glücklich."],
+  "a_say": ["Zum Beispiel: Jemand hatte Kaffee darüber geschüttet.", "Es hatte in der Küche gebrannt.", "Er hatte die Prüfung bestanden."],
+  "items": [{"em": "💻", "q": "Der Computer funktionierte nicht mehr.", "a": "Jemand <b>hatte</b> Kaffee darüber <b>geschüttet</b>."},
+            {"em": "🚒", "q": "Die Feuerwehr stand vor dem Haus.", "a": "Es <b>hatte</b> in der Küche <b>gebrannt</b>."},
+            {"em": "😄", "q": "Anton war sehr glücklich.", "a": "Er <b>hatte</b> die Prüfung <b>bestanden</b>."}]},
+]
+CTA = {"say": "Schreib deinen eigenen Satz mit nachdem in die Kommentare!", "t1": "Dein Satz mit <b>nachdem</b>? ✍️",
+       "t2": "Schreib ihn in die Kommentare!", "chips": []}

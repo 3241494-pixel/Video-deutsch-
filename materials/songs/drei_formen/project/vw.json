@@ -1,0 +1,2510 @@
+[
+{
+"word": "Ging,",
+"start": 0.0,
+"end": 0.42,
+"prob": 0.718
+},
+{
+"word": "ging,",
+"start": 0.44,
+"end": 0.58,
+"prob": 0.764
+},
+{
+"word": "ging,",
+"start": 0.76,
+"end": 0.9,
+"prob": 0.977
+},
+{
+"word": "gegangen,",
+"start": 1.08,
+"end": 1.48,
+"prob": 0.946
+},
+{
+"word": "ich",
+"start": 1.84,
+"end": 2.06,
+"prob": 0.985
+},
+{
+"word": "bin",
+"start": 2.06,
+"end": 2.36,
+"prob": 1.0
+},
+{
+"word": "nach",
+"start": 2.36,
+"end": 2.7,
+"prob": 1.0
+},
+{
+"word": "Hause",
+"start": 2.7,
+"end": 3.12,
+"prob": 0.968
+},
+{
+"word": "gegangen",
+"start": 3.12,
+"end": 3.8,
+"prob": 0.993
+},
+{
+"word": "Komm,",
+"start": 3.8,
+"end": 4.42,
+"prob": 0.44
+},
+{
+"word": "komm,",
+"start": 4.74,
+"end": 4.96,
+"prob": 0.99
+},
+{
+"word": "komm,",
+"start": 5.32,
+"end": 5.58,
+"prob": 0.985
+},
+{
+"word": "gekommen,",
+"start": 5.84,
+"end": 6.0,
+"prob": 0.877
+},
+{
+"word": "meine",
+"start": 6.46,
+"end": 6.88,
+"prob": 0.975
+},
+{
+"word": "Freunde",
+"start": 6.88,
+"end": 7.44,
+"prob": 0.999
+},
+{
+"word": "sind",
+"start": 7.44,
+"end": 7.88,
+"prob": 1.0
+},
+{
+"word": "gekommen",
+"start": 7.88,
+"end": 8.64,
+"prob": 0.999
+},
+{
+"word": "Ging,",
+"start": 8.64,
+"end": 9.7,
+"prob": 0.913
+},
+{
+"word": "ging,",
+"start": 9.94,
+"end": 10.2,
+"prob": 0.996
+},
+{
+"word": "gegangen,",
+"start": 10.46,
+"end": 10.76,
+"prob": 0.998
+},
+{
+"word": "ich",
+"start": 11.18,
+"end": 11.36,
+"prob": 0.999
+},
+{
+"word": "bin",
+"start": 11.36,
+"end": 11.62,
+"prob": 1.0
+},
+{
+"word": "nach",
+"start": 11.62,
+"end": 11.98,
+"prob": 1.0
+},
+{
+"word": "Hause",
+"start": 11.98,
+"end": 12.4,
+"prob": 1.0
+},
+{
+"word": "gegangen",
+"start": 12.4,
+"end": 13.14,
+"prob": 0.999
+},
+{
+"word": "Komm,",
+"start": 13.14,
+"end": 13.72,
+"prob": 0.989
+},
+{
+"word": "komm,",
+"start": 14.04,
+"end": 14.26,
+"prob": 0.995
+},
+{
+"word": "komm,",
+"start": 14.62,
+"end": 14.84,
+"prob": 0.981
+},
+{
+"word": "gekommen,",
+"start": 15.4,
+"end": 15.4,
+"prob": 0.591
+},
+{
+"word": "meine",
+"start": 15.74,
+"end": 16.16,
+"prob": 0.999
+},
+{
+"word": "Freunde",
+"start": 16.16,
+"end": 16.72,
+"prob": 1.0
+},
+{
+"word": "sind",
+"start": 16.72,
+"end": 17.14,
+"prob": 1.0
+},
+{
+"word": "gekommen",
+"start": 17.14,
+"end": 17.94,
+"prob": 1.0
+},
+{
+"word": "Gefahren,",
+"start": 17.94,
+"end": 19.02,
+"prob": 0.951
+},
+{
+"word": "fuhr,",
+"start": 19.3,
+"end": 19.6,
+"prob": 0.976
+},
+{
+"word": "gefahren,",
+"start": 19.8,
+"end": 20.18,
+"prob": 0.998
+},
+{
+"word": "wir",
+"start": 20.44,
+"end": 20.64,
+"prob": 0.992
+},
+{
+"word": "sind",
+"start": 20.64,
+"end": 20.94,
+"prob": 0.998
+},
+{
+"word": "mit",
+"start": 20.94,
+"end": 21.34,
+"prob": 1.0
+},
+{
+"word": "dem",
+"start": 21.34,
+"end": 21.56,
+"prob": 1.0
+},
+{
+"word": "Bus",
+"start": 21.56,
+"end": 21.86,
+"prob": 0.999
+},
+{
+"word": "gefahren",
+"start": 21.86,
+"end": 22.5,
+"prob": 0.997
+},
+{
+"word": "Laufen,",
+"start": 22.5,
+"end": 23.18,
+"prob": 0.957
+},
+{
+"word": "lief,",
+"start": 23.46,
+"end": 23.66,
+"prob": 0.998
+},
+{
+"word": "lief,",
+"start": 23.96,
+"end": 24.38,
+"prob": 1.0
+},
+{
+"word": "gelaufen,",
+"start": 24.44,
+"end": 24.8,
+"prob": 0.999
+},
+{
+"word": "wir",
+"start": 25.22,
+"end": 25.32,
+"prob": 1.0
+},
+{
+"word": "sind",
+"start": 25.32,
+"end": 25.62,
+"prob": 1.0
+},
+{
+"word": "durch",
+"start": 25.62,
+"end": 25.92,
+"prob": 1.0
+},
+{
+"word": "den",
+"start": 25.92,
+"end": 26.18,
+"prob": 1.0
+},
+{
+"word": "Park",
+"start": 26.18,
+"end": 26.56,
+"prob": 0.999
+},
+{
+"word": "gelaufen",
+"start": 26.56,
+"end": 27.0,
+"prob": 1.0
+},
+{
+"word": "Ging,",
+"start": 27.0,
+"end": 28.28,
+"prob": 0.412
+},
+{
+"word": "ging,",
+"start": 28.52,
+"end": 28.52,
+"prob": 0.846
+},
+{
+"word": "ging,",
+"start": 28.58,
+"end": 28.78,
+"prob": 0.987
+},
+{
+"word": "ging",
+"start": 28.88,
+"end": 29.02,
+"prob": 0.901
+},
+{
+"word": "gegangen,",
+"start": 29.02,
+"end": 29.4,
+"prob": 0.655
+},
+{
+"word": "rötter",
+"start": 29.86,
+"end": 30.26,
+"prob": 0.576
+},
+{
+"word": "Kling,",
+"start": 30.26,
+"end": 30.66,
+"prob": 0.777
+},
+{
+"word": "rötter",
+"start": 31.0,
+"end": 31.44,
+"prob": 0.992
+},
+{
+"word": "Klang,",
+"start": 31.44,
+"end": 31.8,
+"prob": 0.99
+},
+{
+"word": "komm,",
+"start": 32.18,
+"end": 32.4,
+"prob": 0.394
+},
+{
+"word": "komm,",
+"start": 32.7,
+"end": 33.1,
+"prob": 0.902
+},
+{
+"word": "komm,",
+"start": 33.62,
+"end": 33.66,
+"prob": 0.673
+},
+{
+"word": "komm,",
+"start": 33.66,
+"end": 33.98,
+"prob": 0.88
+},
+{
+"word": "jetzt",
+"start": 34.28,
+"end": 34.62,
+"prob": 0.463
+},
+{
+"word": "hab",
+"start": 34.62,
+"end": 35.06,
+"prob": 0.846
+},
+{
+"word": "ich",
+"start": 35.06,
+"end": 35.2,
+"prob": 0.978
+},
+{
+"word": "sie",
+"start": 35.2,
+"end": 35.48,
+"prob": 0.992
+},
+{
+"word": "aufgenommen.",
+"start": 35.48,
+"end": 36.36,
+"prob": 0.996
+},
+{
+"word": "Drei",
+"start": 36.84,
+"end": 37.18,
+"prob": 0.978
+},
+{
+"word": "Formen",
+"start": 37.18,
+"end": 37.82,
+"prob": 0.946
+},
+{
+"word": "singen",
+"start": 37.82,
+"end": 38.24,
+"prob": 0.852
+},
+{
+"word": "sie",
+"start": 38.24,
+"end": 38.38,
+"prob": 0.985
+},
+{
+"word": "laut,",
+"start": 38.38,
+"end": 38.92,
+"prob": 0.999
+},
+{
+"word": "gestein",
+"start": 39.12,
+"end": 39.62,
+"prob": 0.62
+},
+{
+"word": "und",
+"start": 39.62,
+"end": 39.86,
+"prob": 0.542
+},
+{
+"word": "sie",
+"start": 39.86,
+"end": 40.16,
+"prob": 0.994
+},
+{
+"word": "selber",
+"start": 40.16,
+"end": 40.66,
+"prob": 0.992
+},
+{
+"word": "baut,",
+"start": 40.66,
+"end": 41.26,
+"prob": 0.84
+},
+{
+"word": "eins,",
+"start": 41.5,
+"end": 41.62,
+"prob": 0.523
+},
+{
+"word": "zwei,",
+"start": 41.9,
+"end": 41.9,
+"prob": 0.999
+},
+{
+"word": "drei,",
+"start": 42.08,
+"end": 42.26,
+"prob": 0.993
+},
+{
+"word": "noch",
+"start": 42.62,
+"end": 42.72,
+"prob": 0.999
+},
+{
+"word": "einmal,",
+"start": 42.72,
+"end": 43.3,
+"prob": 0.997
+},
+{
+"word": "Deutsch",
+"start": 43.74,
+"end": 43.98,
+"prob": 0.902
+},
+{
+"word": "zu",
+"start": 43.98,
+"end": 44.28,
+"prob": 0.998
+},
+{
+"word": "lernen",
+"start": 44.28,
+"end": 44.66,
+"prob": 0.997
+},
+{
+"word": "ist",
+"start": 44.66,
+"end": 45.14,
+"prob": 0.954
+},
+{
+"word": "genial.",
+"start": 45.14,
+"end": 45.64,
+"prob": 0.996
+},
+{
+"word": "Sehen,",
+"start": 46.66,
+"end": 46.96,
+"prob": 0.834
+},
+{
+"word": "sah,",
+"start": 47.24,
+"end": 47.44,
+"prob": 0.983
+},
+{
+"word": "gesehen,",
+"start": 47.76,
+"end": 47.96,
+"prob": 0.948
+},
+{
+"word": "ich",
+"start": 48.36,
+"end": 48.58,
+"prob": 0.998
+},
+{
+"word": "habe",
+"start": 48.58,
+"end": 48.92,
+"prob": 0.997
+},
+{
+"word": "dich",
+"start": 48.92,
+"end": 49.2,
+"prob": 0.999
+},
+{
+"word": "heute",
+"start": 49.2,
+"end": 49.62,
+"prob": 0.999
+},
+{
+"word": "gesehen,",
+"start": 49.62,
+"end": 50.38,
+"prob": 0.976
+},
+{
+"word": "sprechen,",
+"start": 50.68,
+"end": 50.92,
+"prob": 0.966
+},
+{
+"word": "sprach,",
+"start": 51.32,
+"end": 51.6,
+"prob": 0.992
+},
+{
+"word": "gesprochen,",
+"start": 51.86,
+"end": 52.06,
+"prob": 0.998
+},
+{
+"word": "wir",
+"start": 53.06,
+"end": 53.24,
+"prob": 0.984
+},
+{
+"word": "haben",
+"start": 53.24,
+"end": 53.58,
+"prob": 0.999
+},
+{
+"word": "Deutsch",
+"start": 53.58,
+"end": 53.98,
+"prob": 0.956
+},
+{
+"word": "gesprochen.",
+"start": 53.98,
+"end": 54.4,
+"prob": 0.995
+},
+{
+"word": "Gegeben,",
+"start": 55.56,
+"end": 56.28,
+"prob": 0.477
+},
+{
+"word": "gab,",
+"start": 56.6,
+"end": 56.78,
+"prob": 0.868
+},
+{
+"word": "gegeben,",
+"start": 57.04,
+"end": 57.38,
+"prob": 0.67
+},
+{
+"word": "ich",
+"start": 57.6,
+"end": 57.72,
+"prob": 0.982
+},
+{
+"word": "habe",
+"start": 57.72,
+"end": 58.1,
+"prob": 0.98
+},
+{
+"word": "dir",
+"start": 58.1,
+"end": 58.48,
+"prob": 0.98
+},
+{
+"word": "ein",
+"start": 58.48,
+"end": 58.84,
+"prob": 0.976
+},
+{
+"word": "Buch",
+"start": 58.84,
+"end": 59.1,
+"prob": 0.965
+},
+{
+"word": "gegeben",
+"start": 59.1,
+"end": 59.74,
+"prob": 0.992
+},
+{
+"word": "Im",
+"start": 59.74,
+"end": 60.4,
+"prob": 0.03
+},
+{
+"word": "Namen",
+"start": 60.4,
+"end": 60.9,
+"prob": 0.758
+},
+{
+"word": "genommen,",
+"start": 60.9,
+"end": 61.38,
+"prob": 0.689
+},
+{
+"word": "ich",
+"start": 62.48,
+"end": 62.52,
+"prob": 0.998
+},
+{
+"word": "habe",
+"start": 62.52,
+"end": 62.88,
+"prob": 0.998
+},
+{
+"word": "den",
+"start": 62.88,
+"end": 63.4,
+"prob": 0.997
+},
+{
+"word": "Zug",
+"start": 63.4,
+"end": 63.76,
+"prob": 0.999
+},
+{
+"word": "genommen",
+"start": 63.76,
+"end": 64.54,
+"prob": 0.998
+},
+{
+"word": "Sehen,",
+"start": 64.54,
+"end": 65.6,
+"prob": 0.947
+},
+{
+"word": "sah,",
+"start": 65.92,
+"end": 66.08,
+"prob": 0.39
+},
+{
+"word": "gesehen,",
+"start": 66.4,
+"end": 66.68,
+"prob": 0.956
+},
+{
+"word": "Wörter",
+"start": 66.94,
+"end": 67.36,
+"prob": 0.986
+},
+{
+"word": "bleiben,",
+"start": 67.36,
+"end": 68.0,
+"prob": 0.991
+},
+{
+"word": "nicht",
+"start": 68.26,
+"end": 68.44,
+"prob": 0.926
+},
+{
+"word": "mehr",
+"start": 68.44,
+"end": 68.62,
+"prob": 0.998
+},
+{
+"word": "stehen",
+"start": 68.62,
+"end": 69.02,
+"prob": 0.983
+},
+{
+"word": "Sprechen,",
+"start": 69.02,
+"end": 69.68,
+"prob": 0.881
+},
+{
+"word": "sprach,",
+"start": 69.94,
+"end": 70.76,
+"prob": 0.963
+},
+{
+"word": "gesprochen,",
+"start": 70.88,
+"end": 71.24,
+"prob": 0.996
+},
+{
+"word": "heute",
+"start": 71.56,
+"end": 72.04,
+"prob": 0.992
+},
+{
+"word": "hab",
+"start": 72.04,
+"end": 72.62,
+"prob": 0.734
+},
+{
+"word": "ich",
+"start": 72.62,
+"end": 72.76,
+"prob": 0.942
+},
+{
+"word": "viel",
+"start": 72.76,
+"end": 73.1,
+"prob": 1.0
+},
+{
+"word": "gesprochen",
+"start": 73.1,
+"end": 73.72,
+"prob": 0.998
+},
+{
+"word": "Bei",
+"start": 73.72,
+"end": 74.26,
+"prob": 0.672
+},
+{
+"word": "Formen",
+"start": 74.26,
+"end": 75.1,
+"prob": 0.976
+},
+{
+"word": "singen",
+"start": 75.1,
+"end": 75.5,
+"prob": 0.908
+},
+{
+"word": "sie",
+"start": 75.5,
+"end": 75.62,
+"prob": 0.985
+},
+{
+"word": "laut,",
+"start": 75.62,
+"end": 76.2,
+"prob": 0.999
+},
+{
+"word": "bis",
+"start": 76.38,
+"end": 76.58,
+"prob": 0.992
+},
+{
+"word": "dein",
+"start": 76.58,
+"end": 76.9,
+"prob": 0.998
+},
+{
+"word": "Mund",
+"start": 76.9,
+"end": 77.14,
+"prob": 0.979
+},
+{
+"word": "sie",
+"start": 77.14,
+"end": 77.4,
+"prob": 0.997
+},
+{
+"word": "selber",
+"start": 77.4,
+"end": 77.96,
+"prob": 0.998
+},
+{
+"word": "baut",
+"start": 77.96,
+"end": 78.54,
+"prob": 0.999
+},
+{
+"word": "Eins,",
+"start": 78.54,
+"end": 78.86,
+"prob": 0.477
+},
+{
+"word": "zwei,",
+"start": 79.12,
+"end": 79.12,
+"prob": 0.993
+},
+{
+"word": "drei,",
+"start": 79.32,
+"end": 79.5,
+"prob": 0.998
+},
+{
+"word": "noch",
+"start": 79.86,
+"end": 79.96,
+"prob": 0.997
+},
+{
+"word": "einmal,",
+"start": 79.96,
+"end": 80.6,
+"prob": 0.999
+},
+{
+"word": "Deutsch",
+"start": 81.02,
+"end": 81.22,
+"prob": 0.888
+},
+{
+"word": "zu",
+"start": 81.22,
+"end": 81.52,
+"prob": 0.999
+},
+{
+"word": "lernen",
+"start": 81.52,
+"end": 81.96,
+"prob": 0.999
+},
+{
+"word": "ist",
+"start": 81.96,
+"end": 82.42,
+"prob": 0.884
+},
+{
+"word": "genial",
+"start": 82.42,
+"end": 82.9,
+"prob": 0.998
+},
+{
+"word": "Essen,",
+"start": 82.9,
+"end": 84.16,
+"prob": 0.222
+},
+{
+"word": "hast",
+"start": 84.56,
+"end": 84.78,
+"prob": 0.292
+},
+{
+"word": "gegessen,",
+"start": 84.78,
+"end": 85.34,
+"prob": 0.954
+},
+{
+"word": "ich",
+"start": 85.6,
+"end": 85.68,
+"prob": 0.983
+},
+{
+"word": "habe",
+"start": 85.68,
+"end": 86.02,
+"prob": 0.979
+},
+{
+"word": "Brot",
+"start": 86.02,
+"end": 86.54,
+"prob": 0.999
+},
+{
+"word": "und",
+"start": 86.54,
+"end": 86.78,
+"prob": 0.998
+},
+{
+"word": "Käse",
+"start": 86.78,
+"end": 87.22,
+"prob": 1.0
+},
+{
+"word": "gegessen",
+"start": 87.22,
+"end": 87.68,
+"prob": 1.0
+},
+{
+"word": "Tink,",
+"start": 87.68,
+"end": 88.3,
+"prob": 0.216
+},
+{
+"word": "Trank,",
+"start": 88.56,
+"end": 88.9,
+"prob": 0.824
+},
+{
+"word": "getrunken,",
+"start": 89.02,
+"end": 89.46,
+"prob": 0.993
+},
+{
+"word": "ich",
+"start": 89.76,
+"end": 90.5,
+"prob": 0.986
+},
+{
+"word": "habe",
+"start": 90.5,
+"end": 90.82,
+"prob": 0.999
+},
+{
+"word": "Wasser",
+"start": 90.82,
+"end": 91.14,
+"prob": 0.998
+},
+{
+"word": "getrunken",
+"start": 91.14,
+"end": 92.06,
+"prob": 1.0
+},
+{
+"word": "Schlafen,",
+"start": 92.82,
+"end": 93.54,
+"prob": 0.951
+},
+{
+"word": "schlief,",
+"start": 93.74,
+"end": 94.14,
+"prob": 0.997
+},
+{
+"word": "geschlafen,",
+"start": 94.32,
+"end": 94.7,
+"prob": 0.998
+},
+{
+"word": "ich",
+"start": 95.06,
+"end": 95.14,
+"prob": 0.992
+},
+{
+"word": "habe",
+"start": 95.14,
+"end": 95.76,
+"prob": 1.0
+},
+{
+"word": "gut",
+"start": 95.76,
+"end": 96.44,
+"prob": 0.664
+},
+{
+"word": "geschlafen",
+"start": 96.44,
+"end": 97.04,
+"prob": 0.996
+},
+{
+"word": "Lesen,",
+"start": 97.04,
+"end": 97.78,
+"prob": 0.99
+},
+{
+"word": "lass,",
+"start": 97.92,
+"end": 98.18,
+"prob": 0.765
+},
+{
+"word": "gelesen,",
+"start": 98.38,
+"end": 98.76,
+"prob": 0.999
+},
+{
+"word": "ich",
+"start": 99.1,
+"end": 99.76,
+"prob": 0.993
+},
+{
+"word": "habe",
+"start": 99.76,
+"end": 100.16,
+"prob": 1.0
+},
+{
+"word": "ein",
+"start": 100.16,
+"end": 100.74,
+"prob": 0.999
+},
+{
+"word": "Buch",
+"start": 100.74,
+"end": 101.02,
+"prob": 0.999
+},
+{
+"word": "gelesen",
+"start": 101.02,
+"end": 102.14,
+"prob": 1.0
+},
+{
+"word": "Schreiben,",
+"start": 102.14,
+"end": 102.84,
+"prob": 0.997
+},
+{
+"word": "schlief,",
+"start": 103.16,
+"end": 103.44,
+"prob": 0.905
+},
+{
+"word": "geschrieben,",
+"start": 103.62,
+"end": 103.88,
+"prob": 0.988
+},
+{
+"word": "ich",
+"start": 104.4,
+"end": 104.5,
+"prob": 0.998
+},
+{
+"word": "hab",
+"start": 104.5,
+"end": 104.74,
+"prob": 0.571
+},
+{
+"word": "dir",
+"start": 104.74,
+"end": 104.94,
+"prob": 0.973
+},
+{
+"word": "ein",
+"start": 104.94,
+"end": 105.44,
+"prob": 0.786
+},
+{
+"word": "Brief",
+"start": 105.44,
+"end": 105.7,
+"prob": 0.821
+},
+{
+"word": "geschrieben",
+"start": 105.7,
+"end": 106.3,
+"prob": 0.999
+},
+{
+"word": "Finden,",
+"start": 106.3,
+"end": 106.98,
+"prob": 0.583
+},
+{
+"word": "Fangs,",
+"start": 107.22,
+"end": 108.08,
+"prob": 0.609
+},
+{
+"word": "gefunden,",
+"start": 108.14,
+"end": 108.54,
+"prob": 0.996
+},
+{
+"word": "ich",
+"start": 108.96,
+"end": 109.04,
+"prob": 0.996
+},
+{
+"word": "habe",
+"start": 109.04,
+"end": 109.34,
+"prob": 0.999
+},
+{
+"word": "den",
+"start": 109.34,
+"end": 109.56,
+"prob": 0.963
+},
+{
+"word": "Schlüssel",
+"start": 109.56,
+"end": 110.28,
+"prob": 1.0
+},
+{
+"word": "gefunden",
+"start": 110.28,
+"end": 110.94,
+"prob": 0.999
+},
+{
+"word": "Helfen,",
+"start": 110.94,
+"end": 112.24,
+"prob": 0.821
+},
+{
+"word": "half,",
+"start": 112.5,
+"end": 112.76,
+"prob": 0.879
+},
+{
+"word": "geholfen,",
+"start": 112.96,
+"end": 113.34,
+"prob": 0.999
+},
+{
+"word": "wir",
+"start": 113.5,
+"end": 113.76,
+"prob": 0.933
+},
+{
+"word": "haben",
+"start": 113.76,
+"end": 114.14,
+"prob": 0.999
+},
+{
+"word": "unserem",
+"start": 114.14,
+"end": 114.6,
+"prob": 0.949
+},
+{
+"word": "Freund",
+"start": 114.6,
+"end": 115.12,
+"prob": 0.998
+},
+{
+"word": "geholfen",
+"start": 115.12,
+"end": 115.76,
+"prob": 0.982
+},
+{
+"word": "Treffen,",
+"start": 115.76,
+"end": 116.28,
+"prob": 0.677
+},
+{
+"word": "traf,",
+"start": 116.56,
+"end": 116.9,
+"prob": 0.96
+},
+{
+"word": "getroffen,",
+"start": 117.02,
+"end": 117.38,
+"prob": 0.999
+},
+{
+"word": "ich",
+"start": 117.68,
+"end": 118.46,
+"prob": 0.992
+},
+{
+"word": "habe",
+"start": 118.46,
+"end": 118.78,
+"prob": 0.988
+},
+{
+"word": "dich",
+"start": 118.78,
+"end": 119.06,
+"prob": 0.998
+},
+{
+"word": "gestern",
+"start": 119.06,
+"end": 119.68,
+"prob": 0.999
+},
+{
+"word": "getroffen",
+"start": 119.68,
+"end": 120.38,
+"prob": 0.999
+},
+{
+"word": "Essen,",
+"start": 120.38,
+"end": 121.42,
+"prob": 0.748
+},
+{
+"word": "aß,",
+"start": 121.84,
+"end": 122.1,
+"prob": 0.425
+},
+{
+"word": "gegessen,",
+"start": 122.24,
+"end": 122.6,
+"prob": 0.982
+},
+{
+"word": "nicht",
+"start": 123.0,
+"end": 123.16,
+"prob": 0.997
+},
+{
+"word": "vergessen,",
+"start": 123.16,
+"end": 123.82,
+"prob": 0.999
+},
+{
+"word": "nicht",
+"start": 124.12,
+"end": 124.34,
+"prob": 0.997
+},
+{
+"word": "vergessen",
+"start": 124.34,
+"end": 124.92,
+"prob": 1.0
+},
+{
+"word": "Trinken,",
+"start": 124.92,
+"end": 125.66,
+"prob": 0.972
+},
+{
+"word": "trank,",
+"start": 125.88,
+"end": 126.74,
+"prob": 0.915
+},
+{
+"word": "getrunken,",
+"start": 126.94,
+"end": 127.28,
+"prob": 1.0
+},
+{
+"word": "jede",
+"start": 127.68,
+"end": 127.96,
+"prob": 0.995
+},
+{
+"word": "Form",
+"start": 127.96,
+"end": 128.4,
+"prob": 0.997
+},
+{
+"word": "klingt",
+"start": 128.4,
+"end": 128.72,
+"prob": 0.999
+},
+{
+"word": "wie",
+"start": 128.72,
+"end": 128.96,
+"prob": 0.999
+},
+{
+"word": "ein",
+"start": 128.96,
+"end": 129.32,
+"prob": 0.999
+},
+{
+"word": "Funken",
+"start": 129.32,
+"end": 129.76,
+"prob": 0.996
+},
+{
+"word": "Drei",
+"start": 129.76,
+"end": 130.34,
+"prob": 0.837
+},
+{
+"word": "Formen",
+"start": 130.34,
+"end": 131.08,
+"prob": 0.997
+},
+{
+"word": "singen",
+"start": 131.08,
+"end": 131.4,
+"prob": 0.632
+},
+{
+"word": "sie",
+"start": 131.4,
+"end": 131.56,
+"prob": 0.973
+},
+{
+"word": "laut,",
+"start": 131.56,
+"end": 132.1,
+"prob": 0.997
+},
+{
+"word": "bis",
+"start": 132.34,
+"end": 132.52,
+"prob": 0.719
+},
+{
+"word": "dein",
+"start": 132.52,
+"end": 132.78,
+"prob": 0.896
+},
+{
+"word": "Mund",
+"start": 132.78,
+"end": 133.04,
+"prob": 0.813
+},
+{
+"word": "sie",
+"start": 133.04,
+"end": 133.3,
+"prob": 0.966
+},
+{
+"word": "selber",
+"start": 133.3,
+"end": 133.88,
+"prob": 0.991
+},
+{
+"word": "waut",
+"start": 133.88,
+"end": 134.42,
+"prob": 0.65
+},
+{
+"word": "Eins,",
+"start": 134.42,
+"end": 134.76,
+"prob": 0.727
+},
+{
+"word": "zwei,",
+"start": 134.94,
+"end": 135.08,
+"prob": 0.994
+},
+{
+"word": "drei,",
+"start": 135.24,
+"end": 135.42,
+"prob": 0.999
+},
+{
+"word": "noch",
+"start": 135.8,
+"end": 135.88,
+"prob": 0.996
+},
+{
+"word": "einmal,",
+"start": 135.88,
+"end": 136.52,
+"prob": 0.997
+},
+{
+"word": "Deutsch",
+"start": 136.94,
+"end": 137.16,
+"prob": 0.974
+},
+{
+"word": "zu",
+"start": 137.16,
+"end": 137.44,
+"prob": 0.988
+},
+{
+"word": "lernen",
+"start": 137.44,
+"end": 137.86,
+"prob": 0.998
+},
+{
+"word": "ist",
+"start": 137.86,
+"end": 138.3,
+"prob": 0.853
+},
+{
+"word": "genial",
+"start": 138.3,
+"end": 138.82,
+"prob": 0.998
+},
+{
+"word": "Bleiben,",
+"start": 138.82,
+"end": 140.14,
+"prob": 0.843
+},
+{
+"word": "blieb,",
+"start": 140.46,
+"end": 140.78,
+"prob": 0.984
+},
+{
+"word": "geblieben,",
+"start": 140.9,
+"end": 141.26,
+"prob": 0.997
+},
+{
+"word": "ich",
+"start": 141.36,
+"end": 141.78,
+"prob": 0.944
+},
+{
+"word": "bin",
+"start": 141.78,
+"end": 142.04,
+"prob": 0.998
+},
+{
+"word": "heute",
+"start": 142.04,
+"end": 142.54,
+"prob": 0.991
+},
+{
+"word": "hier",
+"start": 142.54,
+"end": 143.02,
+"prob": 0.992
+},
+{
+"word": "geblieben",
+"start": 143.02,
+"end": 143.6,
+"prob": 0.997
+},
+{
+"word": "Stehen,",
+"start": 143.6,
+"end": 144.34,
+"prob": 0.689
+},
+{
+"word": "stand,",
+"start": 144.48,
+"end": 144.68,
+"prob": 0.779
+},
+{
+"word": "gestanden,",
+"start": 144.96,
+"end": 145.32,
+"prob": 0.991
+},
+{
+"word": "wir",
+"start": 145.74,
+"end": 146.34,
+"prob": 0.985
+},
+{
+"word": "haben",
+"start": 146.34,
+"end": 146.7,
+"prob": 1.0
+},
+{
+"word": "lange",
+"start": 146.7,
+"end": 147.18,
+"prob": 0.995
+},
+{
+"word": "dort",
+"start": 147.18,
+"end": 147.62,
+"prob": 0.986
+},
+{
+"word": "gestanden",
+"start": 147.62,
+"end": 148.42,
+"prob": 1.0
+},
+{
+"word": "Sitzen,",
+"start": 148.42,
+"end": 149.44,
+"prob": 0.993
+},
+{
+"word": "saß,",
+"start": 149.74,
+"end": 150.12,
+"prob": 0.995
+},
+{
+"word": "gesessen,",
+"start": 150.26,
+"end": 150.58,
+"prob": 1.0
+},
+{
+"word": "ich",
+"start": 150.9,
+"end": 151.06,
+"prob": 0.978
+},
+{
+"word": "habe",
+"start": 151.06,
+"end": 151.4,
+"prob": 0.998
+},
+{
+"word": "auf",
+"start": 151.4,
+"end": 151.74,
+"prob": 1.0
+},
+{
+"word": "dem",
+"start": 151.74,
+"end": 151.92,
+"prob": 0.997
+},
+{
+"word": "Stuhl",
+"start": 151.92,
+"end": 152.46,
+"prob": 0.999
+},
+{
+"word": "gesessen",
+"start": 152.46,
+"end": 152.94,
+"prob": 1.0
+},
+{
+"word": "Liegen,",
+"start": 152.94,
+"end": 153.7,
+"prob": 0.98
+},
+{
+"word": "lag,",
+"start": 153.82,
+"end": 154.06,
+"prob": 0.921
+},
+{
+"word": "gelegen,",
+"start": 154.34,
+"end": 154.76,
+"prob": 0.997
+},
+{
+"word": "das",
+"start": 155.04,
+"end": 155.52,
+"prob": 0.998
+},
+{
+"word": "Buch",
+"start": 155.52,
+"end": 155.76,
+"prob": 0.989
+},
+{
+"word": "hat",
+"start": 155.76,
+"end": 156.06,
+"prob": 0.999
+},
+{
+"word": "auf",
+"start": 156.06,
+"end": 156.36,
+"prob": 1.0
+},
+{
+"word": "dem",
+"start": 156.36,
+"end": 156.62,
+"prob": 0.923
+},
+{
+"word": "Tisch",
+"start": 156.62,
+"end": 156.94,
+"prob": 0.999
+},
+{
+"word": "gelegen",
+"start": 156.94,
+"end": 157.92,
+"prob": 0.999
+},
+{
+"word": "Halten,",
+"start": 157.92,
+"end": 158.74,
+"prob": 0.988
+},
+{
+"word": "hier",
+"start": 159.08,
+"end": 159.24,
+"prob": 0.99
+},
+{
+"word": "gehalten,",
+"start": 159.24,
+"end": 159.86,
+"prob": 0.955
+},
+{
+"word": "ich",
+"start": 160.3,
+"end": 160.38,
+"prob": 0.999
+},
+{
+"word": "habe",
+"start": 160.38,
+"end": 160.72,
+"prob": 0.999
+},
+{
+"word": "die",
+"start": 160.72,
+"end": 160.98,
+"prob": 1.0
+},
+{
+"word": "Tür",
+"start": 160.98,
+"end": 161.34,
+"prob": 0.999
+},
+{
+"word": "aufgehalten",
+"start": 161.34,
+"end": 162.2,
+"prob": 0.999
+},
+{
+"word": "Fallen,",
+"start": 162.2,
+"end": 162.86,
+"prob": 0.975
+},
+{
+"word": "viel",
+"start": 163.18,
+"end": 163.66,
+"prob": 0.852
+},
+{
+"word": "gefallen,",
+"start": 163.66,
+"end": 164.5,
+"prob": 0.966
+},
+{
+"word": "die",
+"start": 164.76,
+"end": 164.84,
+"prob": 1.0
+},
+{
+"word": "Blätter",
+"start": 164.84,
+"end": 165.16,
+"prob": 0.999
+},
+{
+"word": "sind",
+"start": 165.16,
+"end": 165.64,
+"prob": 0.999
+},
+{
+"word": "vom",
+"start": 165.64,
+"end": 165.96,
+"prob": 0.998
+},
+{
+"word": "Baum",
+"start": 165.96,
+"end": 166.28,
+"prob": 0.999
+},
+{
+"word": "gefallen",
+"start": 166.28,
+"end": 166.82,
+"prob": 0.997
+},
+{
+"word": "Vergessen,",
+"start": 166.82,
+"end": 167.44,
+"prob": 0.931
+},
+{
+"word": "vergaß,",
+"start": 167.54,
+"end": 168.08,
+"prob": 0.727
+},
+{
+"word": "vergaß,",
+"start": 168.22,
+"end": 168.68,
+"prob": 0.96
+},
+{
+"word": "vergessen",
+"start": 168.8,
+"end": 169.14,
+"prob": 0.854
+},
+{
+"word": "Ich",
+"start": 169.14,
+"end": 169.54,
+"prob": 0.389
+},
+{
+"word": "habe",
+"start": 169.54,
+"end": 169.78,
+"prob": 0.994
+},
+{
+"word": "den",
+"start": 169.78,
+"end": 169.98,
+"prob": 0.988
+},
+{
+"word": "Termin",
+"start": 169.98,
+"end": 170.88,
+"prob": 0.996
+},
+{
+"word": "vergessen",
+"start": 170.88,
+"end": 171.52,
+"prob": 0.999
+},
+{
+"word": "Beginnen,",
+"start": 171.52,
+"end": 172.14,
+"prob": 0.664
+},
+{
+"word": "begann,",
+"start": 172.24,
+"end": 172.74,
+"prob": 0.956
+},
+{
+"word": "begonnen",
+"start": 172.94,
+"end": 173.32,
+"prob": 0.999
+},
+{
+"word": "Der",
+"start": 173.32,
+"end": 174.16,
+"prob": 0.98
+},
+{
+"word": "Unterricht",
+"start": 174.16,
+"end": 174.74,
+"prob": 0.999
+},
+{
+"word": "hat",
+"start": 174.74,
+"end": 175.26,
+"prob": 0.984
+},
+{
+"word": "begonnen",
+"start": 175.26,
+"end": 176.0,
+"prob": 0.999
+},
+{
+"word": "Gewinnen,",
+"start": 176.0,
+"end": 176.74,
+"prob": 0.939
+},
+{
+"word": "gewann,",
+"start": 177.16,
+"end": 177.34,
+"prob": 0.973
+},
+{
+"word": "gewonnen",
+"start": 177.56,
+"end": 177.96,
+"prob": 1.0
+},
+{
+"word": "Wir",
+"start": 177.96,
+"end": 178.84,
+"prob": 0.996
+},
+{
+"word": "haben",
+"start": 178.84,
+"end": 179.08,
+"prob": 1.0
+},
+{
+"word": "das",
+"start": 179.08,
+"end": 179.32,
+"prob": 1.0
+},
+{
+"word": "Spiel",
+"start": 179.32,
+"end": 179.72,
+"prob": 1.0
+},
+{
+"word": "gewonnen",
+"start": 179.72,
+"end": 180.3,
+"prob": 1.0
+},
+{
+"word": "Ziehen,",
+"start": 180.82,
+"end": 181.66,
+"prob": 0.746
+},
+{
+"word": "Zug,",
+"start": 181.8,
+"end": 182.04,
+"prob": 0.494
+},
+{
+"word": "gezogen",
+"start": 182.28,
+"end": 182.76,
+"prob": 0.999
+},
+{
+"word": "Wir",
+"start": 182.76,
+"end": 183.34,
+"prob": 0.998
+},
+{
+"word": "sind",
+"start": 183.34,
+"end": 183.52,
+"prob": 1.0
+},
+{
+"word": "in",
+"start": 183.52,
+"end": 183.7,
+"prob": 0.999
+},
+{
+"word": "ein",
+"start": 183.7,
+"end": 184.04,
+"prob": 1.0
+},
+{
+"word": "neues",
+"start": 184.04,
+"end": 184.64,
+"prob": 0.996
+},
+{
+"word": "Haus",
+"start": 184.64,
+"end": 184.9,
+"prob": 0.998
+},
+{
+"word": "gezogen",
+"start": 184.9,
+"end": 185.76,
+"prob": 0.999
+},
+{
+"word": "Trang,",
+"start": 185.76,
+"end": 186.72,
+"prob": 0.616
+},
+{
+"word": "trug,",
+"start": 187.02,
+"end": 187.3,
+"prob": 0.448
+},
+{
+"word": "getragen",
+"start": 187.54,
+"end": 187.86,
+"prob": 0.976
+},
+{
+"word": "Ich",
+"start": 187.86,
+"end": 188.34,
+"prob": 0.989
+},
+{
+"word": "habe",
+"start": 188.34,
+"end": 188.7,
+"prob": 0.999
+},
+{
+"word": "die",
+"start": 188.7,
+"end": 188.98,
+"prob": 1.0
+},
+{
+"word": "Tasche",
+"start": 188.98,
+"end": 189.5,
+"prob": 0.998
+},
+{
+"word": "getragen",
+"start": 189.5,
+"end": 190.2,
+"prob": 0.997
+},
+{
+"word": "Werfen,",
+"start": 190.2,
+"end": 191.02,
+"prob": 0.913
+},
+{
+"word": "waff,",
+"start": 191.18,
+"end": 191.44,
+"prob": 0.569
+},
+{
+"word": "geworfen",
+"start": 191.58,
+"end": 192.0,
+"prob": 0.996
+},
+{
+"word": "Er",
+"start": 192.0,
+"end": 192.78,
+"prob": 0.996
+},
+{
+"word": "hat",
+"start": 192.78,
+"end": 193.1,
+"prob": 1.0
+},
+{
+"word": "den",
+"start": 193.1,
+"end": 193.42,
+"prob": 0.999
+},
+{
+"word": "Ball",
+"start": 193.42,
+"end": 194.0,
+"prob": 0.998
+},
+{
+"word": "geworfen",
+"start": 194.0,
+"end": 194.82,
+"prob": 0.999
+},
+{
+"word": "Gehen,",
+"start": 195.44,
+"end": 196.0,
+"prob": 0.512
+},
+{
+"word": "gehen,",
+"start": 196.12,
+"end": 196.2,
+"prob": 0.932
+},
+{
+"word": "gehen,",
+"start": 196.38,
+"end": 196.54,
+"prob": 0.993
+},
+{
+"word": "gegangen,",
+"start": 196.94,
+"end": 197.12,
+"prob": 0.984
+},
+{
+"word": "kommen,",
+"start": 197.52,
+"end": 197.72,
+"prob": 0.981
+},
+{
+"word": "kommen,",
+"start": 198.02,
+"end": 198.3,
+"prob": 0.985
+},
+{
+"word": "kommen,",
+"start": 198.4,
+"end": 198.58,
+"prob": 0.996
+},
+{
+"word": "kommen,",
+"start": 198.68,
+"end": 198.86,
+"prob": 0.957
+},
+{
+"word": "kommen,",
+"start": 199.24,
+"end": 199.24,
+"prob": 0.662
+},
+{
+"word": "sehen,",
+"start": 199.8,
+"end": 200.0,
+"prob": 0.83
+},
+{
+"word": "sah,",
+"start": 200.36,
+"end": 200.62,
+"prob": 0.679
+},
+{
+"word": "sehen,",
+"start": 200.74,
+"end": 200.92,
+"prob": 0.928
+},
+{
+"word": "sah,",
+"start": 201.04,
+"end": 201.2,
+"prob": 0.979
+},
+{
+"word": "gesehen,",
+"start": 201.48,
+"end": 201.72,
+"prob": 0.97
+},
+{
+"word": "sprechen,",
+"start": 202.04,
+"end": 202.32,
+"prob": 0.984
+},
+{
+"word": "sprach,",
+"start": 202.66,
+"end": 203.3,
+"prob": 0.97
+},
+{
+"word": "gesprochen,",
+"start": 203.38,
+"end": 203.96,
+"prob": 0.982
+},
+{
+"word": "essen,",
+"start": 205.14,
+"end": 205.28,
+"prob": 0.946
+},
+{
+"word": "hast",
+"start": 205.66,
+"end": 205.92,
+"prob": 0.575
+},
+{
+"word": "gegessen,",
+"start": 205.92,
+"end": 206.48,
+"prob": 0.709
+},
+{
+"word": "trinken,",
+"start": 206.82,
+"end": 207.22,
+"prob": 0.588
+},
+{
+"word": "tranken,",
+"start": 207.44,
+"end": 207.76,
+"prob": 0.728
+},
+{
+"word": "tranken,",
+"start": 207.98,
+"end": 208.26,
+"prob": 0.741
+},
+{
+"word": "getrunken,",
+"start": 208.56,
+"end": 208.84,
+"prob": 0.896
+},
+{
+"word": "lesen,",
+"start": 209.18,
+"end": 209.62,
+"prob": 0.995
+},
+{
+"word": "lesen,",
+"start": 209.72,
+"end": 210.06,
+"prob": 0.986
+},
+{
+"word": "hast",
+"start": 210.12,
+"end": 210.58,
+"prob": 0.833
+},
+{
+"word": "gelesen,",
+"start": 210.58,
+"end": 211.16,
+"prob": 0.998
+},
+{
+"word": "schreiben,",
+"start": 211.4,
+"end": 211.76,
+"prob": 0.602
+},
+{
+"word": "schrieb,",
+"start": 212.04,
+"end": 212.5,
+"prob": 0.894
+},
+{
+"word": "geschrieben,",
+"start": 212.66,
+"end": 213.16,
+"prob": 0.992
+},
+{
+"word": "drei",
+"start": 214.1,
+"end": 214.24,
+"prob": 0.952
+},
+{
+"word": "Formen,",
+"start": 214.24,
+"end": 214.9,
+"prob": 0.999
+},
+{
+"word": "ein",
+"start": 215.24,
+"end": 215.5,
+"prob": 0.998
+},
+{
+"word": "Rhythmus,",
+"start": 215.5,
+"end": 216.1,
+"prob": 0.999
+},
+{
+"word": "Deutsch",
+"start": 216.18,
+"end": 216.36,
+"prob": 0.935
+},
+{
+"word": "wird",
+"start": 216.36,
+"end": 216.68,
+"prob": 0.977
+},
+{
+"word": "leichter,",
+"start": 216.68,
+"end": 217.22,
+"prob": 0.999
+},
+{
+"word": "hör",
+"start": 217.38,
+"end": 217.52,
+"prob": 0.99
+},
+{
+"word": "nur",
+"start": 217.52,
+"end": 217.76,
+"prob": 0.977
+},
+{
+"word": "zu,",
+"start": 217.76,
+"end": 218.08,
+"prob": 1.0
+},
+{
+"word": "sing",
+"start": 218.5,
+"end": 218.66,
+"prob": 0.999
+},
+{
+"word": "am",
+"start": 218.66,
+"end": 219.02,
+"prob": 0.886
+},
+{
+"word": "Morgen,",
+"start": 219.02,
+"end": 219.46,
+"prob": 0.997
+},
+{
+"word": "sing",
+"start": 219.72,
+"end": 219.88,
+"prob": 1.0
+},
+{
+"word": "am",
+"start": 219.88,
+"end": 220.28,
+"prob": 0.999
+},
+{
+"word": "Abend,",
+"start": 220.28,
+"end": 220.7,
+"prob": 1.0
+},
+{
+"word": "bald",
+"start": 220.92,
+"end": 221.08,
+"prob": 0.997
+},
+{
+"word": "sind",
+"start": 221.08,
+"end": 221.34,
+"prob": 1.0
+},
+{
+"word": "alle",
+"start": 221.34,
+"end": 222.0,
+"prob": 0.998
+},
+{
+"word": "Wörter",
+"start": 222.0,
+"end": 223.38,
+"prob": 0.839
+},
+{
+"word": "da.",
+"start": 223.38,
+"end": 223.78,
+"prob": 0.999
+},
+{
+"word": "Untertitelung",
+"start": 224.82,
+"end": 226.3,
+"prob": 0.764
+},
+{
+"word": "des",
+"start": 226.3,
+"end": 226.3,
+"prob": 0.695
+},
+{
+"word": "ZDF,",
+"start": 226.3,
+"end": 226.3,
+"prob": 0.998
+},
+{
+"word": "2020",
+"start": 226.3,
+"end": 226.3,
+"prob": 0.951
+}
+]

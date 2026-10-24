@@ -1,0 +1,426 @@
+<title>Новый хит: 5 тем</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=Golos+Text:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* Макет: «сет-лист» — узкая колонка, каждая тема как трек с метаданными (BPM, уровень) и строками хука */
+:root {
+  --bg: #f4f5f9;
+  --surface: #ffffff;
+  --ink: #171a2e;
+  --muted: #5b6080;
+  --line: #dcdfeb;
+  --accent: #b5175a;
+  --accent-soft: #fbe7f0;
+  --top: #1d6b5e;
+  --top-soft: #e2f3ef;
+  --display: "Unbounded", "Arial Black", system-ui, sans-serif;
+  --body: "Golos Text", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #12131c; --surface: #1b1d2a; --ink: #eceef8; --muted: #a1a6c4; --line: #2e3145;
+    --accent: #f06aa0; --accent-soft: #3a1a2a; --top: #5fcfb8; --top-soft: #15302b; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #12131c; --surface: #1b1d2a; --ink: #eceef8; --muted: #a1a6c4; --line: #2e3145;
+  --accent: #f06aa0; --accent-soft: #3a1a2a; --top: #5fcfb8; --top-soft: #15302b; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 16px; line-height: 1.55;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 40px 64px;
+}
+main { max-width: 760px; margin: 0 auto; display: flex; flex-direction: column; gap: 48px; }
+h1, h2, h3 { font-family: var(--display); text-wrap: balance; margin: 0; line-height: 1.2; }
+h1 { font-size: clamp(28px, 6vw, 40px); font-weight: 700; }
+h2 { font-size: 20px; font-weight: 700; margin-bottom: 16px; }
+h3 { font-size: 22px; font-weight: 700; }
+p { margin: 0; }
+a { color: var(--accent); }
+.eyebrow { font-family: var(--mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+header { display: flex; flex-direction: column; gap: 14px; }
+.lead { font-size: 18px; color: var(--muted); max-width: 62ch; }
+.verdict { background: var(--top-soft); border-radius: 10px; padding: 16px 18px; display: flex; flex-direction: column; gap: 6px; }
+.verdict strong { color: var(--top); }
+ul.facts { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 14px; }
+ul.facts li { padding-left: 18px; position: relative; max-width: 66ch; }
+ul.facts li::before { content: ""; position: absolute; left: 0; top: .62em; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); }
+.src { font-size: 13px; color: var(--muted); }
+.note { font-size: 14px; color: var(--muted); max-width: 66ch; margin-top: 14px; }
+.formula { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 12px; }
+.formula div { border-top: 2px solid var(--ink); padding-top: 10px; display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.formula b { font-family: var(--mono); font-size: 13px; font-weight: 600; }
+.formula span { font-size: 15px; color: var(--muted); }
+.tracks { display: flex; flex-direction: column; gap: 20px; }
+.track { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 22px; display: flex; flex-direction: column; gap: 16px; }
+.track.top { border-color: var(--top); }
+.track-head { display: flex; gap: 14px; align-items: flex-start; }
+.no { font-family: var(--mono); font-size: 14px; color: var(--muted); padding-top: 6px; min-width: 2ch; }
+.track-head > div { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip { font-family: var(--mono); font-size: 12px; padding: 3px 8px; border-radius: 6px; background: var(--bg); color: var(--muted); white-space: nowrap; }
+.chip.pick { background: var(--top-soft); color: var(--top); font-weight: 600; }
+.grammar { color: var(--muted); font-size: 15px; }
+dl { margin: 0; display: grid; grid-template-columns: 9.5em 1fr; gap: 10px 16px; }
+dt { font-size: 13px; color: var(--muted); font-weight: 600; padding-top: 2px; }
+dd { margin: 0; min-width: 0; }
+.style { font-family: var(--mono); font-size: 13px; background: var(--bg); padding: 8px 10px; border-radius: 6px; display: block; overflow-wrap: anywhere; }
+.hook { background: var(--accent-soft); border-radius: 10px; padding: 16px 18px; display: grid; grid-template-columns: 1fr 1fr; gap: 14px 22px; }
+.hook .de { font-weight: 600; white-space: pre-line; }
+.hook .ru { color: var(--muted); font-size: 14px; white-space: pre-line; }
+.hook .label { grid-column: 1 / -1; font-family: var(--mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
+.sources ol { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 6px; font-size: 14px; }
+summary { cursor: pointer; color: var(--muted); }
+summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+.next { border-left: 3px solid var(--accent); padding: 4px 0 4px 16px; max-width: 64ch; }
+@media (max-width: 560px) {
+  dl { grid-template-columns: 1fr; gap: 2px; }
+  dd { margin-bottom: 10px; }
+  .hook { grid-template-columns: 1fr; }
+  .track { padding: 18px; }
+}
+</style>
+
+<main>
+  <header>
+    <span class="eyebrow">Песни для изучения немецкого · 24 октября 2026</span>
+    <h1>Новый хит: 5 тем на выбор</h1>
+    <p class="lead">Пять тем в формате «правило + список слов», как в роликах-референсах канала Deutsch &amp; Musik, но с полной анимацией. Ниже разбор референсов, план анимации и тренды.</p>
+    <div class="verdict">
+      <strong>Рекомендация: темы 1, 2 и 3</strong>
+      <p>Артикли der/das продолжают уже проверенный ролик про «die», песня про глаголы с предлогами совпадает с трендом на медленный эмоциональный хук, а серия сильных глаголов собрала больше всего сохранений у референса.</p>
+    </div>
+  </header>
+
+  <section>
+    <h2>Что в референсах</h2>
+    <div class="formula">
+      <div><b>«die»: окончания</b><span>-ung, -heit, -keit, -schaft, -ion… 3:01. 245 тыс. просмотров, 5,7 тыс. сохранений (2,3%).</span></div>
+      <div><b>ie → o → o</b><span>15 сильных глаголов таблицей Infinitiv / Präteritum / Partizip II. 0:47. 243 тыс. просмотров, 8,1 тыс. сохранений (3,3%).</span></div>
+      <div><b>Канал</b><span>@yuliyacherepanova_music, 27,6 тыс. подписчиков, собственная музыка. Охват почти в 10 раз больше аудитории.</span></div>
+    </div>
+    <ul class="facts" style="margin-top:20px">
+      <li><b>Формула:</b> одно правило в заголовке, 5–6 слов с иконками, изменяемая часть выделена цветом. Песня просто пропевает список.</li>
+      <li><b>Анимации почти нет.</b> Это статичные слайды, которые сменяются раз в 15–20 секунд. Здесь мы легко выигрываем.</li>
+      <li><b>Высокий процент сохранений</b> показывает, что такие ролики сохраняют как шпаргалку и переслушивают. Поэтому финальный кадр должен быть полной таблицей, которую удобно поставить на паузу.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Как сделаем анимированнее</h2>
+    <div class="formula">
+      <div><b>Слово на слог</b><span>Каждое слово появляется ровно тогда, когда его поют (выравнивание по вокалу, как в наших клипах).</span></div>
+      <div><b>Окончание «прилетает»</b><span>Основа стоит, а -ung / -heit въезжает и защёлкивается цветом артикля.</span></div>
+      <div><b>Живые иконки</b><span>Свои SVG-персонажи и предметы: подпрыгивают, рисуются, моргают в такт.</span></div>
+      <div><b>Припев = стена</b><span>Все окончания группы вспыхивают сеткой по биту, как алфавит в «Hallo, ABC!».</span></div>
+      <div><b>Счётчик и переходы</b><span>«3 / 15» и смена правила перелистыванием карточки между группами.</span></div>
+      <div><b>Финал: шпаргалка и квиз</b><span>Полная таблица на 3–4 секунды для паузы и мини-квиз «der, die или das?» с таймером.</span></div>
+    </div>
+    <p class="note">Светлая тема, вертикаль 1080×1920 и горизонтальная версия для YouTube, как в прошлых песнях.</p>
+  </section>
+
+  <section>
+    <h2>Что показал поиск</h2>
+    <ul class="facts">
+      <li><b>Немецкий язык сам по себе стал мемом.</b> «Gut genug» (Kitschkrieg, Rayan, Shirin David) летом 2026 стал третьим по использованию звуком TikTok: больше 3,3 млн видео. Цепляет фальцет-хук, который иностранцы поют на слух и мишеарят («Doobie Scoot Canoe»), а немцы в комментариях объясняют настоящий текст. Это и есть наш сценарий: короткая фраза, которую хочется спеть, плюс разбор.
+        <div class="src"><a href="https://www.deutschland.de/en/topic/culture/kitschkrieg-du-bist-gut-genug" target="_blank" rel="noopener">deutschland.de</a> · <a href="https://www.bluewin.ch/en/entertainment/blue-music/everyone-is-making-fun-of-this-german-song-even-in-the-us-3286979.html" target="_blank" rel="noopener">bluewin.ch</a> · <a href="https://earlygame.com/de/news/entertainment/wie-der-neue-song-gut-genug-tiktok-in-den-usa-erobert-und-deutsch-ploetzlich-cool-macht" target="_blank" rel="noopener">earlygame</a></div></li>
+      <li><b>TikTok делает немецкие чарты.</b> По данным самого TikTok, каждый третий хит №1 в Германии в 2024 году сначала завирусился там, в среднем за 13 дней до чарта.
+        <div class="src"><a href="https://www.musicbusinessworldwide.com/1-in-3-chart-topping-hits-in-germany-last-year-went-viral-on-tiktok-first-platform-says" target="_blank" rel="noopener">Music Business Worldwide</a></div></li>
+      <li><b>Шлагер и après-ski снова в моде.</b> В январе 2026 «Tirol» DJ Ötzi вернулся в топ-10 Германии через TikTok, раньше то же было с Helene Fischer. Простой припев, который поёт весь зал, отлично ложится на учебный текст.
+        <div class="src"><a href="https://www.vol.at/tiktok-hype-brings-dj-oetzis-tirol-back-to-the-charts/9930803" target="_blank" rel="noopener">vol.at</a> · <a href="https://www.octiive.com/blog/how-tiktok-is-powering-chart-success-in-germany" target="_blank" rel="noopener">octiive</a></div></li>
+      <li><b>Настроение важнее танца, а рэп остаётся главным источником вирусных кусочков.</b> Это данные маркетинговых блогов, поэтому как ориентир, а не как цифра.
+        <div class="src"><a href="https://stackinfluence.com/blog/popular-tiktok-songs-2026-the-creators-audio-guide" target="_blank" rel="noopener">stackinfluence</a> · <a href="https://www.soundverse.ai/blog/article/what-music-genres-are-most-popular-right-now-1014" target="_blank" rel="noopener">soundverse</a></div></li>
+      <li><b>Песня запоминается лучше, чем речь.</b> Группа, учившая слова в пении, запомнила заметно больше, чем группа с тем же текстом голосом. Оптимум в исследовании 2022 года: три прослушивания, эффект держался 4 недели. Обзор по Suno советует учить через песни грамматические шаблоны и не брать слишком громкий или быстрый стиль.
+        <div class="src"><a href="https://muse.jhu.edu/article/747378" target="_blank" rel="noopener">Project MUSE</a> · <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9158461/" target="_blank" rel="noopener">PMC</a> · <a href="https://www.tirfonline.org/wp-content/uploads/2026/04/Suno_Review-Card_Yiviri-Rasifatu-Tombir.pdf" target="_blank" rel="noopener">TIRF</a></div></li>
+      <li><b>В нашей выборке TikTok песни тоже всплывали.</b> Мем-луп «агрессивный немецкий против детской песни про попугая» вошёл в топ-11, а пародии на псевдонемецком набирают охват. Юмор и контраст работают.
+        <div class="src">tiktok-german/SUMMARY.md</div></li>
+    </ul>
+    <p class="note">Отдельной статистики именно по обучающим песням (какой жанр набирает больше) найти не удалось. Выводы ниже собраны из общих трендов TikTok и исследований о песнях в обучении.</p>
+  </section>
+
+  <section>
+    <h2>Формула трека</h2>
+    <div class="formula">
+      <div><b>Хук в первые 3 секунды</b><span>Сразу с припева, его же режем как звук для TikTok на 15 секунд.</span></div>
+      <div><b>Припев = правило</b><span>Грамматика звучит как лозунг, который можно спеть.</span></div>
+      <div><b>Куплеты = примеры</b><span>6–10 бытовых фраз по одной схеме, каждая строка как карточка караоке.</span></div>
+      <div><b>85–105 BPM</b><span>Медленно и чётко, длинные паузы между строками.</span></div>
+      <div><b>2:00–2:40</b><span>Хватает на три полных повтора припева.</span></div>
+      <div><b>Один жест или повтор</b><span>Простое движение или «спой следующую строку» для дуэтов.</span></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Пять тем в формате референса</h2>
+    <div class="tracks">
+
+      <article class="track top">
+        <div class="track-head"><span class="no">1</span><div>
+          <h3>Immer der! / Immer das!</h3>
+          <span class="grammar">Артикли по окончаниям: две песни, вместе с «die» получается трилогия</span>
+          <div class="chips"><span class="chip pick">в топ-3</span><span class="chip">A2</span><span class="chip">100–104 BPM</span><span class="chip">бодрый поп-чант</span></div>
+        </div></div>
+        <dl>
+          <dt>Слова</dt><dd><b>der:</b> -ling (Frühling, Schmetterling), -ismus (Tourismus), -or (Motor, Autor), -ig (Honig, König), -ich (Teppich), -ant/-ent (Elefant, Student), дни, месяцы, времена года.<br><b>das:</b> -chen, -lein (Mädchen, Büchlein), -um (Museum, Zentrum), -ment (Instrument), Ge- (Gemüse, Geschenk), -nis (Ergebnis), глагол как существительное (das Essen).</dd>
+          <dt>Почему зайдёт</dt><dd>Ролик про «die» уже доказал спрос: 245 тыс. просмотров при небольшом канале. Артикли — боль номер один у всех, кто учит немецкий. Трилогия цветов (der синий, die красный, das зелёный) складывается в серию.</dd>
+          <dt>Стиль для Suno</dt><dd><code class="style">upbeat educational pop chant, bright synth and claps, catchy call and response, female vocal, very clear slow German pronunciation, 102 bpm</code></dd>
+        </dl>
+        <div class="hook"><span class="label">Пример хука</span>
+          <p class="de">Ling und ismus, or und ig —
+immer der, das ist der Trick!
+Chen und lein und um und ment —
+immer das, das jeder kennt!</p>
+          <p class="ru">-ling и -ismus, -or и -ig —
+всегда der, вот и весь секрет!
+-chen и -lein, -um и -ment —
+всегда das, это все знают!</p>
+        </div>
+      </article>
+
+      <article class="track top">
+        <div class="track-head"><span class="no">2</span><div>
+          <h3>Ich warte auf dich</h3>
+          <span class="grammar">Глаголы с предлогами: warten auf, denken an, träumen von, sich freuen auf</span>
+          <div class="chips"><span class="chip pick">в топ-3</span><span class="chip">B1</span><span class="chip">88–92 BPM</span><span class="chip">mood-pop, фальцет</span></div>
+        </div></div>
+        <dl>
+          <dt>Слова</dt><dd>warten auf, denken an, träumen von, sich freuen auf / über, sich interessieren für, Angst haben vor, sich kümmern um, sprechen mit, sich verlieben in. Предлог выделен цветом, рядом падеж (A или D).</dd>
+          <dt>Почему зайдёт</dt><dd>Список упакован в песню о любви, поэтому его можно ставить под свои видео, а не только учить. Это тот самый медленный эмоциональный хук, как у «Gut genug». Тема из самых трудных на B1, её ищут перед экзаменом.</dd>
+          <dt>Стиль для Suno</dt><dd><code class="style">dreamy German pop ballad, soft falsetto male vocal, warm synth pads, light 808, emotional, slow and very clear pronunciation, 90 bpm</code></dd>
+        </dl>
+        <div class="hook"><span class="label">Пример хука</span>
+          <p class="de">Ich warte auf dich, ich denke an dich,
+ich träume von dir — vergiss mich nicht.
+Ich freu' mich auf dich, ich hab' Angst vor der Nacht,
+ich hab' mich in dich verliebt — gute Nacht.</p>
+          <p class="ru">Я жду тебя, я думаю о тебе,
+мне снишься ты — не забывай меня.
+Я жду встречи с тобой, я боюсь ночи,
+я в тебя влюбился — спокойной ночи.</p>
+        </div>
+      </article>
+
+      <article class="track top">
+        <div class="track-head"><span class="no">3</span><div>
+          <h3>Ablaut-Serie: ei → ie → ie</h3>
+          <span class="grammar">Сильные глаголы по группам чередования, по песне на группу</span>
+          <div class="chips"><span class="chip pick">в топ-3</span><span class="chip">A2–B1</span><span class="chip">96–100 BPM</span><span class="chip">короткий поп, 45–60 с</span></div>
+        </div></div>
+        <dl>
+          <dt>Слова</dt><dd><b>ei → ie → ie:</b> bleiben, schreiben, steigen, schweigen, scheinen, schreien, leihen, treiben.<br>Следующие выпуски: ei → i → i (schneiden, reiten), i → a → u (singen, trinken, finden), e → a → o (helfen, sprechen), a → u → a (fahren, tragen).</dd>
+          <dt>Почему зайдёт</dt><dd>У референса ролик с ie → o → o набрал больше всего сохранений (3,3%). Короткий формат легко досмотреть до конца, а серия даёт повод подписаться. Продолжает нашу «Drei Formen», но каждое видео про одну группу.</dd>
+          <dt>Стиль для Suno</dt><dd><code class="style">catchy pop with ukulele and hand claps, rhythmic chant verses, three-beat pattern on each verb, female vocal, clear German, 98 bpm</code></dd>
+        </dl>
+        <div class="hook"><span class="label">Пример хука</span>
+          <p class="de">Ich bleibe, ich blieb, ich bin geblieben —
+ei, ie, ie, so wird's geschrieben!
+Ich schreibe, ich schrieb, ich hab' geschrieben —
+ei, ie, ie, das musst du lieben!</p>
+          <p class="ru">Я остаюсь, остался, (уже) остался —
+ei, ie, ie, вот так и пишется!
+Я пишу, писал, (уже) написал —
+ei, ie, ie, это надо полюбить!</p>
+        </div>
+      </article>
+
+      <article class="track">
+        <div class="track-head"><span class="no">4</span><div>
+          <h3>Aus, bei, mit, nach</h3>
+          <span class="grammar">Предлоги с Dativ и с Akkusativ</span>
+          <div class="chips"><span class="chip">A2</span><span class="chip">104 BPM</span><span class="chip">хип-хоп чант</span></div>
+        </div></div>
+        <dl>
+          <dt>Слова</dt><dd><b>Dativ:</b> aus, bei, mit, nach, seit, von, zu (+ gegenüber).<br><b>Akkusativ:</b> durch, für, gegen, ohne, um (+ bis, entlang).<br>Пример на каждый: mit dem Bus, für den Freund.</dd>
+          <dt>Почему зайдёт</dt><dd>Эти списки учителя и так заставляют учить «как считалочку», значит песня закрывает понятную потребность. Подходит для дуэтов: один поёт предлог, другой отвечает падежом.</dd>
+          <dt>Стиль для Suno</dt><dd><code class="style">playful hip-hop chant, boom-bap drums, kids and adult call and response, clear German, 104 bpm</code></dd>
+        </dl>
+        <div class="hook"><span class="label">Пример хука</span>
+          <p class="de">Aus, bei, mit, nach, seit, von, zu —
+Dativ, Dativ, merk's dir im Nu!
+Durch, für, gegen, ohne, um —
+Akkusativ, rundherum!</p>
+          <p class="ru">Aus, bei, mit, nach, seit, von, zu —
+Dativ, Dativ, запомни мигом!
+Durch, für, gegen, ohne, um —
+Akkusativ, со всех сторон!</p>
+        </div>
+      </article>
+
+      <article class="track">
+        <div class="track-head"><span class="no">5</span><div>
+          <h3>Immer Plural</h3>
+          <span class="grammar">Множественное число по окончаниям: -e, -er, -n/-en, -s, без окончания</span>
+          <div class="chips"><span class="chip">A2</span><span class="chip">100 BPM</span><span class="chip">поп-чант</span></div>
+        </div></div>
+        <dl>
+          <dt>Слова</dt><dd>die Frau → die Frauen, das Kind → die Kinder, der Tag → die Tage, das Auto → die Autos, der Lehrer → die Lehrer. Каждая группа — своё правило и свой цвет окончания.</dd>
+          <dt>Почему зайдёт</dt><dd>Тот же формат «окончание = правило», что и у ролика про «die». У нас уже есть видео про Plural, песня станет его музыкальной версией.</dd>
+          <dt>Стиль для Suno</dt><dd><code class="style">cheerful pop chant, marimba and claps, female vocal with group backing, clear slow German, 100 bpm</code></dd>
+        </dl>
+        <div class="hook"><span class="label">Пример хука</span>
+          <p class="de">Eine Frau, zwei Frauen — n!
+Ein Kind, zwei Kinder — er!
+Ein Tag, zwei Tage — e!
+Ein Auto, zwei Autos — s, juchhe!</p>
+          <p class="ru">Одна женщина, две — n!
+Один ребёнок, двое — er!
+Один день, два — e!
+Одна машина, две — s, ура!</p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section>
+    <details>
+    <summary><h2 style="display:inline">Первый вариант тем (сюжетные песни)</h2></summary>
+    <div class="tracks" style="margin-top:16px">
+
+      <article class="track top">
+        <div class="track-head"><span class="no">1</span><div>
+          <h3>Wenn ich könnte</h3>
+          <span class="grammar">Konjunktiv II: hätte, wäre, würde, könnte</span>
+          <div class="chips"><span class="chip pick">в топ-3</span><span class="chip">B1</span><span class="chip">88–92 BPM</span><span class="chip">mood-pop, фальцет</span></div>
+        </div></div>
+        <dl>
+          <dt>Идея</dt><dd>Песня-мечта: «если бы у меня было время, я бы...». Каждый куплет — одно желание (путешествие, другая работа, любовь), припев собирает все формы Konjunktiv II.</dd>
+          <dt>Почему зайдёт</dt><dd>Ровно формат «Gut genug»: тёплый эмоциональный хук, фальцет, хочется подпевать и вставлять под свои видео с мечтами. Konjunktiv II — главная тема B1, её ищут все, кто готовится к экзамену.</dd>
+          <dt>Стиль для Suno</dt><dd><code class="style">dreamy German pop, soft falsetto male vocal, warm synth pads, light 808, emotional, slow and very clear pronunciation, 90 bpm</code></dd>
+        </dl>
+        <div class="hook"><span class="label">Пример хука</span>
+          <p class="de">Wenn ich könnte, würd' ich fliegen,
+wenn ich Zeit hätt', würd' ich bleiben.
+Wär' ich mutig, wär' ich frei —
+hätte, wäre, würde … und du bist dabei.</p>
+          <p class="ru">Если б я мог, я бы летал,
+будь у меня время, я бы остался.
+Будь я смелым, был бы свободен —
+hätte, wäre, würde … и ты рядом.</p>
+        </div>
+      </article>
+
+      <article class="track top">
+        <div class="track-head"><span class="no">2</span><div>
+          <h3>Ich muss nicht, ich will</h3>
+          <span class="grammar">Модальные глаголы: können, dürfen, sollen, müssen, wollen, möchten</span>
+          <div class="chips"><span class="chip pick">в топ-3</span><span class="chip">A2</span><span class="chip">124–128 BPM</span><span class="chip">гимн / техно-шлагер</span></div>
+        </div></div>
+        <dl>
+          <dt>Идея</dt><dd>Мотивационный гимн: «я не обязан, я хочу». Куплеты про будни (Ich soll früh aufstehen, ich darf nicht aufgeben), припев переворачивает müssen в wollen. Продолжает настроение «Ich mache weiter».</dd>
+          <dt>Почему зайдёт</dt><dd>Шлагер и après-ski сейчас возвращаются через TikTok, а мотивация хорошо идёт под спорт, учёбу и «день из жизни». Модальные глаголы нужны с первых месяцев, аудитория A2 самая широкая.</dd>
+          <dt>Стиль для Suno</dt><dd><code class="style">German techno-schlager anthem, four-on-the-floor kick, big singalong crowd chorus, bright synth lead, male and female vocals, clear diction, 126 bpm</code></dd>
+        </dl>
+        <div class="hook"><span class="label">Пример хука</span>
+          <p class="de">Ich kann, ich darf, ich soll, ich muss —
+doch heute will ich, und dann ist Schluss!
+Ich muss nicht, ich will!
+Ich muss nicht, ich will!</p>
+          <p class="ru">Я могу, мне можно, я должен, мне надо —
+но сегодня я хочу, и точка!
+Я не обязан, я хочу!
+Я не обязан, я хочу!</p>
+        </div>
+      </article>
+
+      <article class="track top">
+        <div class="track-head"><span class="no">3</span><div>
+          <h3>Wo oder wohin?</h3>
+          <span class="grammar">Wechselpräpositionen: Akkusativ (куда?) и Dativ (где?)</span>
+          <div class="chips"><span class="chip pick">в топ-3</span><span class="chip">A2–B1</span><span class="chip">100 BPM</span><span class="chip">afro-pop, танцевальный</span></div>
+        </div></div>
+        <dl>
+          <dt>Идея</dt><dd>Танец-челлендж: на «wohin?» делаем шаг (движение, Akkusativ), на «wo?» замираем (место, Dativ). Пары глаголов legen/liegen, stellen/stehen, hängen.</dd>
+          <dt>Почему зайдёт</dt><dd>Одно движение объясняет правило, его легко повторить в дуэте. Afro-pop держится в мировых чартах. Тема перекликается с нашим роликом про предлоги (v6), их можно связать.</dd>
+          <dt>Стиль для Suno</dt><dd><code class="style">afro-pop, light dancehall groove, log drums, call and response vocals, playful, clear German pronunciation, 100 bpm</code></dd>
+        </dl>
+        <div class="hook"><span class="label">Пример хука</span>
+          <p class="de">Wohin? In den Park! — ich geh', Akkusativ!
+Wo? Im Park! — ich bleib', Dativ!
+Ich leg' es auf den Tisch, es liegt auf dem Tisch —
+wohin heißt „den“, wo heißt „dem“, das merk' ich mir!</p>
+          <p class="ru">Куда? В парк! — иду, Akkusativ!
+Где? В парке! — остаюсь, Dativ!
+Кладу на стол, лежит на столе —
+«куда» — это den, «где» — это dem, запомню!</p>
+        </div>
+      </article>
+
+      <article class="track">
+        <div class="track-head"><span class="no">4</span><div>
+          <h3>Verb ans Ende</h3>
+          <span class="grammar">Придаточные с weil, dass, obwohl, wenn: глагол в конец</span>
+          <div class="chips"><span class="chip">A2–B1</span><span class="chip">86–90 BPM</span><span class="chip">deutschrap, boom-bap</span></div>
+        </div></div>
+        <dl>
+          <dt>Идея</dt><dd>Рэп в формате «вопрос — ответ»: исполнитель начинает фразу с союза, хор отвечает «Verb ans Ende!». Куплеты — оправдания в стиле «я опоздал, weil der Bus nicht gekommen ist».</dd>
+          <dt>Почему зайдёт</dt><dd>Рэп даёт больше всего вирусных отрывков, а Deutschrap силён в немецком TikTok. Порядок слов — самая частая ошибка учеников, поэтому у фразы-кричалки высокий шанс застрять в голове.</dd>
+          <dt>Стиль для Suno</dt><dd><code class="style">German boom-bap rap, chill lo-fi beat, crowd chant chorus, confident male rapper, slow clear flow, 88 bpm</code></dd>
+        </dl>
+        <div class="hook"><span class="label">Пример хука</span>
+          <p class="de">Weil ich lerne — Verb ans Ende!
+Dass du kommst — Verb ans Ende!
+Obwohl es regnet — Verb ans Ende!
+Wenn du willst — Verb ans Ende!</p>
+          <p class="ru">Потому что я учу — глагол в конец!
+Что ты придёшь — глагол в конец!
+Хотя идёт дождь — глагол в конец!
+Если ты хочешь — глагол в конец!</p>
+        </div>
+      </article>
+
+      <article class="track">
+        <div class="track-head"><span class="no">5</span><div>
+          <h3>Ich zieh mich an</h3>
+          <span class="grammar">Возвратные глаголы и распорядок дня: mich, dich, sich, uns</span>
+          <div class="chips"><span class="chip">A2</span><span class="chip">94–98 BPM</span><span class="chip">indie / bedroom pop</span></div>
+        </div></div>
+        <dl>
+          <dt>Идея</dt><dd>Утро под песню: просыпаюсь, умываюсь, одеваюсь, спешу. Каждая строка — шаг утренней рутины, припев проходит по всем местоимениям.</dd>
+          <dt>Почему зайдёт</dt><dd>Формат «get ready with me» — один из самых массовых на TikTok, песню легко ставить под свои утренние видео. Лексика бытовая и сразу пригодится.</dd>
+          <dt>Стиль для Suno</dt><dd><code class="style">cozy indie bedroom pop, clean electric guitar, soft drums, warm female vocal, morning vibe, slow clear pronunciation, 96 bpm</code></dd>
+        </dl>
+        <div class="hook"><span class="label">Пример хука</span>
+          <p class="de">Ich wasch' mich, du wäschst dich,
+er wäscht sich — und wir? Wir waschen uns!
+Ich freu' mich, ich beeil' mich,
+ich zieh' mich an — und los!</p>
+          <p class="ru">Я умываюсь, ты умываешься,
+он умывается — а мы? Мы умываемся!
+Я радуюсь, я спешу,
+я одеваюсь — и вперёд!</p>
+        </div>
+      </article>
+
+    </div>
+    </details>
+  </section>
+
+  <section>
+    <h2>Дальше</h2>
+    <p class="next">Выберите две-три темы, и для каждой я сделаю по два варианта: полный текст для Suno и строку стиля.</p>
+  </section>
+
+  <section class="sources">
+    <h2>Источники</h2>
+    <ol>
+      <li><a href="https://www.tiktok.com/@yuliyacherepanova_music/video/7662711086424083745" target="_blank" rel="noopener">Референс 1 — «die» по окончаниям (TikTok)</a></li>
+      <li><a href="https://www.tiktok.com/@yuliyacherepanova_music/video/7677270171714620704" target="_blank" rel="noopener">Референс 2 — ie → o → o (TikTok)</a></li>
+      <li><a href="https://www.deutschland.de/en/topic/culture/kitschkrieg-du-bist-gut-genug" target="_blank" rel="noopener">deutschland.de — «Du bist gut genug» на TikTok</a></li>
+      <li><a href="https://www.bluewin.ch/en/entertainment/blue-music/everyone-is-making-fun-of-this-german-song-even-in-the-us-3286979.html" target="_blank" rel="noopener">bluewin.ch — мишеаринг «Gut genug» в США</a></li>
+      <li><a href="https://earlygame.com/de/news/entertainment/wie-der-neue-song-gut-genug-tiktok-in-den-usa-erobert-und-deutsch-ploetzlich-cool-macht" target="_blank" rel="noopener">earlygame — как «Gut genug» сделал немецкий крутым</a></li>
+      <li><a href="https://www.musicbusinessworldwide.com/1-in-3-chart-topping-hits-in-germany-last-year-went-viral-on-tiktok-first-platform-says" target="_blank" rel="noopener">Music Business Worldwide — TikTok и немецкие чарты</a></li>
+      <li><a href="https://www.vol.at/tiktok-hype-brings-dj-oetzis-tirol-back-to-the-charts/9930803" target="_blank" rel="noopener">vol.at — «Tirol» снова в чартах</a></li>
+      <li><a href="https://stackinfluence.com/blog/popular-tiktok-songs-2026-the-creators-audio-guide" target="_blank" rel="noopener">stackinfluence — звуки TikTok в 2026</a></li>
+      <li><a href="https://www.soundverse.ai/blog/article/what-music-genres-are-most-popular-right-now-1014" target="_blank" rel="noopener">soundverse — популярные жанры 2026</a></li>
+      <li><a href="https://muse.jhu.edu/article/747378" target="_blank" rel="noopener">Project MUSE — пение против речи для словаря</a></li>
+      <li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9158461/" target="_blank" rel="noopener">PMC — повторное прослушивание песен и словарь</a></li>
+      <li><a href="https://www.tirfonline.org/wp-content/uploads/2026/04/Suno_Review-Card_Yiviri-Rasifatu-Tombir.pdf" target="_blank" rel="noopener">TIRF — обзор Suno для языковых уроков</a></li>
+    </ol>
+  </section>
+</main>

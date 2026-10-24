@@ -1,0 +1,637 @@
+{
+ "duration": 273.659,
+ "segs": [
+  {
+   "block": 0,
+   "role": "seg",
+   "k": 0,
+   "text": "Ich warte auf den Bus.",
+   "start": 0.8,
+   "end": 2.158
+  },
+  {
+   "block": 0,
+   "role": "seg",
+   "k": 1,
+   "text": "Ich träume vom Urlaub.",
+   "start": 3.058,
+   "end": 4.579
+  },
+  {
+   "block": 0,
+   "role": "seg",
+   "k": 2,
+   "text": "Warum auf? Und warum von?",
+   "start": 5.479,
+   "end": 7.569
+  },
+  {
+   "block": 0,
+   "role": "seg",
+   "k": 3,
+   "text": "Diese Präpositionen gehören fest zum Verb.",
+   "start": 8.469,
+   "end": 11.347
+  },
+  {
+   "block": 0,
+   "role": "seg",
+   "k": 4,
+   "text": "Man lernt sie am besten zusammen.",
+   "start": 12.247,
+   "end": 14.36
+  },
+  {
+   "block": 1,
+   "role": "seg",
+   "k": 0,
+   "text": "Regel eins.",
+   "start": 16.36,
+   "end": 17.595
+  },
+  {
+   "block": 1,
+   "role": "seg",
+   "k": 1,
+   "text": "Nach auf, über, für und an steht hier meistens der Akkusativ.",
+   "start": 18.495,
+   "end": 22.483
+  },
+  {
+   "block": 1,
+   "role": "seg",
+   "k": 2,
+   "text": "Ich warte auf den Bus.",
+   "start": 23.383,
+   "end": 24.741
+  },
+  {
+   "block": 1,
+   "role": "seg",
+   "k": 3,
+   "text": "Wir freuen uns auf das Wochenende.",
+   "start": 25.641,
+   "end": 27.522
+  },
+  {
+   "block": 1,
+   "role": "seg",
+   "k": 4,
+   "text": "Sie interessiert sich für moderne Kunst.",
+   "start": 28.422,
+   "end": 30.5
+  },
+  {
+   "block": 1,
+   "role": "seg",
+   "k": 5,
+   "text": "Er ärgert sich über den Lärm.",
+   "start": 31.4,
+   "end": 33.057
+  },
+  {
+   "block": 2,
+   "role": "seg",
+   "k": 0,
+   "text": "Noch mehr Beispiele.",
+   "start": 35.057,
+   "end": 36.28
+  },
+  {
+   "block": 2,
+   "role": "seg",
+   "k": 1,
+   "text": "Ich denke oft an meine Familie.",
+   "start": 37.18,
+   "end": 39.13
+  },
+  {
+   "block": 2,
+   "role": "seg",
+   "k": 2,
+   "text": "Wir sprechen über das Wetter.",
+   "start": 40.03,
+   "end": 41.566
+  },
+  {
+   "block": 2,
+   "role": "seg",
+   "k": 3,
+   "text": "Ich bedanke mich für das Geschenk.",
+   "start": 42.466,
+   "end": 44.277
+  },
+  {
+   "block": 2,
+   "role": "seg",
+   "k": 4,
+   "text": "Er bittet um Hilfe.",
+   "start": 45.177,
+   "end": 46.431
+  },
+  {
+   "block": 3,
+   "role": "seg",
+   "k": 0,
+   "text": "Regel zwei.",
+   "start": 48.431,
+   "end": 49.413
+  },
+  {
+   "block": 3,
+   "role": "seg",
+   "k": 1,
+   "text": "Nach mit, von, zu, vor und nach steht der Dativ.",
+   "start": 50.313,
+   "end": 53.45
+  },
+  {
+   "block": 3,
+   "role": "seg",
+   "k": 2,
+   "text": "Ich spreche mit meinem Chef.",
+   "start": 54.35,
+   "end": 55.807
+  },
+  {
+   "block": 3,
+   "role": "seg",
+   "k": 3,
+   "text": "Er träumt von einem eigenen Haus.",
+   "start": 56.707,
+   "end": 58.797
+  },
+  {
+   "block": 3,
+   "role": "seg",
+   "k": 4,
+   "text": "Das Kind hat Angst vor dem Hund.",
+   "start": 59.697,
+   "end": 61.531
+  },
+  {
+   "block": 3,
+   "role": "seg",
+   "k": 5,
+   "text": "Sie fragt nach dem Weg.",
+   "start": 62.431,
+   "end": 64.01
+  },
+  {
+   "block": 4,
+   "role": "seg",
+   "k": 0,
+   "text": "Noch mehr Beispiele.",
+   "start": 66.01,
+   "end": 67.262
+  },
+  {
+   "block": 4,
+   "role": "seg",
+   "k": 1,
+   "text": "Ich treffe mich mit meinen Freunden.",
+   "start": 68.162,
+   "end": 69.904
+  },
+  {
+   "block": 4,
+   "role": "seg",
+   "k": 2,
+   "text": "Sie gratuliert ihm zum Geburtstag.",
+   "start": 70.804,
+   "end": 72.952
+  },
+  {
+   "block": 4,
+   "role": "seg",
+   "k": 3,
+   "text": "Wir nehmen am Kurs teil.",
+   "start": 73.852,
+   "end": 75.361
+  },
+  {
+   "block": 4,
+   "role": "seg",
+   "k": 4,
+   "text": "Er leidet unter dem Stress.",
+   "start": 76.261,
+   "end": 77.944
+  },
+  {
+   "block": 4,
+   "role": "seg",
+   "k": 5,
+   "text": "Achtung: teilnehmen an, mit Dativ!",
+   "start": 78.844,
+   "end": 81.13
+  },
+  {
+   "block": 5,
+   "role": "seg",
+   "k": 0,
+   "text": "Regel drei: die Fragen.",
+   "start": 83.13,
+   "end": 84.83
+  },
+  {
+   "block": 5,
+   "role": "seg",
+   "k": 1,
+   "text": "Bei Sachen fragt man mit wo plus Präposition.",
+   "start": 85.73,
+   "end": 88.83
+  },
+  {
+   "block": 5,
+   "role": "seg",
+   "k": 2,
+   "text": "Worauf wartest du? Auf den Bus.",
+   "start": 89.73,
+   "end": 91.808
+  },
+  {
+   "block": 5,
+   "role": "seg",
+   "k": 3,
+   "text": "Wovon träumst du? Vom Urlaub.",
+   "start": 92.708,
+   "end": 94.573
+  },
+  {
+   "block": 5,
+   "role": "seg",
+   "k": 4,
+   "text": "Woran denkst du? An die Prüfung.",
+   "start": 95.473,
+   "end": 97.66
+  },
+  {
+   "block": 5,
+   "role": "seg",
+   "k": 5,
+   "text": "Beginnt die Präposition mit einem Vokal, kommt ein r dazu.",
+   "start": 98.56,
+   "end": 102.43
+  },
+  {
+   "block": 6,
+   "role": "seg",
+   "k": 0,
+   "text": "Bei Personen fragt man anders: Präposition plus wen oder wem.",
+   "start": 104.43,
+   "end": 108.772
+  },
+  {
+   "block": 6,
+   "role": "seg",
+   "k": 1,
+   "text": "Auf wen wartest du? Auf meine Schwester.",
+   "start": 109.672,
+   "end": 111.995
+  },
+  {
+   "block": 6,
+   "role": "seg",
+   "k": 2,
+   "text": "Mit wem sprichst du? Mit meinem Chef.",
+   "start": 112.895,
+   "end": 115.074
+  },
+  {
+   "block": 6,
+   "role": "seg",
+   "k": 3,
+   "text": "An wen denkst du? An meine Oma.",
+   "start": 115.974,
+   "end": 117.863
+  },
+  {
+   "block": 7,
+   "role": "seg",
+   "k": 0,
+   "text": "Regel vier.",
+   "start": 119.863,
+   "end": 120.728
+  },
+  {
+   "block": 7,
+   "role": "seg",
+   "k": 1,
+   "text": "Statt einer Sache sagst du da plus Präposition.",
+   "start": 121.628,
+   "end": 124.728
+  },
+  {
+   "block": 7,
+   "role": "seg",
+   "k": 2,
+   "text": "Freust du dich auf den Urlaub? Ja, ich freue mich darauf.",
+   "start": 125.628,
+   "end": 128.527
+  },
+  {
+   "block": 7,
+   "role": "seg",
+   "k": 3,
+   "text": "Hast du Angst vor der Prüfung? Nein, davor habe ich keine Angst.",
+   "start": 129.427,
+   "end": 133.374
+  },
+  {
+   "block": 7,
+   "role": "seg",
+   "k": 4,
+   "text": "Aber bei Personen nimmst du ein Pronomen: Ich warte auf ihn.",
+   "start": 134.274,
+   "end": 137.518
+  },
+  {
+   "block": 8,
+   "role": "seg",
+   "k": 0,
+   "text": "Mein Tipp: Lerne immer das ganze Paket.",
+   "start": 139.518,
+   "end": 141.926
+  },
+  {
+   "block": 8,
+   "role": "seg",
+   "k": 1,
+   "text": "Warten auf, plus Akkusativ.",
+   "start": 142.826,
+   "end": 144.939
+  },
+  {
+   "block": 8,
+   "role": "seg",
+   "k": 2,
+   "text": "Träumen von, plus Dativ.",
+   "start": 145.839,
+   "end": 147.527
+  },
+  {
+   "block": 8,
+   "role": "seg",
+   "k": 3,
+   "text": "Sich freuen auf, plus Akkusativ.",
+   "start": 148.427,
+   "end": 150.761
+  },
+  {
+   "block": 8,
+   "role": "seg",
+   "k": 4,
+   "text": "Mach dir eine Liste mit deinen Verben!",
+   "start": 151.661,
+   "end": 153.635
+  },
+  {
+   "block": 9,
+   "role": "intro",
+   "k": 0,
+   "text": "Und jetzt der Test!",
+   "start": 155.635,
+   "end": 156.796
+  },
+  {
+   "block": 9,
+   "role": "intro",
+   "k": 1,
+   "text": "Teil eins: Welche Präposition fehlt?",
+   "start": 157.696,
+   "end": 160.345
+  },
+  {
+   "block": 9,
+   "role": "q",
+   "k": 2,
+   "text": "Eins: Ich warte … den Bus.",
+   "start": 161.245,
+   "end": 164.089
+  },
+  {
+   "block": 9,
+   "role": "q",
+   "k": 3,
+   "text": "Zwei: Sie träumt … einer Weltreise.",
+   "start": 164.989,
+   "end": 168.156
+  },
+  {
+   "block": 9,
+   "role": "q",
+   "k": 4,
+   "text": "Drei: Wir sprechen … das Wetter.",
+   "start": 169.056,
+   "end": 171.562
+  },
+  {
+   "block": 9,
+   "role": "q",
+   "k": 5,
+   "text": "Vier: Er interessiert sich … Fußball.",
+   "start": 172.462,
+   "end": 175.264
+  },
+  {
+   "block": 9,
+   "role": "q",
+   "k": 6,
+   "text": "Fünf: Ich habe Angst … Spinnen.",
+   "start": 176.164,
+   "end": 178.878
+  },
+  {
+   "block": 9,
+   "role": "q",
+   "k": 7,
+   "text": "Sechs: Denkst du … deine Mutter?",
+   "start": 179.778,
+   "end": 182.423
+  },
+  {
+   "block": 9,
+   "role": "pause",
+   "k": 8,
+   "text": "Drück auf Pause und denk nach!",
+   "start": 183.323,
+   "end": 185.482
+  },
+  {
+   "block": 9,
+   "role": "a",
+   "k": 9,
+   "text": "Ich warte auf den Bus.",
+   "start": 194.182,
+   "end": 195.587
+  },
+  {
+   "block": 9,
+   "role": "a",
+   "k": 10,
+   "text": "Sie träumt von einer Weltreise.",
+   "start": 196.487,
+   "end": 198.577
+  },
+  {
+   "block": 9,
+   "role": "a",
+   "k": 11,
+   "text": "Wir sprechen über das Wetter.",
+   "start": 199.477,
+   "end": 201.091
+  },
+  {
+   "block": 9,
+   "role": "a",
+   "k": 12,
+   "text": "Er interessiert sich für Fußball.",
+   "start": 201.991,
+   "end": 204.058
+  },
+  {
+   "block": 9,
+   "role": "a",
+   "k": 13,
+   "text": "Ich habe Angst vor Spinnen.",
+   "start": 204.958,
+   "end": 206.374
+  },
+  {
+   "block": 9,
+   "role": "a",
+   "k": 14,
+   "text": "Denkst du an deine Mutter?",
+   "start": 207.274,
+   "end": 208.417
+  },
+  {
+   "block": 10,
+   "role": "intro",
+   "k": 0,
+   "text": "Teil zwei: Akkusativ oder Dativ?",
+   "start": 210.417,
+   "end": 213.124
+  },
+  {
+   "block": 10,
+   "role": "intro",
+   "k": 1,
+   "text": "Welcher Artikel fehlt?",
+   "start": 214.024,
+   "end": 215.441
+  },
+  {
+   "block": 10,
+   "role": "q",
+   "k": 2,
+   "text": "Eins: Ich freue mich auf … Wochenende.",
+   "start": 216.341,
+   "end": 219.561
+  },
+  {
+   "block": 10,
+   "role": "q",
+   "k": 3,
+   "text": "Zwei: Er spricht mit … Lehrerin.",
+   "start": 220.461,
+   "end": 223.488
+  },
+  {
+   "block": 10,
+   "role": "q",
+   "k": 4,
+   "text": "Drei: Wir denken an … Urlaub.",
+   "start": 224.388,
+   "end": 227.265
+  },
+  {
+   "block": 10,
+   "role": "q",
+   "k": 5,
+   "text": "Vier: Sie nimmt an … Kurs teil.",
+   "start": 228.165,
+   "end": 231.221
+  },
+  {
+   "block": 10,
+   "role": "q",
+   "k": 6,
+   "text": "Fünf: Ich ärgere mich über … Chef.",
+   "start": 232.121,
+   "end": 235.358
+  },
+  {
+   "block": 10,
+   "role": "q",
+   "k": 7,
+   "text": "Sechs: Das Kind hat Angst vor … Hund.",
+   "start": 236.258,
+   "end": 239.488
+  },
+  {
+   "block": 10,
+   "role": "pause",
+   "k": 8,
+   "text": "Drück auf Pause und denk nach!",
+   "start": 240.388,
+   "end": 242.652
+  },
+  {
+   "block": 10,
+   "role": "a",
+   "k": 9,
+   "text": "Ich freue mich auf das Wochenende.",
+   "start": 251.352,
+   "end": 253.175
+  },
+  {
+   "block": 10,
+   "role": "a",
+   "k": 10,
+   "text": "Er spricht mit der Lehrerin.",
+   "start": 254.075,
+   "end": 255.666
+  },
+  {
+   "block": 10,
+   "role": "a",
+   "k": 11,
+   "text": "Wir denken an den Urlaub.",
+   "start": 256.566,
+   "end": 258.18
+  },
+  {
+   "block": 10,
+   "role": "a",
+   "k": 12,
+   "text": "Sie nimmt an dem Kurs teil.",
+   "start": 259.08,
+   "end": 260.773
+  },
+  {
+   "block": 10,
+   "role": "a",
+   "k": 13,
+   "text": "Ich ärgere mich über den Chef.",
+   "start": 261.673,
+   "end": 263.126
+  },
+  {
+   "block": 10,
+   "role": "a",
+   "k": 14,
+   "text": "Das Kind hat Angst vor dem Hund.",
+   "start": 264.026,
+   "end": 265.802
+  },
+  {
+   "block": 11,
+   "role": "cta",
+   "k": 0,
+   "text": "Wie viele von zwölf hast du richtig? Schreib es in die Kommentare!",
+   "start": 267.802,
+   "end": 271.459
+  }
+ ]
+}

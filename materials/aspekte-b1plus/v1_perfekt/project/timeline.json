@@ -1,0 +1,293 @@
+{
+ "duration": 103.128,
+ "segs": [
+  {
+   "block": 0,
+   "role": "seg",
+   "k": 0,
+   "text": "Ich habe gegessen.",
+   "start": 0.8,
+   "end": 1.716
+  },
+  {
+   "block": 0,
+   "role": "seg",
+   "k": 1,
+   "text": "Ich aß.",
+   "start": 2.466,
+   "end": 3.167
+  },
+  {
+   "block": 0,
+   "role": "seg",
+   "k": 2,
+   "text": "Beides ist Vergangenheit.",
+   "start": 3.917,
+   "end": 5.252
+  },
+  {
+   "block": 0,
+   "role": "seg",
+   "k": 3,
+   "text": "Aber wann sagt man was?",
+   "start": 6.002,
+   "end": 7.488
+  },
+  {
+   "block": 1,
+   "role": "seg",
+   "k": 0,
+   "text": "Regel eins.",
+   "start": 9.288,
+   "end": 10.243
+  },
+  {
+   "block": 1,
+   "role": "seg",
+   "k": 1,
+   "text": "Wenn du sprichst, benutzt du meistens das Perfekt.",
+   "start": 10.993,
+   "end": 13.66
+  },
+  {
+   "block": 1,
+   "role": "seg",
+   "k": 2,
+   "text": "Zum Beispiel:",
+   "start": 14.41,
+   "end": 15.374
+  },
+  {
+   "block": 1,
+   "role": "seg",
+   "k": 3,
+   "text": "Gestern habe ich lange geschlafen.",
+   "start": 16.124,
+   "end": 17.822
+  },
+  {
+   "block": 2,
+   "role": "seg",
+   "k": 0,
+   "text": "Regel zwei.",
+   "start": 19.622,
+   "end": 20.679
+  },
+  {
+   "block": 2,
+   "role": "seg",
+   "k": 1,
+   "text": "In E-Mails und Briefen schreibt man auch meistens Perfekt.",
+   "start": 21.429,
+   "end": 24.877
+  },
+  {
+   "block": 2,
+   "role": "seg",
+   "k": 2,
+   "text": "Ich habe deine Nachricht bekommen.",
+   "start": 25.627,
+   "end": 27.136
+  },
+  {
+   "block": 3,
+   "role": "seg",
+   "k": 0,
+   "text": "Regel drei.",
+   "start": 28.936,
+   "end": 29.898
+  },
+  {
+   "block": 3,
+   "role": "seg",
+   "k": 1,
+   "text": "In Zeitungen und Romanen steht meistens Präteritum.",
+   "start": 30.648,
+   "end": 33.934
+  },
+  {
+   "block": 3,
+   "role": "seg",
+   "k": 2,
+   "text": "Leonie nahm Gesangsunterricht.",
+   "start": 34.684,
+   "end": 36.402
+  },
+  {
+   "block": 3,
+   "role": "seg",
+   "k": 3,
+   "text": "Sie träumte von der Bühne.",
+   "start": 37.152,
+   "end": 38.603
+  },
+  {
+   "block": 4,
+   "role": "seg",
+   "k": 0,
+   "text": "Regel vier. Das ist wichtig!",
+   "start": 40.403,
+   "end": 41.993
+  },
+  {
+   "block": 4,
+   "role": "seg",
+   "k": 1,
+   "text": "Bei haben, sein und den Modalverben benutzt man fast immer Präteritum.",
+   "start": 42.743,
+   "end": 46.965
+  },
+  {
+   "block": 4,
+   "role": "seg",
+   "k": 2,
+   "text": "Auch beim Sprechen!",
+   "start": 47.715,
+   "end": 48.825
+  },
+  {
+   "block": 4,
+   "role": "seg",
+   "k": 3,
+   "text": "Ich war müde.",
+   "start": 49.575,
+   "end": 50.388
+  },
+  {
+   "block": 4,
+   "role": "seg",
+   "k": 4,
+   "text": "Ich hatte keine Zeit.",
+   "start": 51.138,
+   "end": 52.319
+  },
+  {
+   "block": 4,
+   "role": "seg",
+   "k": 5,
+   "text": "Ich wollte nach Hause.",
+   "start": 53.069,
+   "end": 54.265
+  },
+  {
+   "block": 5,
+   "role": "seg",
+   "k": 0,
+   "text": "Und so bildest du das Präteritum.",
+   "start": 56.065,
+   "end": 57.818
+  },
+  {
+   "block": 5,
+   "role": "seg",
+   "k": 1,
+   "text": "Regelmäßig: träumen, träumte.",
+   "start": 58.568,
+   "end": 60.574
+  },
+  {
+   "block": 5,
+   "role": "seg",
+   "k": 2,
+   "text": "Unregelmäßig: kommen, kam.",
+   "start": 61.324,
+   "end": 63.287
+  },
+  {
+   "block": 5,
+   "role": "seg",
+   "k": 3,
+   "text": "Bei ich und er gibt es keine Endung.",
+   "start": 64.037,
+   "end": 66.127
+  },
+  {
+   "block": 5,
+   "role": "seg",
+   "k": 4,
+   "text": "Ich kam. Er kam.",
+   "start": 66.877,
+   "end": 68.241
+  },
+  {
+   "block": 6,
+   "role": "intro",
+   "k": 0,
+   "text": "Und jetzt der Test!",
+   "start": 70.041,
+   "end": 71.225
+  },
+  {
+   "block": 6,
+   "role": "intro",
+   "k": 1,
+   "text": "Perfekt oder Präteritum?",
+   "start": 71.975,
+   "end": 73.515
+  },
+  {
+   "block": 6,
+   "role": "q",
+   "k": 2,
+   "text": "Eins: Du erzählst deiner Freundin vom Wochenende.",
+   "start": 74.265,
+   "end": 76.891
+  },
+  {
+   "block": 6,
+   "role": "q",
+   "k": 3,
+   "text": "Zwei: Ich … keine Zeit.",
+   "start": 77.641,
+   "end": 79.132
+  },
+  {
+   "block": 6,
+   "role": "q",
+   "k": 4,
+   "text": "Drei: Ein Zeitungsartikel über einen Unfall.",
+   "start": 79.882,
+   "end": 82.69
+  },
+  {
+   "block": 6,
+   "role": "pause",
+   "k": 5,
+   "text": "Drück auf Pause und denk nach!",
+   "start": 83.44,
+   "end": 85.349
+  },
+  {
+   "block": 6,
+   "role": "a",
+   "k": 6,
+   "text": "Eins: Perfekt.",
+   "start": 90.749,
+   "end": 91.922
+  },
+  {
+   "block": 6,
+   "role": "a",
+   "k": 7,
+   "text": "Zwei: Ich hatte keine Zeit.",
+   "start": 92.672,
+   "end": 94.32
+  },
+  {
+   "block": 6,
+   "role": "a",
+   "k": 8,
+   "text": "Drei: Präteritum.",
+   "start": 95.07,
+   "end": 96.346
+  },
+  {
+   "block": 7,
+   "role": "cta",
+   "k": 0,
+   "text": "Wie viele hast du richtig? Schreib es in die Kommentare!",
+   "start": 98.146,
+   "end": 100.928
+  }
+ ]
+}

@@ -1,0 +1,533 @@
+{
+ "duration": 245.759,
+ "segs": [
+  {
+   "block": 0,
+   "role": "seg",
+   "k": 0,
+   "text": "Der neue Film ist super.",
+   "start": 0.8,
+   "end": 2.367
+  },
+  {
+   "block": 0,
+   "role": "seg",
+   "k": 1,
+   "text": "Ich sehe den neuen Film.",
+   "start": 3.267,
+   "end": 4.753
+  },
+  {
+   "block": 0,
+   "role": "seg",
+   "k": 2,
+   "text": "Neue, neuen. Warum ändert sich die Endung?",
+   "start": 5.653,
+   "end": 8.34
+  },
+  {
+   "block": 0,
+   "role": "seg",
+   "k": 3,
+   "text": "Heute lernst du die Adjektive nach der, die und das.",
+   "start": 9.24,
+   "end": 12.307
+  },
+  {
+   "block": 1,
+   "role": "seg",
+   "k": 0,
+   "text": "Regel eins: Nach der, die und das gibt es nur zwei Endungen.",
+   "start": 14.307,
+   "end": 18.187
+  },
+  {
+   "block": 1,
+   "role": "seg",
+   "k": 1,
+   "text": "Neue, mit e.",
+   "start": 19.087,
+   "end": 20.287
+  },
+  {
+   "block": 1,
+   "role": "seg",
+   "k": 2,
+   "text": "Und neuen, mit e und n.",
+   "start": 21.187,
+   "end": 23.358
+  },
+  {
+   "block": 1,
+   "role": "seg",
+   "k": 3,
+   "text": "Das ist einfacher, als du denkst!",
+   "start": 24.258,
+   "end": 26.15
+  },
+  {
+   "block": 2,
+   "role": "seg",
+   "k": 0,
+   "text": "Regel zwei: Die Endung e gibt es nur fünfmal.",
+   "start": 28.15,
+   "end": 31.187
+  },
+  {
+   "block": 2,
+   "role": "seg",
+   "k": 1,
+   "text": "Im Nominativ Singular:",
+   "start": 32.087,
+   "end": 33.666
+  },
+  {
+   "block": 2,
+   "role": "seg",
+   "k": 2,
+   "text": "der neue Film,",
+   "start": 34.566,
+   "end": 35.574
+  },
+  {
+   "block": 2,
+   "role": "seg",
+   "k": 3,
+   "text": "das neue Auto,",
+   "start": 36.474,
+   "end": 37.67
+  },
+  {
+   "block": 2,
+   "role": "seg",
+   "k": 4,
+   "text": "die neue Lampe.",
+   "start": 38.57,
+   "end": 39.673
+  },
+  {
+   "block": 2,
+   "role": "seg",
+   "k": 5,
+   "text": "Und im Akkusativ bei das und die:",
+   "start": 40.573,
+   "end": 42.696
+  },
+  {
+   "block": 2,
+   "role": "seg",
+   "k": 6,
+   "text": "Ich kaufe das neue Auto und die neue Lampe.",
+   "start": 43.596,
+   "end": 46.56
+  },
+  {
+   "block": 3,
+   "role": "seg",
+   "k": 0,
+   "text": "Regel drei: Überall sonst kommt e und n.",
+   "start": 48.56,
+   "end": 51.721
+  },
+  {
+   "block": 3,
+   "role": "seg",
+   "k": 1,
+   "text": "Akkusativ maskulin: Ich sehe den neuen Film.",
+   "start": 52.621,
+   "end": 55.808
+  },
+  {
+   "block": 3,
+   "role": "seg",
+   "k": 2,
+   "text": "Dativ: mit dem neuen Auto, mit der neuen Lampe.",
+   "start": 56.708,
+   "end": 59.657
+  },
+  {
+   "block": 3,
+   "role": "seg",
+   "k": 3,
+   "text": "Genitiv: wegen des neuen Films.",
+   "start": 60.557,
+   "end": 62.86
+  },
+  {
+   "block": 3,
+   "role": "seg",
+   "k": 4,
+   "text": "Und im Plural immer: die neuen Filme.",
+   "start": 63.76,
+   "end": 66.09
+  },
+  {
+   "block": 4,
+   "role": "seg",
+   "k": 0,
+   "text": "Hier siehst du alles auf einen Blick.",
+   "start": 68.09,
+   "end": 69.778
+  },
+  {
+   "block": 4,
+   "role": "seg",
+   "k": 1,
+   "text": "Nominativ: der neue, das neue, die neue, die neuen.",
+   "start": 70.678,
+   "end": 74.33
+  },
+  {
+   "block": 4,
+   "role": "seg",
+   "k": 2,
+   "text": "Akkusativ: den neuen, das neue, die neue, die neuen.",
+   "start": 75.23,
+   "end": 79.182
+  },
+  {
+   "block": 4,
+   "role": "seg",
+   "k": 3,
+   "text": "Dativ: dem neuen, dem neuen, der neuen, den neuen.",
+   "start": 80.082,
+   "end": 83.449
+  },
+  {
+   "block": 4,
+   "role": "seg",
+   "k": 4,
+   "text": "Genitiv: des neuen, des neuen, der neuen, der neuen.",
+   "start": 84.349,
+   "end": 88.032
+  },
+  {
+   "block": 4,
+   "role": "seg",
+   "k": 5,
+   "text": "Merke: Dativ, Genitiv und Plural haben immer e und n.",
+   "start": 88.932,
+   "end": 93.036
+  },
+  {
+   "block": 5,
+   "role": "seg",
+   "k": 0,
+   "text": "Regel vier: Genauso funktioniert es nach dieser, jeder und welcher.",
+   "start": 95.036,
+   "end": 99.116
+  },
+  {
+   "block": 5,
+   "role": "seg",
+   "k": 1,
+   "text": "Dieser rote Pullover gefällt mir.",
+   "start": 100.016,
+   "end": 102.002
+  },
+  {
+   "block": 5,
+   "role": "seg",
+   "k": 2,
+   "text": "Jedes kleine Kind kennt das.",
+   "start": 102.902,
+   "end": 104.438
+  },
+  {
+   "block": 5,
+   "role": "seg",
+   "k": 3,
+   "text": "Welche neue Wohnung nimmst du?",
+   "start": 105.338,
+   "end": 107.007
+  },
+  {
+   "block": 5,
+   "role": "seg",
+   "k": 4,
+   "text": "Und im Plural auch nach alle, keine und meine: alle neuen Bücher.",
+   "start": 107.907,
+   "end": 111.939
+  },
+  {
+   "block": 6,
+   "role": "seg",
+   "k": 0,
+   "text": "Noch mehr Beispiele aus dem Alltag.",
+   "start": 113.939,
+   "end": 115.948
+  },
+  {
+   "block": 6,
+   "role": "seg",
+   "k": 1,
+   "text": "Ich nehme den grünen Tee.",
+   "start": 116.848,
+   "end": 118.45
+  },
+  {
+   "block": 6,
+   "role": "seg",
+   "k": 2,
+   "text": "Das kleine Café ist gemütlich.",
+   "start": 119.35,
+   "end": 121.637
+  },
+  {
+   "block": 6,
+   "role": "seg",
+   "k": 3,
+   "text": "Wir wohnen in der großen Stadt.",
+   "start": 122.537,
+   "end": 124.191
+  },
+  {
+   "block": 6,
+   "role": "seg",
+   "k": 4,
+   "text": "Die netten Nachbarn helfen uns.",
+   "start": 125.091,
+   "end": 127.169
+  },
+  {
+   "block": 7,
+   "role": "intro",
+   "k": 0,
+   "text": "Und jetzt der Test!",
+   "start": 129.169,
+   "end": 130.249
+  },
+  {
+   "block": 7,
+   "role": "intro",
+   "k": 1,
+   "text": "Teil eins: e oder e und n?",
+   "start": 131.149,
+   "end": 133.383
+  },
+  {
+   "block": 7,
+   "role": "q",
+   "k": 2,
+   "text": "Eins: klein. Der … Hund.",
+   "start": 134.283,
+   "end": 137.019
+  },
+  {
+   "block": 7,
+   "role": "q",
+   "k": 3,
+   "text": "Zwei: alt. Mit dem … Freund.",
+   "start": 137.919,
+   "end": 140.924
+  },
+  {
+   "block": 7,
+   "role": "q",
+   "k": 4,
+   "text": "Drei: rot. Ich kaufe die … Tasche.",
+   "start": 141.824,
+   "end": 144.964
+  },
+  {
+   "block": 7,
+   "role": "q",
+   "k": 5,
+   "text": "Vier: groß. Ich sehe den … Baum.",
+   "start": 145.864,
+   "end": 149.552
+  },
+  {
+   "block": 7,
+   "role": "q",
+   "k": 6,
+   "text": "Fünf: schön. Das … Wetter.",
+   "start": 150.452,
+   "end": 153.328
+  },
+  {
+   "block": 7,
+   "role": "q",
+   "k": 7,
+   "text": "Sechs: neu. Die … Schuhe.",
+   "start": 154.228,
+   "end": 156.927
+  },
+  {
+   "block": 7,
+   "role": "pause",
+   "k": 8,
+   "text": "Drück auf Pause und denk nach!",
+   "start": 157.827,
+   "end": 159.765
+  },
+  {
+   "block": 7,
+   "role": "a",
+   "k": 9,
+   "text": "Der kleine Hund.",
+   "start": 168.465,
+   "end": 169.475
+  },
+  {
+   "block": 7,
+   "role": "a",
+   "k": 10,
+   "text": "Mit dem alten Freund.",
+   "start": 170.375,
+   "end": 171.919
+  },
+  {
+   "block": 7,
+   "role": "a",
+   "k": 11,
+   "text": "Ich kaufe die rote Tasche.",
+   "start": 172.819,
+   "end": 174.443
+  },
+  {
+   "block": 7,
+   "role": "a",
+   "k": 12,
+   "text": "Ich sehe den großen Baum.",
+   "start": 175.343,
+   "end": 176.948
+  },
+  {
+   "block": 7,
+   "role": "a",
+   "k": 13,
+   "text": "Das schöne Wetter.",
+   "start": 177.848,
+   "end": 178.811
+  },
+  {
+   "block": 7,
+   "role": "a",
+   "k": 14,
+   "text": "Die neuen Schuhe.",
+   "start": 179.711,
+   "end": 180.779
+  },
+  {
+   "block": 8,
+   "role": "intro",
+   "k": 0,
+   "text": "Teil zwei: Ergänze die Endung im Satz!",
+   "start": 182.779,
+   "end": 185.459
+  },
+  {
+   "block": 8,
+   "role": "q",
+   "k": 1,
+   "text": "Eins: blau. Wo ist der … Stift?",
+   "start": 186.359,
+   "end": 189.67
+  },
+  {
+   "block": 8,
+   "role": "q",
+   "k": 2,
+   "text": "Zwei: groß. Ich wohne in dem … Haus.",
+   "start": 190.57,
+   "end": 193.857
+  },
+  {
+   "block": 8,
+   "role": "q",
+   "k": 3,
+   "text": "Drei: heiß. Wir trinken den … Kaffee.",
+   "start": 194.757,
+   "end": 198.029
+  },
+  {
+   "block": 8,
+   "role": "q",
+   "k": 4,
+   "text": "Vier: jung. Die … Frau lacht.",
+   "start": 198.929,
+   "end": 201.805
+  },
+  {
+   "block": 8,
+   "role": "q",
+   "k": 5,
+   "text": "Fünf: nett. Das ist das Auto der … Lehrerin.",
+   "start": 202.705,
+   "end": 206.257
+  },
+  {
+   "block": 8,
+   "role": "q",
+   "k": 6,
+   "text": "Sechs: gut. Alle … Ideen sind willkommen.",
+   "start": 207.157,
+   "end": 210.985
+  },
+  {
+   "block": 8,
+   "role": "pause",
+   "k": 7,
+   "text": "Drück auf Pause und denk nach!",
+   "start": 211.885,
+   "end": 214.079
+  },
+  {
+   "block": 8,
+   "role": "a",
+   "k": 8,
+   "text": "Wo ist der blaue Stift?",
+   "start": 222.779,
+   "end": 224.195
+  },
+  {
+   "block": 8,
+   "role": "a",
+   "k": 9,
+   "text": "Ich wohne in dem großen Haus.",
+   "start": 225.095,
+   "end": 226.825
+  },
+  {
+   "block": 8,
+   "role": "a",
+   "k": 10,
+   "text": "Wir trinken den heißen Kaffee.",
+   "start": 227.725,
+   "end": 229.409
+  },
+  {
+   "block": 8,
+   "role": "a",
+   "k": 11,
+   "text": "Die junge Frau lacht.",
+   "start": 230.309,
+   "end": 231.641
+  },
+  {
+   "block": 8,
+   "role": "a",
+   "k": 12,
+   "text": "Das ist das Auto der netten Lehrerin.",
+   "start": 232.541,
+   "end": 234.825
+  },
+  {
+   "block": 8,
+   "role": "a",
+   "k": 13,
+   "text": "Alle guten Ideen sind willkommen.",
+   "start": 235.725,
+   "end": 237.699
+  },
+  {
+   "block": 9,
+   "role": "cta",
+   "k": 0,
+   "text": "Wie viele von zwölf hast du richtig? Schreib es in die Kommentare!",
+   "start": 239.699,
+   "end": 243.559
+  }
+ ]
+}

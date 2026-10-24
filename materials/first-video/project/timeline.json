@@ -1,0 +1,71 @@
+{
+ "duration": 68.275,
+ "scenes": [
+  {
+   "id": "hook",
+   "start": 1.2,
+   "end": 6.645,
+   "text": "Jemand hat mich gefragt: Versteht dein Hund wirklich nur Deutsch? Gute Frage. Heute machen wir den Test."
+  },
+  {
+   "id": "intro",
+   "start": 7.345,
+   "end": 13.651,
+   "text": "Das ist Bruno. Bruno ist ein deutscher Schäferhund. Er ist drei Jahre alt, und er liegt am liebsten auf seinem roten Spielzeug."
+  },
+  {
+   "id": "t1",
+   "start": 14.451,
+   "end": 19.675,
+   "text": "Erster Test. Ich sage es auf Englisch: Sit! Bruno bewegt sich nicht. Er schaut einfach weg."
+  },
+  {
+   "id": "sitz",
+   "start": 20.575,
+   "end": 24.905,
+   "text": "Jetzt auf Deutsch: Sitz! Und sofort setzt er sich hin. Sitz bedeutet: Setz dich!"
+  },
+  {
+   "id": "platz",
+   "start": 25.705,
+   "end": 30.233,
+   "text": "Nächster Befehl: Platz! Bruno legt sich wieder hin. Platz heißt: Leg dich hin!"
+  },
+  {
+   "id": "komm",
+   "start": 31.033,
+   "end": 34.748,
+   "text": "Und jetzt: Komm her! Bruno steht auf und kommt langsam zu mir."
+  },
+  {
+   "id": "aus",
+   "start": 35.548,
+   "end": 40.47,
+   "text": "Er hat sein Spielzeug im Maul. Ich sage: Aus! Und er lässt es fallen. Braver Hund!"
+  },
+  {
+   "id": "grammar",
+   "start": 41.47,
+   "end": 50.164,
+   "text": "Übrigens: Sitz, Platz und Komm her sind Imperative. Zu einem Menschen sagt man höflicher: Könnten Sie sich bitte setzen? Aber Bruno mag keine langen Sätze."
+  },
+  {
+   "id": "twist",
+   "start": 51.164,
+   "end": 54.438,
+   "text": "Letzter Test. Ich flüstere ganz leise: Willst du ein Leckerli?"
+  },
+  {
+   "id": "reveal",
+   "start": 56.038,
+   "end": 61.077,
+   "text": "Plötzlich hebt er den Kopf und schaut mich direkt an. Dieses Wort versteht er in jeder Sprache."
+  },
+  {
+   "id": "cta",
+   "start": 61.977,
+   "end": 65.775,
+   "text": "Welches Wort soll Bruno als Nächstes lernen? Schreib es in die Kommentare!"
+  }
+ ]
+}

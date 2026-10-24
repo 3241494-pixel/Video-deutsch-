@@ -1,0 +1,300 @@
+1
+00:00:00,800 --> 00:00:03,600
+Der neue Film. Aber: ein neuer Film.
+
+2
+00:00:04,353 --> 00:00:05,920
+Warum plötzlich neuer?
+
+3
+00:00:06,739 --> 00:00:10,800
+Ein zeigt nicht, ob das Wort maskulin oder neutral ist.
+
+4
+00:00:11,505 --> 00:00:14,060
+Dann übernimmt das Adjektiv diese Aufgabe.
+
+5
+00:00:16,020 --> 00:00:18,690
+Regel eins: Nominativ nach ein.
+
+6
+00:00:19,430 --> 00:00:21,270
+Maskulin: ein neuer Film.
+
+7
+00:00:22,170 --> 00:00:24,050
+Neutral: ein neues Auto.
+
+8
+00:00:24,948 --> 00:00:26,870
+Feminin: eine neue Lampe.
+
+9
+00:00:27,492 --> 00:00:30,230
+Er, es, e. Wie bei der, das, die.
+
+10
+00:00:32,132 --> 00:00:34,900
+Im Akkusativ ändert sich nur maskulin.
+
+11
+00:00:35,865 --> 00:00:37,800
+Ich kaufe einen neuen Tisch.
+
+12
+00:00:38,646 --> 00:00:40,420
+Ich kaufe ein neues Sofa.
+
+13
+00:00:41,253 --> 00:00:42,960
+Ich kaufe eine neue Lampe.
+
+14
+00:00:44,823 --> 00:00:48,580
+Regel zwei: Im Dativ und Genitiv ist es wie immer.
+
+15
+00:00:49,335 --> 00:00:51,920
+Das Adjektiv bekommt e und n.
+
+16
+00:00:52,731 --> 00:00:54,220
+Mit einem neuen Freund.
+
+17
+00:00:54,948 --> 00:00:56,560
+In einer kleinen Wohnung.
+
+18
+00:00:57,369 --> 00:00:58,920
+Wegen eines langen Staus.
+
+19
+00:01:00,860 --> 00:01:04,340
+Genauso funktioniert es nach kein, mein, dein und so weiter.
+
+20
+00:01:05,166 --> 00:01:06,720
+Das ist mein bester Freund.
+
+21
+00:01:07,575 --> 00:01:09,020
+Ich habe keine große Lust.
+
+22
+00:01:09,845 --> 00:01:12,060
+Unser altes Auto ist kaputt.
+
+23
+00:01:12,846 --> 00:01:16,340
+Im Plural: keine neuen Ideen, meine alten Freunde.
+
+24
+00:01:18,287 --> 00:01:20,110
+Hier ist die Tabelle für ein.
+
+25
+00:01:21,070 --> 00:01:24,030
+Nominativ: ein neuer, ein neues, eine neue.
+
+26
+00:01:25,010 --> 00:01:28,130
+Akkusativ: einen neuen, ein neues, eine neue.
+
+27
+00:01:28,988 --> 00:01:32,475
+Dativ: einem neuen, einem neuen, einer neuen.
+
+28
+00:01:33,130 --> 00:01:36,785
+Genitiv: eines neuen, eines neuen, einer neuen.
+
+29
+00:01:37,385 --> 00:01:41,410
+Im Plural, zum Beispiel mit keine, immer e und n.
+
+30
+00:01:43,242 --> 00:01:45,120
+Regel drei: ohne Artikel.
+
+31
+00:01:45,781 --> 00:01:48,920
+Dann bekommt das Adjektiv die Endung vom Artikel.
+
+32
+00:01:49,753 --> 00:01:51,720
+Der Kaffee: heißer Kaffee.
+
+33
+00:01:52,405 --> 00:01:54,200
+Das Wasser: kaltes Wasser.
+
+34
+00:01:54,894 --> 00:01:56,460
+Die Milch: frische Milch.
+
+35
+00:01:57,257 --> 00:01:59,100
+Die Äpfel: rote Äpfel.
+
+36
+00:02:00,880 --> 00:02:04,700
+Auch im Dativ nimmt das Adjektiv die Endung vom Artikel.
+
+37
+00:02:05,472 --> 00:02:07,720
+Mit heißem Kaffee. Wie bei dem.
+
+38
+00:02:08,521 --> 00:02:09,900
+Mit kaltem Wasser.
+
+39
+00:02:10,745 --> 00:02:12,820
+Mit frischer Milch. Wie bei der.
+
+40
+00:02:13,531 --> 00:02:19,160
+Nach Zahlen und nach viele oder einige ist es genauso: zwei kleine Kinder, viele nette Leute.
+
+41
+00:02:21,179 --> 00:02:23,420
+Also, noch einmal alle drei Typen:
+
+42
+00:02:24,252 --> 00:02:25,500
+Der kalte Saft.
+
+43
+00:02:26,243 --> 00:02:27,660
+Ein kalter Saft.
+
+44
+00:02:28,432 --> 00:02:29,540
+Kalter Saft.
+
+45
+00:02:30,284 --> 00:02:35,000
+Die Information steht nur einmal: im Artikel oder im Adjektiv.
+
+46
+00:02:37,110 --> 00:02:39,570
+Und jetzt der Test!
+
+47
+00:02:38,992 --> 00:02:43,070
+Teil eins: Welche Endung kommt nach ein, kein und mein?
+
+48
+00:02:43,954 --> 00:02:47,010
+Eins: klein. Ein … Hund.
+
+49
+00:02:47,753 --> 00:02:50,770
+Zwei: groß. Ein … Haus.
+
+50
+00:02:51,526 --> 00:02:54,630
+Drei: neu. Ich habe einen … Job.
+
+51
+00:02:55,504 --> 00:02:59,150
+Vier: best. Das ist meine … Freundin.
+
+52
+00:03:00,011 --> 00:03:03,170
+Fünf: alt. Mit einem … Freund.
+
+53
+00:03:04,080 --> 00:03:07,650
+Sechs: eigen. Er hat kein … Zimmer.
+
+54
+00:03:08,424 --> 00:03:10,730
+Drück auf Pause und denk nach!
+
+55
+00:03:19,293 --> 00:03:20,510
+Ein kleiner Hund.
+
+56
+00:03:21,273 --> 00:03:22,630
+Ein großes Haus.
+
+57
+00:03:23,543 --> 00:03:25,170
+Ich habe einen neuen Job.
+
+58
+00:03:26,010 --> 00:03:27,790
+Das ist meine beste Freundin.
+
+59
+00:03:28,605 --> 00:03:30,070
+Mit einem alten Freund.
+
+60
+00:03:30,835 --> 00:03:32,530
+Er hat kein eigenes Zimmer.
+
+61
+00:03:34,449 --> 00:03:36,520
+Teil zwei: ohne Artikel!
+
+62
+00:03:37,520 --> 00:03:41,147
+Eins: heiß. Ich trinke gern … Tee.
+
+63
+00:03:41,747 --> 00:03:44,660
+Zwei: frisch. … Brot schmeckt gut.
+
+64
+00:03:45,475 --> 00:03:48,160
+Drei: warm. Mit … Wasser.
+
+65
+00:03:49,082 --> 00:03:51,960
+Vier: kalt. … Milch ist lecker.
+
+66
+00:03:52,686 --> 00:03:55,680
+Fünf: nett. Viele … Leute.
+
+67
+00:03:56,597 --> 00:03:59,660
+Sechs: schön. Bei … Wetter.
+
+68
+00:04:00,420 --> 00:04:02,720
+Drück auf Pause und denk nach!
+
+69
+00:04:11,286 --> 00:04:13,170
+Ich trinke gern heißen Tee.
+
+70
+00:04:13,766 --> 00:04:15,690
+Frisches Brot schmeckt gut.
+
+71
+00:04:16,454 --> 00:04:17,710
+Mit warmem Wasser.
+
+72
+00:04:18,435 --> 00:04:19,990
+Kalte Milch ist lecker.
+
+73
+00:04:20,730 --> 00:04:22,090
+Viele nette Leute.
+
+74
+00:04:22,952 --> 00:04:24,150
+Bei schönem Wetter.
+
+75
+00:04:26,006 --> 00:04:29,510
+Wie viele von zwölf hast du richtig? Schreib es in die Kommentare!
+

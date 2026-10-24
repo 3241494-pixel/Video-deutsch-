@@ -1,0 +1,13 @@
+[
+ {"id":"hook","text":"Jemand hat mich gefragt: Versteht dein Hund wirklich nur Deutsch? Gute Frage. Heute machen wir den Test."},
+ {"id":"intro","text":"Das ist Bruno. Bruno ist ein deutscher Schäferhund. Er ist drei Jahre alt, und er liegt am liebsten auf seinem roten Spielzeug."},
+ {"id":"t1","text":"Erster Test. Ich sage es auf Englisch: Sit! Bruno bewegt sich nicht. Er schaut einfach weg."},
+ {"id":"sitz","text":"Jetzt auf Deutsch: Sitz! Und sofort setzt er sich hin. Sitz bedeutet: Setz dich!"},
+ {"id":"platz","text":"Nächster Befehl: Platz! Bruno legt sich wieder hin. Platz heißt: Leg dich hin!"},
+ {"id":"komm","text":"Und jetzt: Komm her! Bruno steht auf und kommt langsam zu mir."},
+ {"id":"aus","text":"Er hat sein Spielzeug im Maul. Ich sage: Aus! Und er lässt es fallen. Braver Hund!"},
+ {"id":"grammar","text":"Übrigens: Sitz, Platz und Komm her sind Imperative. Zu einem Menschen sagt man höflicher: Könnten Sie sich bitte setzen? Aber Bruno mag keine langen Sätze."},
+ {"id":"twist","text":"Letzter Test. Ich flüstere ganz leise: Willst du ein Leckerli?"},
+ {"id":"reveal","text":"Plötzlich hebt er den Kopf und schaut mich direkt an. Dieses Wort versteht er in jeder Sprache."},
+ {"id":"cta","text":"Welches Wort soll Bruno als Nächstes lernen? Schreib es in die Kommentare!"}
+]

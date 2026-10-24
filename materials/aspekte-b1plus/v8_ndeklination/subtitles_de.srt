@@ -1,0 +1,284 @@
+1
+00:00:00,800 --> 00:00:02,180
+Das ist der Student.
+
+2
+00:00:03,035 --> 00:00:05,040
+Aber: Ich kenne den Studenten.
+
+3
+00:00:05,759 --> 00:00:08,160
+Warum bekommt Student plötzlich ein n?
+
+4
+00:00:09,180 --> 00:00:10,840
+Das ist die N-Deklination.
+
+5
+00:00:12,874 --> 00:00:15,880
+Regel eins: Das sind nur maskuline Nomen.
+
+6
+00:00:16,692 --> 00:00:18,280
+Viele enden auf e:
+
+7
+00:00:19,004 --> 00:00:22,200
+der Junge, der Kollege, der Kunde, der Löwe.
+
+8
+00:00:23,031 --> 00:00:25,380
+Oft sind es Personen oder Tiere.
+
+9
+00:00:27,260 --> 00:00:29,820
+Auch Nomen mit diesen Endungen gehören dazu:
+
+10
+00:00:30,680 --> 00:00:33,780
+Der Polizist, der Journalist.
+
+11
+00:00:33,334 --> 00:00:35,060
+Der Student, der Präsident.
+
+12
+00:00:36,092 --> 00:00:38,220
+Der Praktikant, der Elefant.
+
+13
+00:00:39,036 --> 00:00:41,660
+Der Soldat, der Pilot, der Fotograf.
+
+14
+00:00:43,584 --> 00:00:46,490
+Und ein paar Nomen haben keine typische Endung:
+
+15
+00:00:47,184 --> 00:00:50,670
+der Mensch, der Herr, der Nachbar, der Held, der Bauer.
+
+16
+00:00:51,379 --> 00:00:53,510
+Diese Wörter musst du einfach lernen.
+
+17
+00:00:55,590 --> 00:01:01,050
+Regel zwei: Das Nomen bekommt in allen Fällen ein n. Nur nicht im Nominativ Singular.
+
+18
+00:01:01,970 --> 00:01:03,530
+Nominativ: der Kollege.
+
+19
+00:01:04,470 --> 00:01:06,850
+Akkusativ: Ich frage den Kollegen.
+
+20
+00:01:07,692 --> 00:01:09,590
+Dativ: Ich helfe dem Kollegen.
+
+21
+00:01:10,470 --> 00:01:12,630
+Genitiv: das Auto des Kollegen.
+
+22
+00:01:14,510 --> 00:01:16,310
+Noch ein Beispiel mit Mensch.
+
+23
+00:01:17,099 --> 00:01:18,450
+Der Mensch ist wichtig.
+
+24
+00:01:19,299 --> 00:01:20,670
+Ich sehe einen Menschen.
+
+25
+00:01:21,540 --> 00:01:23,250
+Ich spreche mit dem Menschen.
+
+26
+00:01:24,077 --> 00:01:25,970
+Und im Plural: die Menschen.
+
+27
+00:01:27,968 --> 00:01:30,120
+Regel drei: Achte im Satz darauf!
+
+28
+00:01:31,060 --> 00:01:33,260
+Der Polizist hilft dem Touristen.
+
+29
+00:01:34,280 --> 00:01:37,260
+Ich frage den Praktikanten.
+
+30
+00:01:36,808 --> 00:01:38,900
+Wir warten auf den Präsidenten.
+
+31
+00:01:39,612 --> 00:01:41,140
+Kennst du meinen Nachbarn?
+
+32
+00:01:42,942 --> 00:01:47,320
+Regel vier: Einige Nomen haben im Genitiv ein n und ein s.
+
+33
+00:01:48,163 --> 00:01:49,960
+Der Name, des Namens.
+
+34
+00:01:50,723 --> 00:01:53,040
+Der Buchstabe, des Buchstabens.
+
+35
+00:01:53,731 --> 00:01:55,240
+Das Herz, des Herzens.
+
+36
+00:01:55,933 --> 00:01:58,820
+Herz ist neutral, aber es gehört auch dazu.
+
+37
+00:02:00,665 --> 00:02:02,300
+Achtung, typische Fehler!
+
+38
+00:02:03,198 --> 00:02:07,060
+Nicht: Ich kenne den Student. Richtig: Ich kenne den Studenten.
+
+39
+00:02:07,738 --> 00:02:10,600
+Nicht: mit dem Junge. Richtig: mit dem Jungen.
+
+40
+00:02:11,406 --> 00:02:13,700
+Und im Brief: Ich schreibe Herrn Müller.
+
+41
+00:02:14,467 --> 00:02:17,300
+Herr bekommt nur ein n, nicht e und n.
+
+42
+00:02:19,089 --> 00:02:20,360
+Und jetzt der Test!
+
+43
+00:02:21,150 --> 00:02:23,300
+Teil eins: Mit oder ohne n?
+
+44
+00:02:24,056 --> 00:02:25,900
+Eins: Ich sehe den Junge…
+
+45
+00:02:26,739 --> 00:02:29,820
+Zwei: Der Kunde… ist zufrieden.
+
+46
+00:02:30,595 --> 00:02:32,540
+Drei: Wir helfen dem Tourist…
+
+47
+00:02:33,323 --> 00:02:35,600
+Vier: Das ist das Auto des Nachbar…
+
+48
+00:02:36,357 --> 00:02:39,580
+Fünf: Der Pilot… fliegt nach Rom.
+
+49
+00:02:40,373 --> 00:02:42,480
+Sechs: Ich frage den Polizist…
+
+50
+00:02:43,234 --> 00:02:45,781
+Drück auf Pause und denk nach!
+
+51
+00:02:54,181 --> 00:02:55,500
+Ich sehe den Jungen.
+
+52
+00:02:56,335 --> 00:02:58,777
+Der Kunde ist zufrieden. Ohne n!
+
+53
+00:02:59,377 --> 00:03:01,020
+Wir helfen dem Touristen.
+
+54
+00:03:01,860 --> 00:03:04,040
+Das ist das Auto des Nachbarn.
+
+55
+00:03:04,820 --> 00:03:07,493
+Der Pilot fliegt nach Rom. Ohne n!
+
+56
+00:03:08,093 --> 00:03:09,800
+Ich frage den Polizisten.
+
+57
+00:03:11,695 --> 00:03:13,970
+Teil zwei: Welche Form ist richtig?
+
+58
+00:03:14,736 --> 00:03:17,610
+Eins: Ich spreche mit … der Kollege.
+
+59
+00:03:18,522 --> 00:03:21,290
+Zwei: Kennst du … der Student?
+
+60
+00:03:22,184 --> 00:03:25,170
+Drei: Das ist das Büro … der Präsident.
+
+61
+00:03:26,132 --> 00:03:29,190
+Vier: Sie schreibt … der Herr Weber.
+
+62
+00:03:30,052 --> 00:03:33,190
+Fünf: Ich gebe … der Junge das Buch.
+
+63
+00:03:34,047 --> 00:03:37,390
+Sechs: Was ist die Bedeutung … der Name?
+
+64
+00:03:38,197 --> 00:03:40,530
+Drück auf Pause und denk nach!
+
+65
+00:03:49,172 --> 00:03:50,760
+Ich spreche mit dem Kollegen.
+
+66
+00:03:51,674 --> 00:03:53,080
+Kennst du den Studenten?
+
+67
+00:03:53,757 --> 00:03:56,220
+Das ist das Büro des Präsidenten.
+
+68
+00:03:56,991 --> 00:03:58,500
+Sie schreibt Herrn Weber.
+
+69
+00:03:59,295 --> 00:04:01,100
+Ich gebe dem Jungen das Buch.
+
+70
+00:04:01,832 --> 00:04:04,160
+Was ist die Bedeutung des Namens?
+
+71
+00:04:06,026 --> 00:04:09,320
+Wie viele von zwölf hast du richtig? Schreib es in die Kommentare!
+

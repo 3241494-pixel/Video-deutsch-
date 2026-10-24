@@ -1,0 +1,565 @@
+{
+ "duration": 262.521,
+ "segs": [
+  {
+   "block": 0,
+   "role": "seg",
+   "k": 0,
+   "text": "Ich stehe um sieben Uhr auf.",
+   "start": 0.8,
+   "end": 2.526
+  },
+  {
+   "block": 0,
+   "role": "seg",
+   "k": 1,
+   "text": "Aber: Ich verstehe dich.",
+   "start": 3.426,
+   "end": 4.966
+  },
+  {
+   "block": 0,
+   "role": "seg",
+   "k": 2,
+   "text": "Warum trennt man aufstehen, aber nicht verstehen?",
+   "start": 5.866,
+   "end": 8.95
+  },
+  {
+   "block": 0,
+   "role": "seg",
+   "k": 3,
+   "text": "Das liegt an der Vorsilbe.",
+   "start": 9.85,
+   "end": 11.494
+  },
+  {
+   "block": 1,
+   "role": "seg",
+   "k": 0,
+   "text": "Regel eins: trennbare Verben.",
+   "start": 13.494,
+   "end": 15.637
+  },
+  {
+   "block": 1,
+   "role": "seg",
+   "k": 1,
+   "text": "Im Hauptsatz geht die Vorsilbe ans Ende.",
+   "start": 16.537,
+   "end": 19.323
+  },
+  {
+   "block": 1,
+   "role": "seg",
+   "k": 2,
+   "text": "Aufräumen: Sie räumt die Wohnung auf.",
+   "start": 20.223,
+   "end": 22.673
+  },
+  {
+   "block": 1,
+   "role": "seg",
+   "k": 3,
+   "text": "Einkaufen: Wir kaufen im Supermarkt ein.",
+   "start": 23.573,
+   "end": 26.275
+  },
+  {
+   "block": 1,
+   "role": "seg",
+   "k": 4,
+   "text": "Mitnehmen: Nimmst du einen Regenschirm mit?",
+   "start": 27.175,
+   "end": 29.474
+  },
+  {
+   "block": 2,
+   "role": "seg",
+   "k": 0,
+   "text": "Typische trennbare Vorsilben sind:",
+   "start": 31.474,
+   "end": 33.97
+  },
+  {
+   "block": 2,
+   "role": "seg",
+   "k": 1,
+   "text": "ab, an, auf, aus, ein, mit, nach, vor, weg und zu.",
+   "start": 34.87,
+   "end": 38.717
+  },
+  {
+   "block": 2,
+   "role": "seg",
+   "k": 2,
+   "text": "Der Zug fährt um acht Uhr ab.",
+   "start": 39.617,
+   "end": 41.44
+  },
+  {
+   "block": 2,
+   "role": "seg",
+   "k": 3,
+   "text": "Ich rufe dich morgen an.",
+   "start": 42.34,
+   "end": 43.849
+  },
+  {
+   "block": 2,
+   "role": "seg",
+   "k": 4,
+   "text": "Hör mir bitte zu!",
+   "start": 44.749,
+   "end": 45.874
+  },
+  {
+   "block": 3,
+   "role": "seg",
+   "k": 0,
+   "text": "Regel zwei: Hör auf die Betonung.",
+   "start": 47.874,
+   "end": 50.232
+  },
+  {
+   "block": 3,
+   "role": "seg",
+   "k": 1,
+   "text": "Bei trennbaren Verben betont man die Vorsilbe.",
+   "start": 51.132,
+   "end": 54.069
+  },
+  {
+   "block": 3,
+   "role": "seg",
+   "k": 2,
+   "text": "Aufstehen. Einkaufen. Anrufen.",
+   "start": 54.969,
+   "end": 57.513
+  },
+  {
+   "block": 3,
+   "role": "seg",
+   "k": 3,
+   "text": "Bei untrennbaren Verben betont man den Stamm.",
+   "start": 58.413,
+   "end": 61.385
+  },
+  {
+   "block": 3,
+   "role": "seg",
+   "k": 4,
+   "text": "Verstehen. Bekommen. Erzählen.",
+   "start": 62.285,
+   "end": 64.825
+  },
+  {
+   "block": 4,
+   "role": "seg",
+   "k": 0,
+   "text": "Regel drei: untrennbare Verben.",
+   "start": 66.825,
+   "end": 69.106
+  },
+  {
+   "block": 4,
+   "role": "seg",
+   "k": 1,
+   "text": "Die Vorsilben be, ent, er, ge, ver, zer und miss trennt man nie.",
+   "start": 70.006,
+   "end": 74.773
+  },
+  {
+   "block": 4,
+   "role": "seg",
+   "k": 2,
+   "text": "Das Verb bleibt immer zusammen.",
+   "start": 75.673,
+   "end": 77.546
+  },
+  {
+   "block": 4,
+   "role": "seg",
+   "k": 3,
+   "text": "Ich bekomme viele E-Mails.",
+   "start": 78.446,
+   "end": 80.246
+  },
+  {
+   "block": 4,
+   "role": "seg",
+   "k": 4,
+   "text": "Sie erzählt eine Geschichte.",
+   "start": 81.146,
+   "end": 82.864
+  },
+  {
+   "block": 4,
+   "role": "seg",
+   "k": 5,
+   "text": "Wir verstehen die Aufgabe.",
+   "start": 83.764,
+   "end": 85.407
+  },
+  {
+   "block": 5,
+   "role": "seg",
+   "k": 0,
+   "text": "Wichtig: Untrennbare Verben haben im Partizip kein ge.",
+   "start": 87.407,
+   "end": 90.804
+  },
+  {
+   "block": 5,
+   "role": "seg",
+   "k": 1,
+   "text": "Bekommen, bekommen.",
+   "start": 91.704,
+   "end": 93.016
+  },
+  {
+   "block": 5,
+   "role": "seg",
+   "k": 2,
+   "text": "Erzählen, erzählt.",
+   "start": 93.916,
+   "end": 95.623
+  },
+  {
+   "block": 5,
+   "role": "seg",
+   "k": 3,
+   "text": "Bei trennbaren Verben steht ge in der Mitte.",
+   "start": 96.523,
+   "end": 99.312
+  },
+  {
+   "block": 5,
+   "role": "seg",
+   "k": 4,
+   "text": "Aufräumen, aufgeräumt.",
+   "start": 100.212,
+   "end": 102.157
+  },
+  {
+   "block": 5,
+   "role": "seg",
+   "k": 5,
+   "text": "Einkaufen, eingekauft.",
+   "start": 103.057,
+   "end": 104.866
+  },
+  {
+   "block": 6,
+   "role": "seg",
+   "k": 0,
+   "text": "Regel vier: Manchmal bleibt auch ein trennbares Verb zusammen.",
+   "start": 106.866,
+   "end": 110.716
+  },
+  {
+   "block": 6,
+   "role": "seg",
+   "k": 1,
+   "text": "Im Nebensatz: Sie sagt, dass sie die Wohnung aufräumt.",
+   "start": 111.616,
+   "end": 114.882
+  },
+  {
+   "block": 6,
+   "role": "seg",
+   "k": 2,
+   "text": "Mit Modalverb: Sie möchte die Wohnung aufräumen.",
+   "start": 115.782,
+   "end": 118.767
+  },
+  {
+   "block": 6,
+   "role": "seg",
+   "k": 3,
+   "text": "Mit zu: Sie hat keine Lust, die Wohnung aufzuräumen.",
+   "start": 119.667,
+   "end": 122.774
+  },
+  {
+   "block": 6,
+   "role": "seg",
+   "k": 4,
+   "text": "Und im Perfekt: Sie hat die Wohnung aufgeräumt.",
+   "start": 123.674,
+   "end": 126.352
+  },
+  {
+   "block": 7,
+   "role": "seg",
+   "k": 0,
+   "text": "Also, noch einmal:",
+   "start": 128.352,
+   "end": 130.001
+  },
+  {
+   "block": 7,
+   "role": "seg",
+   "k": 1,
+   "text": "Ab, an, auf, ein, mit: trennbar.",
+   "start": 130.901,
+   "end": 133.373
+  },
+  {
+   "block": 7,
+   "role": "seg",
+   "k": 2,
+   "text": "Be, ver, er, ent, zer: untrennbar.",
+   "start": 134.273,
+   "end": 136.714
+  },
+  {
+   "block": 7,
+   "role": "seg",
+   "k": 3,
+   "text": "Im Nebensatz, mit Modalverb und mit zu bleibt alles zusammen.",
+   "start": 137.614,
+   "end": 141.533
+  },
+  {
+   "block": 8,
+   "role": "intro",
+   "k": 0,
+   "text": "Und jetzt der Test!",
+   "start": 143.533,
+   "end": 144.729
+  },
+  {
+   "block": 8,
+   "role": "intro",
+   "k": 1,
+   "text": "Teil eins: Bilde den Satz!",
+   "start": 145.629,
+   "end": 147.433
+  },
+  {
+   "block": 8,
+   "role": "q",
+   "k": 2,
+   "text": "Eins: aufstehen. Ich … um sieben Uhr.",
+   "start": 148.333,
+   "end": 151.952
+  },
+  {
+   "block": 8,
+   "role": "q",
+   "k": 3,
+   "text": "Zwei: einkaufen. Wir … heute.",
+   "start": 152.852,
+   "end": 156.074
+  },
+  {
+   "block": 8,
+   "role": "q",
+   "k": 4,
+   "text": "Drei: anrufen. Er … seine Mutter.",
+   "start": 156.974,
+   "end": 160.105
+  },
+  {
+   "block": 8,
+   "role": "q",
+   "k": 5,
+   "text": "Vier: verstehen. Ich … die Frage nicht.",
+   "start": 161.005,
+   "end": 164.479
+  },
+  {
+   "block": 8,
+   "role": "q",
+   "k": 6,
+   "text": "Fünf: mitkommen. … du?",
+   "start": 165.379,
+   "end": 167.666
+  },
+  {
+   "block": 8,
+   "role": "q",
+   "k": 7,
+   "text": "Sechs: erzählen. Sie … eine Geschichte.",
+   "start": 168.566,
+   "end": 171.928
+  },
+  {
+   "block": 8,
+   "role": "pause",
+   "k": 8,
+   "text": "Drück auf Pause und denk nach!",
+   "start": 172.828,
+   "end": 175.009
+  },
+  {
+   "block": 8,
+   "role": "a",
+   "k": 9,
+   "text": "Ich stehe um sieben Uhr auf.",
+   "start": 183.709,
+   "end": 185.398
+  },
+  {
+   "block": 8,
+   "role": "a",
+   "k": 10,
+   "text": "Wir kaufen heute ein.",
+   "start": 186.298,
+   "end": 187.796
+  },
+  {
+   "block": 8,
+   "role": "a",
+   "k": 11,
+   "text": "Er ruft seine Mutter an.",
+   "start": 188.696,
+   "end": 189.95
+  },
+  {
+   "block": 8,
+   "role": "a",
+   "k": 12,
+   "text": "Ich verstehe die Frage nicht.",
+   "start": 190.85,
+   "end": 192.684
+  },
+  {
+   "block": 8,
+   "role": "a",
+   "k": 13,
+   "text": "Kommst du mit?",
+   "start": 193.584,
+   "end": 194.206
+  },
+  {
+   "block": 8,
+   "role": "a",
+   "k": 14,
+   "text": "Sie erzählt eine Geschichte.",
+   "start": 195.106,
+   "end": 196.989
+  },
+  {
+   "block": 9,
+   "role": "intro",
+   "k": 0,
+   "text": "Teil zwei: Getrennt oder zusammen?",
+   "start": 198.989,
+   "end": 201.156
+  },
+  {
+   "block": 9,
+   "role": "q",
+   "k": 1,
+   "text": "Eins: Ich weiß, dass du früh … aufstehen.",
+   "start": 202.056,
+   "end": 205.346
+  },
+  {
+   "block": 9,
+   "role": "q",
+   "k": 2,
+   "text": "Zwei: Ich möchte heute … einkaufen.",
+   "start": 206.246,
+   "end": 209.235
+  },
+  {
+   "block": 9,
+   "role": "q",
+   "k": 3,
+   "text": "Drei: Er hat mich gestern … anrufen.",
+   "start": 210.135,
+   "end": 213.065
+  },
+  {
+   "block": 9,
+   "role": "q",
+   "k": 4,
+   "text": "Vier: Der Bus … um acht Uhr … abfahren.",
+   "start": 213.965,
+   "end": 218.188
+  },
+  {
+   "block": 9,
+   "role": "q",
+   "k": 5,
+   "text": "Fünf: Sie hat die Prüfung … bestehen.",
+   "start": 219.088,
+   "end": 222.254
+  },
+  {
+   "block": 9,
+   "role": "q",
+   "k": 6,
+   "text": "Sechs: Vergiss nicht, das Licht … ausmachen!",
+   "start": 223.154,
+   "end": 226.749
+  },
+  {
+   "block": 9,
+   "role": "pause",
+   "k": 7,
+   "text": "Drück auf Pause und denk nach!",
+   "start": 227.649,
+   "end": 229.921
+  },
+  {
+   "block": 9,
+   "role": "a",
+   "k": 8,
+   "text": "Ich weiß, dass du früh aufstehst.",
+   "start": 238.621,
+   "end": 240.721
+  },
+  {
+   "block": 9,
+   "role": "a",
+   "k": 9,
+   "text": "Ich möchte heute einkaufen.",
+   "start": 241.621,
+   "end": 243.313
+  },
+  {
+   "block": 9,
+   "role": "a",
+   "k": 10,
+   "text": "Er hat mich gestern angerufen.",
+   "start": 244.213,
+   "end": 246.024
+  },
+  {
+   "block": 9,
+   "role": "a",
+   "k": 11,
+   "text": "Der Bus fährt um acht Uhr ab.",
+   "start": 246.924,
+   "end": 248.909
+  },
+  {
+   "block": 9,
+   "role": "a",
+   "k": 12,
+   "text": "Sie hat die Prüfung bestanden.",
+   "start": 249.809,
+   "end": 251.527
+  },
+  {
+   "block": 9,
+   "role": "a",
+   "k": 13,
+   "text": "Vergiss nicht, das Licht auszumachen!",
+   "start": 252.427,
+   "end": 254.567
+  },
+  {
+   "block": 10,
+   "role": "cta",
+   "k": 0,
+   "text": "Wie viele von zwölf hast du richtig? Schreib es in die Kommentare!",
+   "start": 256.567,
+   "end": 260.321
+  }
+ ]
+}

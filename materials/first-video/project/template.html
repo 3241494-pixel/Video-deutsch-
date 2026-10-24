@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="de" data-resolution="portrait">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="gsap.min.js"></script>
+<style>
+  @font-face { font-family: "Inter Display"; font-weight: 500; src: local("Inter Display Medium"), local("InterDisplay-Medium"); }
+  @font-face { font-family: "Inter Display"; font-weight: 600; src: local("Inter Display SemiBold"), local("InterDisplay-SemiBold"); }
+  @font-face { font-family: "Inter Display"; font-weight: 700; src: local("Inter Display Bold"), local("InterDisplay-Bold"); }
+  @font-face { font-family: "Inter Display"; font-weight: 800; src: local("Inter Display ExtraBold"), local("InterDisplay-ExtraBold"); }
+  @font-face { font-family: "Inter Display"; font-weight: 900; src: local("Inter Display Black"), local("InterDisplay-Black"); }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1080px; height: 1920px; overflow: hidden; background: #FFF7EC; }
+  #root { position: relative; width: 1080px; height: 1920px; overflow: hidden; background: #FFF7EC;
+    font-family: "Inter Display", Inter, sans-serif; color: #1F2A44; }
+  .layer { position: absolute; inset: 0; }
+  .blob { position: absolute; border-radius: 50%; filter: blur(2px); }
+  /* верхняя плашка */
+  #chip { position: absolute; top: 110px; left: 60px; padding: 14px 28px; border-radius: 40px; background: #fff;
+    font: 700 34px "Inter Display"; box-shadow: 0 6px 18px rgba(31,42,68,.08); }
+  #steps { position: absolute; top: 118px; right: 60px; display: flex; gap: 14px; }
+  .dot { width: 26px; height: 26px; border-radius: 50%; background: #E9DFD0; }
+  /* стикер-комментарий */
+  #sticker { position: absolute; left: 90px; top: 300px; width: 900px; padding: 34px 40px; border-radius: 36px; background: #fff;
+    box-shadow: 0 18px 40px rgba(31,42,68,.12); transform-origin: 50% 0; }
+  #sticker .who { display: flex; align-items: center; gap: 18px; font: 600 30px Inter; color: #7A8296; }
+  #sticker .av { width: 58px; height: 58px; border-radius: 50%; background: linear-gradient(135deg,#FFC078,#F783AC); }
+  #sticker .q { margin-top: 18px; font: 800 58px/1.15 "Inter Display"; letter-spacing: -0.01em; }
+  #sticker .q b { color: #E8590C; }
+  /* сцена с собакой */
+  #stage { position: absolute; left: 140px; top: 560px; width: 800px; height: 760px; transform-origin: 50% 88%; }
+  #stage svg { width: 800px; height: 760px; overflow: visible; }
+  #tag { position: absolute; left: 560px; top: 620px; padding: 16px 26px; border-radius: 22px; background: #1F2A44; color: #fff;
+    font: 700 34px/1.3 "Inter Display"; transform: rotate(4deg); }
+  #tag small { display: block; font: 500 26px Inter; color: #C9D1E6; }
+  /* карточки слов */
+  .word { position: absolute; left: 0; right: 0; top: 1220px; text-align: center; opacity: 0; }
+  .word .big { display: inline-block; font: 900 150px/1 "Inter Display"; letter-spacing: -0.03em; }
+  .word .mark { display: inline-block; margin-left: 24px; width: 110px; height: 110px; border-radius: 50%; color: #fff;
+    font: 900 70px/110px Inter; vertical-align: 18px; }
+  .word .mean { margin-top: 16px; font: 600 48px Inter; color: #5C667D; }
+  .ok { background: #2F9E44; } .no { background: #E03131; }
+  .lang { display: inline-block; margin-bottom: 18px; padding: 8px 22px; border-radius: 30px; font: 700 30px Inter; background: #E7ECFF; color: #4263EB; }
+  /* субтитры */
+  #caps { position: absolute; left: 60px; right: 60px; top: 1580px; height: 150px; }
+  .cue { position: absolute; left: 0; right: 0; top: 0; text-align: center; opacity: 0; font: 800 64px/1.2 "Inter Display"; }
+  .cue .w { display: inline-block; margin: 0 .13em; color: #1F2A44; transform-origin: 50% 70%; }
+  /* грамматика */
+  #gram { position: absolute; left: 70px; right: 70px; top: 560px; padding: 50px 54px; border-radius: 44px; background: #fff;
+    box-shadow: 0 24px 60px rgba(31,42,68,.14); opacity: 0; }
+  #gram h3 { font: 900 66px "Inter Display"; } #gram h3 span { color: #E8590C; }
+  .row { display: flex; justify-content: space-between; align-items: baseline; padding: 22px 0; border-bottom: 3px dashed #EFE6D8; font: 800 54px "Inter Display"; opacity: 0; }
+  .row i { font: 600 42px Inter; font-style: normal; color: #5C667D; }
+  #pol { margin-top: 30px; padding: 30px 34px; border-radius: 28px; background: #EBFBEE; opacity: 0; }
+  #pol small { display: block; font: 700 32px Inter; color: #2F9E44; }
+  #pol div { margin-top: 8px; font: 800 52px/1.2 "Inter Display"; }
+  /* шёпот / финал */
+  #psst { position: absolute; left: 110px; top: 610px; padding: 24px 34px; border-radius: 30px 30px 30px 6px; background: #fff;
+    font: 800 50px "Inter Display"; box-shadow: 0 12px 30px rgba(31,42,68,.12); opacity: 0; }
+  #psst em { font-style: normal; color: #9AA1B2; font-weight: 600; font-size: 40px; }
+  .heart { position: absolute; font-size: 90px; opacity: 0; }
+  #cta { position: absolute; left: 70px; right: 70px; top: 1230px; padding: 44px 50px; border-radius: 44px; background: #1F2A44; color: #fff;
+    text-align: center; opacity: 0; }
+  #cta .t1 { font: 900 64px/1.15 "Inter Display"; } #cta .t1 b { color: #FFA94D; }
+  #cta .t2 { margin-top: 18px; font: 600 44px Inter; color: #C9D1E6; }
+  #arrow { position: absolute; left: 500px; top: 1570px; font-size: 110px; opacity: 0; }
+  #zzz { position: absolute; left: 760px; top: 1060px; font: 900 70px "Inter Display"; color: #4263EB; opacity: 0; }
+</style>
+</head>
+<body>
+<div id="root" data-composition-id="main" data-start="0" data-duration="{{D}}" data-width="1080" data-height="1920">
+
+  <div id="bg" class="layer clip" data-start="0" data-duration="{{D}}" data-track-index="0">
+    <div id="b1" class="blob" style="left:-160px;top:180px;width:620px;height:620px;background:#FFE3C2"></div>
+    <div id="b2" class="blob" style="left:640px;top:820px;width:560px;height:560px;background:#DBE4FF"></div>
+    <div id="b3" class="blob" style="left:-120px;top:1380px;width:520px;height:520px;background:#D3F9D8"></div>
+    
+  </div>
+
+  <div id="ui" class="layer clip" data-start="0" data-duration="{{D}}" data-track-index="1">
+    <div id="chip">🇩🇪 Deutsch · A2–B1</div>
+    <div id="steps"><div class="dot" id="d1"></div><div class="dot" id="d2"></div><div class="dot" id="d3"></div><div class="dot" id="d4"></div><div class="dot" id="d5"></div></div>
+
+    <div id="stage">
+      <svg viewBox="0 0 800 760">
+        <!-- подстилка-игрушка -->
+        <g id="mat"><ellipse cx="400" cy="660" rx="300" ry="70" fill="#E2453C"/>
+          <ellipse cx="400" cy="648" rx="260" ry="48" fill="#F25F55"/>
+          <path d="M150 650 Q400 600 650 650" stroke="#C92A2A" stroke-width="8" fill="none" stroke-dasharray="18 14"/></g>
+        <g id="dog">
+          <path id="tail" d="M560 560 Q690 520 700 420" stroke="#3B2A20" stroke-width="38" stroke-linecap="round" fill="none"/>
+          <g id="body">
+            <ellipse cx="400" cy="560" rx="230" ry="110" fill="#C98B4F"/>
+            <ellipse cx="420" cy="520" rx="170" ry="62" fill="#3B2A20"/>
+            <ellipse cx="300" cy="640" rx="60" ry="34" fill="#E3B07A"/>
+            <ellipse cx="500" cy="640" rx="60" ry="34" fill="#E3B07A"/>
+          </g>
+          <g id="head">
+            <g id="earL"><path d="M262 300 L250 110 L352 238 Z" fill="#3B2A20"/><path d="M272 270 L266 160 L330 240 Z" fill="#E7B98A"/></g>
+            <g id="earR"><path d="M538 300 L550 110 L448 238 Z" fill="#3B2A20"/><path d="M528 270 L534 160 L470 240 Z" fill="#E7B98A"/></g>
+            <ellipse cx="400" cy="340" rx="150" ry="140" fill="#D9A066"/>
+            <ellipse cx="400" cy="250" rx="100" ry="58" fill="#3B2A20"/>
+            <ellipse cx="400" cy="410" rx="88" ry="68" fill="#F0CFA0"/>
+            <g id="eyes">
+              <ellipse cx="345" cy="330" rx="27" ry="29" fill="#fff"/><ellipse cx="455" cy="330" rx="27" ry="29" fill="#fff"/>
+              <g id="pupils"><circle cx="345" cy="333" r="15" fill="#2B1D14"/><circle cx="455" cy="333" r="15" fill="#2B1D14"/>
+                <circle cx="350" cy="327" r="5" fill="#fff"/><circle cx="460" cy="327" r="5" fill="#fff"/></g>
+              <g id="lids" transform="scale(1,0)" style="transform-origin:400px 302px">
+                <ellipse cx="345" cy="330" rx="30" ry="32" fill="#D9A066"/><ellipse cx="455" cy="330" rx="30" ry="32" fill="#D9A066"/></g>
+            </g>
+            <ellipse cx="400" cy="380" rx="32" ry="22" fill="#1E1612"/>
+            <path d="M400 402 L400 425 M368 432 Q400 452 432 432" stroke="#1E1612" stroke-width="7" fill="none" stroke-linecap="round"/>
+            <path id="tongue" d="M384 438 Q384 490 400 492 Q416 490 416 438 Z" fill="#F783AC" opacity="0"/>
+            <circle id="ball" cx="400" cy="455" r="44" fill="#E2453C" opacity="0"/>
+          </g>
+        </g>
+      </svg>
+    </div>
+    <div id="tag" style="opacity:0">Bruno 🐾<small>Schäferhund · 3 Jahre</small></div>
+    <div id="zzz">z z z</div>
+    <div id="psst">psst… 🤫 <em>ganz leise</em></div>
+    <div class="heart" id="h1" style="left:180px;top:700px">💛</div>
+    <div class="heart" id="h2" style="left:820px;top:640px">🦴</div>
+    <div class="heart" id="h3" style="left:760px;top:900px">💛</div>
+    <div class="heart" id="h4" style="left:140px;top:960px">✨</div>
+
+    <div id="sticker">
+      <div class="who"><div class="av"></div>Antwort auf den Kommentar von @lena.lernt</div>
+      <div class="q">Versteht dein Hund wirklich <b>nur Deutsch</b>? 😂</div>
+    </div>
+
+    <div class="word" id="wSit"><div class="lang">🇬🇧 Englisch</div><br><span class="big">Sit!</span><span class="mark no">✕</span><div class="mean">Bruno reagiert nicht.</div></div>
+    <div class="word" id="wSitz"><div class="lang">🇩🇪 Deutsch</div><br><span class="big">Sitz!</span><span class="mark ok">✓</span><div class="mean">= Setz dich!</div></div>
+    <div class="word" id="wPlatz"><span class="big">Platz!</span><span class="mark ok">✓</span><div class="mean">= Leg dich hin!</div></div>
+    <div class="word" id="wKomm" style="top:1290px"><span class="big">Komm her!</span><div class="mean">= Komm zu mir!</div></div>
+    <div class="word" id="wAus"><span class="big">Aus!</span><span class="mark ok">✓</span><div class="mean">= Lass es fallen!</div></div>
+    <div class="word" id="wLeck"><span class="big" style="font-size:120px">das Leckerli</span><div class="mean">die Leckerlis · ein kleiner Snack 🦴</div></div>
+
+    <div id="gram">
+      <h3>💡 Der <span>Imperativ</span></h3>
+      <div class="row" id="r1">Sitz! <i>→ Setz dich!</i></div>
+      <div class="row" id="r2">Platz! <i>→ Leg dich hin!</i></div>
+      <div class="row" id="r3">Komm her! <i>→ Komm zu mir!</i></div>
+      <div id="pol"><small>höflich · Sie</small><div>Könnten Sie sich bitte setzen?</div></div>
+    </div>
+
+    <div id="cta"><div class="t1">Welches Wort soll Bruno als <b>Nächstes</b> lernen?</div><div class="t2">Schreib es in die Kommentare!</div></div>
+    <div id="arrow">👇</div>
+  </div>
+
+  <div id="caps" class="clip" data-start="0" data-duration="{{D}}" data-track-index="2">
+{{CAPS}}
+  </div>
+</div>
+<script>
+  window.__timelines = window.__timelines || {};
+  const tl = gsap.timeline({ paused: true });
+  const D = {{D}};
+  // фон: медленный дрейф пятен
+  tl.to("#b1", { x: 120, y: 80, duration: D, ease: "sine.inOut" }, 0);
+  tl.to("#b2", { x: -140, y: -60, duration: D, ease: "sine.inOut" }, 0);
+  tl.to("#b3", { x: 160, y: -90, duration: D, ease: "sine.inOut" }, 0);
+  // собака дышит
+  tl.to("#body", { scaleY: 1.03, transformOrigin: "50% 100%", duration: 1.4, ease: "sine.inOut", repeat: Math.floor(D / 1.4) - 1, yoyo: true }, 0);
+  // моргания
+  [3.5, 9.8, 16.2, 23.1, 28.4, 33.9, 44.2, 59.5, 64.2].forEach(t => {
+    tl.to("#lids", { scaleY: 1, duration: .08 }, t); tl.to("#lids", { scaleY: 0, duration: .1 }, t + .12);
+  });
+  const ears = (t, down, d = .35) => { tl.to("#earL", { rotation: down ? -38 : 0, svgOrigin: "300 290", duration: d, ease: "back.out(2)" }, t);
+    tl.to("#earR", { rotation: down ? 38 : 0, svgOrigin: "500 290", duration: d, ease: "back.out(2)" }, t); };
+  const look = (t, x, rot) => { tl.to("#pupils", { x, duration: .3 }, t); tl.to("#head", { rotation: rot, svgOrigin: "400 470", duration: .45, ease: "power2.out" }, t); };
+  const wag = (t, n) => tl.to("#tail", { rotation: 14, svgOrigin: "560 560", duration: .12, repeat: n * 2 - 1, yoyo: true, ease: "sine.inOut" }, t);
+  const show = (sel, t0, t1) => { tl.fromTo(sel, { opacity: 0, y: 40, scale: .85 }, { opacity: 1, y: 0, scale: 1, duration: .35, ease: "back.out(2.2)" }, t0);
+    tl.to(sel, { opacity: 0, y: -20, duration: .25 }, t1); };
+  const step = (n, t) => tl.to("#d" + n, { backgroundColor: "#E8590C", scale: 1.25, duration: .3, ease: "back.out(3)" }, t);
+
+  // ХУК: стикер-комментарий, собака игнорирует
+  tl.fromTo("#sticker", { opacity: 0, y: 80, scale: .8, rotation: -3 }, { opacity: 1, y: 0, scale: 1, rotation: -2, duration: .6, ease: "back.out(1.8)" }, .1);
+  tl.fromTo("#stage", { opacity: 0, y: 120 }, { opacity: 1, y: 0, duration: .7, ease: "power3.out" }, .4);
+  tl.fromTo("#chip", { opacity: 0, x: -40 }, { opacity: 1, x: 0, duration: .4 }, .3);
+  tl.fromTo("#steps", { opacity: 0 }, { opacity: 1, duration: .4 }, .5);
+  ears(.2, true); look(.2, -14, -10);
+  // стикер уезжает наверх и остаётся до конца (как в оригинале)
+  tl.to("#sticker", { y: -110, scale: .62, rotation: 0, duration: .6, ease: "power3.inOut" }, {{intro}} - .3);
+  // ИНТРО: Bruno
+  look({{intro}}, 0, 0); tl.fromTo("#tag", { opacity: 0, scale: .4 }, { opacity: 1, scale: 1, duration: .4, ease: "back.out(3)" }, {{intro}} + .3);
+  tl.to("#tag", { opacity: 0, duration: .3 }, {{t1}} - .3);
+  look({{intro}} + 3.5, -14, -10);
+
+  // ТЕСТ 1: английский — ноль реакции
+  step(1, {{t1}}); show("#wSit", {{sit}}, {{sitzW}} - .4);
+  tl.to("#head", { rotation: -16, duration: .4, ease: "power2.out" }, {{t1away}});
+  tl.to("#wSit .mark", { rotation: 360, duration: .5, ease: "back.out(2)" }, {{sit}} + .3);
+
+  // ТЕСТ 2: Sitz! — уши вверх, садится
+  step(2, {{sitzW}}); show("#wSitz", {{sitzW}}, {{platzW}} - .4);
+  ears({{sitzW}}, false, .25); look({{sitzW}}, 0, 0);
+  tl.to("#dog", { y: -90, duration: .35, ease: "back.out(2.5)" }, {{sitzDo}});
+  tl.to("#body", { scaleX: .82, transformOrigin: "50% 100%", duration: .35 }, {{sitzDo}});
+  wag({{sitzDo}} + .3, 3);
+
+  // ТЕСТ 3: Platz! — ложится
+  step(3, {{platzW}}); show("#wPlatz", {{platzW}}, {{kommW}} - .4);
+  tl.to("#dog", { y: 0, duration: .45, ease: "bounce.out" }, {{platzDo}});
+  tl.to("#body", { scaleX: 1, duration: .4 }, {{platzDo}});
+
+  // ТЕСТ 4: Komm her! — подходит ближе
+  step(4, {{kommW}}); show("#wKomm", {{kommW}}, {{ausW}} - .6);
+  tl.to("#stage", { scale: 1.15, y: -10, duration: 1.6, ease: "power1.inOut" }, {{kommDo}});
+  [0, .4, .8, 1.2].forEach(d => tl.to("#dog", { y: -30, duration: .2, yoyo: true, repeat: 1, ease: "sine.out" }, {{kommDo}} + d));
+  wag({{kommDo}} + .2, 5);
+
+  // ТЕСТ 5: игрушка в пасти, Aus! — падает
+  tl.to("#ball", { opacity: 1, duration: .3 }, {{ausToy}});
+  step(5, {{ausW}}); show("#wAus", {{ausW}}, {{gram}} - .3);
+  tl.to("#ball", { y: 250, duration: .7, ease: "bounce.out" }, {{ausW}} + .25);
+  wag({{ausBrav}}, 4); tl.to("#stage", { scale: 1, y: 0, duration: .6, ease: "power2.inOut" }, {{ausBrav}} + .4);
+
+  // ГРАММАТИКА: собака уходит вниз-вправо, карточка Imperativ
+  tl.to("#ball", { opacity: 0, duration: .2 }, {{gram}} - .4);
+  tl.to("#stage", { scale: .5, x: 250, y: 300, duration: .6, ease: "power3.inOut" }, {{gram}} - .3);
+  tl.fromTo("#gram", { opacity: 0, y: 60 }, { opacity: 1, y: 0, duration: .5, ease: "back.out(1.6)" }, {{gram}});
+  ["#r1", "#r2", "#r3"].forEach((r, i) => tl.fromTo(r, { opacity: 0, x: -50 }, { opacity: 1, x: 0, duration: .35, ease: "power3.out" }, {{gram}} + .5 + i * .45));
+  tl.fromTo("#pol", { opacity: 0, scale: .85 }, { opacity: 1, scale: 1, duration: .4, ease: "back.out(2)" }, {{gramPol}});
+  tl.to("#lids", { scaleY: 1, duration: .3 }, {{gramBruno}}); ears({{gramBruno}}, true);
+  tl.fromTo("#zzz", { opacity: 0, y: 20 }, { opacity: 1, y: -30, duration: 1, ease: "sine.out" }, {{gramBruno}} + .3);
+  tl.to("#gram", { opacity: 0, y: -40, duration: .35 }, {{twist}} - .4);
+  tl.to("#zzz", { opacity: 0, duration: .3 }, {{twist}} - .4);
+  tl.to("#stage", { scale: 1, x: 0, y: 0, duration: .6, ease: "power3.inOut" }, {{twist}} - .3);
+  look({{twist}}, -14, -12);
+
+  // TWIST: шёпот — и резкая реакция
+  tl.fromTo("#psst", { opacity: 0, scale: .6 }, { opacity: 1, scale: 1, duration: .35, ease: "back.out(2.5)" }, {{flu}});
+  tl.to("#psst", { opacity: 0, duration: .3 }, {{rev}} + .4);
+  tl.to("#lids", { scaleY: 0, duration: .08 }, {{rev}});
+  ears({{rev}}, false, .18); look({{rev}}, 0, 0);
+  tl.to("#pupils", { scale: 1.35, svgOrigin: "400 333", duration: .2, ease: "back.out(3)" }, {{rev}});
+  tl.to("#head", { y: -40, duration: .22, ease: "back.out(3)" }, {{rev}});
+  tl.to("#tongue", { opacity: 1, duration: .15 }, {{rev}} + .3);
+  tl.fromTo("#stage", { scale: 1 }, { scale: 1.12, duration: .25, ease: "back.out(3)" }, {{rev}});
+  wag({{rev}} + .2, 10);
+  show("#wLeck", {{revSay}}, {{cta}} - .3);
+  ["#h1", "#h2", "#h3", "#h4"].forEach((h, i) => { tl.fromTo(h, { opacity: 0, scale: .2, y: 40 }, { opacity: 1, scale: 1, y: 0, duration: .4, ease: "back.out(3)" }, {{rev}} + .2 + i * .12);
+    tl.to(h, { y: -60, rotation: i % 2 ? 15 : -15, duration: 2.5, ease: "sine.inOut" }, {{rev}} + .6 + i * .12); });
+
+  // CTA
+  tl.to(["#h1", "#h2", "#h3", "#h4"], { opacity: 0, duration: .3 }, {{cta}} - .2);
+  tl.to("#stage", { scale: .9, y: -20, duration: .5 }, {{cta}});
+  tl.fromTo("#cta", { opacity: 0, y: 80 }, { opacity: 1, y: 0, duration: .5, ease: "back.out(1.8)" }, {{cta}});
+  tl.fromTo("#arrow", { opacity: 0 }, { opacity: 1, duration: .3 }, {{cta}} + .5);
+  tl.to("#arrow", { y: 40, duration: .4, yoyo: true, repeat: 7, ease: "sine.inOut" }, {{cta}} + .5);
+
+  // субтитры (караоке)
+{{CAPJS}}
+  tl.set({}, {}, D);
+  window.__timelines["main"] = tl;
+  tl.seek(0);
+</script>
+</body>
+</html>

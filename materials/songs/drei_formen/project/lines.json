@@ -1,0 +1,2962 @@
+[
+{
+"sec": null,
+"text": "Gehen — ging — gegangen,",
+"words": [
+"Gehen",
+"ging",
+"gegangen,"
+],
+"t": [
+[
+0.0,
+0.76
+],
+[
+0.76,
+0.9
+],
+[
+1.08,
+1.48
+]
+],
+"start": 0.0,
+"end": 1.48
+},
+{
+"sec": null,
+"text": "ich bin nach Hause gegangen.",
+"words": [
+"ich",
+"bin",
+"nach",
+"Hause",
+"gegangen."
+],
+"t": [
+[
+1.84,
+2.06
+],
+[
+2.06,
+2.36
+],
+[
+2.36,
+2.7
+],
+[
+2.7,
+3.12
+],
+[
+3.12,
+3.8
+]
+],
+"start": 1.84,
+"end": 3.8
+},
+{
+"sec": null,
+"text": "Kommen — kam — gekommen,",
+"words": [
+"Kommen",
+"kam",
+"gekommen,"
+],
+"t": [
+[
+3.8,
+4.82
+],
+[
+4.82,
+5.84
+],
+[
+5.84,
+6.0
+]
+],
+"start": 3.8,
+"end": 6.0
+},
+{
+"sec": null,
+"text": "meine Freunde sind gekommen.",
+"words": [
+"meine",
+"Freunde",
+"sind",
+"gekommen."
+],
+"t": [
+[
+6.46,
+6.88
+],
+[
+6.88,
+7.44
+],
+[
+7.44,
+7.88
+],
+[
+7.88,
+8.64
+]
+],
+"start": 6.46,
+"end": 8.64
+},
+{
+"sec": null,
+"text": "Gehen — ging — gegangen,",
+"words": [
+"Gehen",
+"ging",
+"gegangen,"
+],
+"t": [
+[
+8.64,
+9.7
+],
+[
+9.94,
+10.2
+],
+[
+10.46,
+10.76
+]
+],
+"start": 8.64,
+"end": 10.76
+},
+{
+"sec": null,
+"text": "ich bin nach Hause gegangen.",
+"words": [
+"ich",
+"bin",
+"nach",
+"Hause",
+"gegangen."
+],
+"t": [
+[
+11.18,
+11.36
+],
+[
+11.36,
+11.62
+],
+[
+11.62,
+11.98
+],
+[
+11.98,
+12.4
+],
+[
+12.4,
+13.14
+]
+],
+"start": 11.18,
+"end": 13.14
+},
+{
+"sec": null,
+"text": "Kommen — kam — gekommen,",
+"words": [
+"Kommen",
+"kam",
+"gekommen,"
+],
+"t": [
+[
+13.14,
+14.27
+],
+[
+14.27,
+15.4
+],
+[
+15.4,
+15.4
+]
+],
+"start": 13.14,
+"end": 15.4
+},
+{
+"sec": null,
+"text": "meine Freunde sind gekommen.",
+"words": [
+"meine",
+"Freunde",
+"sind",
+"gekommen."
+],
+"t": [
+[
+15.74,
+16.16
+],
+[
+16.16,
+16.72
+],
+[
+16.72,
+17.14
+],
+[
+17.14,
+17.94
+]
+],
+"start": 15.74,
+"end": 17.94
+},
+{
+"sec": null,
+"text": "Fahren — fuhr — gefahren,",
+"words": [
+"Fahren",
+"fuhr",
+"gefahren,"
+],
+"t": [
+[
+17.94,
+19.02
+],
+[
+19.3,
+19.6
+],
+[
+19.8,
+20.18
+]
+],
+"start": 17.94,
+"end": 20.18
+},
+{
+"sec": null,
+"text": "wir sind mit dem Bus gefahren.",
+"words": [
+"wir",
+"sind",
+"mit",
+"dem",
+"Bus",
+"gefahren."
+],
+"t": [
+[
+20.44,
+20.64
+],
+[
+20.64,
+20.94
+],
+[
+20.94,
+21.34
+],
+[
+21.34,
+21.56
+],
+[
+21.56,
+21.86
+],
+[
+21.86,
+22.5
+]
+],
+"start": 20.44,
+"end": 22.5
+},
+{
+"sec": null,
+"text": "Laufen — lief — gelaufen,",
+"words": [
+"Laufen",
+"lief",
+"gelaufen,"
+],
+"t": [
+[
+22.5,
+23.18
+],
+[
+23.46,
+23.66
+],
+[
+24.44,
+24.8
+]
+],
+"start": 22.5,
+"end": 24.8
+},
+{
+"sec": null,
+"text": "wir sind durch den Park gelaufen.",
+"words": [
+"wir",
+"sind",
+"durch",
+"den",
+"Park",
+"gelaufen."
+],
+"t": [
+[
+25.22,
+25.32
+],
+[
+25.32,
+25.62
+],
+[
+25.62,
+25.92
+],
+[
+25.92,
+26.18
+],
+[
+26.18,
+26.56
+],
+[
+26.56,
+27.0
+]
+],
+"start": 25.22,
+"end": 27.0
+},
+{
+"sec": null,
+"text": "Gehen, ging, gegangen,",
+"words": [
+"Gehen,",
+"ging,",
+"gegangen,"
+],
+"t": [
+[
+27.0,
+28.2
+],
+[
+28.88,
+29.02
+],
+[
+29.02,
+29.4
+]
+],
+"start": 27.0,
+"end": 29.4
+},
+{
+"sec": null,
+"text": "Wörter klingen, Wörter klangen!",
+"words": [
+"Wörter",
+"klingen,",
+"Wörter",
+"klangen!"
+],
+"t": [
+[
+29.4,
+30.097
+],
+[
+30.097,
+30.794
+],
+[
+30.794,
+31.491
+],
+[
+31.491,
+32.189
+]
+],
+"start": 29.4,
+"end": 32.189
+},
+{
+"sec": null,
+"text": "Kommen, kam, gekommen,",
+"words": [
+"Kommen,",
+"kam,",
+"gekommen,"
+],
+"t": [
+[
+32.189,
+32.886
+],
+[
+32.886,
+33.583
+],
+[
+33.583,
+34.28
+]
+],
+"start": 32.189,
+"end": 34.28
+},
+{
+"sec": null,
+"text": "jetzt hab ich sie aufgenommen!",
+"words": [
+"jetzt",
+"hab",
+"ich",
+"sie",
+"aufgenommen!"
+],
+"t": [
+[
+34.28,
+34.62
+],
+[
+34.62,
+35.06
+],
+[
+35.06,
+35.2
+],
+[
+35.2,
+35.48
+],
+[
+35.48,
+36.36
+]
+],
+"start": 34.28,
+"end": 36.36
+},
+{
+"sec": null,
+"text": "Drei Formen, sing sie laut,",
+"words": [
+"Drei",
+"Formen,",
+"sing",
+"sie",
+"laut,"
+],
+"t": [
+[
+36.84,
+37.18
+],
+[
+37.18,
+37.82
+],
+[
+37.82,
+38.24
+],
+[
+38.24,
+38.38
+],
+[
+38.38,
+38.92
+]
+],
+"start": 36.84,
+"end": 38.92
+},
+{
+"sec": null,
+"text": "bis dein Mund sie selber baut!",
+"words": [
+"bis",
+"dein",
+"Mund",
+"sie",
+"selber",
+"baut!"
+],
+"t": [
+[
+38.92,
+39.233
+],
+[
+39.233,
+39.547
+],
+[
+39.547,
+39.86
+],
+[
+39.86,
+40.16
+],
+[
+40.16,
+40.66
+],
+[
+40.66,
+41.26
+]
+],
+"start": 38.92,
+"end": 41.26
+},
+{
+"sec": null,
+"text": "Eins, zwei, drei — noch einmal,",
+"words": [
+"Eins,",
+"zwei,",
+"drei",
+"noch",
+"einmal,"
+],
+"t": [
+[
+41.5,
+41.62
+],
+[
+41.9,
+41.9
+],
+[
+42.08,
+42.26
+],
+[
+42.62,
+42.72
+],
+[
+42.72,
+43.3
+]
+],
+"start": 41.5,
+"end": 43.3
+},
+{
+"sec": null,
+"text": "Deutsch zu lernen ist genial!",
+"words": [
+"Deutsch",
+"zu",
+"lernen",
+"ist",
+"genial!"
+],
+"t": [
+[
+43.74,
+43.98
+],
+[
+43.98,
+44.28
+],
+[
+44.28,
+44.66
+],
+[
+44.66,
+45.14
+],
+[
+45.14,
+45.64
+]
+],
+"start": 43.74,
+"end": 45.64
+},
+{
+"sec": null,
+"text": "Sehen — sah — gesehen,",
+"words": [
+"Sehen",
+"sah",
+"gesehen,"
+],
+"t": [
+[
+46.66,
+46.96
+],
+[
+47.24,
+47.44
+],
+[
+47.76,
+47.96
+]
+],
+"start": 46.66,
+"end": 47.96
+},
+{
+"sec": null,
+"text": "ich habe dich heute gesehen.",
+"words": [
+"ich",
+"habe",
+"dich",
+"heute",
+"gesehen."
+],
+"t": [
+[
+48.36,
+48.58
+],
+[
+48.58,
+48.92
+],
+[
+48.92,
+49.2
+],
+[
+49.2,
+49.62
+],
+[
+49.62,
+50.38
+]
+],
+"start": 48.36,
+"end": 50.38
+},
+{
+"sec": null,
+"text": "Sprechen — sprach — gesprochen,",
+"words": [
+"Sprechen",
+"sprach",
+"gesprochen,"
+],
+"t": [
+[
+50.68,
+50.92
+],
+[
+51.32,
+51.6
+],
+[
+51.86,
+52.06
+]
+],
+"start": 50.68,
+"end": 52.06
+},
+{
+"sec": null,
+"text": "wir haben Deutsch gesprochen.",
+"words": [
+"wir",
+"haben",
+"Deutsch",
+"gesprochen."
+],
+"t": [
+[
+53.06,
+53.24
+],
+[
+53.24,
+53.58
+],
+[
+53.58,
+53.98
+],
+[
+53.98,
+54.4
+]
+],
+"start": 53.06,
+"end": 54.4
+},
+{
+"sec": null,
+"text": "Geben — gab — gegeben,",
+"words": [
+"Geben",
+"gab",
+"gegeben,"
+],
+"t": [
+[
+55.56,
+56.28
+],
+[
+56.6,
+56.78
+],
+[
+57.04,
+57.38
+]
+],
+"start": 55.56,
+"end": 57.38
+},
+{
+"sec": null,
+"text": "ich habe dir ein Buch gegeben.",
+"words": [
+"ich",
+"habe",
+"dir",
+"ein",
+"Buch",
+"gegeben."
+],
+"t": [
+[
+57.6,
+57.72
+],
+[
+57.72,
+58.1
+],
+[
+58.1,
+58.48
+],
+[
+58.48,
+58.84
+],
+[
+58.84,
+59.1
+],
+[
+59.1,
+59.74
+]
+],
+"start": 57.6,
+"end": 59.74
+},
+{
+"sec": null,
+"text": "Nehmen — nahm — genommen,",
+"words": [
+"Nehmen",
+"nahm",
+"genommen,"
+],
+"t": [
+[
+59.74,
+60.4
+],
+[
+60.4,
+60.9
+],
+[
+60.9,
+61.38
+]
+],
+"start": 59.74,
+"end": 61.38
+},
+{
+"sec": null,
+"text": "ich habe den Zug genommen.",
+"words": [
+"ich",
+"habe",
+"den",
+"Zug",
+"genommen."
+],
+"t": [
+[
+62.48,
+62.52
+],
+[
+62.52,
+62.88
+],
+[
+62.88,
+63.4
+],
+[
+63.4,
+63.76
+],
+[
+63.76,
+64.54
+]
+],
+"start": 62.48,
+"end": 64.54
+},
+{
+"sec": null,
+"text": "Sehen, sah, gesehen,",
+"words": [
+"Sehen,",
+"sah,",
+"gesehen,"
+],
+"t": [
+[
+64.54,
+65.6
+],
+[
+65.92,
+66.08
+],
+[
+66.4,
+66.68
+]
+],
+"start": 64.54,
+"end": 66.68
+},
+{
+"sec": null,
+"text": "Wörter bleiben nicht mehr stehen!",
+"words": [
+"Wörter",
+"bleiben",
+"nicht",
+"mehr",
+"stehen!"
+],
+"t": [
+[
+66.94,
+67.36
+],
+[
+67.36,
+68.0
+],
+[
+68.26,
+68.44
+],
+[
+68.44,
+68.62
+],
+[
+68.62,
+69.02
+]
+],
+"start": 66.94,
+"end": 69.02
+},
+{
+"sec": null,
+"text": "Sprechen, sprach, gesprochen,",
+"words": [
+"Sprechen,",
+"sprach,",
+"gesprochen,"
+],
+"t": [
+[
+69.02,
+69.68
+],
+[
+69.94,
+70.76
+],
+[
+70.88,
+71.24
+]
+],
+"start": 69.02,
+"end": 71.24
+},
+{
+"sec": null,
+"text": "heute hab ich viel gesprochen!",
+"words": [
+"heute",
+"hab",
+"ich",
+"viel",
+"gesprochen!"
+],
+"t": [
+[
+71.56,
+72.04
+],
+[
+72.04,
+72.62
+],
+[
+72.62,
+72.76
+],
+[
+72.76,
+73.1
+],
+[
+73.1,
+73.72
+]
+],
+"start": 71.56,
+"end": 73.72
+},
+{
+"sec": null,
+"text": "Drei Formen, sing sie laut,",
+"words": [
+"Drei",
+"Formen,",
+"sing",
+"sie",
+"laut,"
+],
+"t": [
+[
+73.72,
+74.26
+],
+[
+74.26,
+75.1
+],
+[
+75.1,
+75.5
+],
+[
+75.5,
+75.62
+],
+[
+75.62,
+76.2
+]
+],
+"start": 73.72,
+"end": 76.2
+},
+{
+"sec": null,
+"text": "bis dein Mund sie selber baut!",
+"words": [
+"bis",
+"dein",
+"Mund",
+"sie",
+"selber",
+"baut!"
+],
+"t": [
+[
+76.38,
+76.58
+],
+[
+76.58,
+76.9
+],
+[
+76.9,
+77.14
+],
+[
+77.14,
+77.4
+],
+[
+77.4,
+77.96
+],
+[
+77.96,
+78.54
+]
+],
+"start": 76.38,
+"end": 78.54
+},
+{
+"sec": null,
+"text": "Eins, zwei, drei — noch einmal,",
+"words": [
+"Eins,",
+"zwei,",
+"drei",
+"noch",
+"einmal,"
+],
+"t": [
+[
+78.54,
+78.86
+],
+[
+79.12,
+79.12
+],
+[
+79.32,
+79.5
+],
+[
+79.86,
+79.96
+],
+[
+79.96,
+80.6
+]
+],
+"start": 78.54,
+"end": 80.6
+},
+{
+"sec": null,
+"text": "Deutsch zu lernen ist genial!",
+"words": [
+"Deutsch",
+"zu",
+"lernen",
+"ist",
+"genial!"
+],
+"t": [
+[
+81.02,
+81.22
+],
+[
+81.22,
+81.52
+],
+[
+81.52,
+81.96
+],
+[
+81.96,
+82.42
+],
+[
+82.42,
+82.9
+]
+],
+"start": 81.02,
+"end": 82.9
+},
+{
+"sec": null,
+"text": "Essen — aß — gegessen,",
+"words": [
+"Essen",
+"aß",
+"gegessen,"
+],
+"t": [
+[
+82.9,
+84.10000000000001
+],
+[
+84.56,
+84.78
+],
+[
+84.78,
+85.34
+]
+],
+"start": 82.9,
+"end": 85.34
+},
+{
+"sec": null,
+"text": "ich habe Brot und Käse gegessen.",
+"words": [
+"ich",
+"habe",
+"Brot",
+"und",
+"Käse",
+"gegessen."
+],
+"t": [
+[
+85.6,
+85.68
+],
+[
+85.68,
+86.02
+],
+[
+86.02,
+86.54
+],
+[
+86.54,
+86.78
+],
+[
+86.78,
+87.22
+],
+[
+87.22,
+87.68
+]
+],
+"start": 85.6,
+"end": 87.68
+},
+{
+"sec": null,
+"text": "Trinken — trank — getrunken,",
+"words": [
+"Trinken",
+"trank",
+"getrunken,"
+],
+"t": [
+[
+87.68,
+88.3
+],
+[
+88.56,
+88.9
+],
+[
+89.02,
+89.46
+]
+],
+"start": 87.68,
+"end": 89.46
+},
+{
+"sec": null,
+"text": "ich habe Wasser getrunken.",
+"words": [
+"ich",
+"habe",
+"Wasser",
+"getrunken."
+],
+"t": [
+[
+89.76,
+90.5
+],
+[
+90.5,
+90.82
+],
+[
+90.82,
+91.14
+],
+[
+91.14,
+92.06
+]
+],
+"start": 89.76,
+"end": 92.06
+},
+{
+"sec": null,
+"text": "Schlafen — schlief — geschlafen,",
+"words": [
+"Schlafen",
+"schlief",
+"geschlafen,"
+],
+"t": [
+[
+92.82,
+93.54
+],
+[
+93.74,
+94.14
+],
+[
+94.32,
+94.7
+]
+],
+"start": 92.82,
+"end": 94.7
+},
+{
+"sec": null,
+"text": "ich habe gut geschlafen.",
+"words": [
+"ich",
+"habe",
+"gut",
+"geschlafen."
+],
+"t": [
+[
+95.06,
+95.14
+],
+[
+95.14,
+95.76
+],
+[
+95.76,
+96.44
+],
+[
+96.44,
+97.04
+]
+],
+"start": 95.06,
+"end": 97.04
+},
+{
+"sec": null,
+"text": "Lesen — las — gelesen,",
+"words": [
+"Lesen",
+"las",
+"gelesen,"
+],
+"t": [
+[
+97.04,
+97.78
+],
+[
+97.92,
+98.18
+],
+[
+98.38,
+98.76
+]
+],
+"start": 97.04,
+"end": 98.76
+},
+{
+"sec": null,
+"text": "ich habe ein Buch gelesen.",
+"words": [
+"ich",
+"habe",
+"ein",
+"Buch",
+"gelesen."
+],
+"t": [
+[
+99.1,
+99.76
+],
+[
+99.76,
+100.16
+],
+[
+100.16,
+100.74
+],
+[
+100.74,
+101.02
+],
+[
+101.02,
+102.14
+]
+],
+"start": 99.1,
+"end": 102.14
+},
+{
+"sec": null,
+"text": "Schreiben — schrieb — geschrieben,",
+"words": [
+"Schreiben",
+"schrieb",
+"geschrieben,"
+],
+"t": [
+[
+102.14,
+102.84
+],
+[
+103.16,
+103.44
+],
+[
+103.62,
+103.88
+]
+],
+"start": 102.14,
+"end": 103.88
+},
+{
+"sec": null,
+"text": "ich habe dir einen Brief geschrieben.",
+"words": [
+"ich",
+"habe",
+"dir",
+"einen",
+"Brief",
+"geschrieben."
+],
+"t": [
+[
+104.4,
+104.5
+],
+[
+104.5,
+104.74
+],
+[
+104.74,
+104.94
+],
+[
+104.94,
+105.44
+],
+[
+105.44,
+105.7
+],
+[
+105.7,
+106.3
+]
+],
+"start": 104.4,
+"end": 106.3
+},
+{
+"sec": null,
+"text": "Finden — fand — gefunden,",
+"words": [
+"Finden",
+"fand",
+"gefunden,"
+],
+"t": [
+[
+106.3,
+106.98
+],
+[
+107.22,
+108.08
+],
+[
+108.14,
+108.54
+]
+],
+"start": 106.3,
+"end": 108.54
+},
+{
+"sec": null,
+"text": "ich habe den Schlüssel gefunden.",
+"words": [
+"ich",
+"habe",
+"den",
+"Schlüssel",
+"gefunden."
+],
+"t": [
+[
+108.96,
+109.04
+],
+[
+109.04,
+109.34
+],
+[
+109.34,
+109.56
+],
+[
+109.56,
+110.28
+],
+[
+110.28,
+110.94
+]
+],
+"start": 108.96,
+"end": 110.94
+},
+{
+"sec": null,
+"text": "Helfen — half — geholfen,",
+"words": [
+"Helfen",
+"half",
+"geholfen,"
+],
+"t": [
+[
+110.94,
+112.14
+],
+[
+112.5,
+112.76
+],
+[
+112.96,
+113.34
+]
+],
+"start": 110.94,
+"end": 113.34
+},
+{
+"sec": null,
+"text": "wir haben unserem Freund geholfen.",
+"words": [
+"wir",
+"haben",
+"unserem",
+"Freund",
+"geholfen."
+],
+"t": [
+[
+113.5,
+113.76
+],
+[
+113.76,
+114.14
+],
+[
+114.14,
+114.6
+],
+[
+114.6,
+115.12
+],
+[
+115.12,
+115.76
+]
+],
+"start": 113.5,
+"end": 115.76
+},
+{
+"sec": null,
+"text": "Treffen — traf — getroffen,",
+"words": [
+"Treffen",
+"traf",
+"getroffen,"
+],
+"t": [
+[
+115.76,
+116.28
+],
+[
+116.56,
+116.9
+],
+[
+117.02,
+117.38
+]
+],
+"start": 115.76,
+"end": 117.38
+},
+{
+"sec": null,
+"text": "ich habe dich gestern getroffen.",
+"words": [
+"ich",
+"habe",
+"dich",
+"gestern",
+"getroffen."
+],
+"t": [
+[
+117.68,
+118.46
+],
+[
+118.46,
+118.78
+],
+[
+118.78,
+119.06
+],
+[
+119.06,
+119.68
+],
+[
+119.68,
+120.38
+]
+],
+"start": 117.68,
+"end": 120.38
+},
+{
+"sec": null,
+"text": "Essen, aß, gegessen,",
+"words": [
+"Essen,",
+"aß,",
+"gegessen,"
+],
+"t": [
+[
+120.38,
+121.42
+],
+[
+121.84,
+122.1
+],
+[
+122.24,
+122.6
+]
+],
+"start": 120.38,
+"end": 122.6
+},
+{
+"sec": null,
+"text": "nicht vergessen, nicht vergessen!",
+"words": [
+"nicht",
+"vergessen,",
+"nicht",
+"vergessen!"
+],
+"t": [
+[
+123.0,
+123.16
+],
+[
+123.16,
+123.82
+],
+[
+124.12,
+124.34
+],
+[
+124.34,
+124.92
+]
+],
+"start": 123.0,
+"end": 124.92
+},
+{
+"sec": null,
+"text": "Trinken, trank, getrunken,",
+"words": [
+"Trinken,",
+"trank,",
+"getrunken,"
+],
+"t": [
+[
+124.92,
+125.66
+],
+[
+125.88,
+126.74
+],
+[
+126.94,
+127.28
+]
+],
+"start": 124.92,
+"end": 127.28
+},
+{
+"sec": null,
+"text": "jede Form klingt wie ein Funken!",
+"words": [
+"jede",
+"Form",
+"klingt",
+"wie",
+"ein",
+"Funken!"
+],
+"t": [
+[
+127.68,
+127.96
+],
+[
+127.96,
+128.4
+],
+[
+128.4,
+128.72
+],
+[
+128.72,
+128.96
+],
+[
+128.96,
+129.32
+],
+[
+129.32,
+129.76
+]
+],
+"start": 127.68,
+"end": 129.76
+},
+{
+"sec": null,
+"text": "Drei Formen, sing sie laut,",
+"words": [
+"Drei",
+"Formen,",
+"sing",
+"sie",
+"laut,"
+],
+"t": [
+[
+129.76,
+130.34
+],
+[
+130.34,
+131.08
+],
+[
+131.08,
+131.4
+],
+[
+131.4,
+131.56
+],
+[
+131.56,
+132.1
+]
+],
+"start": 129.76,
+"end": 132.1
+},
+{
+"sec": null,
+"text": "bis dein Mund sie selber baut!",
+"words": [
+"bis",
+"dein",
+"Mund",
+"sie",
+"selber",
+"baut!"
+],
+"t": [
+[
+132.34,
+132.52
+],
+[
+132.52,
+132.78
+],
+[
+132.78,
+133.04
+],
+[
+133.04,
+133.3
+],
+[
+133.3,
+133.88
+],
+[
+133.88,
+134.42
+]
+],
+"start": 132.34,
+"end": 134.42
+},
+{
+"sec": null,
+"text": "Eins, zwei, drei — noch einmal,",
+"words": [
+"Eins,",
+"zwei,",
+"drei",
+"noch",
+"einmal,"
+],
+"t": [
+[
+134.42,
+134.76
+],
+[
+134.94,
+135.08
+],
+[
+135.24,
+135.42
+],
+[
+135.8,
+135.88
+],
+[
+135.88,
+136.52
+]
+],
+"start": 134.42,
+"end": 136.52
+},
+{
+"sec": null,
+"text": "Deutsch zu lernen ist genial!",
+"words": [
+"Deutsch",
+"zu",
+"lernen",
+"ist",
+"genial!"
+],
+"t": [
+[
+136.94,
+137.16
+],
+[
+137.16,
+137.44
+],
+[
+137.44,
+137.86
+],
+[
+137.86,
+138.3
+],
+[
+138.3,
+138.82
+]
+],
+"start": 136.94,
+"end": 138.82
+},
+{
+"sec": null,
+"text": "Bleiben — blieb — geblieben,",
+"words": [
+"Bleiben",
+"blieb",
+"geblieben,"
+],
+"t": [
+[
+138.82,
+140.01999999999998
+],
+[
+140.46,
+140.78
+],
+[
+140.9,
+141.26
+]
+],
+"start": 138.82,
+"end": 141.26
+},
+{
+"sec": null,
+"text": "ich bin heute hier geblieben.",
+"words": [
+"ich",
+"bin",
+"heute",
+"hier",
+"geblieben."
+],
+"t": [
+[
+141.36,
+141.78
+],
+[
+141.78,
+142.04
+],
+[
+142.04,
+142.54
+],
+[
+142.54,
+143.02
+],
+[
+143.02,
+143.6
+]
+],
+"start": 141.36,
+"end": 143.6
+},
+{
+"sec": null,
+"text": "Stehen — stand — gestanden,",
+"words": [
+"Stehen",
+"stand",
+"gestanden,"
+],
+"t": [
+[
+143.6,
+144.34
+],
+[
+144.48,
+144.68
+],
+[
+144.96,
+145.32
+]
+],
+"start": 143.6,
+"end": 145.32
+},
+{
+"sec": null,
+"text": "wir haben lange dort gestanden.",
+"words": [
+"wir",
+"haben",
+"lange",
+"dort",
+"gestanden."
+],
+"t": [
+[
+145.74,
+146.34
+],
+[
+146.34,
+146.7
+],
+[
+146.7,
+147.18
+],
+[
+147.18,
+147.62
+],
+[
+147.62,
+148.42
+]
+],
+"start": 145.74,
+"end": 148.42
+},
+{
+"sec": null,
+"text": "Sitzen — saß — gesessen,",
+"words": [
+"Sitzen",
+"saß",
+"gesessen,"
+],
+"t": [
+[
+148.42,
+149.44
+],
+[
+149.74,
+150.12
+],
+[
+150.26,
+150.58
+]
+],
+"start": 148.42,
+"end": 150.58
+},
+{
+"sec": null,
+"text": "ich habe auf dem Stuhl gesessen.",
+"words": [
+"ich",
+"habe",
+"auf",
+"dem",
+"Stuhl",
+"gesessen."
+],
+"t": [
+[
+150.9,
+151.06
+],
+[
+151.06,
+151.4
+],
+[
+151.4,
+151.74
+],
+[
+151.74,
+151.92
+],
+[
+151.92,
+152.46
+],
+[
+152.46,
+152.94
+]
+],
+"start": 150.9,
+"end": 152.94
+},
+{
+"sec": null,
+"text": "Liegen — lag — gelegen,",
+"words": [
+"Liegen",
+"lag",
+"gelegen,"
+],
+"t": [
+[
+152.94,
+153.7
+],
+[
+153.82,
+154.06
+],
+[
+154.34,
+154.76
+]
+],
+"start": 152.94,
+"end": 154.76
+},
+{
+"sec": null,
+"text": "das Buch hat auf dem Tisch gelegen.",
+"words": [
+"das",
+"Buch",
+"hat",
+"auf",
+"dem",
+"Tisch",
+"gelegen."
+],
+"t": [
+[
+155.04,
+155.52
+],
+[
+155.52,
+155.76
+],
+[
+155.76,
+156.06
+],
+[
+156.06,
+156.36
+],
+[
+156.36,
+156.62
+],
+[
+156.62,
+156.94
+],
+[
+156.94,
+157.92
+]
+],
+"start": 155.04,
+"end": 157.92
+},
+{
+"sec": null,
+"text": "Halten — hielt — gehalten,",
+"words": [
+"Halten",
+"hielt",
+"gehalten,"
+],
+"t": [
+[
+157.92,
+158.74
+],
+[
+159.08,
+159.24
+],
+[
+159.24,
+159.86
+]
+],
+"start": 157.92,
+"end": 159.86
+},
+{
+"sec": null,
+"text": "ich habe die Tür aufgehalten.",
+"words": [
+"ich",
+"habe",
+"die",
+"Tür",
+"aufgehalten."
+],
+"t": [
+[
+160.3,
+160.38
+],
+[
+160.38,
+160.72
+],
+[
+160.72,
+160.98
+],
+[
+160.98,
+161.34
+],
+[
+161.34,
+162.2
+]
+],
+"start": 160.3,
+"end": 162.2
+},
+{
+"sec": null,
+"text": "Fallen — fiel — gefallen,",
+"words": [
+"Fallen",
+"fiel",
+"gefallen,"
+],
+"t": [
+[
+162.2,
+162.86
+],
+[
+163.18,
+163.66
+],
+[
+163.66,
+164.5
+]
+],
+"start": 162.2,
+"end": 164.5
+},
+{
+"sec": null,
+"text": "die Blätter sind vom Baum gefallen.",
+"words": [
+"die",
+"Blätter",
+"sind",
+"vom",
+"Baum",
+"gefallen."
+],
+"t": [
+[
+164.76,
+164.84
+],
+[
+164.84,
+165.16
+],
+[
+165.16,
+165.64
+],
+[
+165.64,
+165.96
+],
+[
+165.96,
+166.28
+],
+[
+166.28,
+166.82
+]
+],
+"start": 164.76,
+"end": 166.82
+},
+{
+"sec": null,
+"text": "Vergessen — vergaß — vergessen,",
+"words": [
+"Vergessen",
+"vergaß",
+"vergessen,"
+],
+"t": [
+[
+166.82,
+167.44
+],
+[
+168.22,
+168.68
+],
+[
+168.8,
+169.14
+]
+],
+"start": 166.82,
+"end": 169.14
+},
+{
+"sec": null,
+"text": "ich habe den Termin vergessen.",
+"words": [
+"ich",
+"habe",
+"den",
+"Termin",
+"vergessen."
+],
+"t": [
+[
+169.14,
+169.54
+],
+[
+169.54,
+169.78
+],
+[
+169.78,
+169.98
+],
+[
+169.98,
+170.88
+],
+[
+170.88,
+171.52
+]
+],
+"start": 169.14,
+"end": 171.52
+},
+{
+"sec": null,
+"text": "Beginnen — begann — begonnen,",
+"words": [
+"Beginnen",
+"begann",
+"begonnen,"
+],
+"t": [
+[
+171.52,
+172.14
+],
+[
+172.24,
+172.74
+],
+[
+172.94,
+173.32
+]
+],
+"start": 171.52,
+"end": 173.32
+},
+{
+"sec": null,
+"text": "der Unterricht hat begonnen.",
+"words": [
+"der",
+"Unterricht",
+"hat",
+"begonnen."
+],
+"t": [
+[
+173.32,
+174.16
+],
+[
+174.16,
+174.74
+],
+[
+174.74,
+175.26
+],
+[
+175.26,
+176.0
+]
+],
+"start": 173.32,
+"end": 176.0
+},
+{
+"sec": null,
+"text": "Gewinnen — gewann — gewonnen,",
+"words": [
+"Gewinnen",
+"gewann",
+"gewonnen,"
+],
+"t": [
+[
+176.0,
+176.74
+],
+[
+177.16,
+177.34
+],
+[
+177.56,
+177.96
+]
+],
+"start": 176.0,
+"end": 177.96
+},
+{
+"sec": null,
+"text": "wir haben das Spiel gewonnen.",
+"words": [
+"wir",
+"haben",
+"das",
+"Spiel",
+"gewonnen."
+],
+"t": [
+[
+177.96,
+178.84
+],
+[
+178.84,
+179.08
+],
+[
+179.08,
+179.32
+],
+[
+179.32,
+179.72
+],
+[
+179.72,
+180.3
+]
+],
+"start": 177.96,
+"end": 180.3
+},
+{
+"sec": null,
+"text": "Ziehen — zog — gezogen,",
+"words": [
+"Ziehen",
+"zog",
+"gezogen,"
+],
+"t": [
+[
+180.82,
+181.66
+],
+[
+181.8,
+182.04
+],
+[
+182.28,
+182.76
+]
+],
+"start": 180.82,
+"end": 182.76
+},
+{
+"sec": null,
+"text": "wir sind in ein neues Haus gezogen.",
+"words": [
+"wir",
+"sind",
+"in",
+"ein",
+"neues",
+"Haus",
+"gezogen."
+],
+"t": [
+[
+182.76,
+183.34
+],
+[
+183.34,
+183.52
+],
+[
+183.52,
+183.7
+],
+[
+183.7,
+184.04
+],
+[
+184.04,
+184.64
+],
+[
+184.64,
+184.9
+],
+[
+184.9,
+185.76
+]
+],
+"start": 182.76,
+"end": 185.76
+},
+{
+"sec": null,
+"text": "Tragen — trug — getragen,",
+"words": [
+"Tragen",
+"trug",
+"getragen,"
+],
+"t": [
+[
+185.76,
+186.72
+],
+[
+187.02,
+187.3
+],
+[
+187.54,
+187.86
+]
+],
+"start": 185.76,
+"end": 187.86
+},
+{
+"sec": null,
+"text": "ich habe die Tasche getragen.",
+"words": [
+"ich",
+"habe",
+"die",
+"Tasche",
+"getragen."
+],
+"t": [
+[
+187.86,
+188.34
+],
+[
+188.34,
+188.7
+],
+[
+188.7,
+188.98
+],
+[
+188.98,
+189.5
+],
+[
+189.5,
+190.2
+]
+],
+"start": 187.86,
+"end": 190.2
+},
+{
+"sec": null,
+"text": "Werfen — warf — geworfen,",
+"words": [
+"Werfen",
+"warf",
+"geworfen,"
+],
+"t": [
+[
+190.2,
+191.02
+],
+[
+191.18,
+191.44
+],
+[
+191.58,
+192.0
+]
+],
+"start": 190.2,
+"end": 192.0
+},
+{
+"sec": null,
+"text": "er hat den Ball geworfen.",
+"words": [
+"er",
+"hat",
+"den",
+"Ball",
+"geworfen."
+],
+"t": [
+[
+192.0,
+192.78
+],
+[
+192.78,
+193.1
+],
+[
+193.1,
+193.42
+],
+[
+193.42,
+194.0
+],
+[
+194.0,
+194.82
+]
+],
+"start": 192.0,
+"end": 194.82
+},
+{
+"sec": null,
+"text": "Gehen, ging, gegangen!",
+"words": [
+"Gehen,",
+"ging,",
+"gegangen!"
+],
+"t": [
+[
+195.44,
+196.0
+],
+[
+196.0,
+196.94
+],
+[
+196.94,
+197.12
+]
+],
+"start": 195.44,
+"end": 197.12
+},
+{
+"sec": null,
+"text": "Kommen, kam, gekommen!",
+"words": [
+"Kommen,",
+"kam,",
+"gekommen!"
+],
+"t": [
+[
+197.52,
+197.72
+],
+[
+197.72,
+198.92
+],
+[
+199.23,
+200.42999999999998
+]
+],
+"start": 197.52,
+"end": 200.42999999999998
+},
+{
+"sec": null,
+"text": "Sehen, sah, gesehen!",
+"words": [
+"Sehen,",
+"sah,",
+"gesehen!"
+],
+"t": [
+[
+200.74,
+200.92
+],
+[
+201.04,
+201.2
+],
+[
+201.48,
+201.72
+]
+],
+"start": 200.74,
+"end": 201.72
+},
+{
+"sec": null,
+"text": "Sprechen, sprach, gesprochen!",
+"words": [
+"Sprechen,",
+"sprach,",
+"gesprochen!"
+],
+"t": [
+[
+202.04,
+202.32
+],
+[
+202.66,
+203.3
+],
+[
+203.38,
+203.96
+]
+],
+"start": 202.04,
+"end": 203.96
+},
+{
+"sec": null,
+"text": "Essen, aß, gegessen!",
+"words": [
+"Essen,",
+"aß,",
+"gegessen!"
+],
+"t": [
+[
+205.14,
+205.28
+],
+[
+205.66,
+205.92
+],
+[
+205.92,
+206.48
+]
+],
+"start": 205.14,
+"end": 206.48
+},
+{
+"sec": null,
+"text": "Trinken, trank, getrunken!",
+"words": [
+"Trinken,",
+"trank,",
+"getrunken!"
+],
+"t": [
+[
+206.82,
+207.22
+],
+[
+207.22,
+208.42
+],
+[
+208.56,
+208.84
+]
+],
+"start": 206.82,
+"end": 208.84
+},
+{
+"sec": null,
+"text": "Lesen, las, gelesen!",
+"words": [
+"Lesen,",
+"las,",
+"gelesen!"
+],
+"t": [
+[
+209.18,
+209.62
+],
+[
+209.62,
+210.58
+],
+[
+210.58,
+211.16
+]
+],
+"start": 209.18,
+"end": 211.16
+},
+{
+"sec": null,
+"text": "Schreiben, schrieb, geschrieben!",
+"words": [
+"Schreiben,",
+"schrieb,",
+"geschrieben!"
+],
+"t": [
+[
+211.4,
+211.76
+],
+[
+212.04,
+212.5
+],
+[
+212.66,
+213.16
+]
+],
+"start": 211.4,
+"end": 213.16
+},
+{
+"sec": null,
+"text": "Drei Formen, ein Rhythmus,",
+"words": [
+"Drei",
+"Formen,",
+"ein",
+"Rhythmus,"
+],
+"t": [
+[
+214.1,
+214.24
+],
+[
+214.24,
+214.9
+],
+[
+215.24,
+215.5
+],
+[
+215.5,
+216.1
+]
+],
+"start": 214.1,
+"end": 216.1
+},
+{
+"sec": null,
+"text": "Deutsch wird leichter — hör nur zu!",
+"words": [
+"Deutsch",
+"wird",
+"leichter",
+"hör",
+"nur",
+"zu!"
+],
+"t": [
+[
+216.18,
+216.36
+],
+[
+216.36,
+216.68
+],
+[
+216.68,
+217.22
+],
+[
+217.38,
+217.52
+],
+[
+217.52,
+217.76
+],
+[
+217.76,
+218.08
+]
+],
+"start": 216.18,
+"end": 218.08
+},
+{
+"sec": null,
+"text": "Sing am Morgen, sing am Abend,",
+"words": [
+"Sing",
+"am",
+"Morgen,",
+"sing",
+"am",
+"Abend,"
+],
+"t": [
+[
+218.5,
+218.66
+],
+[
+218.66,
+219.02
+],
+[
+219.02,
+219.46
+],
+[
+219.72,
+219.88
+],
+[
+219.88,
+220.28
+],
+[
+220.28,
+220.7
+]
+],
+"start": 218.5,
+"end": 220.7
+},
+{
+"sec": null,
+"text": "bald sind alle Wörter da!",
+"words": [
+"bald",
+"sind",
+"alle",
+"Wörter",
+"da!"
+],
+"t": [
+[
+220.92,
+221.08
+],
+[
+221.08,
+221.34
+],
+[
+221.34,
+222.0
+],
+[
+222.0,
+223.2
+],
+[
+223.38,
+223.78
+]
+],
+"start": 220.92,
+"end": 223.78
+}
+]

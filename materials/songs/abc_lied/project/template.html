@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="de" data-resolution="{{RES}}">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width={{W}}, height={{H}}" />
+<script src="gsap.min.js"></script>
+<style>
+  @font-face { font-family: "Fredoka"; font-weight: 600; src: url("fredoka-latin-600-normal.woff2") format("woff2"); }
+  @font-face { font-family: "Fredoka"; font-weight: 700; src: url("fredoka-latin-700-normal.woff2") format("woff2"); }
+  @font-face { font-family: "Inter Display"; font-weight: 700; src: local("Inter Display Bold"), local("InterDisplay-Bold"); }
+  @font-face { font-family: "Inter Display"; font-weight: 800; src: local("Inter Display ExtraBold"), local("InterDisplay-ExtraBold"); }
+  @font-face { font-family: "Noto Color Emoji"; src: local("Noto Color Emoji"), local("NotoColorEmoji"); }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: {{W}}px; height: {{H}}px; overflow: hidden; background: #E3F4FF; }
+  #root { position: relative; width: 100%; height: 100%; overflow: hidden; font-family: Fredoka, "Inter Display", sans-serif; color: #3B2F2F;
+    background: linear-gradient(#CFEFFF 0%, #EAF8FF 55%, #FFF9EC 100%); }
+  .layer { position: absolute; inset: 0; }
+  .cloud { position: absolute; background: #fff; border-radius: 999px; opacity: .95; }
+  .cloud::before, .cloud::after { content: ""; position: absolute; background: #fff; border-radius: 50%; }
+  .cloud::before { width: 55%; height: 160%; left: 12%; top: -70%; } .cloud::after { width: 40%; height: 130%; left: 48%; top: -50%; }
+  #hill1 { position: absolute; left: -10%; width: 70%; border-radius: 50% 50% 0 0; background: #B2F2BB; }
+  #hill2 { position: absolute; right: -10%; width: 75%; border-radius: 50% 50% 0 0; background: #8CE99A; }
+  .flower { position: absolute; font-family: "Noto Color Emoji"; }
+  #chip { position: absolute; padding: 12px 30px; border-radius: 40px; background: #fff; font: 700 40px Fredoka; box-shadow: 0 6px 16px rgba(59,47,47,.1); }
+  #chip .em { font-family: "Noto Color Emoji"; }
+  .scene { position: absolute; inset: 0; opacity: 0; }
+  .tile { position: absolute; display: flex; align-items: center; justify-content: center; gap: .08em; border-radius: .22em; color: #fff;
+    font-weight: 700; box-shadow: 0 .06em 0 rgba(0,0,0,.15), 0 .1em .2em rgba(59,47,47,.15); border: .045em solid rgba(255,255,255,.7); }
+  .tile small { font-size: .55em; opacity: .9; }
+  .lname { position: absolute; padding: 8px 26px; border-radius: 30px; background: #3B2F2F; color: #fff; font: 700 44px Fredoka; }
+  .lname span { color: #FFD43B; }
+  .char { position: absolute; }
+  .char svg { width: 100%; height: 100%; overflow: visible; }
+  .word { position: absolute; text-align: center; }
+  .word .de { display: inline-block; padding: 14px 44px; border-radius: 40px; background: #fff; font: 700 96px/1.1 Fredoka; box-shadow: 0 10px 0 rgba(59,47,47,.08), 0 14px 30px rgba(59,47,47,.12); }
+  .word .de .der { color: #1C7ED6; } .word .de .die { color: #E03131; } .word .de .das { color: #2F9E44; }
+  .word .uk { margin-top: 18px; font: 800 52px "Inter Display"; color: #1971C2; }
+  .spark { position: absolute; width: 26px; height: 26px; border-radius: 50%; opacity: 0; }
+  .grid { position: absolute; display: grid; }
+  .gt { display: flex; align-items: center; justify-content: center; border-radius: 26px; background: #fff; color: #CED4DA; font-weight: 700; box-shadow: 0 6px 0 rgba(59,47,47,.08); }
+  .title { position: absolute; text-align: center; font-weight: 700; line-height: 1; }
+  .title b { color: #FF6B6B; } .title i { font-style: normal; color: #4DABF7; } .title u { text-decoration: none; color: #FAB005; }
+  .caps { position: absolute; }
+  .cue { position: absolute; left: 0; right: 0; top: 0; text-align: center; opacity: 0; }
+  .cue .ln { display: inline-block; padding: 14px 34px; border-radius: 34px; background: rgba(255,255,255,.92); box-shadow: 0 8px 22px rgba(59,47,47,.1); font-weight: 700; white-space: nowrap; }
+  .cue .w { display: inline-block; margin: 0 .1em; color: #ADB5BD; }
+  .cue .w.l { color: #ADB5BD; }
+  .cue .u { margin-top: 12px; font-weight: 800; font-family: "Inter Display"; color: #1971C2; }
+  #legend { position: absolute; display: flex; gap: 14px; }
+  #legend span { padding: 8px 22px; border-radius: 24px; background: #fff; font: 700 34px Fredoka; box-shadow: 0 4px 10px rgba(59,47,47,.08); }
+  #bar { position: absolute; height: 16px; border-radius: 8px; background: rgba(255,255,255,.8); overflow: hidden; }
+  #barf { width: 100%; height: 100%; background: linear-gradient(90deg, #FF6B6B, #FAB005, #51CF66, #4DABF7, #845EF7); transform-origin: 0 50%; }
+{{CSS}}
+</style>
+</head>
+<body>
+<div id="root" data-composition-id="main" data-start="0" data-duration="{{D}}" data-width="{{W}}" data-height="{{H}}">
+  <div id="bg" class="layer clip" data-start="0" data-duration="{{D}}" data-track-index="0">
+{{BG}}
+  </div>
+  <div id="ui" class="layer clip" data-start="0" data-duration="{{D}}" data-track-index="1">
+    <div id="chip"><span class="em">🎵</span> Hallo, ABC!</div>
+{{SCENES}}
+    <div id="legend"><span style="color:#1C7ED6">der</span><span style="color:#E03131">die</span><span style="color:#2F9E44">das</span></div>
+    <div id="bar"><div id="barf"></div></div>
+  </div>
+  <div id="capl" class="caps clip" data-start="0" data-duration="{{D}}" data-track-index="2">
+{{CAPS}}
+  </div>
+</div>
+<script>
+  // підгонка довгих рядків караоке під ширину
+  document.querySelectorAll(".cue .ln").forEach(el => {
+    const max = el.closest(".caps").clientWidth; let fs = parseFloat(getComputedStyle(el).fontSize);
+    while (el.offsetWidth > max && fs > 30) { fs -= 2; el.style.fontSize = fs + "px"; }
+  });
+  const tl = gsap.timeline({ paused: true });
+  const D = {{D}};
+  tl.fromTo("#barf", { scaleX: 0 }, { scaleX: 1, duration: D, ease: "none" }, 0);
+  {{JS}}
+  tl.set({}, {}, D);
+  window.__timelines["main"] = tl;
+</script>
+</body>
+</html>

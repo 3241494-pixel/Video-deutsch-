@@ -1,0 +1,83 @@
+{
+ "duration": 98.636,
+ "scenes": [
+  {
+   "id": "hook",
+   "start": 0.6,
+   "end": 9.957,
+   "text": "Ein Tisch, zwei Tische. Ein Buch, zwei Bücher. Ein Auto, zwei Autos. Warum ist der Plural im Deutschen so chaotisch? Keine Panik! Es gibt sechs Regeln."
+  },
+  {
+   "id": "r1",
+   "start": 10.857,
+   "end": 18.163,
+   "text": "Regel eins: die Endung -e. Der Tag, die Tage. Der Hund, die Hunde. Das Jahr, die Jahre. So funktionieren viele maskuline Nomen."
+  },
+  {
+   "id": "r2",
+   "start": 19.063,
+   "end": 27.796,
+   "text": "Regel zwei: Umlaut und -e. Der Stuhl, die Stühle. Die Hand, die Hände. Der Zug, die Züge. Aus a, o und u wird ä, ö und ü."
+  },
+  {
+   "id": "r3",
+   "start": 28.696,
+   "end": 37.087,
+   "text": "Regel drei: die Endung -er, fast immer mit Umlaut. Das Kind, die Kinder. Das Buch, die Bücher. Das Haus, die Häuser. Das sind oft neutrale Nomen."
+  },
+  {
+   "id": "r4",
+   "start": 37.987,
+   "end": 46.152,
+   "text": "Regel vier: Plural mit n. Die Lampe, die Lampen. Die Frau, die Frauen. Die Zeitung, die Zeitungen. Fast alle femininen Nomen machen das."
+  },
+  {
+   "id": "r5",
+   "start": 47.052,
+   "end": 55.695,
+   "text": "Regel fünf: die Endung -s. Das Auto, die Autos. Das Handy, die Handys. Das Hotel, die Hotels. Das sind meistens Wörter aus anderen Sprachen."
+  },
+  {
+   "id": "r6",
+   "start": 56.595,
+   "end": 65.465,
+   "text": "Regel sechs: keine Endung. Der Lehrer, die Lehrer. Das Zimmer, die Zimmer. Der Apfel, die Äpfel. Nur der Artikel wird zu die, manchmal kommt ein Umlaut dazu."
+  },
+  {
+   "id": "tip",
+   "start": 66.465,
+   "end": 72.174,
+   "text": "Mein Tipp: Lerne jedes Nomen immer mit Artikel und Plural. Also nicht nur Buch, sondern: das Buch, die Bücher."
+  },
+  {
+   "id": "qintro",
+   "start": 73.174,
+   "end": 75.438,
+   "text": "Und jetzt kommt der Test! Wie heißt der Plural?"
+  },
+  {
+   "id": "qwords",
+   "start": 76.038,
+   "end": 80.015,
+   "text": "Die Katze. Der Baum. Das Kino. Das Glas. Der Koffer."
+  },
+  {
+   "id": "qpause",
+   "start": 80.515,
+   "end": 82.33,
+   "text": "Drück auf Pause und denk nach!"
+  },
+  {
+   "id": "qans",
+   "start": 87.33,
+   "end": 92.266,
+   "text": "Die Lösungen: die Katzen, die Bäume, die Kinos, die Gläser und die Koffer, ohne Endung!"
+  },
+  {
+   "id": "cta",
+   "start": 93.266,
+   "end": 96.436,
+   "text": "Wie viele hast du richtig? Schreib deine Punkte in die Kommentare!"
+  }
+ ]
+}

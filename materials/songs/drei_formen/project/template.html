@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="de" data-resolution="portrait">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="gsap.min.js"></script>
+<style>
+  @font-face { font-family: "Inter Display"; font-weight: 600; src: local("Inter Display SemiBold"), local("InterDisplay-SemiBold"); }
+  @font-face { font-family: "Inter Display"; font-weight: 700; src: local("Inter Display Bold"), local("InterDisplay-Bold"); }
+  @font-face { font-family: "Inter Display"; font-weight: 800; src: local("Inter Display ExtraBold"), local("InterDisplay-ExtraBold"); }
+  @font-face { font-family: "Inter Display"; font-weight: 900; src: local("Inter Display Black"), local("InterDisplay-Black"); }
+  @font-face { font-family: "Noto Color Emoji"; src: local("Noto Color Emoji"), local("NotoColorEmoji"); }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1080px; height: 1920px; overflow: hidden; background: #FFF7EC; }
+  #root { position: relative; width: 100%; height: 100%; overflow: hidden; background: #FFF7EC; font-family: "Inter Display", Inter, sans-serif; color: #1F2A44; }
+  .layer { position: absolute; inset: 0; }
+  .blob { position: absolute; border-radius: 50%; }
+  .note { position: absolute; font: 90px "Noto Color Emoji"; opacity: .5; }
+  .em { font-family: "Noto Color Emoji"; }
+  em { font-style: normal; }
+  em.p { color: #E8590C; } em.g { color: #0CA678; } em.s { color: #7048E8; } em.h { color: #1C7ED6; } em.r { color: #868E96; }
+  #chip { position: absolute; top: 80px; left: 60px; padding: 14px 28px; border-radius: 40px; background: #fff; font: 800 36px "Inter Display"; box-shadow: 0 6px 18px rgba(31,42,68,.08); }
+  #chip2 { position: absolute; top: 80px; right: 60px; padding: 14px 28px; border-radius: 40px; background: #1F2A44; color: #fff; font: 800 34px "Inter Display"; }
+  #chip2 b { color: #FFA94D; }
+  .pill { position: absolute; top: 182px; left: 0; right: 0; margin: 0 auto; width: max-content; padding: 12px 34px; border-radius: 34px; background: #FFE8CC; color: #7A4A12; font: 700 40px "Inter Display"; opacity: 0; }
+  .pill b { font-weight: 900; color: #E8590C; }
+  .card { position: absolute; left: 50px; right: 50px; top: 280px; opacity: 0; }
+  .drow { margin-bottom: 20px; padding: 18px 34px 20px; border-radius: 34px; background: #fff; box-shadow: 0 14px 34px rgba(31,42,68,.1); border-left: 14px solid #FFA94D; opacity: 0; }
+  .drow:nth-child(2) { border-left-color: #4DABF7; } .drow:nth-child(3) { border-left-color: #63E6BE; }
+  .lab { display: flex; align-items: center; gap: 14px; font: 800 28px Inter; letter-spacing: .08em; text-transform: uppercase; color: #868E96; }
+  .aux { padding: 2px 14px; border-radius: 14px; font: 900 26px Inter; letter-spacing: .04em; color: #fff; text-transform: none; }
+  .aux.s { background: #7048E8; } .aux.h { background: #1C7ED6; }
+  .de { margin-top: 6px; font: 900 72px/1.15 "Inter Display"; white-space: nowrap; }
+  .ru { margin-top: 6px; font: 700 40px/1.2 "Inter Display"; color: #1971C2; }
+  .w { display: inline-block; opacity: .32; transform-origin: 50% 80%; }
+  .card.line { top: 330px; padding: 50px 46px 44px; border-radius: 44px; background: #fff; box-shadow: 0 18px 44px rgba(31,42,68,.12); border: 6px solid #FFD8A8; text-align: center; }
+  .big { font: 900 84px/1.18 "Inter Display"; white-space: nowrap; }
+  .card .uk { margin-top: 26px; font: 700 48px/1.25 "Inter Display"; color: #1971C2; }
+  .fill { position: absolute; left: 90px; right: 90px; top: 380px; padding: 50px; border-radius: 44px; background: #1F2A44; color: #fff; text-align: center; opacity: 0; }
+  .fe { font-size: 130px; display: inline-block; }
+  .ft { margin-top: 10px; font: 900 70px "Inter Display"; } .fu { margin-top: 12px; font: 700 46px "Inter Display"; color: #A5D8FF; }
+  .list { position: absolute; left: 50px; right: 50px; top: 1000px; opacity: 0; }
+  .lhead { margin-bottom: 14px; font: 800 30px Inter; letter-spacing: .06em; text-transform: uppercase; color: #ADB5BD; }
+  .lhead span { text-transform: none; letter-spacing: 0; }
+  .lrow { display: flex; align-items: baseline; gap: 18px; margin-bottom: 10px; padding: 12px 24px; border-radius: 22px; background: rgba(255,255,255,.75); opacity: 0; }
+  .lde { font: 800 40px/1.2 "Inter Display"; white-space: nowrap; } .ar { color: #ADB5BD; }
+  .lu { margin-left: auto; font: 600 30px/1.2 "Inter Display"; color: #1971C2; text-align: right; }
+  #legend { position: absolute; left: 50px; right: 50px; top: 1665px; display: flex; justify-content: center; gap: 14px; }
+  #legend span { padding: 10px 20px; border-radius: 22px; background: #fff; font: 800 30px Inter; box-shadow: 0 4px 12px rgba(31,42,68,.06); }
+  #bar { position: absolute; left: 60px; right: 60px; top: 1760px; height: 14px; border-radius: 7px; background: #F1E4D2; overflow: hidden; }
+  #barf { width: 100%; height: 100%; background: linear-gradient(90deg, #FFA94D, #E8590C); transform-origin: 0 50%; }
+  em.inf { color: #E8590C; } em.prt { color: #1C7ED6; } em.pp { color: #0CA678; } em.pp u { text-decoration-thickness: 6px; text-underline-offset: 8px; }
+  em.h { color: #D6336C; } .aux.h { background: #D6336C; }
+  .drow { padding: 10px 34px 12px; margin-bottom: 12px; } .lab { font-size: 24px; } .de { font-size: 60px; margin-top: 2px; } .ru { font-size: 34px; margin-top: 0; }
+  .drow:nth-child(4) { border-left-color: #B197FC; background: #F8F6FF; }
+  .ex { margin-top: 4px; font: 800 48px/1.2 "Inter Display"; white-space: nowrap; }
+  .w.dash { opacity: .35; }
+  .card.line .big { font-size: 70px; } .card.line .uk { margin-top: 10px; margin-bottom: 26px; font-size: 42px; } .card.line .uk:last-child { margin-bottom: 0; }
+  .list { top: 1010px; } .lhead { margin-bottom: 8px; font-size: 26px; } .lrow { padding: 6px 22px; margin-bottom: 6px; } .lde { font-size: 34px; } .lu { font-size: 28px; }
+</style>
+</head>
+<body>
+<div id="root" data-composition-id="main" data-start="0" data-duration="{{D}}" data-width="1080" data-height="1920">
+  <div id="bg" class="layer clip" data-start="0" data-duration="{{D}}" data-track-index="0">
+    <div id="b1" class="blob" style="left:-160px;top:160px;width:620px;height:620px;background:#FFE3C2"></div>
+    <div id="b2" class="blob" style="left:640px;top:760px;width:560px;height:560px;background:#DBE4FF"></div>
+    <div id="b3" class="blob" style="left:-120px;top:1380px;width:520px;height:520px;background:#D3F9D8"></div>
+    <div id="n1" class="note" style="left:900px;top:300px">🎵</div>
+    <div id="n2" class="note" style="left:40px;top:900px">🎶</div>
+  </div>
+  <div id="ui" class="layer clip" data-start="0" data-duration="{{D}}" data-track-index="1">
+    <div id="chip"><span class="em">🎵</span> Drei Formen</div>
+    <div id="chip2">Starke <b>Verben</b></div>
+{{PILLS}}
+{{CARDS}}
+{{LISTS}}
+    <div id="legend"><span><em class="inf">gehen</em></span><span><em class="prt">ging</em></span><span><em class="pp"><u>ge</u>gangen</em></span><span><em class="s">bin</em> sein</span><span><em class="h">habe</em> haben</span></div>
+    <div id="bar"><div id="barf"></div></div>
+  </div>
+</div>
+<script>
+  // підгонка ширини довгих рядків під картку
+  document.querySelectorAll(".fit").forEach(el => {
+    const max = el.parentElement.clientWidth - 68;
+    let fs = parseFloat(getComputedStyle(el).fontSize);
+    while (el.scrollWidth > max && fs > 30) { fs -= 2; el.style.fontSize = fs + "px"; }
+  });
+  document.querySelectorAll(".lde").forEach(el => {
+    let fs = 34; while (el.parentElement.scrollWidth > el.parentElement.clientWidth && fs > 24) { fs -= 2; el.style.fontSize = fs + "px"; }
+  });
+  const tl = gsap.timeline({ paused: true });
+  const D = {{D}};
+  tl.to("#b1", { x: 120, y: 80, duration: D, ease: "sine.inOut" }, 0);
+  tl.to("#b2", { x: -140, y: -60, duration: D, ease: "sine.inOut" }, 0);
+  tl.to("#b3", { x: 160, y: -90, duration: D, ease: "sine.inOut" }, 0);
+  tl.to("#n1", { y: 40, rotation: 15, duration: 2.4, yoyo: true, repeat: Math.max(0, Math.floor(D / 2.4) - 1), ease: "sine.inOut" }, 0);
+  tl.to("#n2", { y: -40, rotation: -15, duration: 2.8, yoyo: true, repeat: Math.max(0, Math.floor(D / 2.8) - 1), ease: "sine.inOut" }, 0);
+  tl.fromTo("#barf", { scaleX: 0 }, { scaleX: 1, duration: D, ease: "none" }, 0);
+  {{JS}}
+  tl.set({}, {}, D);
+  window.__timelines["main"] = tl;
+</script>
+</body>
+</html>

@@ -1,0 +1,221 @@
+{
+ "duration": 86.942,
+ "segs": [
+  {
+   "block": 0,
+   "role": "seg",
+   "k": 0,
+   "text": "Matthias wollte Fußballprofi werden.",
+   "start": 0.8,
+   "end": 2.971
+  },
+  {
+   "block": 0,
+   "role": "seg",
+   "k": 1,
+   "text": "Aber dann passierte etwas.",
+   "start": 3.721,
+   "end": 5.393
+  },
+  {
+   "block": 0,
+   "role": "seg",
+   "k": 2,
+   "text": "Er hatte sich schwer am Knie verletzt.",
+   "start": 6.143,
+   "end": 8.14
+  },
+  {
+   "block": 0,
+   "role": "seg",
+   "k": 3,
+   "text": "Deshalb musste er seinen Traum aufgeben.",
+   "start": 8.89,
+   "end": 10.899
+  },
+  {
+   "block": 1,
+   "role": "seg",
+   "k": 0,
+   "text": "Das Plusquamperfekt zeigt: Das ist noch früher passiert.",
+   "start": 12.699,
+   "end": 15.854
+  },
+  {
+   "block": 1,
+   "role": "seg",
+   "k": 1,
+   "text": "Zuerst die Verletzung.",
+   "start": 16.604,
+   "end": 17.719
+  },
+  {
+   "block": 1,
+   "role": "seg",
+   "k": 2,
+   "text": "Dann das Ende vom Traum.",
+   "start": 18.469,
+   "end": 19.924
+  },
+  {
+   "block": 2,
+   "role": "seg",
+   "k": 0,
+   "text": "Man bildet es mit hatte oder war, plus Partizip zwei.",
+   "start": 21.724,
+   "end": 24.847
+  },
+  {
+   "block": 2,
+   "role": "seg",
+   "k": 1,
+   "text": "Ich hatte gegessen.",
+   "start": 25.597,
+   "end": 26.572
+  },
+  {
+   "block": 2,
+   "role": "seg",
+   "k": 2,
+   "text": "Er war gelaufen.",
+   "start": 27.322,
+   "end": 28.413
+  },
+  {
+   "block": 3,
+   "role": "seg",
+   "k": 0,
+   "text": "Belinda weinte.",
+   "start": 30.213,
+   "end": 31.235
+  },
+  {
+   "block": 3,
+   "role": "seg",
+   "k": 1,
+   "text": "Ihr Freund hatte sie verlassen.",
+   "start": 31.985,
+   "end": 33.518
+  },
+  {
+   "block": 3,
+   "role": "seg",
+   "k": 2,
+   "text": "Peter trank eine ganze Flasche Wasser.",
+   "start": 34.268,
+   "end": 36.218
+  },
+  {
+   "block": 3,
+   "role": "seg",
+   "k": 3,
+   "text": "Er war zehn Kilometer gelaufen.",
+   "start": 36.968,
+   "end": 38.884
+  },
+  {
+   "block": 4,
+   "role": "seg",
+   "k": 0,
+   "text": "Mit nachdem verbindest du beides.",
+   "start": 40.684,
+   "end": 42.472
+  },
+  {
+   "block": 4,
+   "role": "seg",
+   "k": 1,
+   "text": "Nachdem sich Matthias verletzt hatte, musste er aufhören.",
+   "start": 43.222,
+   "end": 46.682
+  },
+  {
+   "block": 4,
+   "role": "seg",
+   "k": 2,
+   "text": "Achtung: Im Satz mit nachdem steht das Verb am Ende.",
+   "start": 47.432,
+   "end": 50.504
+  },
+  {
+   "block": 5,
+   "role": "intro",
+   "k": 0,
+   "text": "Und jetzt der Test!",
+   "start": 52.304,
+   "end": 53.442
+  },
+  {
+   "block": 5,
+   "role": "intro",
+   "k": 1,
+   "text": "Was ist vorher passiert?",
+   "start": 54.192,
+   "end": 55.585
+  },
+  {
+   "block": 5,
+   "role": "q",
+   "k": 2,
+   "text": "Eins: Der Computer funktionierte nicht mehr.",
+   "start": 56.335,
+   "end": 58.769
+  },
+  {
+   "block": 5,
+   "role": "q",
+   "k": 3,
+   "text": "Zwei: Die Feuerwehr stand vor dem Haus.",
+   "start": 59.519,
+   "end": 61.734
+  },
+  {
+   "block": 5,
+   "role": "q",
+   "k": 4,
+   "text": "Drei: Anton war sehr glücklich.",
+   "start": 62.484,
+   "end": 64.072
+  },
+  {
+   "block": 5,
+   "role": "pause",
+   "k": 5,
+   "text": "Drück auf Pause und denk nach!",
+   "start": 64.822,
+   "end": 66.889
+  },
+  {
+   "block": 5,
+   "role": "a",
+   "k": 6,
+   "text": "Zum Beispiel: Jemand hatte Kaffee darüber geschüttet.",
+   "start": 72.289,
+   "end": 75.008
+  },
+  {
+   "block": 5,
+   "role": "a",
+   "k": 7,
+   "text": "Es hatte in der Küche gebrannt.",
+   "start": 75.758,
+   "end": 77.304
+  },
+  {
+   "block": 5,
+   "role": "a",
+   "k": 8,
+   "text": "Er hatte die Prüfung bestanden.",
+   "start": 78.054,
+   "end": 79.691
+  },
+  {
+   "block": 6,
+   "role": "cta",
+   "k": 0,
+   "text": "Schreib deinen eigenen Satz mit nachdem in die Kommentare!",
+   "start": 81.491,
+   "end": 84.742
+  }
+ ]
+}

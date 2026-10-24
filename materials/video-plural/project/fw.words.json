@@ -1,0 +1,1482 @@
+{
+ "model": "large-v3-turbo",
+ "language": "de",
+ "words": [
+  {
+   "word": "Ein",
+   "start": 0.3,
+   "end": 0.8,
+   "prob": 0.95
+  },
+  {
+   "word": "Tisch.",
+   "start": 0.8,
+   "end": 1.12,
+   "prob": 0.999
+  },
+  {
+   "word": "Zwei",
+   "start": 1.32,
+   "end": 1.54,
+   "prob": 0.899
+  },
+  {
+   "word": "Tische.",
+   "start": 1.54,
+   "end": 1.8,
+   "prob": 0.995
+  },
+  {
+   "word": "Ein",
+   "start": 1.96,
+   "end": 2.1,
+   "prob": 0.999
+  },
+  {
+   "word": "Buch.",
+   "start": 2.1,
+   "end": 2.38,
+   "prob": 1.0
+  },
+  {
+   "word": "Zwei",
+   "start": 2.56,
+   "end": 2.72,
+   "prob": 0.999
+  },
+  {
+   "word": "Bücher.",
+   "start": 2.72,
+   "end": 3.1,
+   "prob": 1.0
+  },
+  {
+   "word": "Ein",
+   "start": 3.26,
+   "end": 3.48,
+   "prob": 0.999
+  },
+  {
+   "word": "Auto.",
+   "start": 3.48,
+   "end": 3.86,
+   "prob": 0.998
+  },
+  {
+   "word": "Zwei",
+   "start": 4.26,
+   "end": 4.42,
+   "prob": 0.999
+  },
+  {
+   "word": "Autos.",
+   "start": 4.42,
+   "end": 4.94,
+   "prob": 1.0
+  },
+  {
+   "word": "Warum",
+   "start": 5.08,
+   "end": 5.38,
+   "prob": 1.0
+  },
+  {
+   "word": "ist",
+   "start": 5.38,
+   "end": 5.62,
+   "prob": 1.0
+  },
+  {
+   "word": "der",
+   "start": 5.62,
+   "end": 5.76,
+   "prob": 0.997
+  },
+  {
+   "word": "Plural",
+   "start": 5.76,
+   "end": 6.2,
+   "prob": 0.99
+  },
+  {
+   "word": "im",
+   "start": 6.2,
+   "end": 6.36,
+   "prob": 0.999
+  },
+  {
+   "word": "Deutschen",
+   "start": 6.36,
+   "end": 6.66,
+   "prob": 0.997
+  },
+  {
+   "word": "so",
+   "start": 6.66,
+   "end": 6.9,
+   "prob": 0.999
+  },
+  {
+   "word": "Schautisch?",
+   "start": 6.9,
+   "end": 7.44,
+   "prob": 0.926
+  },
+  {
+   "word": "Keine",
+   "start": 7.66,
+   "end": 8.0,
+   "prob": 0.999
+  },
+  {
+   "word": "Panik!",
+   "start": 8.0,
+   "end": 8.36,
+   "prob": 1.0
+  },
+  {
+   "word": "Es",
+   "start": 8.52,
+   "end": 8.74,
+   "prob": 0.999
+  },
+  {
+   "word": "gibt",
+   "start": 8.74,
+   "end": 8.96,
+   "prob": 1.0
+  },
+  {
+   "word": "sechs",
+   "start": 8.96,
+   "end": 9.28,
+   "prob": 0.889
+  },
+  {
+   "word": "Regeln.",
+   "start": 9.28,
+   "end": 9.72,
+   "prob": 0.999
+  },
+  {
+   "word": "Regel",
+   "start": 10.84,
+   "end": 11.1,
+   "prob": 0.756
+  },
+  {
+   "word": "eins.",
+   "start": 11.1,
+   "end": 11.48,
+   "prob": 0.021
+  },
+  {
+   "word": "Die",
+   "start": 11.78,
+   "end": 11.84,
+   "prob": 0.998
+  },
+  {
+   "word": "Endung",
+   "start": 11.84,
+   "end": 12.18,
+   "prob": 0.999
+  },
+  {
+   "word": "E.",
+   "start": 12.18,
+   "end": 12.38,
+   "prob": 0.385
+  },
+  {
+   "word": "Der",
+   "start": 12.5,
+   "end": 12.64,
+   "prob": 0.999
+  },
+  {
+   "word": "Tag.",
+   "start": 12.64,
+   "end": 12.96,
+   "prob": 0.999
+  },
+  {
+   "word": "Die",
+   "start": 13.1,
+   "end": 13.16,
+   "prob": 1.0
+  },
+  {
+   "word": "Tage.",
+   "start": 13.16,
+   "end": 13.48,
+   "prob": 1.0
+  },
+  {
+   "word": "Der",
+   "start": 13.68,
+   "end": 13.82,
+   "prob": 1.0
+  },
+  {
+   "word": "Hund.",
+   "start": 13.82,
+   "end": 14.12,
+   "prob": 0.999
+  },
+  {
+   "word": "Die",
+   "start": 14.24,
+   "end": 14.32,
+   "prob": 1.0
+  },
+  {
+   "word": "Hunde.",
+   "start": 14.32,
+   "end": 14.56,
+   "prob": 0.999
+  },
+  {
+   "word": "Das",
+   "start": 14.72,
+   "end": 14.98,
+   "prob": 1.0
+  },
+  {
+   "word": "Jahr.",
+   "start": 14.98,
+   "end": 15.22,
+   "prob": 0.998
+  },
+  {
+   "word": "Die",
+   "start": 15.44,
+   "end": 15.52,
+   "prob": 1.0
+  },
+  {
+   "word": "Jahre.",
+   "start": 15.52,
+   "end": 15.78,
+   "prob": 1.0
+  },
+  {
+   "word": "So",
+   "start": 15.98,
+   "end": 16.12,
+   "prob": 0.999
+  },
+  {
+   "word": "funktionieren",
+   "start": 16.12,
+   "end": 16.78,
+   "prob": 1.0
+  },
+  {
+   "word": "viele",
+   "start": 16.78,
+   "end": 17.08,
+   "prob": 1.0
+  },
+  {
+   "word": "maskuline",
+   "start": 17.08,
+   "end": 17.68,
+   "prob": 0.991
+  },
+  {
+   "word": "Nomen.",
+   "start": 17.68,
+   "end": 17.96,
+   "prob": 0.997
+  },
+  {
+   "word": "Regel",
+   "start": 18.88,
+   "end": 19.32,
+   "prob": 0.999
+  },
+  {
+   "word": "zwei.",
+   "start": 19.32,
+   "end": 19.66,
+   "prob": 0.992
+  },
+  {
+   "word": "Umlaut",
+   "start": 19.98,
+   "end": 20.42,
+   "prob": 0.965
+  },
+  {
+   "word": "und",
+   "start": 20.42,
+   "end": 20.62,
+   "prob": 0.831
+  },
+  {
+   "word": "E.",
+   "start": 20.62,
+   "end": 20.8,
+   "prob": 0.998
+  },
+  {
+   "word": "Der",
+   "start": 21.0,
+   "end": 21.2,
+   "prob": 0.999
+  },
+  {
+   "word": "Stuhl.",
+   "start": 21.2,
+   "end": 21.7,
+   "prob": 0.999
+  },
+  {
+   "word": "Die",
+   "start": 21.9,
+   "end": 21.98,
+   "prob": 1.0
+  },
+  {
+   "word": "Stühle.",
+   "start": 21.98,
+   "end": 22.38,
+   "prob": 0.999
+  },
+  {
+   "word": "Die",
+   "start": 22.56,
+   "end": 22.7,
+   "prob": 1.0
+  },
+  {
+   "word": "Hand.",
+   "start": 22.7,
+   "end": 22.92,
+   "prob": 0.999
+  },
+  {
+   "word": "Die",
+   "start": 23.12,
+   "end": 23.2,
+   "prob": 1.0
+  },
+  {
+   "word": "Hände.",
+   "start": 23.2,
+   "end": 23.44,
+   "prob": 0.998
+  },
+  {
+   "word": "Der",
+   "start": 23.66,
+   "end": 23.9,
+   "prob": 0.998
+  },
+  {
+   "word": "Zug.",
+   "start": 23.9,
+   "end": 24.22,
+   "prob": 1.0
+  },
+  {
+   "word": "Die",
+   "start": 24.38,
+   "end": 24.44,
+   "prob": 1.0
+  },
+  {
+   "word": "Züge.",
+   "start": 24.44,
+   "end": 24.76,
+   "prob": 0.88
+  },
+  {
+   "word": "Aus",
+   "start": 25.04,
+   "end": 25.2,
+   "prob": 0.996
+  },
+  {
+   "word": "A,",
+   "start": 25.2,
+   "end": 25.5,
+   "prob": 0.994
+  },
+  {
+   "word": "O",
+   "start": 25.66,
+   "end": 25.78,
+   "prob": 0.968
+  },
+  {
+   "word": "und",
+   "start": 25.78,
+   "end": 26.12,
+   "prob": 0.99
+  },
+  {
+   "word": "U",
+   "start": 26.12,
+   "end": 26.28,
+   "prob": 0.992
+  },
+  {
+   "word": "wird",
+   "start": 26.28,
+   "end": 26.46,
+   "prob": 0.994
+  },
+  {
+   "word": "E.",
+   "start": 26.46,
+   "end": 26.66,
+   "prob": 0.994
+  },
+  {
+   "word": "Ö",
+   "start": 26.88,
+   "end": 27.06,
+   "prob": 0.787
+  },
+  {
+   "word": "und",
+   "start": 27.06,
+   "end": 27.38,
+   "prob": 0.993
+  },
+  {
+   "word": "Ö.",
+   "start": 27.38,
+   "end": 27.54,
+   "prob": 0.82
+  },
+  {
+   "word": "Regel",
+   "start": 28.46,
+   "end": 28.94,
+   "prob": 0.903
+  },
+  {
+   "word": "drei.",
+   "start": 28.94,
+   "end": 29.22,
+   "prob": 0.042
+  },
+  {
+   "word": "Die",
+   "start": 29.44,
+   "end": 29.48,
+   "prob": 0.978
+  },
+  {
+   "word": "Endung",
+   "start": 29.48,
+   "end": 29.8,
+   "prob": 0.996
+  },
+  {
+   "word": "R.",
+   "start": 29.8,
+   "end": 30.04,
+   "prob": 0.624
+  },
+  {
+   "word": "Fast",
+   "start": 30.32,
+   "end": 30.44,
+   "prob": 0.992
+  },
+  {
+   "word": "immer",
+   "start": 30.44,
+   "end": 30.7,
+   "prob": 0.999
+  },
+  {
+   "word": "mit",
+   "start": 30.7,
+   "end": 30.86,
+   "prob": 0.999
+  },
+  {
+   "word": "Umlaut.",
+   "start": 30.86,
+   "end": 31.34,
+   "prob": 0.99
+  },
+  {
+   "word": "Das",
+   "start": 31.56,
+   "end": 31.68,
+   "prob": 0.984
+  },
+  {
+   "word": "Kind.",
+   "start": 31.68,
+   "end": 31.98,
+   "prob": 0.997
+  },
+  {
+   "word": "Die",
+   "start": 32.18,
+   "end": 32.26,
+   "prob": 0.999
+  },
+  {
+   "word": "Kinder.",
+   "start": 32.26,
+   "end": 32.54,
+   "prob": 0.999
+  },
+  {
+   "word": "Das",
+   "start": 32.8,
+   "end": 33.1,
+   "prob": 1.0
+  },
+  {
+   "word": "Buch.",
+   "start": 33.1,
+   "end": 33.42,
+   "prob": 1.0
+  },
+  {
+   "word": "Die",
+   "start": 33.58,
+   "end": 33.66,
+   "prob": 1.0
+  },
+  {
+   "word": "Bücher.",
+   "start": 33.66,
+   "end": 34.0,
+   "prob": 0.999
+  },
+  {
+   "word": "Das",
+   "start": 34.16,
+   "end": 34.36,
+   "prob": 0.999
+  },
+  {
+   "word": "Haus.",
+   "start": 34.36,
+   "end": 34.66,
+   "prob": 1.0
+  },
+  {
+   "word": "Die",
+   "start": 34.78,
+   "end": 34.88,
+   "prob": 1.0
+  },
+  {
+   "word": "Häuser.",
+   "start": 34.88,
+   "end": 35.18,
+   "prob": 0.998
+  },
+  {
+   "word": "Das",
+   "start": 35.36,
+   "end": 35.6,
+   "prob": 0.999
+  },
+  {
+   "word": "sind",
+   "start": 35.6,
+   "end": 35.8,
+   "prob": 1.0
+  },
+  {
+   "word": "oft",
+   "start": 35.8,
+   "end": 36.04,
+   "prob": 1.0
+  },
+  {
+   "word": "neutrale",
+   "start": 36.04,
+   "end": 36.62,
+   "prob": 0.99
+  },
+  {
+   "word": "Nomen.",
+   "start": 36.62,
+   "end": 36.88,
+   "prob": 0.994
+  },
+  {
+   "word": "Regel",
+   "start": 37.8,
+   "end": 38.28,
+   "prob": 0.997
+  },
+  {
+   "word": "vier.",
+   "start": 38.28,
+   "end": 38.56,
+   "prob": 0.999
+  },
+  {
+   "word": "Lural",
+   "start": 38.74,
+   "end": 39.06,
+   "prob": 0.651
+  },
+  {
+   "word": "mit",
+   "start": 39.06,
+   "end": 39.3,
+   "prob": 0.919
+  },
+  {
+   "word": "N.",
+   "start": 39.3,
+   "end": 39.46,
+   "prob": 0.993
+  },
+  {
+   "word": "Die",
+   "start": 39.6,
+   "end": 39.78,
+   "prob": 1.0
+  },
+  {
+   "word": "Lampe.",
+   "start": 39.78,
+   "end": 40.18,
+   "prob": 0.999
+  },
+  {
+   "word": "Die",
+   "start": 40.26,
+   "end": 40.4,
+   "prob": 1.0
+  },
+  {
+   "word": "Lampen.",
+   "start": 40.4,
+   "end": 40.88,
+   "prob": 0.986
+  },
+  {
+   "word": "Die",
+   "start": 41.0,
+   "end": 41.18,
+   "prob": 1.0
+  },
+  {
+   "word": "Frau.",
+   "start": 41.18,
+   "end": 41.44,
+   "prob": 1.0
+  },
+  {
+   "word": "Die",
+   "start": 41.64,
+   "end": 41.7,
+   "prob": 1.0
+  },
+  {
+   "word": "Frauen.",
+   "start": 41.7,
+   "end": 42.04,
+   "prob": 0.998
+  },
+  {
+   "word": "Die",
+   "start": 42.24,
+   "end": 42.4,
+   "prob": 1.0
+  },
+  {
+   "word": "Zeitung.",
+   "start": 42.4,
+   "end": 42.86,
+   "prob": 1.0
+  },
+  {
+   "word": "Die",
+   "start": 42.94,
+   "end": 43.04,
+   "prob": 1.0
+  },
+  {
+   "word": "Zeitungen.",
+   "start": 43.04,
+   "end": 43.52,
+   "prob": 0.998
+  },
+  {
+   "word": "Fast",
+   "start": 43.78,
+   "end": 44.16,
+   "prob": 0.997
+  },
+  {
+   "word": "alle",
+   "start": 44.16,
+   "end": 44.46,
+   "prob": 1.0
+  },
+  {
+   "word": "femininen",
+   "start": 44.46,
+   "end": 45.08,
+   "prob": 0.985
+  },
+  {
+   "word": "Nomen",
+   "start": 45.08,
+   "end": 45.42,
+   "prob": 1.0
+  },
+  {
+   "word": "machen",
+   "start": 45.42,
+   "end": 45.68,
+   "prob": 1.0
+  },
+  {
+   "word": "das.",
+   "start": 45.68,
+   "end": 45.96,
+   "prob": 1.0
+  },
+  {
+   "word": "Regel",
+   "start": 46.88,
+   "end": 47.36,
+   "prob": 1.0
+  },
+  {
+   "word": "fünf.",
+   "start": 47.36,
+   "end": 47.74,
+   "prob": 0.995
+  },
+  {
+   "word": "Die",
+   "start": 47.9,
+   "end": 47.96,
+   "prob": 1.0
+  },
+  {
+   "word": "Endung",
+   "start": 47.96,
+   "end": 48.3,
+   "prob": 0.999
+  },
+  {
+   "word": "S.",
+   "start": 48.3,
+   "end": 48.52,
+   "prob": 0.982
+  },
+  {
+   "word": "Das",
+   "start": 48.68,
+   "end": 48.84,
+   "prob": 0.999
+  },
+  {
+   "word": "Auto.",
+   "start": 48.84,
+   "end": 49.22,
+   "prob": 0.999
+  },
+  {
+   "word": "Die",
+   "start": 49.44,
+   "end": 49.52,
+   "prob": 1.0
+  },
+  {
+   "word": "Autos.",
+   "start": 49.52,
+   "end": 49.98,
+   "prob": 1.0
+  },
+  {
+   "word": "Das",
+   "start": 50.14,
+   "end": 50.32,
+   "prob": 1.0
+  },
+  {
+   "word": "Handy.",
+   "start": 50.32,
+   "end": 50.64,
+   "prob": 0.999
+  },
+  {
+   "word": "Die",
+   "start": 50.8,
+   "end": 50.94,
+   "prob": 0.999
+  },
+  {
+   "word": "Handys.",
+   "start": 50.94,
+   "end": 51.36,
+   "prob": 0.995
+  },
+  {
+   "word": "Das",
+   "start": 51.64,
+   "end": 51.86,
+   "prob": 0.999
+  },
+  {
+   "word": "Hotel.",
+   "start": 51.86,
+   "end": 52.28,
+   "prob": 0.995
+  },
+  {
+   "word": "Die",
+   "start": 52.56,
+   "end": 52.66,
+   "prob": 0.999
+  },
+  {
+   "word": "Hotels.",
+   "start": 52.66,
+   "end": 53.12,
+   "prob": 0.732
+  },
+  {
+   "word": "Das",
+   "start": 53.26,
+   "end": 53.48,
+   "prob": 0.999
+  },
+  {
+   "word": "sind",
+   "start": 53.48,
+   "end": 53.68,
+   "prob": 1.0
+  },
+  {
+   "word": "meistens",
+   "start": 53.68,
+   "end": 54.3,
+   "prob": 0.997
+  },
+  {
+   "word": "Wörter",
+   "start": 54.3,
+   "end": 54.5,
+   "prob": 0.997
+  },
+  {
+   "word": "aus",
+   "start": 54.5,
+   "end": 54.74,
+   "prob": 1.0
+  },
+  {
+   "word": "anderen",
+   "start": 54.74,
+   "end": 55.08,
+   "prob": 1.0
+  },
+  {
+   "word": "Sprachen.",
+   "start": 55.08,
+   "end": 55.58,
+   "prob": 1.0
+  },
+  {
+   "word": "Regel",
+   "start": 56.5,
+   "end": 56.98,
+   "prob": 0.998
+  },
+  {
+   "word": "sechs.",
+   "start": 56.98,
+   "end": 57.3,
+   "prob": 0.998
+  },
+  {
+   "word": "Keine",
+   "start": 57.3,
+   "end": 57.74,
+   "prob": 0.805
+  },
+  {
+   "word": "Endung.",
+   "start": 57.74,
+   "end": 58.12,
+   "prob": 0.986
+  },
+  {
+   "word": "Der",
+   "start": 58.28,
+   "end": 58.46,
+   "prob": 0.959
+  },
+  {
+   "word": "Lehrer.",
+   "start": 58.46,
+   "end": 58.82,
+   "prob": 0.698
+  },
+  {
+   "word": "Die",
+   "start": 59.04,
+   "end": 59.1,
+   "prob": 0.996
+  },
+  {
+   "word": "Lehrer.",
+   "start": 59.1,
+   "end": 59.42,
+   "prob": 0.876
+  },
+  {
+   "word": "Das",
+   "start": 59.62,
+   "end": 59.8,
+   "prob": 0.999
+  },
+  {
+   "word": "Zimmer.",
+   "start": 59.8,
+   "end": 60.16,
+   "prob": 1.0
+  },
+  {
+   "word": "Die",
+   "start": 60.42,
+   "end": 60.48,
+   "prob": 0.999
+  },
+  {
+   "word": "Zimmer.",
+   "start": 60.48,
+   "end": 60.76,
+   "prob": 0.995
+  },
+  {
+   "word": "Der",
+   "start": 60.9,
+   "end": 61.04,
+   "prob": 0.996
+  },
+  {
+   "word": "Apfel.",
+   "start": 61.04,
+   "end": 61.46,
+   "prob": 0.996
+  },
+  {
+   "word": "Die",
+   "start": 61.62,
+   "end": 61.74,
+   "prob": 0.998
+  },
+  {
+   "word": "Äpfel.",
+   "start": 61.74,
+   "end": 62.1,
+   "prob": 0.998
+  },
+  {
+   "word": "Nur",
+   "start": 62.24,
+   "end": 62.38,
+   "prob": 0.989
+  },
+  {
+   "word": "der",
+   "start": 62.38,
+   "end": 62.56,
+   "prob": 0.999
+  },
+  {
+   "word": "Artikel",
+   "start": 62.56,
+   "end": 63.04,
+   "prob": 0.998
+  },
+  {
+   "word": "wird",
+   "start": 63.04,
+   "end": 63.26,
+   "prob": 0.998
+  },
+  {
+   "word": "zu",
+   "start": 63.26,
+   "end": 63.4,
+   "prob": 0.994
+  },
+  {
+   "word": "die.",
+   "start": 63.4,
+   "end": 63.58,
+   "prob": 0.673
+  },
+  {
+   "word": "Manchmal",
+   "start": 63.72,
+   "end": 64.12,
+   "prob": 0.999
+  },
+  {
+   "word": "kommt",
+   "start": 64.12,
+   "end": 64.4,
+   "prob": 1.0
+  },
+  {
+   "word": "ein",
+   "start": 64.4,
+   "end": 64.58,
+   "prob": 1.0
+  },
+  {
+   "word": "Umlaut",
+   "start": 64.58,
+   "end": 64.94,
+   "prob": 0.898
+  },
+  {
+   "word": "dazu.",
+   "start": 64.94,
+   "end": 65.22,
+   "prob": 0.999
+  },
+  {
+   "word": "Mein",
+   "start": 66.46,
+   "end": 66.66,
+   "prob": 0.999
+  },
+  {
+   "word": "Tipp.",
+   "start": 66.66,
+   "end": 66.86,
+   "prob": 0.999
+  },
+  {
+   "word": "Lerne",
+   "start": 66.98,
+   "end": 67.2,
+   "prob": 0.97
+  },
+  {
+   "word": "jedes",
+   "start": 67.2,
+   "end": 67.46,
+   "prob": 0.999
+  },
+  {
+   "word": "Nomen",
+   "start": 67.46,
+   "end": 67.68,
+   "prob": 0.413
+  },
+  {
+   "word": "immer",
+   "start": 67.68,
+   "end": 67.92,
+   "prob": 1.0
+  },
+  {
+   "word": "mit",
+   "start": 67.92,
+   "end": 68.1,
+   "prob": 1.0
+  },
+  {
+   "word": "Artikel",
+   "start": 68.1,
+   "end": 68.56,
+   "prob": 1.0
+  },
+  {
+   "word": "und",
+   "start": 68.56,
+   "end": 68.86,
+   "prob": 0.979
+  },
+  {
+   "word": "Plural.",
+   "start": 68.86,
+   "end": 69.26,
+   "prob": 0.987
+  },
+  {
+   "word": "Also",
+   "start": 69.4,
+   "end": 69.66,
+   "prob": 0.999
+  },
+  {
+   "word": "nicht",
+   "start": 69.66,
+   "end": 69.86,
+   "prob": 1.0
+  },
+  {
+   "word": "nur",
+   "start": 69.86,
+   "end": 70.02,
+   "prob": 1.0
+  },
+  {
+   "word": "Buch,",
+   "start": 70.02,
+   "end": 70.36,
+   "prob": 0.999
+  },
+  {
+   "word": "sondern",
+   "start": 70.52,
+   "end": 70.86,
+   "prob": 1.0
+  },
+  {
+   "word": "das",
+   "start": 70.86,
+   "end": 71.22,
+   "prob": 0.999
+  },
+  {
+   "word": "Buch,",
+   "start": 71.22,
+   "end": 71.48,
+   "prob": 1.0
+  },
+  {
+   "word": "die",
+   "start": 71.58,
+   "end": 71.66,
+   "prob": 1.0
+  },
+  {
+   "word": "Bücher.",
+   "start": 71.66,
+   "end": 72.0,
+   "prob": 0.999
+  },
+  {
+   "word": "Und",
+   "start": 72.88,
+   "end": 73.32,
+   "prob": 0.998
+  },
+  {
+   "word": "jetzt",
+   "start": 73.32,
+   "end": 73.5,
+   "prob": 1.0
+  },
+  {
+   "word": "kommt",
+   "start": 73.5,
+   "end": 73.74,
+   "prob": 1.0
+  },
+  {
+   "word": "der",
+   "start": 73.74,
+   "end": 73.88,
+   "prob": 1.0
+  },
+  {
+   "word": "Test.",
+   "start": 73.88,
+   "end": 74.14,
+   "prob": 1.0
+  },
+  {
+   "word": "Wie",
+   "start": 74.28,
+   "end": 74.42,
+   "prob": 0.999
+  },
+  {
+   "word": "heißt",
+   "start": 74.42,
+   "end": 74.62,
+   "prob": 0.998
+  },
+  {
+   "word": "der",
+   "start": 74.62,
+   "end": 74.78,
+   "prob": 1.0
+  },
+  {
+   "word": "Plural?",
+   "start": 74.78,
+   "end": 75.18,
+   "prob": 0.999
+  },
+  {
+   "word": "Die",
+   "start": 75.94,
+   "end": 76.3,
+   "prob": 0.991
+  },
+  {
+   "word": "Katze.",
+   "start": 76.3,
+   "end": 76.78,
+   "prob": 0.999
+  },
+  {
+   "word": "Der",
+   "start": 76.94,
+   "end": 77.12,
+   "prob": 0.999
+  },
+  {
+   "word": "Baum.",
+   "start": 77.12,
+   "end": 77.44,
+   "prob": 0.999
+  },
+  {
+   "word": "Das",
+   "start": 77.64,
+   "end": 77.84,
+   "prob": 1.0
+  },
+  {
+   "word": "Kino.",
+   "start": 77.84,
+   "end": 78.24,
+   "prob": 1.0
+  },
+  {
+   "word": "Das",
+   "start": 78.38,
+   "end": 78.64,
+   "prob": 1.0
+  },
+  {
+   "word": "Glas.",
+   "start": 78.64,
+   "end": 78.96,
+   "prob": 0.999
+  },
+  {
+   "word": "Der",
+   "start": 79.26,
+   "end": 79.46,
+   "prob": 0.999
+  },
+  {
+   "word": "Koffer.",
+   "start": 79.46,
+   "end": 79.82,
+   "prob": 0.999
+  },
+  {
+   "word": "Drück",
+   "start": 80.52,
+   "end": 80.76,
+   "prob": 0.944
+  },
+  {
+   "word": "auf",
+   "start": 80.76,
+   "end": 81.02,
+   "prob": 0.999
+  },
+  {
+   "word": "Pause",
+   "start": 81.02,
+   "end": 81.4,
+   "prob": 0.998
+  },
+  {
+   "word": "und",
+   "start": 81.4,
+   "end": 81.74,
+   "prob": 0.968
+  },
+  {
+   "word": "denk",
+   "start": 81.74,
+   "end": 82.0,
+   "prob": 0.967
+  },
+  {
+   "word": "nach.",
+   "start": 82.0,
+   "end": 82.2,
+   "prob": 0.999
+  },
+  {
+   "word": "Die",
+   "start": 87.04,
+   "end": 87.48,
+   "prob": 0.998
+  },
+  {
+   "word": "Lösungen.",
+   "start": 87.48,
+   "end": 87.98,
+   "prob": 0.998
+  },
+  {
+   "word": "Die",
+   "start": 88.14,
+   "end": 88.22,
+   "prob": 1.0
+  },
+  {
+   "word": "Katzen.",
+   "start": 88.22,
+   "end": 88.58,
+   "prob": 0.999
+  },
+  {
+   "word": "Die",
+   "start": 88.7,
+   "end": 88.82,
+   "prob": 1.0
+  },
+  {
+   "word": "Bäume.",
+   "start": 88.82,
+   "end": 89.18,
+   "prob": 0.999
+  },
+  {
+   "word": "Die",
+   "start": 89.32,
+   "end": 89.44,
+   "prob": 0.999
+  },
+  {
+   "word": "Kinos.",
+   "start": 89.44,
+   "end": 89.78,
+   "prob": 0.993
+  },
+  {
+   "word": "Die",
+   "start": 89.96,
+   "end": 90.06,
+   "prob": 0.999
+  },
+  {
+   "word": "Gläser.",
+   "start": 90.06,
+   "end": 90.48,
+   "prob": 0.998
+  },
+  {
+   "word": "Und",
+   "start": 90.7,
+   "end": 90.74,
+   "prob": 0.957
+  },
+  {
+   "word": "die",
+   "start": 90.74,
+   "end": 90.88,
+   "prob": 0.999
+  },
+  {
+   "word": "Koffer.",
+   "start": 90.88,
+   "end": 91.26,
+   "prob": 0.999
+  },
+  {
+   "word": "Oder",
+   "start": 91.26,
+   "end": 91.46,
+   "prob": 0.362
+  },
+  {
+   "word": "ohne",
+   "start": 91.46,
+   "end": 91.74,
+   "prob": 0.676
+  },
+  {
+   "word": "Endung.",
+   "start": 91.74,
+   "end": 92.1,
+   "prob": 0.984
+  },
+  {
+   "word": "Wie",
+   "start": 92.98,
+   "end": 93.48,
+   "prob": 0.79
+  },
+  {
+   "word": "viele",
+   "start": 93.48,
+   "end": 93.72,
+   "prob": 0.964
+  },
+  {
+   "word": "hast",
+   "start": 93.72,
+   "end": 93.88,
+   "prob": 0.996
+  },
+  {
+   "word": "du",
+   "start": 93.88,
+   "end": 94.0,
+   "prob": 0.772
+  },
+  {
+   "word": "richtig?",
+   "start": 94.0,
+   "end": 94.26,
+   "prob": 0.981
+  },
+  {
+   "word": "Schreib",
+   "start": 94.46,
+   "end": 94.86,
+   "prob": 0.987
+  },
+  {
+   "word": "deine",
+   "start": 94.86,
+   "end": 95.02,
+   "prob": 0.974
+  },
+  {
+   "word": "Punkte",
+   "start": 95.02,
+   "end": 95.46,
+   "prob": 0.976
+  },
+  {
+   "word": "in",
+   "start": 95.46,
+   "end": 95.64,
+   "prob": 0.995
+  },
+  {
+   "word": "die",
+   "start": 95.64,
+   "end": 95.72,
+   "prob": 0.997
+  },
+  {
+   "word": "Kommentare.",
+   "start": 95.72,
+   "end": 96.06,
+   "prob": 0.997
+  }
+ ]
+}

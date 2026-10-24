@@ -1,0 +1,232 @@
+1
+00:00:00,300 --> 00:00:02,000
+Ein Tisch, zwei Tische.
+
+2
+00:00:01,960 --> 00:00:03,300
+Ein Buch, zwei Bücher.
+
+3
+00:00:03,260 --> 00:00:05,140
+Ein Auto, zwei Autos.
+
+4
+00:00:05,080 --> 00:00:06,860
+Warum ist der Plural im Deutschen
+
+5
+00:00:06,660 --> 00:00:07,640
+so chaotisch?
+
+6
+00:00:07,660 --> 00:00:08,560
+Keine Panik!
+
+7
+00:00:08,520 --> 00:00:09,920
+Es gibt sechs Regeln.
+
+8
+00:00:10,840 --> 00:00:12,580
+Regel eins: die Endung -e.
+
+9
+00:00:12,500 --> 00:00:13,680
+Der Tag, die Tage.
+
+10
+00:00:13,680 --> 00:00:14,760
+Der Hund, die Hunde.
+
+11
+00:00:14,720 --> 00:00:15,980
+Das Jahr, die Jahre.
+
+12
+00:00:15,980 --> 00:00:18,160
+So funktionieren viele maskuline Nomen.
+
+13
+00:00:18,880 --> 00:00:21,000
+Regel zwei: Umlaut und -e.
+
+14
+00:00:21,000 --> 00:00:22,580
+Der Stuhl, die Stühle.
+
+15
+00:00:22,560 --> 00:00:23,640
+Die Hand, die Hände.
+
+16
+00:00:23,660 --> 00:00:24,960
+Der Zug, die Züge.
+
+17
+00:00:25,040 --> 00:00:26,660
+Aus a, o und u wird
+
+18
+00:00:26,460 --> 00:00:27,740
+ä, ö und ü.
+
+19
+00:00:28,460 --> 00:00:30,640
+Regel drei: die Endung -er, fast
+
+20
+00:00:30,440 --> 00:00:31,540
+immer mit Umlaut.
+
+21
+00:00:31,560 --> 00:00:32,740
+Das Kind, die Kinder.
+
+22
+00:00:32,800 --> 00:00:34,200
+Das Buch, die Bücher.
+
+23
+00:00:34,160 --> 00:00:35,380
+Das Haus, die Häuser.
+
+24
+00:00:35,360 --> 00:00:37,080
+Das sind oft neutrale Nomen.
+
+25
+00:00:37,800 --> 00:00:39,660
+Regel vier: Plural mit n.
+
+26
+00:00:39,600 --> 00:00:41,080
+Die Lampe, die Lampen.
+
+27
+00:00:41,000 --> 00:00:42,240
+Die Frau, die Frauen.
+
+28
+00:00:42,240 --> 00:00:43,720
+Die Zeitung, die Zeitungen.
+
+29
+00:00:43,780 --> 00:00:46,160
+Fast alle femininen Nomen machen das.
+
+30
+00:00:46,880 --> 00:00:48,720
+Regel fünf: die Endung -s.
+
+31
+00:00:48,680 --> 00:00:50,180
+Das Auto, die Autos.
+
+32
+00:00:50,140 --> 00:00:51,560
+Das Handy, die Handys.
+
+33
+00:00:51,640 --> 00:00:53,320
+Das Hotel, die Hotels.
+
+34
+00:00:53,260 --> 00:00:55,280
+Das sind meistens Wörter aus anderen
+
+35
+00:00:55,080 --> 00:00:55,780
+Sprachen.
+
+36
+00:00:56,500 --> 00:00:58,320
+Regel sechs: keine Endung.
+
+37
+00:00:58,280 --> 00:00:59,620
+Der Lehrer, die Lehrer.
+
+38
+00:00:59,620 --> 00:01:00,960
+Das Zimmer, die Zimmer.
+
+39
+00:01:00,900 --> 00:01:02,300
+Der Apfel, die Äpfel.
+
+40
+00:01:02,240 --> 00:01:03,780
+Nur der Artikel wird zu die,
+
+41
+00:01:03,720 --> 00:01:05,420
+manchmal kommt ein Umlaut dazu.
+
+42
+00:01:06,460 --> 00:01:08,120
+Mein Tipp: Lerne jedes Nomen immer
+
+43
+00:01:07,920 --> 00:01:09,460
+mit Artikel und Plural.
+
+44
+00:01:09,400 --> 00:01:11,420
+Also nicht nur Buch, sondern: das
+
+45
+00:01:11,220 --> 00:01:12,200
+Buch, die Bücher.
+
+46
+00:01:12,880 --> 00:01:14,340
+Und jetzt kommt der Test!
+
+47
+00:01:14,280 --> 00:01:15,380
+Wie heißt der Plural?
+
+48
+00:01:15,940 --> 00:01:16,980
+Die Katze.
+
+49
+00:01:16,940 --> 00:01:17,640
+Der Baum.
+
+50
+00:01:17,640 --> 00:01:18,440
+Das Kino.
+
+51
+00:01:18,380 --> 00:01:19,160
+Das Glas.
+
+52
+00:01:19,260 --> 00:01:20,020
+Der Koffer.
+
+53
+00:01:20,520 --> 00:01:22,400
+Drück auf Pause und denk nach!
+
+54
+00:01:27,040 --> 00:01:29,380
+Die Lösungen: die Katzen, die Bäume,
+
+55
+00:01:29,320 --> 00:01:31,080
+die Kinos, die Gläser und die
+
+56
+00:01:30,880 --> 00:01:32,300
+Koffer, ohne Endung!
+
+57
+00:01:32,980 --> 00:01:34,460
+Wie viele hast du richtig?
+
+58
+00:01:34,460 --> 00:01:36,260
+Schreib deine Punkte in die Kommentare!
+

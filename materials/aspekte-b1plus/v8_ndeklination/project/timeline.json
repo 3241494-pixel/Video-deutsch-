@@ -1,0 +1,573 @@
+{
+ "duration": 251.724,
+ "segs": [
+  {
+   "block": 0,
+   "role": "seg",
+   "k": 0,
+   "text": "Das ist der Student.",
+   "start": 0.8,
+   "end": 2.135
+  },
+  {
+   "block": 0,
+   "role": "seg",
+   "k": 1,
+   "text": "Aber: Ich kenne den Studenten.",
+   "start": 3.035,
+   "end": 4.859
+  },
+  {
+   "block": 0,
+   "role": "seg",
+   "k": 2,
+   "text": "Warum bekommt Student plötzlich ein n?",
+   "start": 5.759,
+   "end": 8.0
+  },
+  {
+   "block": 0,
+   "role": "seg",
+   "k": 3,
+   "text": "Das ist die N-Deklination.",
+   "start": 8.9,
+   "end": 10.874
+  },
+  {
+   "block": 1,
+   "role": "seg",
+   "k": 0,
+   "text": "Regel eins: Das sind nur maskuline Nomen.",
+   "start": 12.874,
+   "end": 15.792
+  },
+  {
+   "block": 1,
+   "role": "seg",
+   "k": 1,
+   "text": "Viele enden auf e:",
+   "start": 16.692,
+   "end": 18.104
+  },
+  {
+   "block": 1,
+   "role": "seg",
+   "k": 2,
+   "text": "der Junge, der Kollege, der Kunde, der Löwe.",
+   "start": 19.004,
+   "end": 22.131
+  },
+  {
+   "block": 1,
+   "role": "seg",
+   "k": 3,
+   "text": "Oft sind es Personen oder Tiere.",
+   "start": 23.031,
+   "end": 25.222
+  },
+  {
+   "block": 2,
+   "role": "seg",
+   "k": 0,
+   "text": "Auch Nomen mit diesen Endungen gehören dazu:",
+   "start": 27.222,
+   "end": 29.642
+  },
+  {
+   "block": 2,
+   "role": "seg",
+   "k": 1,
+   "text": "Der Polizist, der Journalist.",
+   "start": 30.542,
+   "end": 32.434
+  },
+  {
+   "block": 2,
+   "role": "seg",
+   "k": 2,
+   "text": "Der Student, der Präsident.",
+   "start": 33.334,
+   "end": 35.192
+  },
+  {
+   "block": 2,
+   "role": "seg",
+   "k": 3,
+   "text": "Der Praktikant, der Elefant.",
+   "start": 36.092,
+   "end": 38.136
+  },
+  {
+   "block": 2,
+   "role": "seg",
+   "k": 4,
+   "text": "Der Soldat, der Pilot, der Fotograf.",
+   "start": 39.036,
+   "end": 41.584
+  },
+  {
+   "block": 3,
+   "role": "seg",
+   "k": 0,
+   "text": "Und ein paar Nomen haben keine typische Endung:",
+   "start": 43.584,
+   "end": 46.284
+  },
+  {
+   "block": 3,
+   "role": "seg",
+   "k": 1,
+   "text": "der Mensch, der Herr, der Nachbar, der Held, der Bauer.",
+   "start": 47.184,
+   "end": 50.479
+  },
+  {
+   "block": 3,
+   "role": "seg",
+   "k": 2,
+   "text": "Diese Wörter musst du einfach lernen.",
+   "start": 51.379,
+   "end": 53.532
+  },
+  {
+   "block": 4,
+   "role": "seg",
+   "k": 0,
+   "text": "Regel zwei: Das Nomen bekommt in allen Fällen ein n. Nur nicht im Nominativ Singular.",
+   "start": 55.532,
+   "end": 60.928
+  },
+  {
+   "block": 4,
+   "role": "seg",
+   "k": 1,
+   "text": "Nominativ: der Kollege.",
+   "start": 61.828,
+   "end": 63.407
+  },
+  {
+   "block": 4,
+   "role": "seg",
+   "k": 2,
+   "text": "Akkusativ: Ich frage den Kollegen.",
+   "start": 64.307,
+   "end": 66.792
+  },
+  {
+   "block": 4,
+   "role": "seg",
+   "k": 3,
+   "text": "Dativ: Ich helfe dem Kollegen.",
+   "start": 67.692,
+   "end": 69.569
+  },
+  {
+   "block": 4,
+   "role": "seg",
+   "k": 4,
+   "text": "Genitiv: das Auto des Kollegen.",
+   "start": 70.469,
+   "end": 72.504
+  },
+  {
+   "block": 5,
+   "role": "seg",
+   "k": 0,
+   "text": "Noch ein Beispiel mit Mensch.",
+   "start": 74.504,
+   "end": 76.199
+  },
+  {
+   "block": 5,
+   "role": "seg",
+   "k": 1,
+   "text": "Der Mensch ist wichtig.",
+   "start": 77.099,
+   "end": 78.399
+  },
+  {
+   "block": 5,
+   "role": "seg",
+   "k": 2,
+   "text": "Ich sehe einen Menschen.",
+   "start": 79.299,
+   "end": 80.64
+  },
+  {
+   "block": 5,
+   "role": "seg",
+   "k": 3,
+   "text": "Ich spreche mit dem Menschen.",
+   "start": 81.54,
+   "end": 83.177
+  },
+  {
+   "block": 5,
+   "role": "seg",
+   "k": 4,
+   "text": "Und im Plural: die Menschen.",
+   "start": 84.077,
+   "end": 85.968
+  },
+  {
+   "block": 6,
+   "role": "seg",
+   "k": 0,
+   "text": "Regel drei: Achte im Satz darauf!",
+   "start": 87.968,
+   "end": 90.16
+  },
+  {
+   "block": 6,
+   "role": "seg",
+   "k": 1,
+   "text": "Der Polizist hilft dem Touristen.",
+   "start": 91.06,
+   "end": 93.185
+  },
+  {
+   "block": 6,
+   "role": "seg",
+   "k": 2,
+   "text": "Ich frage den Praktikanten.",
+   "start": 94.085,
+   "end": 95.908
+  },
+  {
+   "block": 6,
+   "role": "seg",
+   "k": 3,
+   "text": "Wir warten auf den Präsidenten.",
+   "start": 96.808,
+   "end": 98.712
+  },
+  {
+   "block": 6,
+   "role": "seg",
+   "k": 4,
+   "text": "Kennst du meinen Nachbarn?",
+   "start": 99.612,
+   "end": 100.942
+  },
+  {
+   "block": 7,
+   "role": "seg",
+   "k": 0,
+   "text": "Regel vier: Einige Nomen haben im Genitiv ein n und ein s.",
+   "start": 102.942,
+   "end": 107.263
+  },
+  {
+   "block": 7,
+   "role": "seg",
+   "k": 1,
+   "text": "Der Name, des Namens.",
+   "start": 108.163,
+   "end": 109.823
+  },
+  {
+   "block": 7,
+   "role": "seg",
+   "k": 2,
+   "text": "Der Buchstabe, des Buchstabens.",
+   "start": 110.723,
+   "end": 112.831
+  },
+  {
+   "block": 7,
+   "role": "seg",
+   "k": 3,
+   "text": "Das Herz, des Herzens.",
+   "start": 113.731,
+   "end": 115.033
+  },
+  {
+   "block": 7,
+   "role": "seg",
+   "k": 4,
+   "text": "Herz ist neutral, aber es gehört auch dazu.",
+   "start": 115.933,
+   "end": 118.665
+  },
+  {
+   "block": 8,
+   "role": "seg",
+   "k": 0,
+   "text": "Achtung, typische Fehler!",
+   "start": 120.665,
+   "end": 122.298
+  },
+  {
+   "block": 8,
+   "role": "seg",
+   "k": 1,
+   "text": "Nicht: Ich kenne den Student. Richtig: Ich kenne den Studenten.",
+   "start": 123.198,
+   "end": 126.838
+  },
+  {
+   "block": 8,
+   "role": "seg",
+   "k": 2,
+   "text": "Nicht: mit dem Junge. Richtig: mit dem Jungen.",
+   "start": 127.738,
+   "end": 130.506
+  },
+  {
+   "block": 8,
+   "role": "seg",
+   "k": 3,
+   "text": "Und im Brief: Ich schreibe Herrn Müller.",
+   "start": 131.406,
+   "end": 133.567
+  },
+  {
+   "block": 8,
+   "role": "seg",
+   "k": 4,
+   "text": "Herr bekommt nur ein n, nicht e und n.",
+   "start": 134.467,
+   "end": 137.089
+  },
+  {
+   "block": 9,
+   "role": "intro",
+   "k": 0,
+   "text": "Und jetzt der Test!",
+   "start": 139.089,
+   "end": 140.25
+  },
+  {
+   "block": 9,
+   "role": "intro",
+   "k": 1,
+   "text": "Teil eins: Mit oder ohne n?",
+   "start": 141.15,
+   "end": 143.156
+  },
+  {
+   "block": 9,
+   "role": "q",
+   "k": 2,
+   "text": "Eins: Ich sehe den Junge…",
+   "start": 144.056,
+   "end": 145.839
+  },
+  {
+   "block": 9,
+   "role": "q",
+   "k": 3,
+   "text": "Zwei: Der Kunde… ist zufrieden.",
+   "start": 146.739,
+   "end": 149.695
+  },
+  {
+   "block": 9,
+   "role": "q",
+   "k": 4,
+   "text": "Drei: Wir helfen dem Tourist…",
+   "start": 150.595,
+   "end": 152.423
+  },
+  {
+   "block": 9,
+   "role": "q",
+   "k": 5,
+   "text": "Vier: Das ist das Auto des Nachbar…",
+   "start": 153.323,
+   "end": 155.457
+  },
+  {
+   "block": 9,
+   "role": "q",
+   "k": 6,
+   "text": "Fünf: Der Pilot… fliegt nach Rom.",
+   "start": 156.357,
+   "end": 159.473
+  },
+  {
+   "block": 9,
+   "role": "q",
+   "k": 7,
+   "text": "Sechs: Ich frage den Polizist…",
+   "start": 160.373,
+   "end": 162.334
+  },
+  {
+   "block": 9,
+   "role": "pause",
+   "k": 8,
+   "text": "Drück auf Pause und denk nach!",
+   "start": 163.234,
+   "end": 165.481
+  },
+  {
+   "block": 9,
+   "role": "a",
+   "k": 9,
+   "text": "Ich sehe den Jungen.",
+   "start": 174.181,
+   "end": 175.435
+  },
+  {
+   "block": 9,
+   "role": "a",
+   "k": 10,
+   "text": "Der Kunde ist zufrieden. Ohne n!",
+   "start": 176.335,
+   "end": 178.477
+  },
+  {
+   "block": 9,
+   "role": "a",
+   "k": 11,
+   "text": "Wir helfen dem Touristen.",
+   "start": 179.377,
+   "end": 180.918
+  },
+  {
+   "block": 9,
+   "role": "a",
+   "k": 12,
+   "text": "Das ist das Auto des Nachbarn.",
+   "start": 181.818,
+   "end": 183.896
+  },
+  {
+   "block": 9,
+   "role": "a",
+   "k": 13,
+   "text": "Der Pilot fliegt nach Rom. Ohne n!",
+   "start": 184.796,
+   "end": 187.193
+  },
+  {
+   "block": 9,
+   "role": "a",
+   "k": 14,
+   "text": "Ich frage den Polizisten.",
+   "start": 188.093,
+   "end": 189.695
+  },
+  {
+   "block": 10,
+   "role": "intro",
+   "k": 0,
+   "text": "Teil zwei: Welche Form ist richtig?",
+   "start": 191.695,
+   "end": 193.836
+  },
+  {
+   "block": 10,
+   "role": "q",
+   "k": 1,
+   "text": "Eins: Ich spreche mit … der Kollege.",
+   "start": 194.736,
+   "end": 197.622
+  },
+  {
+   "block": 10,
+   "role": "q",
+   "k": 2,
+   "text": "Zwei: Kennst du … der Student?",
+   "start": 198.522,
+   "end": 201.284
+  },
+  {
+   "block": 10,
+   "role": "q",
+   "k": 3,
+   "text": "Drei: Das ist das Büro … der Präsident.",
+   "start": 202.184,
+   "end": 205.232
+  },
+  {
+   "block": 10,
+   "role": "q",
+   "k": 4,
+   "text": "Vier: Sie schreibt … der Herr Weber.",
+   "start": 206.132,
+   "end": 209.152
+  },
+  {
+   "block": 10,
+   "role": "q",
+   "k": 5,
+   "text": "Fünf: Ich gebe … der Junge das Buch.",
+   "start": 210.052,
+   "end": 213.147
+  },
+  {
+   "block": 10,
+   "role": "q",
+   "k": 6,
+   "text": "Sechs: Was ist die Bedeutung … der Name?",
+   "start": 214.047,
+   "end": 217.297
+  },
+  {
+   "block": 10,
+   "role": "pause",
+   "k": 7,
+   "text": "Drück auf Pause und denk nach!",
+   "start": 218.197,
+   "end": 220.472
+  },
+  {
+   "block": 10,
+   "role": "a",
+   "k": 8,
+   "text": "Ich spreche mit dem Kollegen.",
+   "start": 229.172,
+   "end": 230.774
+  },
+  {
+   "block": 10,
+   "role": "a",
+   "k": 9,
+   "text": "Kennst du den Studenten?",
+   "start": 231.674,
+   "end": 232.857
+  },
+  {
+   "block": 10,
+   "role": "a",
+   "k": 10,
+   "text": "Das ist das Büro des Präsidenten.",
+   "start": 233.757,
+   "end": 236.091
+  },
+  {
+   "block": 10,
+   "role": "a",
+   "k": 11,
+   "text": "Sie schreibt Herrn Weber.",
+   "start": 236.991,
+   "end": 238.395
+  },
+  {
+   "block": 10,
+   "role": "a",
+   "k": 12,
+   "text": "Ich gebe dem Jungen das Buch.",
+   "start": 239.295,
+   "end": 240.932
+  },
+  {
+   "block": 10,
+   "role": "a",
+   "k": 13,
+   "text": "Was ist die Bedeutung des Namens?",
+   "start": 241.832,
+   "end": 244.026
+  },
+  {
+   "block": 11,
+   "role": "cta",
+   "k": 0,
+   "text": "Wie viele von zwölf hast du richtig? Schreib es in die Kommentare!",
+   "start": 246.026,
+   "end": 249.524
+  }
+ ]
+}

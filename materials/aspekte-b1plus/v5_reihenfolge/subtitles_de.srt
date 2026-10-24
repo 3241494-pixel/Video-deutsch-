@@ -1,0 +1,116 @@
+1
+00:00:00,800 --> 00:00:03,180
+Ich gebe dem Polizisten meinen Ausweis.
+
+2
+00:00:03,849 --> 00:00:05,040
+Ich gebe ihn ihm.
+
+3
+00:00:05,679 --> 00:00:07,760
+Warum ändert sich die Reihenfolge?
+
+4
+00:00:09,326 --> 00:00:11,080
+Regel eins: zwei Nomen.
+
+5
+00:00:11,776 --> 00:00:13,920
+Zuerst Dativ, dann Akkusativ.
+
+6
+00:00:14,744 --> 00:00:17,360
+Ich gebe dem Polizisten meinen Ausweis.
+
+7
+00:00:17,979 --> 00:00:19,540
+Ich schenke meiner Mutter Blumen.
+
+8
+00:00:21,240 --> 00:00:23,800
+Regel zwei: ein Pronomen und ein Nomen.
+
+9
+00:00:24,479 --> 00:00:26,180
+Das Pronomen kommt zuerst.
+
+10
+00:00:26,773 --> 00:00:28,520
+Ich gebe ihm meinen Ausweis.
+
+11
+00:00:29,195 --> 00:00:30,780
+Ich gebe ihn dem Polizisten.
+
+12
+00:00:32,508 --> 00:00:34,480
+Regel drei: zwei Pronomen.
+
+13
+00:00:35,127 --> 00:00:37,740
+Jetzt zuerst Akkusativ, dann Dativ.
+
+14
+00:00:38,396 --> 00:00:39,660
+Ich gebe ihn ihm.
+
+15
+00:00:40,330 --> 00:00:41,500
+Ich zeige es dir.
+
+16
+00:00:43,270 --> 00:00:44,560
+Also, noch einmal:
+
+17
+00:00:45,254 --> 00:00:47,340
+Zwei Nomen: Dativ zuerst.
+
+18
+00:00:48,012 --> 00:00:49,540
+Pronomen immer nach vorne.
+
+19
+00:00:50,260 --> 00:00:52,700
+Zwei Pronomen: Akkusativ zuerst.
+
+20
+00:00:54,380 --> 00:00:55,560
+Und jetzt der Test!
+
+21
+00:00:56,187 --> 00:00:57,620
+Richtig oder falsch?
+
+22
+00:00:58,307 --> 00:01:00,300
+Eins: Ich erkläre die Regel dir.
+
+23
+00:01:00,858 --> 00:01:03,080
+Zwei: Ich schenke meinem Vater ein Buch.
+
+24
+00:01:03,659 --> 00:01:05,140
+Drei: Ich zeige es ihr.
+
+25
+00:01:05,794 --> 00:01:07,880
+Drück auf Pause und denk nach!
+
+26
+00:01:13,150 --> 00:01:16,430
+Eins ist falsch. Richtig ist: Ich erkläre dir die Regel.
+
+27
+00:01:17,008 --> 00:01:18,290
+Zwei ist richtig.
+
+28
+00:01:18,841 --> 00:01:19,970
+Drei ist richtig.
+
+29
+00:01:21,618 --> 00:01:24,250
+Wie viele hast du richtig? Schreib es in die Kommentare!
+
