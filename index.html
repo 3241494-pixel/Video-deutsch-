@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Видео Deutsch</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&family=Unbounded:wght@600;800&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap top-in">
+    <div class="brand">
+      <h1>Видео Deutsch</h1>
+      <p class="sub" id="summary">Загружаю каталог…</p>
+    </div>
+    <button type="button" class="ghost" id="openSettings" aria-expanded="false">
+      <span class="dot" id="syncDot"></span><span id="syncText">GitHub</span>
+    </button>
+  </div>
+</header>
+
+<section class="wrap settings" id="settings" hidden>
+  <h2>Сохранение отметок в GitHub</h2>
+  <p>Отметки «опубликовано» хранятся в файле <code>data/published.json</code> этого репозитория. Чтобы ставить их отсюда, нужен личный токен GitHub. Он хранится только в этом браузере.</p>
+  <ol>
+    <li>Открой <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">создание токена (fine-grained)</a>.</li>
+    <li>Repository access: <b>Only select repositories</b> → <b id="repoName2">Video-deutsch-</b>.</li>
+    <li>Permissions → Repository → <b>Contents: Read and write</b>. Создай токен и вставь сюда.</li>
+  </ol>
+  <form id="tokenForm" class="row">
+    <label class="sr" for="token">Токен GitHub</label>
+    <input id="token" type="password" autocomplete="off" placeholder="github_pat_…">
+    <button type="submit" class="primary">Сохранить</button>
+    <button type="button" class="ghost" id="forget">Забыть токен</button>
+  </form>
+  <p class="note" id="tokenNote"></p>
+</section>
+
+<nav class="wrap filters" aria-label="Фильтры">
+  <div class="chips" id="groupChips"></div>
+  <div class="chips">
+    <span class="label">Не опубликовано в</span>
+    <button type="button" class="chip" data-todo="tiktok" aria-pressed="false">TikTok</button>
+    <button type="button" class="chip" data-todo="youtube" aria-pressed="false">YouTube</button>
+    <button type="button" class="chip" data-todo="instagram" aria-pressed="false">Instagram</button>
+    <label class="sr" for="q">Поиск</label>
+    <input id="q" type="search" placeholder="Поиск: Dativ, Lied, ep3…">
+  </div>
+</nav>
+
+<main class="wrap" id="list"></main>
+
+<footer class="wrap foot">
+  <p>Каталог собирается скриптом <code>tools/build.py</code> из файлов проекта. Новый ролик: запись в <code>tools/catalog.py</code> → запуск сборки → push.</p>
+</footer>
+
+<template id="cardTpl">
+  <article class="card">
+    <div class="media"><video controls playsinline preload="none"></video></div>
+    <div class="body">
+      <div class="head">
+        <h3></h3>
+        <div class="meta"></div>
+        <p class="about"></p>
+      </div>
+      <div class="actions">
+        <a class="primary dl" download>Скачать MP4</a>
+        <span class="marks"></span>
+      </div>
+      <div class="tabs" role="tablist"></div>
+      <div class="panel"></div>
+      <details class="mats"><summary>Материалы для создания</summary><div class="mats-in"></div></details>
+    </div>
+  </article>
+</template>
+
+<script src="app.js"></script>
+</body>
+</html>

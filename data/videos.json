@@ -1,0 +1,4111 @@
+{
+ "groups": [
+  {
+   "id": "start",
+   "title": "Первые ролики",
+   "note": "Сюжетный ролик и первый грамматический разбор, 1080×1920."
+  },
+  {
+   "id": "aspekte",
+   "title": "Грамматика по Aspekte neu B1+",
+   "note": "Серия по учебнику Aspekte neu B1 plus (Teil 1), по порядку глав. В конце каждого ролика тест с таймером."
+  },
+  {
+   "id": "aspekte_uk",
+   "title": "Aspekte с украинскими субтитрами",
+   "note": "Ролики 1–6 серии Aspekte: немецкий голос и субтитры, под ними украинский перевод."
+  },
+  {
+   "id": "artikel",
+   "title": "Серия der · die · das",
+   "note": "5 песен про артикли по окончаниям: вертикаль для TikTok/Shorts/Reels и 16:9 для YouTube."
+  },
+  {
+   "id": "songs",
+   "title": "Песни для изучения",
+   "note": "Клипы на учебные песни Suno: караоке, немецкий текст и украинский перевод."
+  }
+ ],
+ "videos": [
+  {
+   "id": "bruno_nur_deutsch",
+   "group": "start",
+   "title": "Bruno versteht nur Deutsch",
+   "level": "A2–B1",
+   "topic": "императив, Sie",
+   "about": "Собака «понимает только немецкий»: пять команд-императивов, вежливая форма с Sie и слово das Leckerli.",
+   "file": "videos/start/bruno_nur_deutsch.mp4",
+   "size": 10951638,
+   "duration": 68.3,
+   "width": 1080,
+   "height": 1920,
+   "vertical": true,
+   "covers": {},
+   "posts": {
+    "tiktok": {
+     "text": "Versteht mein Hund nur Deutsch? 🐕🇩🇪 Sitz, Platz, Aus! #deutschlernen #learngerman #deutsch #hund #germanforbeginners #немецкийязык"
+    },
+    "instagram": {
+     "text": "Versteht mein Hund nur Deutsch? 🐕🇩🇪 Sitz, Platz, Aus!\n\nСобака «понимает только немецкий»: пять команд-императивов, вежливая форма с Sie и слово das Leckerli.\n\n#deutschlernen #learngerman #deutsch #hund #germanforbeginners #немецкийязык"
+    },
+    "youtube": {
+     "title": "Versteht mein Hund nur Deutsch? 🐕 Sitz, Platz, Aus! #deutschlernen #shorts",
+     "description": "Sitz! Platz! Komm her! Aus! Bruno versteht nur Deutsch – oder? Fünf Imperative für Hunde und die höfliche Form mit Sie: «Könnten Sie sich bitte setzen?»\nСобака понимает только немецкий? Пять команд в повелительном наклонении, вежливая форма с Sie и слово das Leckerli. Уровень A2–B1.\n\nWelches Wort soll Bruno als Nächstes lernen? Schreib es in die Kommentare!\n\n#deutschlernen #learngerman #imperativ #hund #deutscha2 #немецкийязык",
+     "kind": "Shorts"
+    }
+   },
+   "materials": [
+    {
+     "name": "README.md",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/first-video/README.md",
+       "size": 3420
+      }
+     ]
+    },
+    {
+     "name": "subtitles_de.srt",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/first-video/subtitles_de.srt",
+       "size": 2450
+      }
+     ]
+    },
+    {
+     "name": "first-video/project/",
+     "dir": true,
+     "files": [
+      {
+       "path": "materials/first-video/project/build_voice.py",
+       "size": 962
+      },
+      {
+       "path": "materials/first-video/project/gen.py",
+       "size": 4597
+      },
+      {
+       "path": "materials/first-video/project/gsap.min.js",
+       "size": 72779
+      },
+      {
+       "path": "materials/first-video/project/hyperframes.json",
+       "size": 318
+      },
+      {
+       "path": "materials/first-video/project/index.html",
+       "size": 56787
+      },
+      {
+       "path": "materials/first-video/project/meta.json",
+       "size": 92
+      },
+      {
+       "path": "materials/first-video/project/script.json",
+       "size": 1314
+      },
+      {
+       "path": "materials/first-video/project/template.html",
+       "size": 18446
+      },
+      {
+       "path": "materials/first-video/project/timeline.json",
+       "size": 1915
+      },
+      {
+       "path": "materials/first-video/project/words.json",
+       "size": 14208
+      }
+     ]
+    },
+    {
+     "name": "first-video/audio/",
+     "dir": true,
+     "files": [
+      {
+       "path": "materials/first-video/audio/bgm.mp3",
+       "size": 720621
+      },
+      {
+       "path": "materials/first-video/audio/voice.mp3",
+       "size": 1367294
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "plural_deutsch",
+   "group": "start",
+   "title": "Plural im Deutschen",
+   "level": "A2–B1",
+   "topic": "6 правил + тест",
+   "about": "Шесть правил множественного числа (-e, умлаут, -er, -n/-en, -s, без окончания) и тест из пяти слов с таймером.",
+   "file": "videos/start/plural_deutsch.mp4",
+   "size": 13032360,
+   "duration": 98.6,
+   "width": 1080,
+   "height": 1920,
+   "vertical": true,
+   "covers": {},
+   "posts": {
+    "tiktok": {
+     "text": "Plural im Deutschen: 6 Regeln + Test 🇩🇪 Wie viele hast du richtig? #deutschlernen #learngerman #grammatik #deutscha2 #germangrammar #немецкийязык"
+    },
+    "instagram": {
+     "text": "Plural im Deutschen: 6 Regeln + Test 🇩🇪 Wie viele hast du richtig?\n\nШесть правил множественного числа (-e, умлаут, -er, -n/-en, -s, без окончания) и тест из пяти слов с таймером.\n\n#deutschlernen #learngerman #grammatik #deutscha2 #germangrammar #немецкийязык"
+    },
+    "youtube": {
+     "title": "Plural im Deutschen: 6 Regeln + Test 🇩🇪 #deutschlernen #grammatik #shorts",
+     "description": "Tisch – Tische, Buch – Bücher, Auto – Autos: Ist der Plural im Deutschen chaotisch? Nein! Sechs Regeln: -e, Umlaut + -e, -er, -n/-en, -s und ohne Endung. Am Ende: Test mit 5 Wörtern.\nМножественное число в немецком: 6 правил и тест с таймером. Уровень A2–B1.\n\n#deutschlernen #learngerman #plural #grammatik #deutscha2 #немецкийязык",
+     "kind": "Shorts"
+    }
+   },
+   "materials": [
+    {
+     "name": "README.md",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/video-plural/README.md",
+       "size": 3048
+      }
+     ]
+    },
+    {
+     "name": "subtitles_de.srt",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/video-plural/subtitles_de.srt",
+       "size": 3363
+      }
+     ]
+    },
+    {
+     "name": "video-plural/project/",
+     "dir": true,
+     "files": [
+      {
+       "path": "materials/video-plural/project/build_voice.py",
+       "size": 934
+      },
+      {
+       "path": "materials/video-plural/project/fw.words.json",
+       "size": 19862
+      },
+      {
+       "path": "materials/video-plural/project/gen.py",
+       "size": 14397
+      },
+      {
+       "path": "materials/video-plural/project/gsap.min.js",
+       "size": 72779
+      },
+      {
+       "path": "materials/video-plural/project/hyperframes.json",
+       "size": 318
+      },
+      {
+       "path": "materials/video-plural/project/meta.json",
+       "size": 87
+      },
+      {
+       "path": "materials/video-plural/project/script.json",
+       "size": 1720
+      },
+      {
+       "path": "materials/video-plural/project/template.html",
+       "size": 9888
+      },
+      {
+       "path": "materials/video-plural/project/timeline.json",
+       "size": 2426
+      }
+     ]
+    },
+    {
+     "name": "video-plural/audio/",
+     "dir": true,
+     "files": [
+      {
+       "path": "materials/video-plural/audio/mix.mp3",
+       "size": 2368557
+      },
+      {
+       "path": "materials/video-plural/audio/voice.mp3",
+       "size": 1974379
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "v1_perfekt",
+   "group": "aspekte",
+   "title": "1. Perfekt oder Präteritum?",
+   "level": "Kapitel 1",
+   "topic": "4 правила + тест",
+   "about": "Устная речь и письма в Perfekt, газеты и романы в Präteritum, war/hatte/wollte почти всегда в Präteritum, образование Präteritum.",
+   "file": "videos/aspekte/v1_perfekt.mp4",
+   "size": 11878581,
+   "duration": 103.1,
+   "width": 1080,
+   "height": 1920,
+   "vertical": true,
+   "covers": {},
+   "posts": {
+    "tiktok": {
+     "text": "Perfekt oder Präteritum? 🤔 So sagst du es richtig + Test #deutschlernen #grammatik #perfekt #präteritum #deutschb1 #немецкийязык"
+    },
+    "instagram": {
+     "text": "Perfekt oder Präteritum? 🤔 So sagst du es richtig + Test\n\nУстная речь и письма в Perfekt, газеты и романы в Präteritum, war/hatte/wollte почти всегда в Präteritum, образование Präteritum.\n\n#deutschlernen #grammatik #perfekt #präteritum #deutschb1 #немецкийязык"
+    },
+    "youtube": {
+     "title": "Perfekt oder Präteritum? 🤔 So sagst du es richtig + Test #shorts",
+     "description": "Wann sagt man «ich habe gemacht» und wann «ich machte»? Mündlich und in Mails: Perfekt. Zeitung und Roman: Präteritum. Und war, hatte, wollte fast immer im Präteritum.\nУстная речь и письма в Perfekt, газеты и романы в Präteritum, war/hatte/wollte почти всегда в Präteritum, образование Präteritum.\n\nAus der Serie «Grammatik mit Aspekte neu B1+». Am Ende: Test mit Timer – wie viele hast du richtig? Schreib dein Ergebnis in die Kommentare!\nСерия «Грамматика по Aspekte neu B1+». В конце тест с таймером: напиши в комментариях свой результат!\n\n#deutschlernen #grammatik #perfekt #präteritum #deutschb1 #немецкийязык",
+     "kind": "Shorts"
+    }
+   },
+   "materials": [
+    {
+     "name": "subtitles_de.srt",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/aspekte-b1plus/v1_perfekt/subtitles_de.srt",
+       "size": 2289
+      }
+     ]
+    },
+    {
+     "name": "aspekte-b1plus/v1_perfekt/project/",
+     "dir": true,
+     "files": [
+      {
+       "path": "materials/aspekte-b1plus/v1_perfekt/project/index.html",
+       "size": 59326
+      },
+      {
+       "path": "materials/aspekte-b1plus/v1_perfekt/project/spec.py",
+       "size": 4378
+      },
+      {
+       "path": "materials/aspekte-b1plus/v1_perfekt/project/timeline.json",
+       "size": 4834
+      }
+     ]
+    },
+    {
+     "name": "SCENARII_1-5.md",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/aspekte-b1plus/SCENARII_1-5.md",
+       "size": 11023
+      }
+     ]
+    },
+    {
+     "name": "aspekte-b1plus/engine/",
+     "dir": true,
+     "files": [
+      {
+       "path": "materials/aspekte-b1plus/engine/README.md",
+       "size": 2174
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/add_uk_subs.py",
+       "size": 2528
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/colors.py",
+       "size": 261
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/deliver.sh",
+       "size": 534
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/engine.py",
+       "size": 17443
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/gsap.min.js",
+       "size": 72779
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/hyperframes.json",
+       "size": 318
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/render_uk.sh",
+       "size": 517
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/template.html",
+       "size": 9021
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/uk_translations.py",
+       "size": 13154
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v10_adjektiv_ein.py",
+       "size": 8537
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v1_perfekt.py",
+       "size": 4378
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v2_partizip.py",
+       "size": 4892
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v3_plusquam.py",
+       "size": 3443
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v4_kasus.py",
+       "size": 4247
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v5_reihenfolge.py",
+       "size": 3385
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v6_praepositionen.py",
+       "size": 9558
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v7_trennbar.py",
+       "size": 8326
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v8_ndeklination.py",
+       "size": 8412
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v9_adjektiv_der.py",
+       "size": 7547
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "v1_perfekt_uk",
+   "group": "aspekte_uk",
+   "title": "1. Perfekt oder Präteritum?",
+   "level": "Kapitel 1",
+   "topic": "🇺🇦 субтитры",
+   "about": "Тот же ролик: немецкая озвучка и немецкие субтитры, под ними перевод каждой фразы на украинский.",
+   "file": "videos/aspekte_uk/v1_perfekt_uk.mp4",
+   "size": 13554394,
+   "duration": 103.1,
+   "width": 1080,
+   "height": 1920,
+   "vertical": true,
+   "covers": {},
+   "posts": {
+    "tiktok": {
+     "text": "Perfekt oder Präteritum? 🤔 So sagst du es richtig + Test 🇺🇦 #німецькамова #вивчаюнімецьку #deutschlernen #grammatik #deutschb1 #learngerman"
+    },
+    "instagram": {
+     "text": "Perfekt oder Präteritum? 🤔 So sagst du es richtig + Test 🇺🇦\n\nТот же ролик: немецкая озвучка и немецкие субтитры, под ними перевод каждой фразы на украинский.\n\n#німецькамова #вивчаюнімецьку #deutschlernen #grammatik #deutschb1 #learngerman"
+    },
+    "youtube": {
+     "title": "Perfekt oder Präteritum? 🤔 So sagst du es richtig + Test 🇺🇦 #shorts",
+     "description": "Wann sagt man «ich habe gemacht» und wann «ich machte»? Mündlich und in Mails: Perfekt. Zeitung und Roman: Präteritum. Und war, hatte, wollte fast immer im Präteritum.\nКоли Perfekt, а коли Präteritum: усне мовлення, газети, war/hatte/wollte.\n\nСерія «Граматика за Aspekte neu B1+». Німецька озвучка, німецькі субтитри та переклад українською. Наприкінці тест із таймером!\n\n#німецькамова #вивчаюнімецьку #deutschlernen #grammatik #deutschb1 #learngerman",
+     "kind": "Shorts"
+    }
+   },
+   "materials": [
+    {
+     "name": "subtitles_uk.srt",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/aspekte-b1plus/v1_perfekt/subtitles_uk.srt",
+       "size": 2723
+      }
+     ]
+    },
+    {
+     "name": "subtitles_de.srt",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/aspekte-b1plus/v1_perfekt/subtitles_de.srt",
+       "size": 2289
+      }
+     ]
+    },
+    {
+     "name": "aspekte-b1plus/v1_perfekt/project_uk/",
+     "dir": true,
+     "files": [
+      {
+       "path": "materials/aspekte-b1plus/v1_perfekt/project_uk/index.html",
+       "size": 67658
+      }
+     ]
+    },
+    {
+     "name": "add_uk_subs.py",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/aspekte-b1plus/engine/add_uk_subs.py",
+       "size": 2528
+      }
+     ]
+    },
+    {
+     "name": "uk_translations.py",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/aspekte-b1plus/engine/uk_translations.py",
+       "size": 13154
+      }
+     ]
+    },
+    {
+     "name": "render_uk.sh",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/aspekte-b1plus/engine/render_uk.sh",
+       "size": 517
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "v2_partizip",
+   "group": "aspekte",
+   "title": "2. Partizip II",
+   "level": "Kapitel 1",
+   "topic": "5 типов + тест",
+   "about": "ge-…-t и ge-…-en, отделяемые (aufgehört), неотделяемые и -ieren без ge, смешанные глаголы (gekannt, gebracht, gedacht, gewusst).",
+   "file": "videos/aspekte/v2_partizip.mp4",
+   "size": 12138123,
+   "duration": 113.0,
+   "width": 1080,
+   "height": 1920,
+   "vertical": true,
+   "covers": {},
+   "posts": {
+    "tiktok": {
+     "text": "Partizip II: ge- oder kein ge-? 🤯 5 Regeln + Test #deutschlernen #grammatik #partizip #deutscha2 #learngerman #немецкийязык"
+    },
+    "instagram": {
+     "text": "Partizip II: ge- oder kein ge-? 🤯 5 Regeln + Test\n\nge-…-t и ge-…-en, отделяемые (aufgehört), неотделяемые и -ieren без ge, смешанные глаголы (gekannt, gebracht, gedacht, gewusst).\n\n#deutschlernen #grammatik #partizip #deutscha2 #learngerman #немецкийязык"
+    },
+    "youtube": {
+     "title": "Partizip II: ge- oder kein ge-? 🤯 5 Regeln + Test #shorts",
+     "description": "gemacht, gefahren, aufgehört, verstanden, studiert: fünf Regeln für das Partizip II – mit ge-, ohne ge- und die gemischten Verben gekannt, gebracht, gedacht, gewusst.\nge-…-t и ge-…-en, отделяемые (aufgehört), неотделяемые и -ieren без ge, смешанные глаголы (gekannt, gebracht, gedacht, gewusst).\n\nAus der Serie «Grammatik mit Aspekte neu B1+». Am Ende: Test mit Timer – wie viele hast du richtig? Schreib dein Ergebnis in die Kommentare!\nСерия «Грамматика по Aspekte neu B1+». В конце тест с таймером: напиши в комментариях свой результат!\n\n#deutschlernen #grammatik #partizip #deutscha2 #learngerman #немецкийязык",
+     "kind": "Shorts"
+    }
+   },
+   "materials": [
+    {
+     "name": "subtitles_de.srt",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/aspekte-b1plus/v2_partizip/subtitles_de.srt",
+       "size": 2480
+      }
+     ]
+    },
+    {
+     "name": "aspekte-b1plus/v2_partizip/project/",
+     "dir": true,
+     "files": [
+      {
+       "path": "materials/aspekte-b1plus/v2_partizip/project/index.html",
+       "size": 63497
+      },
+      {
+       "path": "materials/aspekte-b1plus/v2_partizip/project/spec.py",
+       "size": 4892
+      },
+      {
+       "path": "materials/aspekte-b1plus/v2_partizip/project/timeline.json",
+       "size": 5455
+      }
+     ]
+    },
+    {
+     "name": "SCENARII_1-5.md",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/aspekte-b1plus/SCENARII_1-5.md",
+       "size": 11023
+      }
+     ]
+    },
+    {
+     "name": "aspekte-b1plus/engine/",
+     "dir": true,
+     "files": [
+      {
+       "path": "materials/aspekte-b1plus/engine/README.md",
+       "size": 2174
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/add_uk_subs.py",
+       "size": 2528
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/colors.py",
+       "size": 261
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/deliver.sh",
+       "size": 534
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/engine.py",
+       "size": 17443
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/gsap.min.js",
+       "size": 72779
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/hyperframes.json",
+       "size": 318
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/render_uk.sh",
+       "size": 517
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/template.html",
+       "size": 9021
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/uk_translations.py",
+       "size": 13154
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v10_adjektiv_ein.py",
+       "size": 8537
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v1_perfekt.py",
+       "size": 4378
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v2_partizip.py",
+       "size": 4892
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v3_plusquam.py",
+       "size": 3443
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v4_kasus.py",
+       "size": 4247
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v5_reihenfolge.py",
+       "size": 3385
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v6_praepositionen.py",
+       "size": 9558
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v7_trennbar.py",
+       "size": 8326
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v8_ndeklination.py",
+       "size": 8412
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v9_adjektiv_der.py",
+       "size": 7547
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "v2_partizip_uk",
+   "group": "aspekte_uk",
+   "title": "2. Partizip II",
+   "level": "Kapitel 1",
+   "topic": "🇺🇦 субтитры",
+   "about": "Тот же ролик: немецкая озвучка и немецкие субтитры, под ними перевод каждой фразы на украинский.",
+   "file": "videos/aspekte_uk/v2_partizip_uk.mp4",
+   "size": 14458979,
+   "duration": 113.0,
+   "width": 1080,
+   "height": 1920,
+   "vertical": true,
+   "covers": {},
+   "posts": {
+    "tiktok": {
+     "text": "Partizip II: ge- oder kein ge-? 🤯 5 Regeln + Test 🇺🇦 #німецькамова #вивчаюнімецьку #deutschlernen #grammatik #deutschb1 #learngerman"
+    },
+    "instagram": {
+     "text": "Partizip II: ge- oder kein ge-? 🤯 5 Regeln + Test 🇺🇦\n\nТот же ролик: немецкая озвучка и немецкие субтитры, под ними перевод каждой фразы на украинский.\n\n#німецькамова #вивчаюнімецьку #deutschlernen #grammatik #deutschb1 #learngerman"
+    },
+    "youtube": {
+     "title": "Partizip II: ge- oder kein ge-? 🤯 5 Regeln + Test 🇺🇦 #shorts",
+     "description": "gemacht, gefahren, aufgehört, verstanden, studiert: fünf Regeln für das Partizip II – mit ge-, ohne ge- und die gemischten Verben gekannt, gebracht, gedacht, gewusst.\nPartizip II: з ge- і без ge-, відокремлювані та змішані дієслова.\n\nСерія «Граматика за Aspekte neu B1+». Німецька озвучка, німецькі субтитри та переклад українською. Наприкінці тест із таймером!\n\n#німецькамова #вивчаюнімецьку #deutschlernen #grammatik #deutschb1 #learngerman",
+     "kind": "Shorts"
+    }
+   },
+   "materials": [
+    {
+     "name": "subtitles_uk.srt",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/aspekte-b1plus/v2_partizip/subtitles_uk.srt",
+       "size": 3290
+      }
+     ]
+    },
+    {
+     "name": "subtitles_de.srt",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/aspekte-b1plus/v2_partizip/subtitles_de.srt",
+       "size": 2480
+      }
+     ]
+    },
+    {
+     "name": "aspekte-b1plus/v2_partizip/project_uk/",
+     "dir": true,
+     "files": [
+      {
+       "path": "materials/aspekte-b1plus/v2_partizip/project_uk/index.html",
+       "size": 73283
+      }
+     ]
+    },
+    {
+     "name": "add_uk_subs.py",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/aspekte-b1plus/engine/add_uk_subs.py",
+       "size": 2528
+      }
+     ]
+    },
+    {
+     "name": "uk_translations.py",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/aspekte-b1plus/engine/uk_translations.py",
+       "size": 13154
+      }
+     ]
+    },
+    {
+     "name": "render_uk.sh",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/aspekte-b1plus/engine/render_uk.sh",
+       "size": 517
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "v3_plusquam",
+   "group": "aspekte",
+   "title": "3. Plusquamperfekt + nachdem",
+   "level": "Kapitel 1",
+   "topic": "примеры + тест",
+   "about": "«Прошлое в прошлом»: история про Matthias из учебника, hatte/war + Partizip II, предложения с nachdem и тест «Was ist vorher passiert?».",
+   "file": "videos/aspekte/v3_plusquam.mp4",
+   "size": 10601522,
+   "duration": 86.9,
+   "width": 1080,
+   "height": 1920,
+   "vertical": true,
+   "covers": {},
+   "posts": {
+    "tiktok": {
+     "text": "Plusquamperfekt in 90 Sekunden ⏪ Mit nachdem + Test #deutschlernen #grammatik #plusquamperfekt #deutschb1 #learngerman #немецкийязык"
+    },
+    "instagram": {
+     "text": "Plusquamperfekt in 90 Sekunden ⏪ Mit nachdem + Test\n\n«Прошлое в прошлом»: история про Matthias из учебника, hatte/war + Partizip II, предложения с nachdem и тест «Was ist vorher passiert?».\n\n#deutschlernen #grammatik #plusquamperfekt #deutschb1 #learngerman #немецкийязык"
+    },
+    "youtube": {
+     "title": "Plusquamperfekt in 90 Sekunden ⏪ Mit nachdem + Test #shorts",
+     "description": "Die Vergangenheit in der Vergangenheit: hatte/war + Partizip II und Sätze mit nachdem. Was ist vorher passiert?\n«Прошлое в прошлом»: история про Matthias из учебника, hatte/war + Partizip II, предложения с nachdem и тест «Was ist vorher passiert?».\n\nAus der Serie «Grammatik mit Aspekte neu B1+». Am Ende: Test mit Timer – wie viele hast du richtig? Schreib dein Ergebnis in die Kommentare!\nСерия «Грамматика по Aspekte neu B1+». В конце тест с таймером: напиши в комментариях свой результат!\n\n#deutschlernen #grammatik #plusquamperfekt #deutschb1 #learngerman #немецкийязык",
+     "kind": "Shorts"
+    }
+   },
+   "materials": [
+    {
+     "name": "subtitles_de.srt",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/aspekte-b1plus/v3_plusquam/subtitles_de.srt",
+       "size": 1892
+      }
+     ]
+    },
+    {
+     "name": "aspekte-b1plus/v3_plusquam/project/",
+     "dir": true,
+     "files": [
+      {
+       "path": "materials/aspekte-b1plus/v3_plusquam/project/index.html",
+       "size": 52444
+      },
+      {
+       "path": "materials/aspekte-b1plus/v3_plusquam/project/spec.py",
+       "size": 3443
+      },
+      {
+       "path": "materials/aspekte-b1plus/v3_plusquam/project/timeline.json",
+       "size": 3811
+      }
+     ]
+    },
+    {
+     "name": "SCENARII_1-5.md",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/aspekte-b1plus/SCENARII_1-5.md",
+       "size": 11023
+      }
+     ]
+    },
+    {
+     "name": "aspekte-b1plus/engine/",
+     "dir": true,
+     "files": [
+      {
+       "path": "materials/aspekte-b1plus/engine/README.md",
+       "size": 2174
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/add_uk_subs.py",
+       "size": 2528
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/colors.py",
+       "size": 261
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/deliver.sh",
+       "size": 534
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/engine.py",
+       "size": 17443
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/gsap.min.js",
+       "size": 72779
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/hyperframes.json",
+       "size": 318
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/render_uk.sh",
+       "size": 517
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/template.html",
+       "size": 9021
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/uk_translations.py",
+       "size": 13154
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v10_adjektiv_ein.py",
+       "size": 8537
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v1_perfekt.py",
+       "size": 4378
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v2_partizip.py",
+       "size": 4892
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v3_plusquam.py",
+       "size": 3443
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v4_kasus.py",
+       "size": 4247
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v5_reihenfolge.py",
+       "size": 3385
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v6_praepositionen.py",
+       "size": 9558
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v7_trennbar.py",
+       "size": 8326
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v8_ndeklination.py",
+       "size": 8412
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v9_adjektiv_der.py",
+       "size": 7547
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "v3_plusquam_uk",
+   "group": "aspekte_uk",
+   "title": "3. Plusquamperfekt + nachdem",
+   "level": "Kapitel 1",
+   "topic": "🇺🇦 субтитры",
+   "about": "Тот же ролик: немецкая озвучка и немецкие субтитры, под ними перевод каждой фразы на украинский.",
+   "file": "videos/aspekte_uk/v3_plusquam_uk.mp4",
+   "size": 12080042,
+   "duration": 86.9,
+   "width": 1080,
+   "height": 1920,
+   "vertical": true,
+   "covers": {},
+   "posts": {
+    "tiktok": {
+     "text": "Plusquamperfekt in 90 Sekunden ⏪ Mit nachdem + Test 🇺🇦 #німецькамова #вивчаюнімецьку #deutschlernen #grammatik #deutschb1 #learngerman"
+    },
+    "instagram": {
+     "text": "Plusquamperfekt in 90 Sekunden ⏪ Mit nachdem + Test 🇺🇦\n\nТот же ролик: немецкая озвучка и немецкие субтитры, под ними перевод каждой фразы на украинский.\n\n#німецькамова #вивчаюнімецьку #deutschlernen #grammatik #deutschb1 #learngerman"
+    },
+    "youtube": {
+     "title": "Plusquamperfekt in 90 Sekunden ⏪ Mit nachdem + Test 🇺🇦 #shorts",
+     "description": "Die Vergangenheit in der Vergangenheit: hatte/war + Partizip II und Sätze mit nachdem. Was ist vorher passiert?\nPlusquamperfekt: минуле в минулому, hatte/war + Partizip II і речення з nachdem.\n\nСерія «Граматика за Aspekte neu B1+». Німецька озвучка, німецькі субтитри та переклад українською. Наприкінці тест із таймером!\n\n#німецькамова #вивчаюнімецьку #deutschlernen #grammatik #deutschb1 #learngerman",
+     "kind": "Shorts"
+    }
+   },
+   "materials": [
+    {
+     "name": "subtitles_uk.srt",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/aspekte-b1plus/v3_plusquam/subtitles_uk.srt",
+       "size": 2291
+      }
+     ]
+    },
+    {
+     "name": "subtitles_de.srt",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/aspekte-b1plus/v3_plusquam/subtitles_de.srt",
+       "size": 1892
+      }
+     ]
+    },
+    {
+     "name": "aspekte-b1plus/v3_plusquam/project_uk/",
+     "dir": true,
+     "files": [
+      {
+       "path": "materials/aspekte-b1plus/v3_plusquam/project_uk/index.html",
+       "size": 59036
+      }
+     ]
+    },
+    {
+     "name": "add_uk_subs.py",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/aspekte-b1plus/engine/add_uk_subs.py",
+       "size": 2528
+      }
+     ]
+    },
+    {
+     "name": "uk_translations.py",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/aspekte-b1plus/engine/uk_translations.py",
+       "size": 13154
+      }
+     ]
+    },
+    {
+     "name": "render_uk.sh",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/aspekte-b1plus/engine/render_uk.sh",
+       "size": 517
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "v4_kasus",
+   "group": "aspekte",
+   "title": "4. Welcher Kasus?",
+   "level": "Kapitel 1",
+   "topic": "6 моделей + тест",
+   "about": "Глагол определяет падеж: Nominativ, Akkusativ, Dativ, Dativ + Akkusativ и глаголы с предлогом. Падежи выделены цветом.",
+   "file": "videos/aspekte/v4_kasus.mp4",
+   "size": 11354826,
+   "duration": 90.3,
+   "width": 1080,
+   "height": 1920,
+   "vertical": true,
+   "covers": {},
+   "posts": {
+    "tiktok": {
+     "text": "Dativ oder Akkusativ? Das Verb entscheidet! ⚖️ + Test #deutschlernen #dativ #akkusativ #grammatik #deutschb1 #немецкийязык"
+    },
+    "instagram": {
+     "text": "Dativ oder Akkusativ? Das Verb entscheidet! ⚖️ + Test\n\nГлагол определяет падеж: Nominativ, Akkusativ, Dativ, Dativ + Akkusativ и глаголы с предлогом. Падежи выделены цветом.\n\n#deutschlernen #dativ #akkusativ #grammatik #deutschb1 #немецкийязык"
+    },
+    "youtube": {
+     "title": "Dativ oder Akkusativ? Das Verb entscheidet! ⚖️ + Test #shorts",
+     "description": "Das Verb entscheidet den Kasus: Nominativ, Akkusativ, Dativ, Dativ + Akkusativ und Verben mit Präposition – mit Farben erklärt.\nГлагол определяет падеж: Nominativ, Akkusativ, Dativ, Dativ + Akkusativ и глаголы с предлогом. Падежи выделены цветом.\n\nAus der Serie «Grammatik mit Aspekte neu B1+». Am Ende: Test mit Timer – wie viele hast du richtig? Schreib dein Ergebnis in die Kommentare!\nСерия «Грамматика по Aspekte neu B1+». В конце тест с таймером: напиши в комментариях свой результат!\n\n#deutschlernen #dativ #akkusativ #grammatik #deutschb1 #немецкийязык",
+     "kind": "Shorts"
+    }
+   },
+   "materials": [
+    {
+     "name": "subtitles_de.srt",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/aspekte-b1plus/v4_kasus/subtitles_de.srt",
+       "size": 1939
+      }
+     ]
+    },
+    {
+     "name": "aspekte-b1plus/v4_kasus/project/",
+     "dir": true,
+     "files": [
+      {
+       "path": "materials/aspekte-b1plus/v4_kasus/project/index.html",
+       "size": 53895
+      },
+      {
+       "path": "materials/aspekte-b1plus/v4_kasus/project/spec.py",
+       "size": 4247
+      },
+      {
+       "path": "materials/aspekte-b1plus/v4_kasus/project/timeline.json",
+       "size": 4064
+      }
+     ]
+    },
+    {
+     "name": "SCENARII_1-5.md",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/aspekte-b1plus/SCENARII_1-5.md",
+       "size": 11023
+      }
+     ]
+    },
+    {
+     "name": "aspekte-b1plus/engine/",
+     "dir": true,
+     "files": [
+      {
+       "path": "materials/aspekte-b1plus/engine/README.md",
+       "size": 2174
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/add_uk_subs.py",
+       "size": 2528
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/colors.py",
+       "size": 261
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/deliver.sh",
+       "size": 534
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/engine.py",
+       "size": 17443
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/gsap.min.js",
+       "size": 72779
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/hyperframes.json",
+       "size": 318
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/render_uk.sh",
+       "size": 517
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/template.html",
+       "size": 9021
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/uk_translations.py",
+       "size": 13154
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v10_adjektiv_ein.py",
+       "size": 8537
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v1_perfekt.py",
+       "size": 4378
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v2_partizip.py",
+       "size": 4892
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v3_plusquam.py",
+       "size": 3443
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v4_kasus.py",
+       "size": 4247
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v5_reihenfolge.py",
+       "size": 3385
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v6_praepositionen.py",
+       "size": 9558
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v7_trennbar.py",
+       "size": 8326
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v8_ndeklination.py",
+       "size": 8412
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v9_adjektiv_der.py",
+       "size": 7547
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "v4_kasus_uk",
+   "group": "aspekte_uk",
+   "title": "4. Welcher Kasus?",
+   "level": "Kapitel 1",
+   "topic": "🇺🇦 субтитры",
+   "about": "Тот же ролик: немецкая озвучка и немецкие субтитры, под ними перевод каждой фразы на украинский.",
+   "file": "videos/aspekte_uk/v4_kasus_uk.mp4",
+   "size": 12930843,
+   "duration": 90.3,
+   "width": 1080,
+   "height": 1920,
+   "vertical": true,
+   "covers": {},
+   "posts": {
+    "tiktok": {
+     "text": "Dativ oder Akkusativ? Das Verb entscheidet! ⚖️ + Test 🇺🇦 #німецькамова #вивчаюнімецьку #deutschlernen #grammatik #deutschb1 #learngerman"
+    },
+    "instagram": {
+     "text": "Dativ oder Akkusativ? Das Verb entscheidet! ⚖️ + Test 🇺🇦\n\nТот же ролик: немецкая озвучка и немецкие субтитры, под ними перевод каждой фразы на украинский.\n\n#німецькамова #вивчаюнімецьку #deutschlernen #grammatik #deutschb1 #learngerman"
+    },
+    "youtube": {
+     "title": "Dativ oder Akkusativ? Das Verb entscheidet! ⚖️ + Test 🇺🇦 #shorts",
+     "description": "Das Verb entscheidet den Kasus: Nominativ, Akkusativ, Dativ, Dativ + Akkusativ und Verben mit Präposition – mit Farben erklärt.\nДієслово визначає відмінок: Nominativ, Akkusativ, Dativ і дієслова з прийменником.\n\nСерія «Граматика за Aspekte neu B1+». Німецька озвучка, німецькі субтитри та переклад українською. Наприкінці тест із таймером!\n\n#німецькамова #вивчаюнімецьку #deutschlernen #grammatik #deutschb1 #learngerman",
+     "kind": "Shorts"
+    }
+   },
+   "materials": [
+    {
+     "name": "subtitles_uk.srt",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/aspekte-b1plus/v4_kasus/subtitles_uk.srt",
+       "size": 2388
+      }
+     ]
+    },
+    {
+     "name": "subtitles_de.srt",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/aspekte-b1plus/v4_kasus/subtitles_de.srt",
+       "size": 1939
+      }
+     ]
+    },
+    {
+     "name": "aspekte-b1plus/v4_kasus/project_uk/",
+     "dir": true,
+     "files": [
+      {
+       "path": "materials/aspekte-b1plus/v4_kasus/project_uk/index.html",
+       "size": 61017
+      }
+     ]
+    },
+    {
+     "name": "add_uk_subs.py",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/aspekte-b1plus/engine/add_uk_subs.py",
+       "size": 2528
+      }
+     ]
+    },
+    {
+     "name": "uk_translations.py",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/aspekte-b1plus/engine/uk_translations.py",
+       "size": 13154
+      }
+     ]
+    },
+    {
+     "name": "render_uk.sh",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/aspekte-b1plus/engine/render_uk.sh",
+       "size": 517
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "v5_reihenfolge",
+   "group": "aspekte",
+   "title": "5. Wer kommt zuerst?",
+   "level": "Kapitel 1",
+   "topic": "3 правила + тест",
+   "about": "Порядок объектов: два существительных (сначала Dativ), местоимение + существительное (местоимение впереди), два местоимения (сначала Akkusativ).",
+   "file": "videos/aspekte/v5_reihenfolge.mp4",
+   "size": 9921350,
+   "duration": 86.6,
+   "width": 1080,
+   "height": 1920,
+   "vertical": true,
+   "covers": {},
+   "posts": {
+    "tiktok": {
+     "text": "Ich gebe ihn ihm 🤯 Dativ oder Akkusativ zuerst? + Test #deutschlernen #grammatik #dativ #akkusativ #deutschb1 #немецкийязык"
+    },
+    "instagram": {
+     "text": "Ich gebe ihn ihm 🤯 Dativ oder Akkusativ zuerst? + Test\n\nПорядок объектов: два существительных (сначала Dativ), местоимение + существительное (местоимение впереди), два местоимения (сначала Akkusativ).\n\n#deutschlernen #grammatik #dativ #akkusativ #deutschb1 #немецкийязык"
+    },
+    "youtube": {
+     "title": "Ich gebe ihn ihm 🤯 Dativ oder Akkusativ zuerst? + Test #shorts",
+     "description": "Ich gebe dem Mann den Ball. Ich gebe ihn ihm. Drei Regeln für die Reihenfolge von Dativ und Akkusativ im Satz.\nПорядок объектов: два существительных (сначала Dativ), местоимение + существительное (местоимение впереди), два местоимения (сначала Akkusativ).\n\nAus der Serie «Grammatik mit Aspekte neu B1+». Am Ende: Test mit Timer – wie viele hast du richtig? Schreib dein Ergebnis in die Kommentare!\nСерия «Грамматика по Aspekte neu B1+». В конце тест с таймером: напиши в комментариях свой результат!\n\n#deutschlernen #grammatik #dativ #akkusativ #deutschb1 #немецкийязык",
+     "kind": "Shorts"
+    }
+   },
+   "materials": [
+    {
+     "name": "subtitles_de.srt",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/aspekte-b1plus/v5_reihenfolge/subtitles_de.srt",
+       "size": 1851
+      }
+     ]
+    },
+    {
+     "name": "aspekte-b1plus/v5_reihenfolge/project/",
+     "dir": true,
+     "files": [
+      {
+       "path": "materials/aspekte-b1plus/v5_reihenfolge/project/index.html",
+       "size": 51026
+      },
+      {
+       "path": "materials/aspekte-b1plus/v5_reihenfolge/project/spec.py",
+       "size": 3385
+      },
+      {
+       "path": "materials/aspekte-b1plus/v5_reihenfolge/project/timeline.json",
+       "size": 3904
+      }
+     ]
+    },
+    {
+     "name": "SCENARII_1-5.md",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/aspekte-b1plus/SCENARII_1-5.md",
+       "size": 11023
+      }
+     ]
+    },
+    {
+     "name": "aspekte-b1plus/engine/",
+     "dir": true,
+     "files": [
+      {
+       "path": "materials/aspekte-b1plus/engine/README.md",
+       "size": 2174
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/add_uk_subs.py",
+       "size": 2528
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/colors.py",
+       "size": 261
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/deliver.sh",
+       "size": 534
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/engine.py",
+       "size": 17443
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/gsap.min.js",
+       "size": 72779
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/hyperframes.json",
+       "size": 318
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/render_uk.sh",
+       "size": 517
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/template.html",
+       "size": 9021
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/uk_translations.py",
+       "size": 13154
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v10_adjektiv_ein.py",
+       "size": 8537
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v1_perfekt.py",
+       "size": 4378
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v2_partizip.py",
+       "size": 4892
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v3_plusquam.py",
+       "size": 3443
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v4_kasus.py",
+       "size": 4247
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v5_reihenfolge.py",
+       "size": 3385
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v6_praepositionen.py",
+       "size": 9558
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v7_trennbar.py",
+       "size": 8326
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v8_ndeklination.py",
+       "size": 8412
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v9_adjektiv_der.py",
+       "size": 7547
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "v5_reihenfolge_uk",
+   "group": "aspekte_uk",
+   "title": "5. Wer kommt zuerst?",
+   "level": "Kapitel 1",
+   "topic": "🇺🇦 субтитры",
+   "about": "Тот же ролик: немецкая озвучка и немецкие субтитры, под ними перевод каждой фразы на украинский.",
+   "file": "videos/aspekte_uk/v5_reihenfolge_uk.mp4",
+   "size": 11430739,
+   "duration": 86.6,
+   "width": 1080,
+   "height": 1920,
+   "vertical": true,
+   "covers": {},
+   "posts": {
+    "tiktok": {
+     "text": "Ich gebe ihn ihm 🤯 Dativ oder Akkusativ zuerst? + Test 🇺🇦 #німецькамова #вивчаюнімецьку #deutschlernen #grammatik #deutschb1 #learngerman"
+    },
+    "instagram": {
+     "text": "Ich gebe ihn ihm 🤯 Dativ oder Akkusativ zuerst? + Test 🇺🇦\n\nТот же ролик: немецкая озвучка и немецкие субтитры, под ними перевод каждой фразы на украинский.\n\n#німецькамова #вивчаюнімецьку #deutschlernen #grammatik #deutschb1 #learngerman"
+    },
+    "youtube": {
+     "title": "Ich gebe ihn ihm 🤯 Dativ oder Akkusativ zuerst? + Test 🇺🇦 #shorts",
+     "description": "Ich gebe dem Mann den Ball. Ich gebe ihn ihm. Drei Regeln für die Reihenfolge von Dativ und Akkusativ im Satz.\nПорядок додатків: спочатку Dativ чи Akkusativ? Три правила.\n\nСерія «Граматика за Aspekte neu B1+». Німецька озвучка, німецькі субтитри та переклад українською. Наприкінці тест із таймером!\n\n#німецькамова #вивчаюнімецьку #deutschlernen #grammatik #deutschb1 #learngerman",
+     "kind": "Shorts"
+    }
+   },
+   "materials": [
+    {
+     "name": "subtitles_uk.srt",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/aspekte-b1plus/v5_reihenfolge/subtitles_uk.srt",
+       "size": 2308
+      }
+     ]
+    },
+    {
+     "name": "subtitles_de.srt",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/aspekte-b1plus/v5_reihenfolge/subtitles_de.srt",
+       "size": 1851
+      }
+     ]
+    },
+    {
+     "name": "aspekte-b1plus/v5_reihenfolge/project_uk/",
+     "dir": true,
+     "files": [
+      {
+       "path": "materials/aspekte-b1plus/v5_reihenfolge/project_uk/index.html",
+       "size": 57922
+      }
+     ]
+    },
+    {
+     "name": "add_uk_subs.py",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/aspekte-b1plus/engine/add_uk_subs.py",
+       "size": 2528
+      }
+     ]
+    },
+    {
+     "name": "uk_translations.py",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/aspekte-b1plus/engine/uk_translations.py",
+       "size": 13154
+      }
+     ]
+    },
+    {
+     "name": "render_uk.sh",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/aspekte-b1plus/engine/render_uk.sh",
+       "size": 517
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "v6_praepositionen",
+   "group": "aspekte",
+   "title": "6. Verben mit Präpositionen",
+   "level": "Kapitel 1",
+   "topic": "5 правил + тест из 12 фраз",
+   "about": "warten auf, sich freuen über, träumen von: предлоги с Akkusativ и Dativ, вопросы worauf? / auf wen?, ответы darauf / davor и много примеров.",
+   "file": "videos/aspekte/v6_praepositionen.mp4",
+   "size": 28747007,
+   "duration": 273.7,
+   "width": 1080,
+   "height": 1920,
+   "vertical": true,
+   "covers": {},
+   "posts": {
+    "tiktok": {
+     "text": "Warten AUF, träumen VON 🤯 Verben mit Präpositionen + Test (12 Sätze) #deutschlernen #grammatik #präpositionen #deutschb1 #learngerman #немецкийязык"
+    },
+    "instagram": {
+     "text": "Warten AUF, träumen VON 🤯 Verben mit Präpositionen + Test (12 Sätze)\n\nwarten auf, sich freuen über, träumen von: предлоги с Akkusativ и Dativ, вопросы worauf? / auf wen?, ответы darauf / davor и много примеров.\n\n#deutschlernen #grammatik #präpositionen #deutschb1 #learngerman #немецкийязык"
+    },
+    "youtube": {
+     "title": "Warten AUF, träumen VON 🤯 Verben mit Präpositionen + Test (12 Sätze) #shorts",
+     "description": "warten auf, sich freuen über, träumen von: Verben mit Präpositionen, Akkusativ oder Dativ, Fragen mit worauf? und auf wen?, Antworten mit darauf und davon. Test mit 12 Sätzen.\nwarten auf, sich freuen über, träumen von: предлоги с Akkusativ и Dativ, вопросы worauf? / auf wen?, ответы darauf / davor и много примеров.\n\nAus der Serie «Grammatik mit Aspekte neu B1+». Am Ende: Test mit Timer – wie viele hast du richtig? Schreib dein Ergebnis in die Kommentare!\nСерия «Грамматика по Aspekte neu B1+». В конце тест с таймером: напиши в комментариях свой результат!\n\n#deutschlernen #grammatik #präpositionen #deutschb1 #learngerman #немецкийязык",
+     "kind": "Shorts"
+    }
+   },
+   "materials": [
+    {
+     "name": "subtitles_de.srt",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/aspekte-b1plus/v6_praepositionen/subtitles_de.srt",
+       "size": 5399
+      }
+     ]
+    },
+    {
+     "name": "aspekte-b1plus/v6_praepositionen/project/",
+     "dir": true,
+     "files": [
+      {
+       "path": "materials/aspekte-b1plus/v6_praepositionen/project/index.html",
+       "size": 149664
+      },
+      {
+       "path": "materials/aspekte-b1plus/v6_praepositionen/project/spec.py",
+       "size": 9558
+      },
+      {
+       "path": "materials/aspekte-b1plus/v6_praepositionen/project/timeline.json",
+       "size": 11022
+      }
+     ]
+    },
+    {
+     "name": "SCENARII_1-5.md",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/aspekte-b1plus/SCENARII_1-5.md",
+       "size": 11023
+      }
+     ]
+    },
+    {
+     "name": "aspekte-b1plus/engine/",
+     "dir": true,
+     "files": [
+      {
+       "path": "materials/aspekte-b1plus/engine/README.md",
+       "size": 2174
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/add_uk_subs.py",
+       "size": 2528
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/colors.py",
+       "size": 261
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/deliver.sh",
+       "size": 534
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/engine.py",
+       "size": 17443
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/gsap.min.js",
+       "size": 72779
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/hyperframes.json",
+       "size": 318
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/render_uk.sh",
+       "size": 517
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/template.html",
+       "size": 9021
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/uk_translations.py",
+       "size": 13154
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v10_adjektiv_ein.py",
+       "size": 8537
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v1_perfekt.py",
+       "size": 4378
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v2_partizip.py",
+       "size": 4892
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v3_plusquam.py",
+       "size": 3443
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v4_kasus.py",
+       "size": 4247
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v5_reihenfolge.py",
+       "size": 3385
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v6_praepositionen.py",
+       "size": 9558
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v7_trennbar.py",
+       "size": 8326
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v8_ndeklination.py",
+       "size": 8412
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v9_adjektiv_der.py",
+       "size": 7547
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "v6_praepositionen_uk",
+   "group": "aspekte_uk",
+   "title": "6. Verben mit Präpositionen",
+   "level": "Kapitel 1",
+   "topic": "🇺🇦 субтитры",
+   "about": "Тот же ролик: немецкая озвучка и немецкие субтитры, под ними перевод каждой фразы на украинский.",
+   "file": "videos/aspekte_uk/v6_praepositionen_uk.mp4",
+   "size": 33537050,
+   "duration": 273.7,
+   "width": 1080,
+   "height": 1920,
+   "vertical": true,
+   "covers": {},
+   "posts": {
+    "tiktok": {
+     "text": "Warten AUF, träumen VON 🤯 Verben mit Präpositionen + Test (12 Sätze) 🇺🇦 #німецькамова #вивчаюнімецьку #deutschlernen #grammatik #deutschb1 #learngerman"
+    },
+    "instagram": {
+     "text": "Warten AUF, träumen VON 🤯 Verben mit Präpositionen + Test (12 Sätze) 🇺🇦\n\nТот же ролик: немецкая озвучка и немецкие субтитры, под ними перевод каждой фразы на украинский.\n\n#німецькамова #вивчаюнімецьку #deutschlernen #grammatik #deutschb1 #learngerman"
+    },
+    "youtube": {
+     "title": "Warten AUF, träumen VON 🤯 Verben mit Präpositionen + Test (12 Sätze) 🇺🇦 #shorts",
+     "description": "warten auf, sich freuen über, träumen von: Verben mit Präpositionen, Akkusativ oder Dativ, Fragen mit worauf? und auf wen?, Antworten mit darauf und davon. Test mit 12 Sätzen.\nДієслова з прийменниками: warten auf, sich freuen über, worauf? / darauf.\n\nСерія «Граматика за Aspekte neu B1+». Німецька озвучка, німецькі субтитри та переклад українською. Наприкінці тест із таймером!\n\n#німецькамова #вивчаюнімецьку #deutschlernen #grammatik #deutschb1 #learngerman",
+     "kind": "Shorts"
+    }
+   },
+   "materials": [
+    {
+     "name": "subtitles_uk.srt",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/aspekte-b1plus/v6_praepositionen/subtitles_uk.srt",
+       "size": 7070
+      }
+     ]
+    },
+    {
+     "name": "subtitles_de.srt",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/aspekte-b1plus/v6_praepositionen/subtitles_de.srt",
+       "size": 5399
+      }
+     ]
+    },
+    {
+     "name": "aspekte-b1plus/v6_praepositionen/project_uk/",
+     "dir": true,
+     "files": [
+      {
+       "path": "materials/aspekte-b1plus/v6_praepositionen/project_uk/index.html",
+       "size": 168722
+      }
+     ]
+    },
+    {
+     "name": "add_uk_subs.py",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/aspekte-b1plus/engine/add_uk_subs.py",
+       "size": 2528
+      }
+     ]
+    },
+    {
+     "name": "uk_translations.py",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/aspekte-b1plus/engine/uk_translations.py",
+       "size": 13154
+      }
+     ]
+    },
+    {
+     "name": "render_uk.sh",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/aspekte-b1plus/engine/render_uk.sh",
+       "size": 517
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "v7_trennbar",
+   "group": "aspekte",
+   "title": "7. Trennbar oder untrennbar?",
+   "level": "Kapitel 2",
+   "topic": "5 правил + тест из 12 фраз",
+   "about": "aufstehen и verstehen: отделяемые и неотделяемые приставки, ударение, Partizip II, и когда отделяемый глагол не разделяется (Nebensatz, модальный глагол, zu).",
+   "file": "videos/aspekte/v7_trennbar.mp4",
+   "size": 26300410,
+   "duration": 262.5,
+   "width": 1080,
+   "height": 1920,
+   "vertical": true,
+   "covers": {},
+   "posts": {
+    "tiktok": {
+     "text": "Aufstehen oder verstehen? ✂️ Trennbare Verben einfach erklärt + Test #deutschlernen #grammatik #trennbareverben #deutscha2 #learngerman #немецкийязык"
+    },
+    "instagram": {
+     "text": "Aufstehen oder verstehen? ✂️ Trennbare Verben einfach erklärt + Test\n\naufstehen и verstehen: отделяемые и неотделяемые приставки, ударение, Partizip II, и когда отделяемый глагол не разделяется (Nebensatz, модальный глагол, zu).\n\n#deutschlernen #grammatik #trennbareverben #deutscha2 #learngerman #немецкийязык"
+    },
+    "youtube": {
+     "title": "Aufstehen oder verstehen? ✂️ Trennbare Verben einfach erklärt + Test #shorts",
+     "description": "aufstehen oder verstehen? Trennbare und untrennbare Präfixe, Betonung, Partizip II und wann das Verb nicht getrennt wird: Nebensatz, Modalverb, zu. Test mit 12 Sätzen.\naufstehen и verstehen: отделяемые и неотделяемые приставки, ударение, Partizip II, и когда отделяемый глагол не разделяется (Nebensatz, модальный глагол, zu).\n\nAus der Serie «Grammatik mit Aspekte neu B1+». Am Ende: Test mit Timer – wie viele hast du richtig? Schreib dein Ergebnis in die Kommentare!\nСерия «Грамматика по Aspekte neu B1+». В конце тест с таймером: напиши в комментариях свой результат!\n\n#deutschlernen #grammatik #trennbareverben #deutscha2 #learngerman #немецкийязык",
+     "kind": "Shorts"
+    }
+   },
+   "materials": [
+    {
+     "name": "subtitles_de.srt",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/aspekte-b1plus/v7_trennbar/subtitles_de.srt",
+       "size": 4912
+      }
+     ]
+    },
+    {
+     "name": "aspekte-b1plus/v7_trennbar/project/",
+     "dir": true,
+     "files": [
+      {
+       "path": "materials/aspekte-b1plus/v7_trennbar/project/index.html",
+       "size": 136478
+      },
+      {
+       "path": "materials/aspekte-b1plus/v7_trennbar/project/spec.py",
+       "size": 8326
+      },
+      {
+       "path": "materials/aspekte-b1plus/v7_trennbar/project/timeline.json",
+       "size": 9896
+      }
+     ]
+    },
+    {
+     "name": "SCENARII_1-5.md",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/aspekte-b1plus/SCENARII_1-5.md",
+       "size": 11023
+      }
+     ]
+    },
+    {
+     "name": "aspekte-b1plus/engine/",
+     "dir": true,
+     "files": [
+      {
+       "path": "materials/aspekte-b1plus/engine/README.md",
+       "size": 2174
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/add_uk_subs.py",
+       "size": 2528
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/colors.py",
+       "size": 261
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/deliver.sh",
+       "size": 534
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/engine.py",
+       "size": 17443
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/gsap.min.js",
+       "size": 72779
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/hyperframes.json",
+       "size": 318
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/render_uk.sh",
+       "size": 517
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/template.html",
+       "size": 9021
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/uk_translations.py",
+       "size": 13154
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v10_adjektiv_ein.py",
+       "size": 8537
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v1_perfekt.py",
+       "size": 4378
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v2_partizip.py",
+       "size": 4892
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v3_plusquam.py",
+       "size": 3443
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v4_kasus.py",
+       "size": 4247
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v5_reihenfolge.py",
+       "size": 3385
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v6_praepositionen.py",
+       "size": 9558
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v7_trennbar.py",
+       "size": 8326
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v8_ndeklination.py",
+       "size": 8412
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v9_adjektiv_der.py",
+       "size": 7547
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "v8_ndeklination",
+   "group": "aspekte",
+   "title": "8. n-Deklination",
+   "level": "Kapitel 2",
+   "topic": "5 правил + тест из 12 фраз",
+   "about": "der Student, den Studenten: какие слова относятся к n-Deklination (-e, -ist, -ent, -ant…), окончание во всех падежах, des Namens, Herrn Müller и типичные ошибки.",
+   "file": "videos/aspekte/v8_ndeklination.mp4",
+   "size": 25932145,
+   "duration": 251.7,
+   "width": 1080,
+   "height": 1920,
+   "vertical": true,
+   "covers": {},
+   "posts": {
+    "tiktok": {
+     "text": "Den Student oder den StudentEN? 🎓 n-Deklination + Test #deutschlernen #grammatik #ndeklination #deutschb1 #learngerman #немецкийязык"
+    },
+    "instagram": {
+     "text": "Den Student oder den StudentEN? 🎓 n-Deklination + Test\n\nder Student, den Studenten: какие слова относятся к n-Deklination (-e, -ist, -ent, -ant…), окончание во всех падежах, des Namens, Herrn Müller и типичные ошибки.\n\n#deutschlernen #grammatik #ndeklination #deutschb1 #learngerman #немецкийязык"
+    },
+    "youtube": {
+     "title": "Den Student oder den StudentEN? 🎓 n-Deklination + Test #shorts",
+     "description": "der Student, den Studenten, dem Studenten: Welche Nomen gehören zur n-Deklination (-e, -ist, -ent, -ant), des Namens, Herrn Müller und typische Fehler. Test mit 12 Sätzen.\nder Student, den Studenten: какие слова относятся к n-Deklination (-e, -ist, -ent, -ant…), окончание во всех падежах, des Namens, Herrn Müller и типичные ошибки.\n\nAus der Serie «Grammatik mit Aspekte neu B1+». Am Ende: Test mit Timer – wie viele hast du richtig? Schreib dein Ergebnis in die Kommentare!\nСерия «Грамматика по Aspekte neu B1+». В конце тест с таймером: напиши в комментариях свой результат!\n\n#deutschlernen #grammatik #ndeklination #deutschb1 #learngerman #немецкийязык",
+     "kind": "Shorts"
+    }
+   },
+   "materials": [
+    {
+     "name": "subtitles_de.srt",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/aspekte-b1plus/v8_ndeklination/subtitles_de.srt",
+       "size": 4889
+      }
+     ]
+    },
+    {
+     "name": "aspekte-b1plus/v8_ndeklination/project/",
+     "dir": true,
+     "files": [
+      {
+       "path": "materials/aspekte-b1plus/v8_ndeklination/project/index.html",
+       "size": 134570
+      },
+      {
+       "path": "materials/aspekte-b1plus/v8_ndeklination/project/spec.py",
+       "size": 8412
+      },
+      {
+       "path": "materials/aspekte-b1plus/v8_ndeklination/project/timeline.json",
+       "size": 9954
+      }
+     ]
+    },
+    {
+     "name": "SCENARII_1-5.md",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/aspekte-b1plus/SCENARII_1-5.md",
+       "size": 11023
+      }
+     ]
+    },
+    {
+     "name": "aspekte-b1plus/engine/",
+     "dir": true,
+     "files": [
+      {
+       "path": "materials/aspekte-b1plus/engine/README.md",
+       "size": 2174
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/add_uk_subs.py",
+       "size": 2528
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/colors.py",
+       "size": 261
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/deliver.sh",
+       "size": 534
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/engine.py",
+       "size": 17443
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/gsap.min.js",
+       "size": 72779
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/hyperframes.json",
+       "size": 318
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/render_uk.sh",
+       "size": 517
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/template.html",
+       "size": 9021
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/uk_translations.py",
+       "size": 13154
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v10_adjektiv_ein.py",
+       "size": 8537
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v1_perfekt.py",
+       "size": 4378
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v2_partizip.py",
+       "size": 4892
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v3_plusquam.py",
+       "size": 3443
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v4_kasus.py",
+       "size": 4247
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v5_reihenfolge.py",
+       "size": 3385
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v6_praepositionen.py",
+       "size": 9558
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v7_trennbar.py",
+       "size": 8326
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v8_ndeklination.py",
+       "size": 8412
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v9_adjektiv_der.py",
+       "size": 7547
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "v9_adjektiv_der",
+   "group": "aspekte",
+   "title": "9. Adjektive nach der, die, das",
+   "level": "Kapitel 3",
+   "topic": "4 правила + таблица + тест из 12 фраз",
+   "about": "Склонение прилагательных после определённого артикля: всего два окончания -e и -en, полная таблица, то же после dieser/jeder/welcher и примеры из жизни.",
+   "file": "videos/aspekte/v9_adjektiv_der.mp4",
+   "size": 23439656,
+   "duration": 245.8,
+   "width": 1080,
+   "height": 1920,
+   "vertical": true,
+   "covers": {},
+   "posts": {
+    "tiktok": {
+     "text": "Der neue oder den neuen? 🤔 Adjektivendungen nach der, die, das + Test #deutschlernen #grammatik #adjektive #deutschb1 #germangrammar #немецкийязык"
+    },
+    "instagram": {
+     "text": "Der neue oder den neuen? 🤔 Adjektivendungen nach der, die, das + Test\n\nСклонение прилагательных после определённого артикля: всего два окончания -e и -en, полная таблица, то же после dieser/jeder/welcher и примеры из жизни.\n\n#deutschlernen #grammatik #adjektive #deutschb1 #germangrammar #немецкийязык"
+    },
+    "youtube": {
+     "title": "Der neue oder den neuen? 🤔 Adjektivendungen nach der, die, das + Test #shorts",
+     "description": "der neue Film, den neuen Film: Nach der, die, das gibt es nur zwei Endungen, -e und -en. Mit Tabelle, dieser/jeder/welcher und Beispielen aus dem Alltag. Test mit 12 Sätzen.\nСклонение прилагательных после определённого артикля: всего два окончания -e и -en, полная таблица, то же после dieser/jeder/welcher и примеры из жизни.\n\nAus der Serie «Grammatik mit Aspekte neu B1+». Am Ende: Test mit Timer – wie viele hast du richtig? Schreib dein Ergebnis in die Kommentare!\nСерия «Грамматика по Aspekte neu B1+». В конце тест с таймером: напиши в комментариях свой результат!\n\n#deutschlernen #grammatik #adjektive #deutschb1 #germangrammar #немецкийязык",
+     "kind": "Shorts"
+    }
+   },
+   "materials": [
+    {
+     "name": "subtitles_de.srt",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/aspekte-b1plus/v9_adjektiv_der/subtitles_de.srt",
+       "size": 4565
+      }
+     ]
+    },
+    {
+     "name": "aspekte-b1plus/v9_adjektiv_der/project/",
+     "dir": true,
+     "files": [
+      {
+       "path": "materials/aspekte-b1plus/v9_adjektiv_der/project/index.html",
+       "size": 133933
+      },
+      {
+       "path": "materials/aspekte-b1plus/v9_adjektiv_der/project/spec.py",
+       "size": 7547
+      },
+      {
+       "path": "materials/aspekte-b1plus/v9_adjektiv_der/project/timeline.json",
+       "size": 9254
+      }
+     ]
+    },
+    {
+     "name": "SCENARII_1-5.md",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/aspekte-b1plus/SCENARII_1-5.md",
+       "size": 11023
+      }
+     ]
+    },
+    {
+     "name": "aspekte-b1plus/engine/",
+     "dir": true,
+     "files": [
+      {
+       "path": "materials/aspekte-b1plus/engine/README.md",
+       "size": 2174
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/add_uk_subs.py",
+       "size": 2528
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/colors.py",
+       "size": 261
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/deliver.sh",
+       "size": 534
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/engine.py",
+       "size": 17443
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/gsap.min.js",
+       "size": 72779
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/hyperframes.json",
+       "size": 318
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/render_uk.sh",
+       "size": 517
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/template.html",
+       "size": 9021
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/uk_translations.py",
+       "size": 13154
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v10_adjektiv_ein.py",
+       "size": 8537
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v1_perfekt.py",
+       "size": 4378
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v2_partizip.py",
+       "size": 4892
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v3_plusquam.py",
+       "size": 3443
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v4_kasus.py",
+       "size": 4247
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v5_reihenfolge.py",
+       "size": 3385
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v6_praepositionen.py",
+       "size": 9558
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v7_trennbar.py",
+       "size": 8326
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v8_ndeklination.py",
+       "size": 8412
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v9_adjektiv_der.py",
+       "size": 7547
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "v10_adjektiv_ein",
+   "group": "aspekte",
+   "title": "10. Adjektive nach ein und ohne Artikel",
+   "level": "Kapitel 3",
+   "topic": "4 правила + таблица + тест из 12 фраз",
+   "about": "ein neuer Film, ein neues Auto: окончания после ein/kein/mein, таблица, прилагательные без артикля (heißer Kaffee, mit kaltem Wasser) и все три типа рядом.",
+   "file": "videos/aspekte/v10_adjektiv_ein.mp4",
+   "size": 25906409,
+   "duration": 271.9,
+   "width": 1080,
+   "height": 1920,
+   "vertical": true,
+   "covers": {},
+   "posts": {
+    "tiktok": {
+     "text": "Ein neuer, ein neues, eine neue 😵 Adjektive nach ein + ohne Artikel + Test #deutschlernen #grammatik #adjektive #deutscha2 #learngerman #немецкийязык"
+    },
+    "instagram": {
+     "text": "Ein neuer, ein neues, eine neue 😵 Adjektive nach ein + ohne Artikel + Test\n\nein neuer Film, ein neues Auto: окончания после ein/kein/mein, таблица, прилагательные без артикля (heißer Kaffee, mit kaltem Wasser) и все три типа рядом.\n\n#deutschlernen #grammatik #adjektive #deutscha2 #learngerman #немецкийязык"
+    },
+    "youtube": {
+     "title": "Ein neuer, ein neues, eine neue 😵 Adjektive nach ein + ohne Artikel + Test #shorts",
+     "description": "ein neuer Film, ein neues Auto, heißer Kaffee, mit kaltem Wasser: Adjektivendungen nach ein/kein/mein und ohne Artikel, mit Tabelle und allen drei Typen im Vergleich. Test mit 12 Sätzen.\nein neuer Film, ein neues Auto: окончания после ein/kein/mein, таблица, прилагательные без артикля (heißer Kaffee, mit kaltem Wasser) и все три типа рядом.\n\nAus der Serie «Grammatik mit Aspekte neu B1+». Am Ende: Test mit Timer – wie viele hast du richtig? Schreib dein Ergebnis in die Kommentare!\nСерия «Грамматика по Aspekte neu B1+». В конце тест с таймером: напиши в комментариях свой результат!\n\n#deutschlernen #grammatik #adjektive #deutscha2 #learngerman #немецкийязык",
+     "kind": "Shorts"
+    }
+   },
+   "materials": [
+    {
+     "name": "subtitles_de.srt",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/aspekte-b1plus/v10_adjektiv_ein/subtitles_de.srt",
+       "size": 5064
+      }
+     ]
+    },
+    {
+     "name": "aspekte-b1plus/v10_adjektiv_ein/project/",
+     "dir": true,
+     "files": [
+      {
+       "path": "materials/aspekte-b1plus/v10_adjektiv_ein/project/index.html",
+       "size": 140031
+      },
+      {
+       "path": "materials/aspekte-b1plus/v10_adjektiv_ein/project/spec.py",
+       "size": 8537
+      },
+      {
+       "path": "materials/aspekte-b1plus/v10_adjektiv_ein/project/timeline.json",
+       "size": 10419
+      }
+     ]
+    },
+    {
+     "name": "SCENARII_1-5.md",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/aspekte-b1plus/SCENARII_1-5.md",
+       "size": 11023
+      }
+     ]
+    },
+    {
+     "name": "aspekte-b1plus/engine/",
+     "dir": true,
+     "files": [
+      {
+       "path": "materials/aspekte-b1plus/engine/README.md",
+       "size": 2174
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/add_uk_subs.py",
+       "size": 2528
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/colors.py",
+       "size": 261
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/deliver.sh",
+       "size": 534
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/engine.py",
+       "size": 17443
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/gsap.min.js",
+       "size": 72779
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/hyperframes.json",
+       "size": 318
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/render_uk.sh",
+       "size": 517
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/template.html",
+       "size": 9021
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/uk_translations.py",
+       "size": 13154
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v10_adjektiv_ein.py",
+       "size": 8537
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v1_perfekt.py",
+       "size": 4378
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v2_partizip.py",
+       "size": 4892
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v3_plusquam.py",
+       "size": 3443
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v4_kasus.py",
+       "size": 4247
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v5_reihenfolge.py",
+       "size": 3385
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v6_praepositionen.py",
+       "size": 9558
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v7_trennbar.py",
+       "size": 8326
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v8_ndeklination.py",
+       "size": 8412
+      },
+      {
+       "path": "materials/aspekte-b1plus/engine/v9_adjektiv_der.py",
+       "size": 7547
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ep1_die_ung",
+   "group": "artikel",
+   "title": "1. Immer die! -ung, -heit, -keit, -schaft",
+   "level": "A1–B1",
+   "topic": "🎵 песня",
+   "about": "Песня про артикли по окончаниям: слова с эмодзи, артикль цветом (der синий, die красный, das зелёный), украинский перевод.",
+   "file": "videos/artikel/ep1_die_ung.mp4",
+   "size": 17425317,
+   "duration": 74.9,
+   "width": 1080,
+   "height": 1920,
+   "vertical": true,
+   "covers": {
+    "tiktok": "materials/songs/artikel_serie/ep1_die_ung/ep1_die_ung_cover_tiktok.png",
+    "youtube": "materials/songs/artikel_serie/ep1_die_ung/ep1_die_ung_cover_youtube.png"
+   },
+   "posts": {
+    "tiktok": {
+     "text": "Immer DIE! -ung -heit -keit -schaft 🎵 Folge 1/5 #deutschlernen #learngerman #artikel #derdiedas #німецькамова #deutschmitmusik"
+    },
+    "instagram": {
+     "text": "Immer DIE! -ung -heit -keit -schaft 🎵 Folge 1/5\n\nПесня про артикли по окончаниям: слова с эмодзи, артикль цветом (der синий, die красный, das зелёный), украинский перевод.\n\n#deutschlernen #learngerman #artikel #derdiedas #німецькамова #deutschmitmusik"
+    },
+    "youtube": {
+     "title": "Immer DIE! -ung, -heit, -keit, -schaft | Artikel-Song 1/5 #deutschlernen #derdiedas #shorts",
+     "description": "Der, die oder das? Hör aufs Ende! In diesem Lied lernst du: Nomen mit -ung, -heit, -keit, -schaft sind immer DIE.\nНімецькі артиклі легко: слова із закінченнями -ung, -heit, -keit, -schaft — це die (жіночий рід). Пісня з перекладом українською, співай разом і запам'ятовуй.\n\nТаймкоди:\n0:00 Intro: der, die, das\n0:07 -ung — Immer die!\n0:22 -heit — Immer die!\n0:35 -keit — Immer die!\n0:50 -schaft — Immer die!\n1:01 Wiederholung + Ausnahmen\n\nWörter im Lied / Слова в пісні:\n-ung: die Wohnung (квартира), die Zeitung (газета), die Meinung (думка), die Lösung (рішення), die Prüfung (іспит), die Erfahrung (досвід)\n-heit: die Freiheit (свобода), die Gesundheit (здоров'я), die Wahrheit (правда), die Kindheit (дитинство), die Krankheit (хвороба), die Gelegenheit (нагода)\n-keit: die Möglichkeit (можливість), die Schwierigkeit (труднощі), die Geschwindigkeit (швидкість), die Süßigkeit (солодощі), die Pünktlichkeit (пунктуальність), die Sehenswürdigkeit (пам'ятка)\n-schaft: die Freundschaft (дружба), die Mannschaft (команда), die Landschaft (краєвид), die Wirtschaft (економіка), die Gesellschaft (суспільство), die Wissenschaft (наука)\n\nSerie «Der, die, das mit Musik»: 5 Lieder über Artikel und Endungen (A1–B1). Abonniere, damit du keine Folge verpasst!\n\n#deutschlernen #derdiedas #artikel #germangrammar #learngerman #німецькамова #німецька #deutschmitmusik #die",
+     "kind": "Shorts"
+    }
+   },
+   "materials": [
+    {
+     "name": "meta.md",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/songs/artikel_serie/ep1_die_ung/meta.md",
+       "size": 2312
+      }
+     ]
+    },
+    {
+     "name": "text.md",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/songs/artikel_serie/ep1_die_ung/text.md",
+       "size": 1390
+      }
+     ]
+    },
+    {
+     "name": "lines.json",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/songs/artikel_serie/ep1_die_ung/lines.json",
+       "size": 4078
+      }
+     ]
+    },
+    {
+     "name": "beats.json",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/songs/artikel_serie/ep1_die_ung/beats.json",
+       "size": 876
+      }
+     ]
+    },
+    {
+     "name": "song.mp3",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/songs/artikel_serie/ep1_die_ung/song.mp3",
+       "size": 1799463
+      }
+     ]
+    },
+    {
+     "name": "songs/artikel_serie/engine/",
+     "dir": true,
+     "files": [
+      {
+       "path": "materials/songs/artikel_serie/engine/covers.py",
+       "size": 5511
+      },
+      {
+       "path": "materials/songs/artikel_serie/engine/gen.py",
+       "size": 26479
+      },
+      {
+       "path": "materials/songs/artikel_serie/engine/meta.py",
+       "size": 3495
+      },
+      {
+       "path": "materials/songs/artikel_serie/engine/page.py",
+       "size": 21137
+      },
+      {
+       "path": "materials/songs/artikel_serie/engine/prepare.py",
+       "size": 3756
+      },
+      {
+       "path": "materials/songs/artikel_serie/engine/render.sh",
+       "size": 681
+      },
+      {
+       "path": "materials/songs/artikel_serie/engine/series.py",
+       "size": 11917
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ep1_die_ung_youtube",
+   "group": "artikel",
+   "title": "1. Immer die! -ung, -heit, -keit, -schaft",
+   "level": "A1–B1",
+   "topic": "🎵 песня · YouTube 16:9",
+   "about": "Песня про артикли по окончаниям: слова с эмодзи, артикль цветом (der синий, die красный, das зелёный), украинский перевод.",
+   "file": "videos/artikel/ep1_die_ung_youtube.mp4",
+   "size": 16543647,
+   "duration": 74.9,
+   "width": 1920,
+   "height": 1080,
+   "vertical": false,
+   "covers": {
+    "tiktok": "materials/songs/artikel_serie/ep1_die_ung/ep1_die_ung_cover_tiktok.png",
+    "youtube": "materials/songs/artikel_serie/ep1_die_ung/ep1_die_ung_cover_youtube.png"
+   },
+   "posts": {
+    "youtube": {
+     "title": "Immer DIE! -ung, -heit, -keit, -schaft | Artikel-Song 1/5 #deutschlernen #derdiedas",
+     "description": "Der, die oder das? Hör aufs Ende! In diesem Lied lernst du: Nomen mit -ung, -heit, -keit, -schaft sind immer DIE.\nНімецькі артиклі легко: слова із закінченнями -ung, -heit, -keit, -schaft — це die (жіночий рід). Пісня з перекладом українською, співай разом і запам'ятовуй.\n\nТаймкоди:\n0:00 Intro: der, die, das\n0:07 -ung — Immer die!\n0:22 -heit — Immer die!\n0:35 -keit — Immer die!\n0:50 -schaft — Immer die!\n1:01 Wiederholung + Ausnahmen\n\nWörter im Lied / Слова в пісні:\n-ung: die Wohnung (квартира), die Zeitung (газета), die Meinung (думка), die Lösung (рішення), die Prüfung (іспит), die Erfahrung (досвід)\n-heit: die Freiheit (свобода), die Gesundheit (здоров'я), die Wahrheit (правда), die Kindheit (дитинство), die Krankheit (хвороба), die Gelegenheit (нагода)\n-keit: die Möglichkeit (можливість), die Schwierigkeit (труднощі), die Geschwindigkeit (швидкість), die Süßigkeit (солодощі), die Pünktlichkeit (пунктуальність), die Sehenswürdigkeit (пам'ятка)\n-schaft: die Freundschaft (дружба), die Mannschaft (команда), die Landschaft (краєвид), die Wirtschaft (економіка), die Gesellschaft (суспільство), die Wissenschaft (наука)\n\nSerie «Der, die, das mit Musik»: 5 Lieder über Artikel und Endungen (A1–B1). Abonniere, damit du keine Folge verpasst!\n\n#deutschlernen #derdiedas #artikel #germangrammar #learngerman #німецькамова #німецька #deutschmitmusik #die",
+     "kind": "Видео 16:9"
+    }
+   },
+   "materials": [
+    {
+     "name": "meta.md",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/songs/artikel_serie/ep1_die_ung/meta.md",
+       "size": 2312
+      }
+     ]
+    },
+    {
+     "name": "text.md",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/songs/artikel_serie/ep1_die_ung/text.md",
+       "size": 1390
+      }
+     ]
+    },
+    {
+     "name": "lines.json",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/songs/artikel_serie/ep1_die_ung/lines.json",
+       "size": 4078
+      }
+     ]
+    },
+    {
+     "name": "beats.json",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/songs/artikel_serie/ep1_die_ung/beats.json",
+       "size": 876
+      }
+     ]
+    },
+    {
+     "name": "song.mp3",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/songs/artikel_serie/ep1_die_ung/song.mp3",
+       "size": 1799463
+      }
+     ]
+    },
+    {
+     "name": "songs/artikel_serie/engine/",
+     "dir": true,
+     "files": [
+      {
+       "path": "materials/songs/artikel_serie/engine/covers.py",
+       "size": 5511
+      },
+      {
+       "path": "materials/songs/artikel_serie/engine/gen.py",
+       "size": 26479
+      },
+      {
+       "path": "materials/songs/artikel_serie/engine/meta.py",
+       "size": 3495
+      },
+      {
+       "path": "materials/songs/artikel_serie/engine/page.py",
+       "size": 21137
+      },
+      {
+       "path": "materials/songs/artikel_serie/engine/prepare.py",
+       "size": 3756
+      },
+      {
+       "path": "materials/songs/artikel_serie/engine/render.sh",
+       "size": 681
+      },
+      {
+       "path": "materials/songs/artikel_serie/engine/series.py",
+       "size": 11917
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ep2_der",
+   "group": "artikel",
+   "title": "2. Immer der! -ling, -ismus, -ist, -or…",
+   "level": "A1–B1",
+   "topic": "🎵 песня",
+   "about": "Песня про артикли по окончаниям: слова с эмодзи, артикль цветом (der синий, die красный, das зелёный), украинский перевод.",
+   "file": "videos/artikel/ep2_der.mp4",
+   "size": 22679835,
+   "duration": 96.4,
+   "width": 1080,
+   "height": 1920,
+   "vertical": true,
+   "covers": {
+    "tiktok": "materials/songs/artikel_serie/ep2_der/ep2_der_cover_tiktok.png",
+    "youtube": "materials/songs/artikel_serie/ep2_der/ep2_der_cover_youtube.png"
+   },
+   "posts": {
+    "tiktok": {
+     "text": "Immer DER! -ling -ismus -ist -or -ig / -ich -ent / -ant 🎵 Folge 2/5 #deutschlernen #learngerman #artikel #derdiedas #німецькамова #deutschmitmusik"
+    },
+    "instagram": {
+     "text": "Immer DER! -ling -ismus -ist -or -ig / -ich -ent / -ant 🎵 Folge 2/5\n\nПесня про артикли по окончаниям: слова с эмодзи, артикль цветом (der синий, die красный, das зелёный), украинский перевод.\n\n#deutschlernen #learngerman #artikel #derdiedas #німецькамова #deutschmitmusik"
+    },
+    "youtube": {
+     "title": "Immer DER! -ling -ismus -ist -or -ig / -ich -ent / -ant | Artikel 2/5 #deutschlernen #derdiedas",
+     "description": "Der, die oder das? Hör aufs Ende! In diesem Lied lernst du: Nomen mit -ling, -ismus, -ist, -or, -ig / -ich, -ent / -ant sind fast immer DER.\nНімецькі артиклі легко: слова із закінченнями -ling, -ismus, -ist, -or, -ig / -ich, -ent / -ant — це der (чоловічий рід). Пісня з перекладом українською, співай разом і запам'ятовуй.\n\nТаймкоди:\n0:00 Intro: der, die, das\n0:09 -ling — Immer der!\n0:20 -ismus — Immer der!\n0:34 -ist — Immer der!\n0:45 -or — Fast immer der!\n0:56 -ig / -ich — Immer der!\n1:08 -ent / -ant — Fast immer der!\n1:20 Wiederholung + Ausnahmen\n\nWörter im Lied / Слова в пісні:\n-ling: der Frühling (весна), der Schmetterling (метелик), der Liebling (улюбленець), der Zwilling (близнюк), der Lehrling (учень), der Feigling (боягуз)\n-ismus: der Tourismus (туризм), der Optimismus (оптимізм), der Egoismus (егоїзм), der Journalismus (журналістика), der Realismus (реалізм), der Kapitalismus (капіталізм)\n-ist: der Tourist (турист), der Polizist (поліцейський), der Journalist (журналіст), der Pianist (піаніст), der Optimist (оптиміст), der Spezialist (спеціаліст)\n-or: der Motor (двигун), der Autor (автор), der Doktor (лікар), der Professor (професор), der Direktor (директор), der Traktor (трактор)\n-ig / -ich: der Honig (мед), der König (король), der Käfig (клітка), der Essig (оцет), der Teppich (килим), der Pfirsich (персик)\n-ent / -ant: der Student (студент), der Präsident (президент), der Patient (пацієнт), der Kontinent (континент), der Elefant (слон), der Praktikant (практикант)\n\nAusnahmen / Винятки: das Labor, das Tor, das Talent, das Restaurant, das Prozent\n\nSerie «Der, die, das mit Musik»: 5 Lieder über Artikel und Endungen (A1–B1). Abonniere, damit du keine Folge verpasst!\n\n#deutschlernen #derdiedas #artikel #germangrammar #learngerman #німецькамова #німецька #deutschmitmusik #der",
+     "kind": "Shorts"
+    }
+   },
+   "materials": [
+    {
+     "name": "meta.md",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/songs/artikel_serie/ep2_der/meta.md",
+       "size": 2875
+      }
+     ]
+    },
+    {
+     "name": "text.md",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/songs/artikel_serie/ep2_der/text.md",
+       "size": 1790
+      }
+     ]
+    },
+    {
+     "name": "lines.json",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/songs/artikel_serie/ep2_der/lines.json",
+       "size": 5969
+      }
+     ]
+    },
+    {
+     "name": "beats.json",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/songs/artikel_serie/ep2_der/beats.json",
+       "size": 1116
+      }
+     ]
+    },
+    {
+     "name": "song.mp3",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/songs/artikel_serie/ep2_der/song.mp3",
+       "size": 2315434
+      }
+     ]
+    },
+    {
+     "name": "songs/artikel_serie/engine/",
+     "dir": true,
+     "files": [
+      {
+       "path": "materials/songs/artikel_serie/engine/covers.py",
+       "size": 5511
+      },
+      {
+       "path": "materials/songs/artikel_serie/engine/gen.py",
+       "size": 26479
+      },
+      {
+       "path": "materials/songs/artikel_serie/engine/meta.py",
+       "size": 3495
+      },
+      {
+       "path": "materials/songs/artikel_serie/engine/page.py",
+       "size": 21137
+      },
+      {
+       "path": "materials/songs/artikel_serie/engine/prepare.py",
+       "size": 3756
+      },
+      {
+       "path": "materials/songs/artikel_serie/engine/render.sh",
+       "size": 681
+      },
+      {
+       "path": "materials/songs/artikel_serie/engine/series.py",
+       "size": 11917
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ep2_der_youtube",
+   "group": "artikel",
+   "title": "2. Immer der! -ling, -ismus, -ist, -or…",
+   "level": "A1–B1",
+   "topic": "🎵 песня · YouTube 16:9",
+   "about": "Песня про артикли по окончаниям: слова с эмодзи, артикль цветом (der синий, die красный, das зелёный), украинский перевод.",
+   "file": "videos/artikel/ep2_der_youtube.mp4",
+   "size": 21291805,
+   "duration": 96.4,
+   "width": 1920,
+   "height": 1080,
+   "vertical": false,
+   "covers": {
+    "tiktok": "materials/songs/artikel_serie/ep2_der/ep2_der_cover_tiktok.png",
+    "youtube": "materials/songs/artikel_serie/ep2_der/ep2_der_cover_youtube.png"
+   },
+   "posts": {
+    "youtube": {
+     "title": "Immer DER! -ling -ismus -ist -or -ig / -ich -ent / -ant | Artikel 2/5 #deutschlernen #derdiedas",
+     "description": "Der, die oder das? Hör aufs Ende! In diesem Lied lernst du: Nomen mit -ling, -ismus, -ist, -or, -ig / -ich, -ent / -ant sind fast immer DER.\nНімецькі артиклі легко: слова із закінченнями -ling, -ismus, -ist, -or, -ig / -ich, -ent / -ant — це der (чоловічий рід). Пісня з перекладом українською, співай разом і запам'ятовуй.\n\nТаймкоди:\n0:00 Intro: der, die, das\n0:09 -ling — Immer der!\n0:20 -ismus — Immer der!\n0:34 -ist — Immer der!\n0:45 -or — Fast immer der!\n0:56 -ig / -ich — Immer der!\n1:08 -ent / -ant — Fast immer der!\n1:20 Wiederholung + Ausnahmen\n\nWörter im Lied / Слова в пісні:\n-ling: der Frühling (весна), der Schmetterling (метелик), der Liebling (улюбленець), der Zwilling (близнюк), der Lehrling (учень), der Feigling (боягуз)\n-ismus: der Tourismus (туризм), der Optimismus (оптимізм), der Egoismus (егоїзм), der Journalismus (журналістика), der Realismus (реалізм), der Kapitalismus (капіталізм)\n-ist: der Tourist (турист), der Polizist (поліцейський), der Journalist (журналіст), der Pianist (піаніст), der Optimist (оптиміст), der Spezialist (спеціаліст)\n-or: der Motor (двигун), der Autor (автор), der Doktor (лікар), der Professor (професор), der Direktor (директор), der Traktor (трактор)\n-ig / -ich: der Honig (мед), der König (король), der Käfig (клітка), der Essig (оцет), der Teppich (килим), der Pfirsich (персик)\n-ent / -ant: der Student (студент), der Präsident (президент), der Patient (пацієнт), der Kontinent (континент), der Elefant (слон), der Praktikant (практикант)\n\nAusnahmen / Винятки: das Labor, das Tor, das Talent, das Restaurant, das Prozent\n\nSerie «Der, die, das mit Musik»: 5 Lieder über Artikel und Endungen (A1–B1). Abonniere, damit du keine Folge verpasst!\n\n#deutschlernen #derdiedas #artikel #germangrammar #learngerman #німецькамова #німецька #deutschmitmusik #der",
+     "kind": "Видео 16:9"
+    }
+   },
+   "materials": [
+    {
+     "name": "meta.md",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/songs/artikel_serie/ep2_der/meta.md",
+       "size": 2875
+      }
+     ]
+    },
+    {
+     "name": "text.md",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/songs/artikel_serie/ep2_der/text.md",
+       "size": 1790
+      }
+     ]
+    },
+    {
+     "name": "lines.json",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/songs/artikel_serie/ep2_der/lines.json",
+       "size": 5969
+      }
+     ]
+    },
+    {
+     "name": "beats.json",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/songs/artikel_serie/ep2_der/beats.json",
+       "size": 1116
+      }
+     ]
+    },
+    {
+     "name": "song.mp3",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/songs/artikel_serie/ep2_der/song.mp3",
+       "size": 2315434
+      }
+     ]
+    },
+    {
+     "name": "songs/artikel_serie/engine/",
+     "dir": true,
+     "files": [
+      {
+       "path": "materials/songs/artikel_serie/engine/covers.py",
+       "size": 5511
+      },
+      {
+       "path": "materials/songs/artikel_serie/engine/gen.py",
+       "size": 26479
+      },
+      {
+       "path": "materials/songs/artikel_serie/engine/meta.py",
+       "size": 3495
+      },
+      {
+       "path": "materials/songs/artikel_serie/engine/page.py",
+       "size": 21137
+      },
+      {
+       "path": "materials/songs/artikel_serie/engine/prepare.py",
+       "size": 3756
+      },
+      {
+       "path": "materials/songs/artikel_serie/engine/render.sh",
+       "size": 681
+      },
+      {
+       "path": "materials/songs/artikel_serie/engine/series.py",
+       "size": 11917
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ep3_das_chen",
+   "group": "artikel",
+   "title": "3. Immer das! -chen, -um, -ment, -ma, -o",
+   "level": "A1–B1",
+   "topic": "🎵 песня",
+   "about": "Песня про артикли по окончаниям: слова с эмодзи, артикль цветом (der синий, die красный, das зелёный), украинский перевод.",
+   "file": "videos/artikel/ep3_das_chen.mp4",
+   "size": 19631434,
+   "duration": 89.5,
+   "width": 1080,
+   "height": 1920,
+   "vertical": true,
+   "covers": {
+    "tiktok": "materials/songs/artikel_serie/ep3_das_chen/ep3_das_chen_cover_tiktok.png",
+    "youtube": "materials/songs/artikel_serie/ep3_das_chen/ep3_das_chen_cover_youtube.png"
+   },
+   "posts": {
+    "tiktok": {
+     "text": "Immer DAS! -chen / -lein -um -ment -ma -o 🎵 Folge 3/5 #deutschlernen #learngerman #artikel #derdiedas #німецькамова #deutschmitmusik"
+    },
+    "instagram": {
+     "text": "Immer DAS! -chen / -lein -um -ment -ma -o 🎵 Folge 3/5\n\nПесня про артикли по окончаниям: слова с эмодзи, артикль цветом (der синий, die красный, das зелёный), украинский перевод.\n\n#deutschlernen #learngerman #artikel #derdiedas #німецькамова #deutschmitmusik"
+    },
+    "youtube": {
+     "title": "Immer DAS! -chen / -lein, -um, -ment, -ma, -o | Artikel-Song 3/5 #deutschlernen #derdiedas #shorts",
+     "description": "Der, die oder das? Hör aufs Ende! In diesem Lied lernst du: Nomen mit -chen / -lein, -um, -ment, -ma, -o sind fast immer DAS.\nНімецькі артиклі легко: слова із закінченнями -chen / -lein, -um, -ment, -ma, -o — це das (середній рід). Пісня з перекладом українською, співай разом і запам'ятовуй.\n\nТаймкоди:\n0:00 Intro: der, die, das\n0:07 -chen / -lein — Immer das!\n0:21 -um — Fast immer das!\n0:34 -ment — Fast immer das!\n0:49 -ma — Fast immer das!\n1:03 -o — Fast immer das!\n1:16 Wiederholung + Ausnahmen\n\nWörter im Lied / Слова в пісні:\n-chen / -lein: das Mädchen (дівчинка), das Brötchen (булочка), das Märchen (казка), das Kätzchen (кошеня), das Büchlein (книжечка), das Vöglein (пташка)\n-um: das Museum (музей), das Zentrum (центр), das Datum (дата), das Studium (навчання), das Gymnasium (гімназія), das Publikum (публіка)\n-ment: das Instrument (інструмент), das Dokument (документ), das Experiment (експеримент), das Apartment (апартаменти), das Medikament (ліки), das Parlament (парламент)\n-ma: das Thema (тема), das Klima (клімат), das Drama (драма), das Komma (кома), das Schema (схема), das Dilemma (дилема)\n-o: das Auto (машина), das Kino (кіно), das Büro (офіс), das Radio (радіо), das Foto (фото), das Konto (рахунок)\n\nAusnahmen / Винятки: der Moment, der Konsum, die Firma, die Oma, der Euro, die Disco\n\nSerie «Der, die, das mit Musik»: 5 Lieder über Artikel und Endungen (A1–B1). Abonniere, damit du keine Folge verpasst!\n\n#deutschlernen #derdiedas #artikel #germangrammar #learngerman #німецькамова #німецька #deutschmitmusik #das",
+     "kind": "Shorts"
+    }
+   },
+   "materials": [
+    {
+     "name": "meta.md",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/songs/artikel_serie/ep3_das_chen/meta.md",
+       "size": 2532
+      }
+     ]
+    },
+    {
+     "name": "text.md",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/songs/artikel_serie/ep3_das_chen/text.md",
+       "size": 1593
+      }
+     ]
+    },
+    {
+     "name": "lines.json",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/songs/artikel_serie/ep3_das_chen/lines.json",
+       "size": 5225
+      }
+     ]
+    },
+    {
+     "name": "beats.json",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/songs/artikel_serie/ep3_das_chen/beats.json",
+       "size": 1080
+      }
+     ]
+    },
+    {
+     "name": "song.mp3",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/songs/artikel_serie/ep3_das_chen/song.mp3",
+       "size": 2150549
+      }
+     ]
+    },
+    {
+     "name": "songs/artikel_serie/engine/",
+     "dir": true,
+     "files": [
+      {
+       "path": "materials/songs/artikel_serie/engine/covers.py",
+       "size": 5511
+      },
+      {
+       "path": "materials/songs/artikel_serie/engine/gen.py",
+       "size": 26479
+      },
+      {
+       "path": "materials/songs/artikel_serie/engine/meta.py",
+       "size": 3495
+      },
+      {
+       "path": "materials/songs/artikel_serie/engine/page.py",
+       "size": 21137
+      },
+      {
+       "path": "materials/songs/artikel_serie/engine/prepare.py",
+       "size": 3756
+      },
+      {
+       "path": "materials/songs/artikel_serie/engine/render.sh",
+       "size": 681
+      },
+      {
+       "path": "materials/songs/artikel_serie/engine/series.py",
+       "size": 11917
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ep3_das_chen_youtube",
+   "group": "artikel",
+   "title": "3. Immer das! -chen, -um, -ment, -ma, -o",
+   "level": "A1–B1",
+   "topic": "🎵 песня · YouTube 16:9",
+   "about": "Песня про артикли по окончаниям: слова с эмодзи, артикль цветом (der синий, die красный, das зелёный), украинский перевод.",
+   "file": "videos/artikel/ep3_das_chen_youtube.mp4",
+   "size": 18582695,
+   "duration": 89.5,
+   "width": 1920,
+   "height": 1080,
+   "vertical": false,
+   "covers": {
+    "tiktok": "materials/songs/artikel_serie/ep3_das_chen/ep3_das_chen_cover_tiktok.png",
+    "youtube": "materials/songs/artikel_serie/ep3_das_chen/ep3_das_chen_cover_youtube.png"
+   },
+   "posts": {
+    "youtube": {
+     "title": "Immer DAS! -chen / -lein, -um, -ment, -ma, -o | Artikel-Song 3/5 #deutschlernen #derdiedas",
+     "description": "Der, die oder das? Hör aufs Ende! In diesem Lied lernst du: Nomen mit -chen / -lein, -um, -ment, -ma, -o sind fast immer DAS.\nНімецькі артиклі легко: слова із закінченнями -chen / -lein, -um, -ment, -ma, -o — це das (середній рід). Пісня з перекладом українською, співай разом і запам'ятовуй.\n\nТаймкоди:\n0:00 Intro: der, die, das\n0:07 -chen / -lein — Immer das!\n0:21 -um — Fast immer das!\n0:34 -ment — Fast immer das!\n0:49 -ma — Fast immer das!\n1:03 -o — Fast immer das!\n1:16 Wiederholung + Ausnahmen\n\nWörter im Lied / Слова в пісні:\n-chen / -lein: das Mädchen (дівчинка), das Brötchen (булочка), das Märchen (казка), das Kätzchen (кошеня), das Büchlein (книжечка), das Vöglein (пташка)\n-um: das Museum (музей), das Zentrum (центр), das Datum (дата), das Studium (навчання), das Gymnasium (гімназія), das Publikum (публіка)\n-ment: das Instrument (інструмент), das Dokument (документ), das Experiment (експеримент), das Apartment (апартаменти), das Medikament (ліки), das Parlament (парламент)\n-ma: das Thema (тема), das Klima (клімат), das Drama (драма), das Komma (кома), das Schema (схема), das Dilemma (дилема)\n-o: das Auto (машина), das Kino (кіно), das Büro (офіс), das Radio (радіо), das Foto (фото), das Konto (рахунок)\n\nAusnahmen / Винятки: der Moment, der Konsum, die Firma, die Oma, der Euro, die Disco\n\nSerie «Der, die, das mit Musik»: 5 Lieder über Artikel und Endungen (A1–B1). Abonniere, damit du keine Folge verpasst!\n\n#deutschlernen #derdiedas #artikel #germangrammar #learngerman #німецькамова #німецька #deutschmitmusik #das",
+     "kind": "Видео 16:9"
+    }
+   },
+   "materials": [
+    {
+     "name": "meta.md",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/songs/artikel_serie/ep3_das_chen/meta.md",
+       "size": 2532
+      }
+     ]
+    },
+    {
+     "name": "text.md",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/songs/artikel_serie/ep3_das_chen/text.md",
+       "size": 1593
+      }
+     ]
+    },
+    {
+     "name": "lines.json",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/songs/artikel_serie/ep3_das_chen/lines.json",
+       "size": 5225
+      }
+     ]
+    },
+    {
+     "name": "beats.json",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/songs/artikel_serie/ep3_das_chen/beats.json",
+       "size": 1080
+      }
+     ]
+    },
+    {
+     "name": "song.mp3",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/songs/artikel_serie/ep3_das_chen/song.mp3",
+       "size": 2150549
+      }
+     ]
+    },
+    {
+     "name": "songs/artikel_serie/engine/",
+     "dir": true,
+     "files": [
+      {
+       "path": "materials/songs/artikel_serie/engine/covers.py",
+       "size": 5511
+      },
+      {
+       "path": "materials/songs/artikel_serie/engine/gen.py",
+       "size": 26479
+      },
+      {
+       "path": "materials/songs/artikel_serie/engine/meta.py",
+       "size": 3495
+      },
+      {
+       "path": "materials/songs/artikel_serie/engine/page.py",
+       "size": 21137
+      },
+      {
+       "path": "materials/songs/artikel_serie/engine/prepare.py",
+       "size": 3756
+      },
+      {
+       "path": "materials/songs/artikel_serie/engine/render.sh",
+       "size": 681
+      },
+      {
+       "path": "materials/songs/artikel_serie/engine/series.py",
+       "size": 11917
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ep4_die_ion",
+   "group": "artikel",
+   "title": "4. Immer die! -ion, -tät, -ik, -ie, -ei",
+   "level": "A1–B1",
+   "topic": "🎵 песня",
+   "about": "Песня про артикли по окончаниям: слова с эмодзи, артикль цветом (der синий, die красный, das зелёный), украинский перевод.",
+   "file": "videos/artikel/ep4_die_ion.mp4",
+   "size": 18285179,
+   "duration": 83.6,
+   "width": 1080,
+   "height": 1920,
+   "vertical": true,
+   "covers": {
+    "tiktok": "materials/songs/artikel_serie/ep4_die_ion/ep4_die_ion_cover_tiktok.png",
+    "youtube": "materials/songs/artikel_serie/ep4_die_ion/ep4_die_ion_cover_youtube.png"
+   },
+   "posts": {
+    "tiktok": {
+     "text": "Immer DIE! -ion -tät -ik -ie -ei 🎵 Folge 4/5 #deutschlernen #learngerman #artikel #derdiedas #німецькамова #deutschmitmusik"
+    },
+    "instagram": {
+     "text": "Immer DIE! -ion -tät -ik -ie -ei 🎵 Folge 4/5\n\nПесня про артикли по окончаниям: слова с эмодзи, артикль цветом (der синий, die красный, das зелёный), украинский перевод.\n\n#deutschlernen #learngerman #artikel #derdiedas #німецькамова #deutschmitmusik"
+    },
+    "youtube": {
+     "title": "Immer DIE! -ion, -tät, -ik, -ie, -ei | Artikel-Song 4/5 #deutschlernen #derdiedas #shorts",
+     "description": "Der, die oder das? Hör aufs Ende! In diesem Lied lernst du: Nomen mit -ion, -tät, -ik, -ie, -ei sind fast immer DIE.\nНімецькі артиклі легко: слова із закінченнями -ion, -tät, -ik, -ie, -ei — це die (жіночий рід). Пісня з перекладом українською, співай разом і запам'ятовуй.\n\nТаймкоди:\n0:00 Intro: der, die, das\n0:06 -ion — Immer die!\n0:18 -tät — Immer die!\n0:32 -ik — Fast immer die!\n0:44 -ie — Immer die!\n0:59 -ei — Fast immer die!\n1:10 Wiederholung + Ausnahmen\n\nWörter im Lied / Слова в пісні:\n-ion: die Information (інформація), die Situation (ситуація), die Region (регіон), die Lektion (урок), die Station (станція), die Religion (релігія)\n-tät: die Universität (університет), die Qualität (якість), die Realität (реальність), die Kreativität (креативність), die Nationalität (національність), die Spezialität (фірмова страва)\n-ik: die Musik (музика), die Politik (політика), die Physik (фізика), die Grammatik (граматика), die Fabrik (фабрика), die Klinik (клініка)\n-ie: die Familie (сім'я), die Energie (енергія), die Fantasie (фантазія), die Biologie (біологія), die Therapie (терапія), die Industrie (промисловість)\n-ei: die Polizei (поліція), die Bäckerei (пекарня), die Bücherei (бібліотека), die Partei (партія), die Türkei (Туреччина), die Metzgerei (м'ясна крамниця)\n\nAusnahmen / Винятки: der Atlantik, das Genie, das Ei, der Papagei\n\nSerie «Der, die, das mit Musik»: 5 Lieder über Artikel und Endungen (A1–B1). Abonniere, damit du keine Folge verpasst!\n\n#deutschlernen #derdiedas #artikel #germangrammar #learngerman #німецькамова #німецька #deutschmitmusik #die",
+     "kind": "Shorts"
+    }
+   },
+   "materials": [
+    {
+     "name": "meta.md",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/songs/artikel_serie/ep4_die_ion/meta.md",
+       "size": 2608
+      }
+     ]
+    },
+    {
+     "name": "text.md",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/songs/artikel_serie/ep4_die_ion/text.md",
+       "size": 1562
+      }
+     ]
+    },
+    {
+     "name": "lines.json",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/songs/artikel_serie/ep4_die_ion/lines.json",
+       "size": 5042
+      }
+     ]
+    },
+    {
+     "name": "beats.json",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/songs/artikel_serie/ep4_die_ion/beats.json",
+       "size": 986
+      }
+     ]
+    },
+    {
+     "name": "song.mp3",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/songs/artikel_serie/ep4_die_ion/song.mp3",
+       "size": 2007607
+      }
+     ]
+    },
+    {
+     "name": "songs/artikel_serie/engine/",
+     "dir": true,
+     "files": [
+      {
+       "path": "materials/songs/artikel_serie/engine/covers.py",
+       "size": 5511
+      },
+      {
+       "path": "materials/songs/artikel_serie/engine/gen.py",
+       "size": 26479
+      },
+      {
+       "path": "materials/songs/artikel_serie/engine/meta.py",
+       "size": 3495
+      },
+      {
+       "path": "materials/songs/artikel_serie/engine/page.py",
+       "size": 21137
+      },
+      {
+       "path": "materials/songs/artikel_serie/engine/prepare.py",
+       "size": 3756
+      },
+      {
+       "path": "materials/songs/artikel_serie/engine/render.sh",
+       "size": 681
+      },
+      {
+       "path": "materials/songs/artikel_serie/engine/series.py",
+       "size": 11917
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ep4_die_ion_youtube",
+   "group": "artikel",
+   "title": "4. Immer die! -ion, -tät, -ik, -ie, -ei",
+   "level": "A1–B1",
+   "topic": "🎵 песня · YouTube 16:9",
+   "about": "Песня про артикли по окончаниям: слова с эмодзи, артикль цветом (der синий, die красный, das зелёный), украинский перевод.",
+   "file": "videos/artikel/ep4_die_ion_youtube.mp4",
+   "size": 17269628,
+   "duration": 83.6,
+   "width": 1920,
+   "height": 1080,
+   "vertical": false,
+   "covers": {
+    "tiktok": "materials/songs/artikel_serie/ep4_die_ion/ep4_die_ion_cover_tiktok.png",
+    "youtube": "materials/songs/artikel_serie/ep4_die_ion/ep4_die_ion_cover_youtube.png"
+   },
+   "posts": {
+    "youtube": {
+     "title": "Immer DIE! -ion, -tät, -ik, -ie, -ei | Artikel-Song 4/5 #deutschlernen #derdiedas",
+     "description": "Der, die oder das? Hör aufs Ende! In diesem Lied lernst du: Nomen mit -ion, -tät, -ik, -ie, -ei sind fast immer DIE.\nНімецькі артиклі легко: слова із закінченнями -ion, -tät, -ik, -ie, -ei — це die (жіночий рід). Пісня з перекладом українською, співай разом і запам'ятовуй.\n\nТаймкоди:\n0:00 Intro: der, die, das\n0:06 -ion — Immer die!\n0:18 -tät — Immer die!\n0:32 -ik — Fast immer die!\n0:44 -ie — Immer die!\n0:59 -ei — Fast immer die!\n1:10 Wiederholung + Ausnahmen\n\nWörter im Lied / Слова в пісні:\n-ion: die Information (інформація), die Situation (ситуація), die Region (регіон), die Lektion (урок), die Station (станція), die Religion (релігія)\n-tät: die Universität (університет), die Qualität (якість), die Realität (реальність), die Kreativität (креативність), die Nationalität (національність), die Spezialität (фірмова страва)\n-ik: die Musik (музика), die Politik (політика), die Physik (фізика), die Grammatik (граматика), die Fabrik (фабрика), die Klinik (клініка)\n-ie: die Familie (сім'я), die Energie (енергія), die Fantasie (фантазія), die Biologie (біологія), die Therapie (терапія), die Industrie (промисловість)\n-ei: die Polizei (поліція), die Bäckerei (пекарня), die Bücherei (бібліотека), die Partei (партія), die Türkei (Туреччина), die Metzgerei (м'ясна крамниця)\n\nAusnahmen / Винятки: der Atlantik, das Genie, das Ei, der Papagei\n\nSerie «Der, die, das mit Musik»: 5 Lieder über Artikel und Endungen (A1–B1). Abonniere, damit du keine Folge verpasst!\n\n#deutschlernen #derdiedas #artikel #germangrammar #learngerman #німецькамова #німецька #deutschmitmusik #die",
+     "kind": "Видео 16:9"
+    }
+   },
+   "materials": [
+    {
+     "name": "meta.md",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/songs/artikel_serie/ep4_die_ion/meta.md",
+       "size": 2608
+      }
+     ]
+    },
+    {
+     "name": "text.md",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/songs/artikel_serie/ep4_die_ion/text.md",
+       "size": 1562
+      }
+     ]
+    },
+    {
+     "name": "lines.json",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/songs/artikel_serie/ep4_die_ion/lines.json",
+       "size": 5042
+      }
+     ]
+    },
+    {
+     "name": "beats.json",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/songs/artikel_serie/ep4_die_ion/beats.json",
+       "size": 986
+      }
+     ]
+    },
+    {
+     "name": "song.mp3",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/songs/artikel_serie/ep4_die_ion/song.mp3",
+       "size": 2007607
+      }
+     ]
+    },
+    {
+     "name": "songs/artikel_serie/engine/",
+     "dir": true,
+     "files": [
+      {
+       "path": "materials/songs/artikel_serie/engine/covers.py",
+       "size": 5511
+      },
+      {
+       "path": "materials/songs/artikel_serie/engine/gen.py",
+       "size": 26479
+      },
+      {
+       "path": "materials/songs/artikel_serie/engine/meta.py",
+       "size": 3495
+      },
+      {
+       "path": "materials/songs/artikel_serie/engine/page.py",
+       "size": 21137
+      },
+      {
+       "path": "materials/songs/artikel_serie/engine/prepare.py",
+       "size": 3756
+      },
+      {
+       "path": "materials/songs/artikel_serie/engine/render.sh",
+       "size": 681
+      },
+      {
+       "path": "materials/songs/artikel_serie/engine/series.py",
+       "size": 11917
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ep5_das_ge",
+   "group": "artikel",
+   "title": "5. Immer das! Ge-, -nis, -tum, -ett",
+   "level": "A1–B1",
+   "topic": "🎵 песня",
+   "about": "Песня про артикли по окончаниям: слова с эмодзи, артикль цветом (der синий, die красный, das зелёный), украинский перевод.",
+   "file": "videos/artikel/ep5_das_ge.mp4",
+   "size": 19506832,
+   "duration": 83.2,
+   "width": 1080,
+   "height": 1920,
+   "vertical": true,
+   "covers": {
+    "tiktok": "materials/songs/artikel_serie/ep5_das_ge/ep5_das_ge_cover_tiktok.png",
+    "youtube": "materials/songs/artikel_serie/ep5_das_ge/ep5_das_ge_cover_youtube.png"
+   },
+   "posts": {
+    "tiktok": {
+     "text": "Immer DAS! Ge- -nis -tum -ett Verb → Nomen 🎵 Folge 5/5 #deutschlernen #learngerman #artikel #derdiedas #німецькамова #deutschmitmusik"
+    },
+    "instagram": {
+     "text": "Immer DAS! Ge- -nis -tum -ett Verb → Nomen 🎵 Folge 5/5\n\nПесня про артикли по окончаниям: слова с эмодзи, артикль цветом (der синий, die красный, das зелёный), украинский перевод.\n\n#deutschlernen #learngerman #artikel #derdiedas #німецькамова #deutschmitmusik"
+    },
+    "youtube": {
+     "title": "Immer DAS! Ge-, -nis, -tum, -ett, Verb → Nomen | Artikel-Song 5/5 #deutschlernen #derdiedas #shorts",
+     "description": "Der, die oder das? Hör aufs Ende! In diesem Lied lernst du: Nomen mit Ge-, -nis, -tum, -ett, Verb → Nomen sind fast immer DAS.\nНімецькі артиклі легко: слова із закінченнями Ge-, -nis, -tum, -ett, Verb → Nomen — це das (середній рід). Пісня з перекладом українською, співай разом і запам'ятовуй.\n\nТаймкоди:\n0:00 Intro: der, die, das\n0:10 Ge- — Meistens das!\n0:21 -nis — Fast immer das!\n0:32 -tum — Meistens das!\n0:43 -ett — Immer das!\n0:54 Verb → Nomen — Immer das!\n1:07 Wiederholung + Ausnahmen\n\nWörter im Lied / Слова в пісні:\nGe-: das Gebäude (будівля), das Gemüse (овочі), das Getränk (напій), das Geschenk (подарунок), das Gesicht (обличчя), das Gespräch (розмова)\n-nis: das Ergebnis (результат), das Zeugnis (атестат), das Erlebnis (враження), das Geheimnis (таємниця), das Ereignis (подія), das Hindernis (перешкода)\n-tum: das Eigentum (власність), das Wachstum (зростання), das Christentum (християнство), das Altertum (античність), das Heiligtum (святиня), das Königtum (королівство)\n-ett: das Bett (ліжко), das Ballett (балет), das Etikett (етикетка), das Tablett (таця), das Skelett (скелет), das Kabinett (кабінет)\nVerb → Nomen: das Essen (їжа), das Leben (життя), das Lernen (навчання), das Schwimmen (плавання), das Treffen (зустріч), das Wissen (знання)\n\nAusnahmen / Винятки: der Geschmack, der Gedanke, die Geduld, die Erlaubnis, der Irrtum, der Reichtum\n\nSerie «Der, die, das mit Musik»: 5 Lieder über Artikel und Endungen (A1–B1). Abonniere, damit du keine Folge verpasst!\n\n#deutschlernen #derdiedas #artikel #germangrammar #learngerman #німецькамова #німецька #deutschmitmusik #das",
+     "kind": "Shorts"
+    }
+   },
+   "materials": [
+    {
+     "name": "meta.md",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/songs/artikel_serie/ep5_das_ge/meta.md",
+       "size": 2630
+      }
+     ]
+    },
+    {
+     "name": "text.md",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/songs/artikel_serie/ep5_das_ge/text.md",
+       "size": 1584
+      }
+     ]
+    },
+    {
+     "name": "lines.json",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/songs/artikel_serie/ep5_das_ge/lines.json",
+       "size": 5052
+      }
+     ]
+    },
+    {
+     "name": "beats.json",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/songs/artikel_serie/ep5_das_ge/beats.json",
+       "size": 986
+      }
+     ]
+    },
+    {
+     "name": "song.mp3",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/songs/artikel_serie/ep5_das_ge/song.mp3",
+       "size": 1997576
+      }
+     ]
+    },
+    {
+     "name": "songs/artikel_serie/engine/",
+     "dir": true,
+     "files": [
+      {
+       "path": "materials/songs/artikel_serie/engine/covers.py",
+       "size": 5511
+      },
+      {
+       "path": "materials/songs/artikel_serie/engine/gen.py",
+       "size": 26479
+      },
+      {
+       "path": "materials/songs/artikel_serie/engine/meta.py",
+       "size": 3495
+      },
+      {
+       "path": "materials/songs/artikel_serie/engine/page.py",
+       "size": 21137
+      },
+      {
+       "path": "materials/songs/artikel_serie/engine/prepare.py",
+       "size": 3756
+      },
+      {
+       "path": "materials/songs/artikel_serie/engine/render.sh",
+       "size": 681
+      },
+      {
+       "path": "materials/songs/artikel_serie/engine/series.py",
+       "size": 11917
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ep5_das_ge_youtube",
+   "group": "artikel",
+   "title": "5. Immer das! Ge-, -nis, -tum, -ett",
+   "level": "A1–B1",
+   "topic": "🎵 песня · YouTube 16:9",
+   "about": "Песня про артикли по окончаниям: слова с эмодзи, артикль цветом (der синий, die красный, das зелёный), украинский перевод.",
+   "file": "videos/artikel/ep5_das_ge_youtube.mp4",
+   "size": 18412805,
+   "duration": 83.2,
+   "width": 1920,
+   "height": 1080,
+   "vertical": false,
+   "covers": {
+    "tiktok": "materials/songs/artikel_serie/ep5_das_ge/ep5_das_ge_cover_tiktok.png",
+    "youtube": "materials/songs/artikel_serie/ep5_das_ge/ep5_das_ge_cover_youtube.png"
+   },
+   "posts": {
+    "youtube": {
+     "title": "Immer DAS! Ge-, -nis, -tum, -ett, Verb → Nomen | Artikel-Song 5/5 #deutschlernen #derdiedas",
+     "description": "Der, die oder das? Hör aufs Ende! In diesem Lied lernst du: Nomen mit Ge-, -nis, -tum, -ett, Verb → Nomen sind fast immer DAS.\nНімецькі артиклі легко: слова із закінченнями Ge-, -nis, -tum, -ett, Verb → Nomen — це das (середній рід). Пісня з перекладом українською, співай разом і запам'ятовуй.\n\nТаймкоди:\n0:00 Intro: der, die, das\n0:10 Ge- — Meistens das!\n0:21 -nis — Fast immer das!\n0:32 -tum — Meistens das!\n0:43 -ett — Immer das!\n0:54 Verb → Nomen — Immer das!\n1:07 Wiederholung + Ausnahmen\n\nWörter im Lied / Слова в пісні:\nGe-: das Gebäude (будівля), das Gemüse (овочі), das Getränk (напій), das Geschenk (подарунок), das Gesicht (обличчя), das Gespräch (розмова)\n-nis: das Ergebnis (результат), das Zeugnis (атестат), das Erlebnis (враження), das Geheimnis (таємниця), das Ereignis (подія), das Hindernis (перешкода)\n-tum: das Eigentum (власність), das Wachstum (зростання), das Christentum (християнство), das Altertum (античність), das Heiligtum (святиня), das Königtum (королівство)\n-ett: das Bett (ліжко), das Ballett (балет), das Etikett (етикетка), das Tablett (таця), das Skelett (скелет), das Kabinett (кабінет)\nVerb → Nomen: das Essen (їжа), das Leben (життя), das Lernen (навчання), das Schwimmen (плавання), das Treffen (зустріч), das Wissen (знання)\n\nAusnahmen / Винятки: der Geschmack, der Gedanke, die Geduld, die Erlaubnis, der Irrtum, der Reichtum\n\nSerie «Der, die, das mit Musik»: 5 Lieder über Artikel und Endungen (A1–B1). Abonniere, damit du keine Folge verpasst!\n\n#deutschlernen #derdiedas #artikel #germangrammar #learngerman #німецькамова #німецька #deutschmitmusik #das",
+     "kind": "Видео 16:9"
+    }
+   },
+   "materials": [
+    {
+     "name": "meta.md",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/songs/artikel_serie/ep5_das_ge/meta.md",
+       "size": 2630
+      }
+     ]
+    },
+    {
+     "name": "text.md",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/songs/artikel_serie/ep5_das_ge/text.md",
+       "size": 1584
+      }
+     ]
+    },
+    {
+     "name": "lines.json",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/songs/artikel_serie/ep5_das_ge/lines.json",
+       "size": 5052
+      }
+     ]
+    },
+    {
+     "name": "beats.json",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/songs/artikel_serie/ep5_das_ge/beats.json",
+       "size": 986
+      }
+     ]
+    },
+    {
+     "name": "song.mp3",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/songs/artikel_serie/ep5_das_ge/song.mp3",
+       "size": 1997576
+      }
+     ]
+    },
+    {
+     "name": "songs/artikel_serie/engine/",
+     "dir": true,
+     "files": [
+      {
+       "path": "materials/songs/artikel_serie/engine/covers.py",
+       "size": 5511
+      },
+      {
+       "path": "materials/songs/artikel_serie/engine/gen.py",
+       "size": 26479
+      },
+      {
+       "path": "materials/songs/artikel_serie/engine/meta.py",
+       "size": 3495
+      },
+      {
+       "path": "materials/songs/artikel_serie/engine/page.py",
+       "size": 21137
+      },
+      {
+       "path": "materials/songs/artikel_serie/engine/prepare.py",
+       "size": 3756
+      },
+      {
+       "path": "materials/songs/artikel_serie/engine/render.sh",
+       "size": 681
+      },
+      {
+       "path": "materials/songs/artikel_serie/engine/series.py",
+       "size": 11917
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ich_mache_weiter",
+   "group": "songs",
+   "title": "Ich mache weiter",
+   "level": "A2–B1",
+   "topic": "🎵 отделяемые глаголы",
+   "about": "Около 60 отделяемых глаголов в трёх формах: Infinitiv, Präsens, Perfekt. Префикс оранжевый, ge зелёный, bin/habe отмечены как sein/haben.",
+   "file": "videos/songs/ich_mache_weiter.mp4",
+   "size": 45019477,
+   "duration": 300.8,
+   "width": 1080,
+   "height": 1920,
+   "vertical": true,
+   "covers": {
+    "tiktok": "materials/songs/ich_mache_weiter/ich_mache_weiter_cover_tiktok.png"
+   },
+   "posts": {
+    "tiktok": {
+     "text": "Ich stehe auf, ich bin aufgestanden 🎵 Trennbare Verben als Song #deutschlernen #trennbareverben #germansong #німецькамова #вивчаюнімецьку #learngerman"
+    },
+    "instagram": {
+     "text": "Ich stehe auf, ich bin aufgestanden 🎵 Trennbare Verben als Song\n\nОколо 60 отделяемых глаголов в трёх формах: Infinitiv, Präsens, Perfekt. Префикс оранжевый, ge зелёный, bin/habe отмечены как sein/haben.\n\n#deutschlernen #trennbareverben #germansong #німецькамова #вивчаюнімецьку #learngerman"
+    },
+    "youtube": {
+     "title": "Ich stehe auf, ich bin aufgestanden 🎵 Trennbare Verben als Song #deutschlernen #shorts",
+     "description": "Ich mache weiter: ein Song mit rund 60 trennbaren Verben – Infinitiv, Präsens und Perfekt. aufstehen, ich stehe auf, ich bin aufgestanden.\nВідокремлювані дієслова в трьох формах. Пісня з перекладом українською: співай разом і запам'ятовуй.\n\n#deutschlernen #trennbareverben #germansong #німецькамова #вивчаюнімецьку #learngerman",
+     "kind": "Shorts"
+    }
+   },
+   "materials": [
+    {
+     "name": "subtitles_de.srt",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/songs/ich_mache_weiter/subtitles_de.srt",
+       "size": 6253
+      }
+     ]
+    },
+    {
+     "name": "subtitles_de_uk.srt",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/songs/ich_mache_weiter/subtitles_de_uk.srt",
+       "size": 10862
+      }
+     ]
+    },
+    {
+     "name": "songs/ich_mache_weiter/project/",
+     "dir": true,
+     "files": [
+      {
+       "path": "materials/songs/ich_mache_weiter/project/align.py",
+       "size": 2877
+      },
+      {
+       "path": "materials/songs/ich_mache_weiter/project/gen.py",
+       "size": 9119
+      },
+      {
+       "path": "materials/songs/ich_mache_weiter/project/index.html",
+       "size": 217366
+      },
+      {
+       "path": "materials/songs/ich_mache_weiter/project/lines.json",
+       "size": 25309
+      },
+      {
+       "path": "materials/songs/ich_mache_weiter/project/song_fw.py",
+       "size": 749
+      },
+      {
+       "path": "materials/songs/ich_mache_weiter/project/template.html",
+       "size": 7481
+      },
+      {
+       "path": "materials/songs/ich_mache_weiter/project/uk.py",
+       "size": 6146
+      },
+      {
+       "path": "materials/songs/ich_mache_weiter/project/vw2.json",
+       "size": 36260
+      }
+     ]
+    },
+    {
+     "name": "make_covers.py",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/songs/make_covers.py",
+       "size": 5246
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ich_mache_weiter_youtube",
+   "group": "songs",
+   "title": "Ich mache weiter · YouTube 16:9",
+   "level": "A2–B1",
+   "topic": "🎵 отделяемые глаголы",
+   "about": "Горизонтальная версия: карточка слева, список глаголов справа.",
+   "file": "videos/songs/ich_mache_weiter_youtube.mp4",
+   "size": 45614049,
+   "duration": 300.8,
+   "width": 1920,
+   "height": 1080,
+   "vertical": false,
+   "covers": {
+    "youtube": "materials/songs/ich_mache_weiter/ich_mache_weiter_cover_youtube.png"
+   },
+   "posts": {
+    "youtube": {
+     "title": "Trennbare Verben als Song 🎵 Ich mache weiter | A2–B1 #deutschlernen #trennbareverben #germansong",
+     "description": "Ich mache weiter: ein Lernsong mit rund 60 trennbaren Verben. Zu jedem Verb: Infinitiv, Präsens und Perfekt (aufstehen – ich stehe auf – ich bin aufgestanden). Präfix in Orange, ge- in Grün, sein/haben markiert.\nПісня про відокремлювані дієслова німецької мови: інфінітив, теперішній час і Perfekt. Пісня з перекладом українською: співай разом і запам'ятовуй.\n\n#deutschlernen #trennbareverben #germansong #learngerman #німецькамова #вивчаюнімецьку #deutschmitmusik",
+     "kind": "Видео 16:9"
+    }
+   },
+   "materials": [
+    {
+     "name": "subtitles_de_uk.srt",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/songs/ich_mache_weiter/subtitles_de_uk.srt",
+       "size": 10862
+      }
+     ]
+    },
+    {
+     "name": "songs/ich_mache_weiter/project_youtube/",
+     "dir": true,
+     "files": [
+      {
+       "path": "materials/songs/ich_mache_weiter/project_youtube/index.html",
+       "size": 217922
+      },
+      {
+       "path": "materials/songs/ich_mache_weiter/project_youtube/template_h.html",
+       "size": 8037
+      }
+     ]
+    },
+    {
+     "name": "songs/ich_mache_weiter/project/",
+     "dir": true,
+     "files": [
+      {
+       "path": "materials/songs/ich_mache_weiter/project/align.py",
+       "size": 2877
+      },
+      {
+       "path": "materials/songs/ich_mache_weiter/project/gen.py",
+       "size": 9119
+      },
+      {
+       "path": "materials/songs/ich_mache_weiter/project/index.html",
+       "size": 217366
+      },
+      {
+       "path": "materials/songs/ich_mache_weiter/project/lines.json",
+       "size": 25309
+      },
+      {
+       "path": "materials/songs/ich_mache_weiter/project/song_fw.py",
+       "size": 749
+      },
+      {
+       "path": "materials/songs/ich_mache_weiter/project/template.html",
+       "size": 7481
+      },
+      {
+       "path": "materials/songs/ich_mache_weiter/project/uk.py",
+       "size": 6146
+      },
+      {
+       "path": "materials/songs/ich_mache_weiter/project/vw2.json",
+       "size": 36260
+      }
+     ]
+    },
+    {
+     "name": "make_covers.py",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/songs/make_covers.py",
+       "size": 5246
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "drei_formen",
+   "group": "songs",
+   "title": "Drei Formen, sing sie laut",
+   "level": "A2–B1",
+   "topic": "🎵 сильные глаголы",
+   "about": "28 сильных глаголов в трёх формах: Infinitiv, Präteritum, Partizip II, и к каждому пример в Perfekt с отметкой sein или haben.",
+   "file": "videos/songs/drei_formen.mp4",
+   "size": 30215137,
+   "duration": 226.3,
+   "width": 1080,
+   "height": 1920,
+   "vertical": true,
+   "covers": {
+    "tiktok": "materials/songs/drei_formen/drei_formen_cover_tiktok.png"
+   },
+   "posts": {
+    "tiktok": {
+     "text": "Gehen, ging, gegangen 🎵 Starke Verben als Song – sing mit! #deutschlernen #starkeverben #germansong #німецькамова #вивчаюнімецьку #learngerman"
+    },
+    "instagram": {
+     "text": "Gehen, ging, gegangen 🎵 Starke Verben als Song – sing mit!\n\n28 сильных глаголов в трёх формах: Infinitiv, Präteritum, Partizip II, и к каждому пример в Perfekt с отметкой sein или haben.\n\n#deutschlernen #starkeverben #germansong #німецькамова #вивчаюнімецьку #learngerman"
+    },
+    "youtube": {
+     "title": "Gehen, ging, gegangen 🎵 Starke Verben als Song – sing mit! #deutschlernen #shorts",
+     "description": "Drei Formen, sing sie laut: 28 starke Verben mit Infinitiv, Präteritum und Partizip II, dazu ein Beispiel im Perfekt mit sein oder haben.\nСильні дієслова в трьох формах. Пісня з перекладом українською: співай разом і запам'ятовуй.\n\n#deutschlernen #starkeverben #germansong #німецькамова #вивчаюнімецьку #learngerman",
+     "kind": "Shorts"
+    }
+   },
+   "materials": [
+    {
+     "name": "subtitles_de.srt",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/songs/drei_formen/subtitles_de.srt",
+       "size": 6153
+      }
+     ]
+    },
+    {
+     "name": "subtitles_de_uk.srt",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/songs/drei_formen/subtitles_de_uk.srt",
+       "size": 10277
+      }
+     ]
+    },
+    {
+     "name": "songs/drei_formen/project/",
+     "dir": true,
+     "files": [
+      {
+       "path": "materials/songs/drei_formen/project/align.py",
+       "size": 2772
+      },
+      {
+       "path": "materials/songs/drei_formen/project/gen.py",
+       "size": 8430
+      },
+      {
+       "path": "materials/songs/drei_formen/project/index.html",
+       "size": 154542
+      },
+      {
+       "path": "materials/songs/drei_formen/project/lines.json",
+       "size": 21993
+      },
+      {
+       "path": "materials/songs/drei_formen/project/template.html",
+       "size": 8374
+      },
+      {
+       "path": "materials/songs/drei_formen/project/uk.py",
+       "size": 5481
+      },
+      {
+       "path": "materials/songs/drei_formen/project/vw.json",
+       "size": 28005
+      }
+     ]
+    },
+    {
+     "name": "make_covers.py",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/songs/make_covers.py",
+       "size": 5246
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "drei_formen_youtube",
+   "group": "songs",
+   "title": "Drei Formen · YouTube 16:9",
+   "level": "A2–B1",
+   "topic": "🎵 сильные глаголы",
+   "about": "Горизонтальная версия: карточка слева, список глаголов справа.",
+   "file": "videos/songs/drei_formen_youtube.mp4",
+   "size": 31645902,
+   "duration": 226.3,
+   "width": 1920,
+   "height": 1080,
+   "vertical": false,
+   "covers": {
+    "youtube": "materials/songs/drei_formen/drei_formen_cover_youtube.png"
+   },
+   "posts": {
+    "youtube": {
+     "title": "Starke Verben als Song 🎵 gehen, ging, gegangen | A2–B1 #deutschlernen #starkeverben #germansong",
+     "description": "Drei Formen, sing sie laut: ein Lernsong mit 28 starken Verben – Infinitiv, Präteritum, Partizip II (gehen – ging – gegangen) und ein Beispielsatz im Perfekt mit sein oder haben. Die drei Formen in drei Farben.\nПісня про сильні дієслова німецької мови: три форми й приклад у Perfekt. Пісня з перекладом українською: співай разом і запам'ятовуй.\n\n#deutschlernen #starkeverben #germansong #learngerman #німецькамова #вивчаюнімецьку #deutschmitmusik",
+     "kind": "Видео 16:9"
+    }
+   },
+   "materials": [
+    {
+     "name": "subtitles_de_uk.srt",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/songs/drei_formen/subtitles_de_uk.srt",
+       "size": 10277
+      }
+     ]
+    },
+    {
+     "name": "songs/drei_formen/project_youtube/",
+     "dir": true,
+     "files": [
+      {
+       "path": "materials/songs/drei_formen/project_youtube/index.html",
+       "size": 155098
+      },
+      {
+       "path": "materials/songs/drei_formen/project_youtube/template_h.html",
+       "size": 8930
+      }
+     ]
+    },
+    {
+     "name": "songs/drei_formen/project/",
+     "dir": true,
+     "files": [
+      {
+       "path": "materials/songs/drei_formen/project/align.py",
+       "size": 2772
+      },
+      {
+       "path": "materials/songs/drei_formen/project/gen.py",
+       "size": 8430
+      },
+      {
+       "path": "materials/songs/drei_formen/project/index.html",
+       "size": 154542
+      },
+      {
+       "path": "materials/songs/drei_formen/project/lines.json",
+       "size": 21993
+      },
+      {
+       "path": "materials/songs/drei_formen/project/template.html",
+       "size": 8374
+      },
+      {
+       "path": "materials/songs/drei_formen/project/uk.py",
+       "size": 5481
+      },
+      {
+       "path": "materials/songs/drei_formen/project/vw.json",
+       "size": 28005
+      }
+     ]
+    },
+    {
+     "name": "make_covers.py",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/songs/make_covers.py",
+       "size": 5246
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "hallo_abc",
+   "group": "songs",
+   "title": "Hallo, ABC! (для детей)",
+   "level": "A1 · дети",
+   "topic": "🎵 алфавит",
+   "about": "Анимированный клип про немецкий алфавит: плитка буквы с подсказкой «sprich: Be», персонаж и слово с артиклем цветом; в припеве загораются все 26 букв.",
+   "file": "videos/songs/hallo_abc.mp4",
+   "size": 49330457,
+   "duration": 144.0,
+   "width": 1080,
+   "height": 1920,
+   "vertical": true,
+   "covers": {
+    "tiktok": "materials/songs/abc_lied/hallo_abc_cover_tiktok.png"
+   },
+   "posts": {
+    "tiktok": {
+     "text": "Das ABC für Kinder 🎵 Hallo, ABC! Sing mit! #deutschlernen #alphabet #kinderlied #deutschfürkinder #німецькадлядітей #вивчаюнімецьку"
+    },
+    "instagram": {
+     "text": "Das ABC für Kinder 🎵 Hallo, ABC! Sing mit!\n\nАнимированный клип про немецкий алфавит: плитка буквы с подсказкой «sprich: Be», персонаж и слово с артиклем цветом; в припеве загораются все 26 букв.\n\n#deutschlernen #alphabet #kinderlied #deutschfürkinder #німецькадлядітей #вивчаюнімецьку"
+    },
+    "youtube": {
+     "title": "Das ABC für Kinder 🎵 Hallo, ABC! Sing mit! #kinderlied #alphabet #shorts",
+     "description": "Hallo, ABC! Ein Kinderlied über das deutsche Alphabet: zu jedem Buchstaben ein Bild und ein Wort mit Artikel. Am Ende: Ä, Ö, Ü und ß.\nДитяча пісня про німецький алфавіт: кожна літера з картинкою і словом. Пісня з перекладом українською: співай разом і запам'ятовуй.\n\n#deutschlernen #alphabet #kinderlied #deutschfürkinder #німецькадлядітей #вивчаюнімецьку",
+     "kind": "Shorts"
+    }
+   },
+   "materials": [
+    {
+     "name": "text.md",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/songs/abc_lied/text.md",
+       "size": 4274
+      }
+     ]
+    },
+    {
+     "name": "subtitles_de_uk.srt",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/songs/abc_lied/subtitles_de_uk.srt",
+       "size": 5282
+      }
+     ]
+    },
+    {
+     "name": "songs/abc_lied/project/",
+     "dir": true,
+     "files": [
+      {
+       "path": "materials/songs/abc_lied/project/align.py",
+       "size": 2772
+      },
+      {
+       "path": "materials/songs/abc_lied/project/chars.py",
+       "size": 18447
+      },
+      {
+       "path": "materials/songs/abc_lied/project/covers.py",
+       "size": 4155
+      },
+      {
+       "path": "materials/songs/abc_lied/project/gen.py",
+       "size": 13829
+      },
+      {
+       "path": "materials/songs/abc_lied/project/lines.json",
+       "size": 15489
+      },
+      {
+       "path": "materials/songs/abc_lied/project/template.html",
+       "size": 5951
+      },
+      {
+       "path": "materials/songs/abc_lied/project/uk.py",
+       "size": 4100
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "hallo_abc_youtube",
+   "group": "songs",
+   "title": "Hallo, ABC! · YouTube 16:9",
+   "level": "A1 · дети",
+   "topic": "🎵 алфавит",
+   "about": "Горизонтальная версия детского клипа про алфавит.",
+   "file": "videos/songs/hallo_abc_youtube.mp4",
+   "size": 48916418,
+   "duration": 144.0,
+   "width": 1920,
+   "height": 1080,
+   "vertical": false,
+   "covers": {
+    "youtube": "materials/songs/abc_lied/hallo_abc_cover_youtube.png"
+   },
+   "posts": {
+    "youtube": {
+     "title": "Hallo, ABC! 🎵 Das deutsche Alphabet für Kinder | Kinderlied #kinderlied #alphabet #deutschlernen",
+     "description": "Hallo, ABC! Ein fröhliches Kinderlied über das deutsche Alphabet. Zu jedem Buchstaben: die Aussprache (sprich: Be), ein gezeichnetes Bild und ein Wort mit Artikel – der in Blau, die in Rot, das in Grün. Im Refrain leuchten alle 26 Buchstaben, Ä, Ö, Ü und ß bekommen eine eigene Strophe.\nДитяча пісня про німецький алфавіт з картинками та перекладом українською. Співайте разом!\n\n#kinderlied #alphabet #deutschlernen #deutschfürkinder #abc #німецькадлядітей #вивчаюнімецьку",
+     "kind": "Видео 16:9"
+    }
+   },
+   "materials": [
+    {
+     "name": "text.md",
+     "dir": false,
+     "files": [
+      {
+       "path": "materials/songs/abc_lied/text.md",
+       "size": 4274
+      }
+     ]
+    },
+    {
+     "name": "songs/abc_lied/project_youtube/",
+     "dir": true,
+     "files": [
+      {
+       "path": "materials/songs/abc_lied/project_youtube/index.html",
+       "size": 336704
+      }
+     ]
+    },
+    {
+     "name": "songs/abc_lied/project/",
+     "dir": true,
+     "files": [
+      {
+       "path": "materials/songs/abc_lied/project/align.py",
+       "size": 2772
+      },
+      {
+       "path": "materials/songs/abc_lied/project/chars.py",
+       "size": 18447
+      },
+      {
+       "path": "materials/songs/abc_lied/project/covers.py",
+       "size": 4155
+      },
+      {
+       "path": "materials/songs/abc_lied/project/gen.py",
+       "size": 13829
+      },
+      {
+       "path": "materials/songs/abc_lied/project/lines.json",
+       "size": 15489
+      },
+      {
+       "path": "materials/songs/abc_lied/project/template.html",
+       "size": 5951
+      },
+      {
+       "path": "materials/songs/abc_lied/project/uk.py",
+       "size": 4100
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "drafts": [
+  {
+   "name": "songs/grammatik_hits/",
+   "dir": true,
+   "files": [
+    {
+     "path": "materials/songs/grammatik_hits/page.py",
+     "size": 7223
+    },
+    {
+     "path": "materials/songs/grammatik_hits/songs.py",
+     "size": 30324
+    },
+    {
+     "path": "materials/songs/grammatik_hits/suno.html",
+     "size": 41707
+    },
+    {
+     "path": "materials/songs/grammatik_hits/t1_konjunktiv/v1/text.md",
+     "size": 2034
+    },
+    {
+     "path": "materials/songs/grammatik_hits/t1_konjunktiv/v2/text.md",
+     "size": 1967
+    },
+    {
+     "path": "materials/songs/grammatik_hits/t1_konjunktiv/v3/text.md",
+     "size": 1807
+    },
+    {
+     "path": "materials/songs/grammatik_hits/t2_modalverben/v1/text.md",
+     "size": 1870
+    },
+    {
+     "path": "materials/songs/grammatik_hits/t2_modalverben/v2/text.md",
+     "size": 2115
+    },
+    {
+     "path": "materials/songs/grammatik_hits/t2_modalverben/v3/text.md",
+     "size": 2034
+    },
+    {
+     "path": "materials/songs/grammatik_hits/t3_wo_wohin/v1/text.md",
+     "size": 1980
+    },
+    {
+     "path": "materials/songs/grammatik_hits/t3_wo_wohin/v2/text.md",
+     "size": 2251
+    },
+    {
+     "path": "materials/songs/grammatik_hits/t3_wo_wohin/v3/text.md",
+     "size": 2051
+    },
+    {
+     "path": "materials/songs/grammatik_hits/t4_verb_ende/v1/text.md",
+     "size": 2066
+    },
+    {
+     "path": "materials/songs/grammatik_hits/t4_verb_ende/v2/text.md",
+     "size": 1988
+    },
+    {
+     "path": "materials/songs/grammatik_hits/t4_verb_ende/v3/text.md",
+     "size": 1934
+    },
+    {
+     "path": "materials/songs/grammatik_hits/t5_reflexiv/v1/text.md",
+     "size": 1835
+    },
+    {
+     "path": "materials/songs/grammatik_hits/t5_reflexiv/v2/text.md",
+     "size": 1942
+    },
+    {
+     "path": "materials/songs/grammatik_hits/t5_reflexiv/v3/text.md",
+     "size": 1740
+    }
+   ]
+  },
+  {
+   "name": "topics.html",
+   "dir": false,
+   "files": [
+    {
+     "path": "materials/songs/next_hit/topics.html",
+     "size": 37294
+    }
+   ]
+  }
+ ]
+}
